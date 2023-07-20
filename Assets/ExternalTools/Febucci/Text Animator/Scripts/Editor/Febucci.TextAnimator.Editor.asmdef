@@ -1,0 +1,17 @@
+{
+    "name": "Febucci.TextAnimator.Editor",
+    "references": [
+        "Febucci.TextAnimator.Runtime",
+        "Unity.TextMeshPro"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}

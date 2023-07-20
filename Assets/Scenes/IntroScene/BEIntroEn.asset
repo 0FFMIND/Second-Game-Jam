@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d63f69b81c0527241b21cb982bf8144a, type: 3}
+  m_Name: BEIntroEn
+  m_EditorClassIdentifier: 
+  istypped: 1
+  dialogList:
+  - <wave>To start a conversation,please click with the left mouse button</wave>
+  - <wave>You can also skip reading by double-clicking the left mouse button</wave>
+  - <wave>Right-click to return to the menu interface</wave>
+  - <wave>Your progress "Intro Scene" is now saved!</wave>

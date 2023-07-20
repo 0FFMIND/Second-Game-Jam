@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d63f69b81c0527241b21cb982bf8144a, type: 3}
+  m_Name: UPEG
+  m_EditorClassIdentifier: 
+  istypped: 0
+  dialogList:
+  - <wave>Just when TOUCH was allowed in, suddenly a finger was swallowed, causing
+    a sharp pain</wave>
+  - <wave>At the same time, the panel on the right, the durability is restored because
+    of the loss of the worn finger</wave>
+  - <wave>But should also consider the number of fingers and coins</wave>
+  - <wave>With those coins, the turrets could be placed in these places</wave>
+  - <wave>With turrets, it is possible to reduce the number of slides, which saves
+    the duality of fingers</wave>
+  - <wave>When the number of fingers is 0 or negative, nothing can be done, and everything
+    will end at that time</wave>
+  - <wave>From now on, try to resist the five waves of enemies</wave>

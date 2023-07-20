@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d63f69b81c0527241b21cb982bf8144a, type: 3}
+  m_Name: IntroEn
+  m_EditorClassIdentifier: 
+  istypped: 0
+  dialogList:
+  - <wave>In a world long ago, the sun reclaimed the brantiance that nourished all
+    things, and replaced it with abnormal radiation</wave>
+  - <wave>TOUCH mutations inevitably swept the world, and monsters, radiation, suspicion,
+    and survival seemed to become luxuries</wave>
+  - <wave>Humanity persisted, and the Oasis Survival Zone became humanity's last
+    hope, but the problem of radiation still shrouded the hope of survival like a
+    cloud</wave>
+  - <wave>"Do not overstep" the treatment of TOUCH and the world outside the surviving
+    zone, our predecessors want us to remember this principle, which is the lesson
+    of blood and tears</wave>
+  - <wave>I hope all the best in my defense work today</wave>

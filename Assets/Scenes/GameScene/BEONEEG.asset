@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d63f69b81c0527241b21cb982bf8144a, type: 3}
+  m_Name: BEONEEG
+  m_EditorClassIdentifier: 
+  istypped: 0
+  dialogList:
+  - <wave> By the way, I was on shift before, and I'm on duty this week</wave>
+  - <wave>Let's get acquainted with the operator panel again</wave>
+  - <wave>The number floating in the upper left corner is the current panel information</wave>
+  - <wave>Right-click when want to return to the beginning of the screen</wave>
+  - <wave>For intruded TOUCHes, there are two ways to kill them</wave>
+  - <wave>One of them is to make crazy mouse swipes in the face of enemies</wave>
+  - <wave>Attack enemies while pressing the left mouse button while using the swipe
+    function</wave>

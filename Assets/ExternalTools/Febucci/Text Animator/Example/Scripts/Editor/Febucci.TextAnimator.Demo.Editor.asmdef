@@ -1,0 +1,17 @@
+{
+    "name": "Febucci.TextAnimator.Demo.Editor",
+    "references": [
+        "Febucci.TextAnimator.Demo.Runtime",
+        "Febucci.TextAnimator.Runtime"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}
