@@ -1,2 +1,2 @@
 # NO-OTTER-CROSSING
-Unity version is 2020.3.20f1c1, please use this version to cooperation or meet with unwanted BUGs.
+Unity version is 2020.3.20f1c1. Please use this version to cooperate or meet with unwanted BUGs.
