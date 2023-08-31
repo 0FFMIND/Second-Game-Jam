@@ -1,138 +1,108 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using System.Linq;
 using TMPro;
+
 public enum LanguageOption
 {
     English,
-    Chinese,
+    Chinese
 }
 public class LanguageManager : Singleton<LanguageManager>
 {
-    public LanguageOption nowOption = LanguageOption.English;
-    public LanguageOption preOption = LanguageOption.English;
-    public bool setChange;
-    Dictionary<string, string> gameDict = new Dictionary<string, string>();
-    private void Start()
+    public LanguageOption CurrentLanguage { get; set; } = LanguageOption.Chinese;
+    [SerializeField] private LanguageOption previousLanguage = LanguageOption.Chinese;
+    public bool hasLanguageChanged;
+    private readonly Dictionary<string, string> gameDictionary = new Dictionary<string, string>();
+    private void Awake()
     {
-        //To Do: 把savesystem初始化写进来
-        //在一开始把txt存进gameDict
-        string path = "Language";
-        TextAsset targetAsset = Resources.Load<TextAsset>(path);
-        string[] lines = targetAsset.text.Split('\n');
-        for (int i = 0; i < lines.Length; i++)
-        {
-            if (string.IsNullOrEmpty(lines[i]))
-            {
-                continue;
-            }
-            else
-            {
-                string[] nowLines = lines[i].Split(':');
-                foreach (string line in nowLines)
-                {
-                    line.Trim();//去除首尾的空格
-                }
-                gameDict.Add(nowLines[0], nowLines[1]);
-            }
-        }
+        LoadLanguageFile("Language");
     }
     private void Update()
     {
-        if(nowOption != preOption)
+        if (CurrentLanguage != previousLanguage)
         {
-            SwitchLanguage(nowOption);
+            SwitchLanguage(CurrentLanguage);
         }
-        //当signal变化的时候加载一次
-        if (setChange)
+        ChangeLanguage();
+    }
+    private void ChangeLanguage()
+    {
+        if (hasLanguageChanged)
         {
-            setChange = false;
-            SwitchLanguage(nowOption);
+            LanguageOption option = previousLanguage;
+            CurrentLanguage = (LanguageOption)(((int)option + 1) % 2);
+            hasLanguageChanged = false;
         }
     }
-    private void FindAll(Transform parent, ref List<GameObject> newObj)
+    private void LoadLanguageFile(string path)
+    {
+        TextAsset targetAsset = Resources.Load<TextAsset>(path);
+        string[] lines = targetAsset.text.Split('\n');
+        foreach (string line in lines)
+        {
+            string[] lineParts = line.Split(':');
+            if (lineParts.Length < 2) continue;
+            gameDictionary.Add(lineParts[0].Trim(), lineParts[1].Trim());
+        }
+    }
+    private void GetAllObjectsInScene(Transform parent,ref List<GameObject> objects)
     {
         for (int i = 0; i < parent.childCount; i++)
         {
-            Transform temp = parent.GetChild(i);
-            newObj.Add(temp.gameObject);
-            if(temp.childCount > 0)
+            Transform child = parent.GetChild(i);
+            objects.Add(child.gameObject);
+            if (child.childCount > 0)
             {
-                FindAll(temp, ref newObj);
+                //简单的递归
+                GetAllObjectsInScene(child, ref objects);
             }
         }
     }
-    public void SwitchLanguage(LanguageOption changeTo)
+    private void SwitchLanguage(LanguageOption targetLanguage)
     {
-        //判断nowOption与preOption的关系
-        if (nowOption == LanguageOption.Chinese)
-        {
-            preOption = LanguageOption.Chinese;
-            changeTo = LanguageOption.Chinese;
-        } else if (nowOption == LanguageOption.English)
-        {
-            preOption = LanguageOption.English;
-            changeTo = LanguageOption.English;
-        }
-        //先遍历所有的物体
+        previousLanguage = CurrentLanguage;
+        CurrentLanguage = targetLanguage;
         Scene scene = SceneManager.GetActiveScene();
-        List<GameObject> allObj = new List<GameObject>(scene.GetRootGameObjects());
-        List<GameObject> newObj = new List<GameObject>();
-        foreach (GameObject singleObj in allObj)
+        if(scene.name == "TitleScene")
         {
-            newObj.Add(singleObj);
-            FindAll(singleObj.transform, ref newObj);
+            GameObject.Find("TitleCanvas").gameObject.GetComponent<TitleController>().hasLangChangeInTitle = true;
         }
-        foreach (GameObject singleObj in newObj)
+        List<GameObject> allObjects = new List<GameObject>(scene.GetRootGameObjects());
+        List<GameObject> childObjects = new List<GameObject>();
+        foreach(GameObject obj in allObjects)
         {
-            string singleText = null;
-            bool isTMP = false;
-            if (singleObj.GetComponent<TMP_Text>() != null && singleObj.GetComponent<TMP_Text>().text != null)
+            childObjects.Add(obj);
+            GetAllObjectsInScene(obj.transform, ref childObjects);
+        }
+        foreach(GameObject obj in childObjects)
+        {
+            if(obj.GetComponent<Text>() != null)
             {
-                singleText = singleObj.GetComponent<TMP_Text>().text;
-                isTMP = true;
-            }
-            else if (singleObj.GetComponent<Text>() != null && singleObj.GetComponent<Text>().text != null)
+                obj.GetComponent<Text>().text = UpdateLanguageText(targetLanguage, obj.GetComponent<Text>().text);
+            }else if(obj.GetComponent<TMP_Text>() != null)
             {
-                singleText = singleObj.GetComponent<Text>().text;
-                isTMP = false;
-            }
-            if(singleText != null)
-            {
-                //English对应前面的key，Chinese对应后面的value
-                //当前是English，想要切换Chinese
-                if (changeTo == LanguageOption.Chinese)
-                {
-                    if (gameDict.ContainsKey(singleText))
-                    {
-                        singleText = gameDict[singleText];
-
-                    }
-                }
-                //当前是Chinese，想要切换English
-                else if (changeTo == LanguageOption.English)
-                {
-                    string firstKey = gameDict.FirstOrDefault(pair => pair.Value == singleText).Key;
-                    if(firstKey != null)
-                    {
-                        singleText = firstKey;
-
-                    }
-                }
-                if (isTMP)
-                {
-                    singleObj.GetComponent<TMP_Text>().text = singleText;
-                }
-                else
-                {
-                    singleObj.GetComponent<Text>().text = singleText;
-                }
+                UpdateLanguageText(targetLanguage, obj.GetComponent<TMP_Text>().text);
             }
         }
-        if (nowOption == LanguageOption.English) preOption = LanguageOption.English;
-        else if (nowOption == LanguageOption.Chinese) preOption = LanguageOption.Chinese;
+    }
+    private string UpdateLanguageText(LanguageOption targetLanguage, string text)
+    {
+        if (targetLanguage == LanguageOption.Chinese && gameDictionary.ContainsKey(text))
+        {
+            return gameDictionary[text];
+        }
+        else if (targetLanguage == LanguageOption.English)
+        {
+            string firstKey = gameDictionary.FirstOrDefault(pair => pair.Value == text).Key;
+            if (firstKey != null)
+            {
+                return firstKey;
+            }
+            else return null;
+        }
+        else return null;
     }
 }

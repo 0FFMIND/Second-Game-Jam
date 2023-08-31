@@ -46,7 +46,8 @@ public class SaveManager : Singleton<SaveManager>
                             Screen.SetResolution(1920, 1080, true);
                             ishighReso = true;
                         }
-                        else if (r == "lowReso") {
+                        else if (r == "lowReso")
+                        {
                             Screen.SetResolution(1280, 720, true);
                             islowReso = true;
                         }
@@ -66,16 +67,16 @@ public class SaveManager : Singleton<SaveManager>
                     })
                     .Read<string>("LangOpt", (r) =>
                     {
-                        if (r == "engLang")
-                        {
-                            LanguageManager.Instance.nowOption = LanguageOption.English;
-                            isengLang = true;
-                        }
-                        else if (r == "chnLang")
-                        {
-                            LanguageManager.Instance.nowOption = LanguageOption.Chinese;
-                            ischnLang = true;
-                        }
+                    //    if (r == "engLang")
+                    //    {
+                    //        LanguageManager.Instance.nowOption = LanguageOption.English;
+                    //        isengLang = true;
+                    //    }
+                    //    else if (r == "chnLang")
+                    //    {
+                    //        LanguageManager.Instance.nowOption = LanguageOption.Chinese;
+                    //        ischnLang = true;
+                    //    }
                     });
     }
 }

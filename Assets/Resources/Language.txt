@@ -1,22 +1,6 @@
 New Start:新的开始
 Continue:继续游戏
-Developers:开发者信息
-Settings:游戏设置
+Developers:开发人员
+Settings:设置
 Exit Game:退出游戏
-Resolution:分辨率设置
-Screen Size:屏幕大小
-Language:语言选择
-Full Screen:全屏游玩体验
-Windowed:窗口化
-Save Changes:保存修改
-Back:返回
-Intro Scene:背景介绍一
-Level One:教学关卡
-Intro2 Scene:背景介绍二
-Level Two:实战关卡
-Return Menu:返回标题
-Leader-OFFMIND:组织者-OFFMIND
-Programmer-OFFMIND:编程负责-OFFMIND
-Artist-HOON:美术-HOON
-Music-ZELX:背景音乐-泽西
-Planning-MOJIN:策划-末尽
+<wave>Explorer in The End of World<wave>:<wave>末世探险者</wave>

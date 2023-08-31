@@ -13,8 +13,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Febucci.TextAnimator.Editor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Febucci.TextAnimator.Demo.Editor", "Febucci.TextAnimator.Demo.Editor.csproj", "{5083456E-8B1C-F569-1622-E53A007CA382}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{E8732CFD-E24C-1D22-2B4D-E35394AE268A}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,10 +43,6 @@ Global
 		{5083456E-8B1C-F569-1622-E53A007CA382}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5083456E-8B1C-F569-1622-E53A007CA382}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5083456E-8B1C-F569-1622-E53A007CA382}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E8732CFD-E24C-1D22-2B4D-E35394AE268A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E8732CFD-E24C-1D22-2B4D-E35394AE268A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E8732CFD-E24C-1D22-2B4D-E35394AE268A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E8732CFD-E24C-1D22-2B4D-E35394AE268A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -7,21 +7,21 @@ public class MainMenu : TitleMenuBase<MainMenu>
 {
     public void OnStartPressed()
     {
-        TransManager.Instance.ChangeScene("IntroScene");
+        TransManager.Instance.ChangeScene("TitleScene");
     }
     public void OnContinuePressed()
     {
-        gameObject.GetComponentInParent<TitleController>().continueMenu.Open();
+        //gameObject.GetComponentInParent<TitleController>().continueMenu.Open();
     }
     public void OnDeveloperPressed()
     {
+        ShowSubBackground();
         gameObject.GetComponentInParent<TitleController>().developerMenu.Open();
     }
     public void OnSettingPressed()
     {
-        gameObject.GetComponentInParent<TitleController>().mainBackground.SetActive(false);
-        gameObject.GetComponentInParent<TitleController>().subBackground.SetActive(true);
-        gameObject.GetComponentInParent<TitleController>().settingMenu.Open();
+        ShowSubBackground();
+        //gameObject.GetComponentInParent<TitleController>().settingMenu.Open();
     }
     public override void OnBackPressed()
     {
@@ -29,5 +29,10 @@ public class MainMenu : TitleMenuBase<MainMenu>
         UnityEditor.EditorApplication.isPlaying = false;
 #endif
         Application.Quit();
+    }
+    private void ShowSubBackground()
+    {
+        gameObject.GetComponentInParent<TitleController>().mainBackground.SetActive(false);
+        gameObject.GetComponentInParent<TitleController>().subBackground.SetActive(true);
     }
 }

@@ -30,16 +30,16 @@ public class Node : MonoBehaviour
     }
     public void OnMouseDown()
     {
-        if (!isTurretOn)
-        {
-            int nowcoins = int.Parse(dataController.coinText.text);
-            if (nowcoins >= purchaseCoins)
-            {
-                CursorManager.Instance.AddCoins((int)-purchaseCoins);
-                SetTurret();
-            }
-            buyPanel.SetActive(false);
-        }
+        //if (!isTurretOn)
+        //{
+        //    int nowcoins = int.Parse(dataController.coinText.text);
+        //    if (nowcoins >= purchaseCoins)
+        //    {
+        //        CursorManager.Instance.AddCoins((int)-purchaseCoins);
+        //        SetTurret();
+        //    }
+        //    buyPanel.SetActive(false);
+        //}
 
     }
     public void OnMouseExit()
