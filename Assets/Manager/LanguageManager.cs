@@ -101,8 +101,8 @@ public class LanguageManager : Singleton<LanguageManager>
             {
                 return firstKey;
             }
-            else return null;
+            else return text;
         }
-        else return null;
+        else return text;
     }
 }

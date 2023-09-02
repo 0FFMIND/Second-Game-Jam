@@ -7,6 +7,8 @@ public class DeveloperMenu : TitleMenuBase<DeveloperMenu>
 {
     public override void OnBackPressed()
     {
+        gameObject.GetComponentInParent<TitleController>().mainBackground.SetActive(true);
+        gameObject.GetComponentInParent<TitleController>().subBackground.SetActive(false);
         Close();
     }
 }

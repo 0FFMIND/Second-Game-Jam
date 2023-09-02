@@ -7,7 +7,7 @@ public class MainMenu : TitleMenuBase<MainMenu>
 {
     public void OnStartPressed()
     {
-        TransManager.Instance.ChangeScene("TitleScene");
+        TransManager.Instance.ChangeScene("IntroScene");
     }
     public void OnContinuePressed()
     {
@@ -21,7 +21,7 @@ public class MainMenu : TitleMenuBase<MainMenu>
     public void OnSettingPressed()
     {
         ShowSubBackground();
-        //gameObject.GetComponentInParent<TitleController>().settingMenu.Open();
+        gameObject.GetComponentInParent<TitleController>().settingMenu.Open();
     }
     public override void OnBackPressed()
     {
