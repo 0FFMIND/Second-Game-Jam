@@ -13,7 +13,7 @@ public enum LanguageOption
 public class LanguageManager : Singleton<LanguageManager>
 {
     public LanguageOption CurrentLanguage { get; set; } = LanguageOption.Chinese;
-    [SerializeField] private LanguageOption previousLanguage = LanguageOption.Chinese;
+    public LanguageOption previousLanguage = LanguageOption.Chinese;
     public bool hasLanguageChanged;
     private readonly Dictionary<string, string> gameDictionary = new Dictionary<string, string>();
     private void Awake()

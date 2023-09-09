@@ -8,8 +8,6 @@ public class SettingBtnCust : Button
     public enum E_nowOptions{
         highReso,
         lowReso,
-        SFXvalue,
-        BGMvalue,
         EngLang,
         ChnLang
     }

@@ -24,7 +24,6 @@ public class TitleController : MonoBehaviour
         SaveManager.Instance.Init();
         AudioManager.Instance.StopBGM();
         AudioManager.Instance.PlayBGM(BackgroundMusic.TitleScene);
-        selectButton.SetButtons();
     }
     private void Update()
     {

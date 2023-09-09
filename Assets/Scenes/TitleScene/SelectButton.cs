@@ -7,6 +7,9 @@ public class SelectButton : MonoBehaviour
     private List<SettingBtnCust> firstButtons = new List<SettingBtnCust>();
     private List<SettingBtnCust> secondButtons = new List<SettingBtnCust>();
     private List<SettingBtnCust> storageButtons = new List<SettingBtnCust>();
+    public Slider SFXSlider;
+    public Slider BGMSlider;
+    
     private void SaveSettings()
     {
         List<string> storageSettings = new List<string>();
@@ -22,36 +25,34 @@ public class SelectButton : MonoBehaviour
                      Screen.SetResolution(1280, 720, true);
                      storageSettings.Add("lowReso");
                      break;
-                case SettingBtnCust.E_nowOptions.SFXvalue:
-                    //TO DO
-                    break;
-                case SettingBtnCust.E_nowOptions.BGMvalue:
-                    //TO DO
-                    break;
-                case SettingBtnCust.E_nowOptions.EngLang:
-                     LanguageManager.Instance.CurrentLanguage = LanguageOption.English;
-                     storageSettings.Add("engLang");
-                     break;
-                case SettingBtnCust.E_nowOptions.ChnLang:
-                     LanguageManager.Instance.CurrentLanguage = LanguageOption.Chinese;
-                     storageSettings.Add("chnLang");
-                     break;
                 default:
                      break;
             }
         }
-        SaveManager.Instance.SaveSettings(storageSettings);
-    }
-    private void Update()
-    {
-        //TO DO 当音量键变化
+        storageSettings.Add(SFXSlider.value.ToString());
+        storageSettings.Add(BGMSlider.value.ToString());
         foreach (var singleBtn in storageButtons)
         {
-            if (singleBtn.isPressed)
+            switch (singleBtn.nowOptions)
             {
-                SaveSettings();
+                case SettingBtnCust.E_nowOptions.EngLang:
+                    LanguageManager.Instance.CurrentLanguage = LanguageOption.English;
+                    storageSettings.Add("engLang");
+                    break;
+                case SettingBtnCust.E_nowOptions.ChnLang:
+                    LanguageManager.Instance.CurrentLanguage = LanguageOption.Chinese;
+                    storageSettings.Add("chnLang");
+                    break;
+                default:
+                    break;
             }
         }
+
+        SaveManager.Instance.SaveSettings(storageSettings);
+    }
+    private void Start()
+    {
+        SetButtons();
     }
     public void SetButtons()
     {
@@ -63,7 +64,6 @@ public class SelectButton : MonoBehaviour
             InitializeButton(secondButtons, parentTransforms, i, 1);
         }
         UpdateButtonsFromSavedSettings();
-        foreach (SettingBtnCust button in storageButtons) button.Init();
     }
 
     // Move button initialization to a separate method for clarity and reuse.
@@ -71,8 +71,6 @@ public class SelectButton : MonoBehaviour
     {
         SettingBtnCust button = parentTransforms[parentIndex].GetChild(childIndex).gameObject.GetComponent<SettingBtnCust>();
         buttonList.Add(button);
-        storageButtons.Add(button);
-
         button.nowOptions = (SettingBtnCust.E_nowOptions)(2 * parentIndex + childIndex);
         button.isFirst = childIndex == 1;
         button.PressedBtn += SettingPressedBtn;
@@ -83,38 +81,72 @@ public class SelectButton : MonoBehaviour
     // Update button states based on saved settings.
     private void UpdateButtonsFromSavedSettings()
     {
+        storageButtons.Clear();
         UpdateButtonState(SaveManager.Instance.IsHighResolution, SaveManager.Instance.IsLowResolution, 0);
         UpdateButtonState(SaveManager.Instance.IsEnglishLanguage, SaveManager.Instance.IsChineseLanguage, 1);
+        UpdateButtonStateTwo(SaveManager.Instance.IsHighResolution, SaveManager.Instance.IsLowResolution, 0);
+        UpdateButtonStateTwo(SaveManager.Instance.IsEnglishLanguage, SaveManager.Instance.IsChineseLanguage, 1);
     }
     // Update the state of a pair of buttons based on their saved settings.
     private void UpdateButtonState(bool firstSetting, bool secondSetting, int index)
     {
         if (firstSetting)
         {
-            SettingPressedBtn(firstButtons[index]);
-            SettingUnpressedBtn(secondButtons[index]);
+            storageButtons.Add(firstButtons[index]);
         }
         else if (secondSetting)
         {
-            SettingUnpressedBtn(firstButtons[index]);
+            storageButtons.Add(secondButtons[index]);
+        }
+    }
+    private void UpdateButtonStateTwo(bool firstSetting, bool secondSetting, int index)
+    {
+        if (firstSetting)
+        {
+            SettingPressedBtn(firstButtons[index]);
+        }
+        else if (secondSetting)
+        {
             SettingPressedBtn(secondButtons[index]);
         }
     }
-
     // Event handlers for button actions.
-    private void SettingPressedBtn(SettingBtnCust button)
+    public void SettingPressedBtn(SettingBtnCust button)
     {
         // Get the other button in the pair.
-        SettingBtnCust otherButton = button.isFirst ? secondButtons[(int)button.nowOptions / 2] : firstButtons[(int)button.nowOptions / 2];
-
-        // Unpress the other button.
+        SettingBtnCust otherButton = button.isFirst ? firstButtons[(int)button.nowOptions / 2] : secondButtons[(int)button.nowOptions / 2];
+        storageButtons.Remove(otherButton);
+        if(!storageButtons.Exists(t=> t.Equals(button)))
+        {
+            storageButtons.Add(button);
+        }
         SettingUnpressedBtn(otherButton);
+        button.GetComponentInChildren<Text>().color = Color.black;
+        button.colors = new ColorBlock {
+            normalColor = new Color(1f, 1f, 1f, 1f),
+            highlightedColor = Color.white,
+            pressedColor = Color.red,
+            selectedColor = Color.white,
+            disabledColor = new Color(0.8f,0.8f,0.8f,0.8f),
+            colorMultiplier = 1,
+        };
         button.isPressed = true;
+        SaveSettings();
     }
 
-    private void SettingUnpressedBtn(SettingBtnCust button)
+    public void SettingUnpressedBtn(SettingBtnCust button)
     {
         button.isPressed = false;
+        button.GetComponentInChildren<Text>().color = Color.white;
+        button.colors = new ColorBlock
+        {
+            normalColor = new Color(1f, 1f, 1f, 0f),
+            highlightedColor = Color.white,
+            pressedColor = Color.red,
+            selectedColor = Color.white,
+            disabledColor = new Color(0.8f, 0.8f, 0.8f, 0.8f),
+            colorMultiplier = 1,
+        };
     }
 
     private void SettingHighlightedButton(SettingBtnCust button)
@@ -123,10 +155,10 @@ public class SelectButton : MonoBehaviour
     }
     public void SFXchange()
     {
-
+        SaveSettings();
     }
     public void BGMchange()
     {
-
+        SaveSettings();
     }
 }

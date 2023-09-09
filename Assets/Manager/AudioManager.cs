@@ -32,7 +32,7 @@ public class AudioManager : Singleton<AudioManager>
     }
     public void ChangeSFXVolume(float value)
     {
-        float changeValue = value - 0.5f;
+        float changeValue = value;
         foreach (var clip in sfx)
         {
             ChangeAudioValue(changeValue, clip);
@@ -50,12 +50,12 @@ public class AudioManager : Singleton<AudioManager>
         }
         else
         {
-            clip.volume += changeValue;
+            clip.volume = changeValue;
         }
     }
     public void ChangeBGMVolume(float value)
     {
-        float changeValue = value - 0.5f;
+        float changeValue = value;
         foreach (var clip in bgm)
         {
             ChangeAudioValue(changeValue, clip);

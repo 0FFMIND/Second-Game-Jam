@@ -164,7 +164,7 @@
     <None Include="Assets\PostProcessing\Shaders\XNoiseLibrary.hlsl" />
     <None Include="Assets\ExternalTools\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\PostProcessing\Shaders\Blending.hlsl" />
-    <None Include="Assets\ChineseLag.txt" />
+    <None Include="Assets\Text\ChineseLag.txt" />
     <None Include="Assets\Resources\Language.txt" />
     <None Include="Assets\ExternalTools\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\ExternalTools\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
