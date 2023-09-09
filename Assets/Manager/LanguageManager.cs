@@ -12,8 +12,8 @@ public enum LanguageOption
 }
 public class LanguageManager : Singleton<LanguageManager>
 {
-    public LanguageOption CurrentLanguage { get; set; } = LanguageOption.Chinese;
-    public LanguageOption previousLanguage = LanguageOption.Chinese;
+    public LanguageOption CurrentLanguage { get; set; }
+    public LanguageOption previousLanguage;
     public bool hasLanguageChanged;
     private readonly Dictionary<string, string> gameDictionary = new Dictionary<string, string>();
     private void Awake()
@@ -61,7 +61,7 @@ public class LanguageManager : Singleton<LanguageManager>
             }
         }
     }
-    private void SwitchLanguage(LanguageOption targetLanguage)
+    public void SwitchLanguage(LanguageOption targetLanguage)
     {
         previousLanguage = CurrentLanguage;
         CurrentLanguage = targetLanguage;

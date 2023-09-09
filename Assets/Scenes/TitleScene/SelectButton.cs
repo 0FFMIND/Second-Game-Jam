@@ -10,7 +10,7 @@ public class SelectButton : MonoBehaviour
     public Slider SFXSlider;
     public Slider BGMSlider;
     
-    private void SaveSettings()
+    public void SaveSettings()
     {
         List<string> storageSettings = new List<string>();
         foreach (var singleBtn in storageButtons)
@@ -53,6 +53,21 @@ public class SelectButton : MonoBehaviour
     private void Start()
     {
         SetButtons();
+    }
+    private void OnEnable()
+    {
+        if (SaveManager.Instance.SFXvalue < SFXSlider.minValue) SFXSlider.value = SFXSlider.minValue;
+        if (SaveManager.Instance.BGMvalue < BGMSlider.minValue) BGMSlider.value = BGMSlider.minValue;
+        if (SaveManager.Instance.SFXvalue > SFXSlider.maxValue) SFXSlider.value = SFXSlider.maxValue;
+        if (SaveManager.Instance.BGMvalue > BGMSlider.maxValue) BGMSlider.value = BGMSlider.maxValue;
+        if ((SaveManager.Instance.SFXvalue >= SFXSlider.minValue) && (SaveManager.Instance.SFXvalue <= SFXSlider.maxValue))
+        {
+            SFXSlider.value = SaveManager.Instance.SFXvalue;
+        }
+        if((SaveManager.Instance.BGMvalue >= BGMSlider.minValue) && (SaveManager.Instance.BGMvalue <= BGMSlider.maxValue))
+        {
+            BGMSlider.value = SaveManager.Instance.BGMvalue;
+        }
     }
     public void SetButtons()
     {
@@ -152,13 +167,5 @@ public class SelectButton : MonoBehaviour
     private void SettingHighlightedButton(SettingBtnCust button)
     {
         button.isHighlighted = true;
-    }
-    public void SFXchange()
-    {
-        SaveSettings();
-    }
-    public void BGMchange()
-    {
-        SaveSettings();
     }
 }

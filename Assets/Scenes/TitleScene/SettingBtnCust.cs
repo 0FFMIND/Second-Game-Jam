@@ -32,7 +32,14 @@ public class SettingBtnCust : Button
     public void SettingPointerExit()
     {
         isHighlighted = false;
-        HighlightedBtn.Invoke(this);
+        if (isPressed)
+        {
+            GetComponentInChildren<Text>().color = Color.black;
+        }
+        else
+        {
+            GetComponentInChildren<Text>().color = Color.white;
+        }
     }
     public void Init() {
             if (isPressed)

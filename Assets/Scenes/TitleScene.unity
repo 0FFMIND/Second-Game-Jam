@@ -509,7 +509,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u8D1F\u8D23\u4EBA/\u7A0B\u5E8F/\u7B56\u5212\uFF1AOFFMIND"
+  m_Text: "\u8D1F\u8D23\u4EBA/\u7A0B\u5E8F/\u7B56\u5212-OFFMIND"
 --- !u!222 &66669667
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -564,6 +564,7 @@ GameObject:
   m_Component:
   - component: {fileID: 129493031}
   - component: {fileID: 129493032}
+  - component: {fileID: 129493033}
   m_Layer: 3
   m_Name: Slider
   m_TagString: Untagged
@@ -656,6 +657,35 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &129493033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129493030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 14
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 533342307}
+          m_TargetAssemblyTypeName: SelectButton, Assembly-CSharp
+          m_MethodName: SaveSettings
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &131020645
 GameObject:
   m_ObjectHideFlags: 0
@@ -1128,8 +1158,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 3.2999878, y: -969.25995}
-  m_SizeDelta: {x: 268.3, y: 0}
+  m_AnchoredPosition: {x: 1.0999, y: -969.25995}
+  m_SizeDelta: {x: 896.9, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &213890396
 MonoBehaviour:
@@ -1636,6 +1666,7 @@ GameObject:
   m_Component:
   - component: {fileID: 310558660}
   - component: {fileID: 310558661}
+  - component: {fileID: 310558662}
   m_Layer: 3
   m_Name: Slider
   m_TagString: Untagged
@@ -1728,6 +1759,35 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &310558662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 310558659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 14
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 533342307}
+          m_TargetAssemblyTypeName: SelectButton, Assembly-CSharp
+          m_MethodName: SaveSettings
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &315237487
 GameObject:
   m_ObjectHideFlags: 0
@@ -4519,8 +4579,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 70.29999, y: -527}
-  m_SizeDelta: {x: 219.2, y: 0}
+  m_AnchoredPosition: {x: 1.0999756, y: -527}
+  m_SizeDelta: {x: 896.9, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &997520577
 MonoBehaviour:
@@ -4555,7 +4615,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u7F8E\u672F-FYAZASHIRU"
+  m_Text: "\u7F8E\u672F-FYAZASHIRU\u3001\u7A7A\u6C14\u52A8\u529B\u9524"
 --- !u!222 &997520578
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5231,7 +5291,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u7B80\u4F53\u4E2D\u6587"
+  m_Text: English
 --- !u!222 &1116962009
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5854,10 +5914,34 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 1193010745}
+          m_TargetAssemblyTypeName: ButtonEvent, Assembly-CSharp
+          m_MethodName: TextSetBlack
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - eventID: 1
     callback:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1193010744}
+          m_TargetAssemblyTypeName: SettingBtnCust, Assembly-CSharp
+          m_MethodName: SettingPointerExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1223525384
 GameObject:
   m_ObjectHideFlags: 0
@@ -7012,7 +7096,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u7B56\u5212\uFF1A\u6697\u523B"
+  m_Text: "\u7B56\u5212-\u6697\u523B"
 --- !u!222 &1491736127
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7186,8 +7270,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 511, y: -47.468}
-  m_SizeDelta: {x: 262.01056, y: 109.248}
+  m_AnchoredPosition: {x: 512.48, y: -47.468}
+  m_SizeDelta: {x: 383.64, y: 109.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1546065959
 MonoBehaviour:
@@ -7218,10 +7302,34 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 1546065963}
+          m_TargetAssemblyTypeName: ButtonEvent, Assembly-CSharp
+          m_MethodName: TextSetBlack
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - eventID: 1
     callback:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1546065962}
+          m_TargetAssemblyTypeName: SettingBtnCust, Assembly-CSharp
+          m_MethodName: SettingPointerExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &1546065960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7235,8 +7343,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: -332
-    m_Right: -330
+    m_Left: -300
+    m_Right: -300
     m_Top: 26
     m_Bottom: 26
   m_ChildAlignment: 4
@@ -7534,10 +7642,34 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 1555371576}
+          m_TargetAssemblyTypeName: ButtonEvent, Assembly-CSharp
+          m_MethodName: TextSetBlack
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - eventID: 1
     callback:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1555371575}
+          m_TargetAssemblyTypeName: SettingBtnCust, Assembly-CSharp
+          m_MethodName: SettingPointerExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &1555371573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9100,10 +9232,34 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 1835608490}
+          m_TargetAssemblyTypeName: ButtonEvent, Assembly-CSharp
+          m_MethodName: TextSetBlack
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - eventID: 1
     callback:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1835608492}
+          m_TargetAssemblyTypeName: SettingBtnCust, Assembly-CSharp
+          m_MethodName: SettingPointerExit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1837591069
 GameObject:
   m_ObjectHideFlags: 0
@@ -9880,7 +10036,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: English
+  m_Text: "\u7B80\u4F53\u4E2D\u6587"
 --- !u!222 &2061120137
 CanvasRenderer:
   m_ObjectHideFlags: 0

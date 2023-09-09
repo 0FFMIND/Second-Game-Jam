@@ -7,11 +7,11 @@ public class MainMenu : TitleMenuBase<MainMenu>
 {
     public void OnStartPressed()
     {
-        TransManager.Instance.ChangeScene("IntroScene");
+        // TransManager.Instance.ChangeScene("IntroScene");
     }
     public void OnContinuePressed()
     {
-        gameObject.GetComponentInParent<TitleController>().continueMenu.Open();
+        // gameObject.GetComponentInParent<TitleController>().continueMenu.Open();
     }
     public void OnDeveloperPressed()
     {

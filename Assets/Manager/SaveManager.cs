@@ -56,22 +56,24 @@ public class SaveManager : Singleton<SaveManager>
                    .Read<string>("SFXvalue", (r) =>
                     {
                         AudioManager.Instance.ChangeSFXVolume(float.Parse(r));
+                        SFXvalue = float.Parse(r);
                     })
                    .Read<string>("BGMvalue", (r) =>
                     {
                         AudioManager.Instance.ChangeBGMVolume(float.Parse(r));
+                        BGMvalue = float.Parse(r);
                     })
                    .Read<string>("LangOpt", (r) =>
                     {
                         if (r == "engLang")
                         {
-                            LanguageManager.Instance.previousLanguage = LanguageOption.Chinese;
+                            LanguageManager.Instance.SwitchLanguage(LanguageOption.English);
                             LanguageManager.Instance.hasLanguageChanged = true;
                             IsEnglishLanguage = true;
                         }
                         else if (r == "chnLang")
                         {
-                            LanguageManager.Instance.previousLanguage = LanguageOption.English;
+                            LanguageManager.Instance.SwitchLanguage(LanguageOption.Chinese);
                             LanguageManager.Instance.hasLanguageChanged = true;
                             IsChineseLanguage = true;
                         }
