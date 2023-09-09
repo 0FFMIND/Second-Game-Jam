@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 
 public class SelectButton : MonoBehaviour
 {
@@ -45,6 +44,7 @@ public class SelectButton : MonoBehaviour
     }
     private void Update()
     {
+        //TO DO 当音量键变化
         foreach (var singleBtn in storageButtons)
         {
             if (singleBtn.isPressed)
@@ -55,18 +55,14 @@ public class SelectButton : MonoBehaviour
     }
     public void SetButtons()
     {
-        Transform[] parentTransforms = { gameObject.transform.Find("ResoSetting"), gameObject.transform.Find("SizeSetting"), gameObject.transform.Find("LangSetting") };
+        Transform[] parentTransforms = { gameObject.transform.Find("ResoSetting"), gameObject.transform.Find("LangSetting") };
         // Initialize buttons and assign options and events.
         for (int i = 0; i < parentTransforms.Length; i++)
         {
             InitializeButton(firstButtons, parentTransforms, i, 0);
             InitializeButton(secondButtons, parentTransforms, i, 1);
         }
-
-        // Update buttons based on saved settings.
         UpdateButtonsFromSavedSettings();
-
-        // Initialize each button in the storageButtons list.
         foreach (SettingBtnCust button in storageButtons) button.Init();
     }
 
@@ -78,9 +74,7 @@ public class SelectButton : MonoBehaviour
         storageButtons.Add(button);
 
         button.nowOptions = (SettingBtnCust.E_nowOptions)(2 * parentIndex + childIndex);
-        button.isFirst = isFirst;
-        button.isPressed = isFirst;
-
+        button.isFirst = childIndex == 1;
         button.PressedBtn += SettingPressedBtn;
         button.UnPressedBtn += SettingUnpressedBtn;
         button.HighlightedBtn += SettingHighlightedButton;
@@ -89,24 +83,21 @@ public class SelectButton : MonoBehaviour
     // Update button states based on saved settings.
     private void UpdateButtonsFromSavedSettings()
     {
-        UpdateButtonState(SaveManager.Instance.ishighReso, SaveManager.Instance.islowReso, 0);
-        UpdateButtonState(SaveManager.Instance.ishIt)
-        UpdateButtonState(SaveManager.Instance.isHighSize, SaveManager.Instance.isLowSize, 1);
-        UpdateButtonState(SaveManager.Instance.isEngLang, SaveManager.Instance.isChnLang, 2);
+        UpdateButtonState(SaveManager.Instance.IsHighResolution, SaveManager.Instance.IsLowResolution, 0);
+        UpdateButtonState(SaveManager.Instance.IsEnglishLanguage, SaveManager.Instance.IsChineseLanguage, 1);
     }
-
     // Update the state of a pair of buttons based on their saved settings.
     private void UpdateButtonState(bool firstSetting, bool secondSetting, int index)
     {
         if (firstSetting)
         {
-            firstButtons[index].PressButton();
-            secondButtons[index].UnpressButton();
+            SettingPressedBtn(firstButtons[index]);
+            SettingUnpressedBtn(secondButtons[index]);
         }
         else if (secondSetting)
         {
-            firstButtons[index].UnpressButton();
-            secondButtons[index].PressButton();
+            SettingUnpressedBtn(firstButtons[index]);
+            SettingPressedBtn(secondButtons[index]);
         }
     }
 
@@ -117,22 +108,25 @@ public class SelectButton : MonoBehaviour
         SettingBtnCust otherButton = button.isFirst ? secondButtons[(int)button.nowOptions / 2] : firstButtons[(int)button.nowOptions / 2];
 
         // Unpress the other button.
-        otherButton.UnpressButton();
-
-        // Set the button as pressed.
+        SettingUnpressedBtn(otherButton);
         button.isPressed = true;
     }
 
     private void SettingUnpressedBtn(SettingBtnCust button)
     {
-        // Set the button as unpressed.
         button.isPressed = false;
     }
 
     private void SettingHighlightedButton(SettingBtnCust button)
     {
-        // Highlight the button.
-        button.HighlightButton();
+        button.isHighlighted = true;
     }
-}
+    public void SFXchange()
+    {
+
+    }
+    public void BGMchange()
+    {
+
+    }
 }

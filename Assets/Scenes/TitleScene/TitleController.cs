@@ -8,6 +8,7 @@ public class TitleController : MonoBehaviour
     public List<GameObject> CN = new List<GameObject>();
     public List<GameObject> EN = new List<GameObject>();
     public bool hasLangChangeInTitle = true;
+    public SelectButton selectButton;
     
     public MainMenu mainMenu;
     public ContinueMenu continueMenu;
@@ -23,6 +24,7 @@ public class TitleController : MonoBehaviour
         SaveManager.Instance.Init();
         AudioManager.Instance.StopBGM();
         AudioManager.Instance.PlayBGM(BackgroundMusic.TitleScene);
+        selectButton.SetButtons();
     }
     private void Update()
     {

@@ -11,7 +11,7 @@ public class MainMenu : TitleMenuBase<MainMenu>
     }
     public void OnContinuePressed()
     {
-        //gameObject.GetComponentInParent<TitleController>().continueMenu.Open();
+        gameObject.GetComponentInParent<TitleController>().continueMenu.Open();
     }
     public void OnDeveloperPressed()
     {

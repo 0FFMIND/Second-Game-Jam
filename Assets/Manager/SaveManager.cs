@@ -31,10 +31,9 @@ public class SaveManager : Singleton<SaveManager>
     {
         SaveWriter.Create("Settings")
                   .Write("ResoOpt", settingsPref[0])
-                  //TO DO
-                  .Write("SFXvalue", "0.5")
-                  .Write("BGMvalue", "0.5")
-                  .Write("LangOpt", settingsPref[2])
+                  .Write("SFXvalue", settingsPref[1])
+                  .Write("BGMvalue", settingsPref[2])
+                  .Write("LangOpt", settingsPref[3])
                   .Commit();
         LoadSettings();
     }
@@ -54,30 +53,25 @@ public class SaveManager : Singleton<SaveManager>
                             IsLowResolution = true;
                         }
                     })
-                   .Read<string>("SizeOpt", (r) =>
+                   .Read<string>("SFXvalue", (r) =>
                     {
-                        if (r == "highSize")
-                        {
-                            Screen.fullScreen = true;
-                            ishighSize = true;
-                        }
-                        else if (r == "lowSize")
-                        {
-                            Screen.fullScreen = false;
-                            islowSize = true;
-                        }
+                        AudioManager.Instance.ChangeSFXVolume(float.Parse(r));
                     })
-                    .Read<string>("LangOpt", (r) =>
+                   .Read<string>("SFXvalue", (r) =>
+                    {
+                        AudioManager.Instance.ChangeBGMVolume(float.Parse(r));
+                    })
+                   .Read<string>("LangOpt", (r) =>
                     {
                         if (r == "engLang")
                         {
-                            LanguageManager.Instance.nowOption = LanguageOption.English;
-                            isengLang = true;
+                            LanguageManager.Instance.CurrentLanguage = LanguageOption.English;
+                            LanguageManager.Instance.hasLanguageChanged = true;
                         }
                         else if (r == "chnLang")
                         {
-                            LanguageManager.Instance.nowOption = LanguageOption.Chinese;
-                            ischnLang = true;
+                            LanguageManager.Instance.CurrentLanguage = LanguageOption.Chinese;
+                            LanguageManager.Instance.hasLanguageChanged = true;
                         }
                     });
     }

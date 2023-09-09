@@ -19,7 +19,7 @@ public class SettingBtnCust : Button
     public event Action<SettingBtnCust> HighlightedBtn;
     public E_nowOptions nowOptions;
     public bool isFirst = false;
-    public bool isPressed;
+    public bool isPressed = false;
     public bool isHighlighted;
     //¸øEvent TriggerÌá¹©
     public void SettingPointerEnter()

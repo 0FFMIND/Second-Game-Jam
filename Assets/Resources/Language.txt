@@ -3,7 +3,7 @@ Continue:继续游戏
 Developers:开发人员
 Settings:设置
 Exit Game:退出游戏
-<wave>Explorer in The End of World<wave>:<wave>末世探险者</wave>
+<wave>Interstellar Cleanse Project<wave>:<wave>星际清洁计划</wave>
 <wave>Developers</wave>:<wave>制作人员名单</wave>
 Settings:调整设置
 Resolution:分辨率

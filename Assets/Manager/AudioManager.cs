@@ -30,6 +30,37 @@ public class AudioManager : Singleton<AudioManager>
             sfx[(int)soundEffectenum].Play();
         }
     }
+    public void ChangeSFXVolume(float value)
+    {
+        float changeValue = value - 0.5f;
+        foreach (var clip in sfx)
+        {
+            ChangeAudioValue(changeValue, clip);
+        }
+    }
+    private void ChangeAudioValue(float changeValue,AudioSource clip)
+    {
+        if (clip.volume + changeValue > 1)
+        {
+            clip.volume = 1;
+        }
+        else if (clip.volume + changeValue < 0)
+        {
+            clip.volume = 0;
+        }
+        else
+        {
+            clip.volume += changeValue;
+        }
+    }
+    public void ChangeBGMVolume(float value)
+    {
+        float changeValue = value - 0.5f;
+        foreach (var clip in bgm)
+        {
+            ChangeAudioValue(changeValue, clip);
+        }
+    }
     public void StopBGM()
     {
         for (int i = 0; i < bgm.Length; i++)
