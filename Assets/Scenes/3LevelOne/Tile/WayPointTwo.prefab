@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5777929834581210695
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5861112047367647979}
+  - component: {fileID: 3331869046592883888}
+  m_Layer: 3
+  m_Name: WayPointTwo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &5861112047367647979
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5777929834581210695}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalScale: {x: 22.940002, y: 19, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.0028801, y: -0.0017090001}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &3331869046592883888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5777929834581210695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1084710e5e0d05d4685f5b0af3ff9f0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points:
+  - {x: 3.52, y: 5.05, z: 0}
+  - {x: 4.3, y: 4.33, z: 0}
+  - {x: 4.78, y: 3.58, z: 0}
+  - {x: 4.09, y: 3.04, z: 0}
+  - {x: 2.85, y: 3.3, z: 0}
+  - {x: 1.32, y: 3.2, z: 0}
+  - {x: 0.62, y: 2.57, z: 0}
+  - {x: 0.8, y: 1.55, z: 0}
+  - {x: -0.27, y: 1.13, z: 0}
+  - {x: -1.1, y: 0.65, z: 0}
+  - {x: -0.88, y: -0.23, z: 0}
+  - {x: -0.16, y: -0.65, z: 0}
+  - {x: 1.01, y: -0.71, z: 0}
+  - {x: 1.56, y: -1.76, z: 0}
+  - {x: 2.59, y: -2.03, z: 0}
+  - {x: 3.29, y: -1.27, z: 0}
+  - {x: 4.47, y: -0.89, z: 0}
+  - {x: 4.94, y: -0.89, z: 0}

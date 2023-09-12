@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d63f69b81c0527241b21cb982bf8144a, type: 3}
+  m_Name: BEONECN
+  m_EditorClassIdentifier: 
+  istypped: 0
+  dialogList:
+  - "<wave>\u554A...\u5BF9\u4E86\uFF0C\u4E4B\u524D\u5728\u8F6E\u73ED\uFF0C\u8FD9\u5468\u5230\u6211\u503C\u52E4\u4E86</wave>"
+  - "<wave>\u91CD\u65B0\u6765\u719F\u6089\u4E00\u4E0B\u64CD\u4F5C\u9762\u677F\u5427</wave>"
+  - "<wave>\u5DE6\u4E0A\u89D2\u6D6E\u52A8\u7684\u6570\u5B57\u662F\u5F53\u524D\u9762\u677F\u4FE1\u606F</wave>"
+  - "<wave>\u5F53\u60F3\u8FD4\u56DE\u5F00\u5934\u754C\u9762\u65F6\u5355\u51FB\u9F20\u6807\u53F3\u952E</wave>"
+  - "<wave>\u5BF9\u4E8E\u5165\u4FB5\u7684TOUCH\uFF0C\u6709\u4E24\u79CD\u65B9\u6CD5\u89E3\u51B3\u6389\u5B83\u4EEC</wave>"
+  - "<wave>\u5176\u4E2D\u4E00\u79CD\u662F\u9762\u5BF9TOUCH\u8FDB\u884C\u75AF\u72C2\u7684\u9F20\u6807\u6ED1\u52A8</wave>"
+  - "<wave>\u5BF9\u654C\u4EBA\u8FDB\u884C\u4E00\u8FB9\u6309\u7740\u9F20\u6807\u5DE6\u952E\u4E00\u8FB9\u4F7F\u7528\u6ED1\u52A8\u529F\u80FD\u8FDB\u884C\u653B\u51FB</wave>"

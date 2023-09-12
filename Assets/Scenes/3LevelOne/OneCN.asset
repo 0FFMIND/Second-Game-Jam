@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d63f69b81c0527241b21cb982bf8144a, type: 3}
+  m_Name: OneCN
+  m_EditorClassIdentifier: 
+  istypped: 0
+  dialogList:
+  - "<wave>\u57FA\u672C\u7684\u653B\u51FB\u65B9\u6CD5\u5DF2\u7ECF\u56DE\u5FC6\u8D77\u6765\u4E86</wave>"
+  - "<wave>\u4F46\u662F\u91D1\u5E01\u6DA8\u7684\u6709\u70B9\u6162\u5462</wave>"
+  - "<wave>\u624B\u6307\u4E5F\u78E8\u635F\u4E86</wave>"
+  - "<wave>\u679C\u7136\u8FD8\u662F\u60F3\u6323\u91D1\u5E01\u5EFA\u70AE\u53F0\u6BD4\u8F83\u5408\u9002\u5462</wave>"
+  - "<wave>\u73B0\u5728\u8BD5\u7740\u653E\u5F03\u653B\u51FB\u8BA9TOUCH\u541E\u6389\u90A3\u6839\u88AB\u6D88\u8017\u6389\u7684\u624B\u6307\u5427</wave>"
