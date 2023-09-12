@@ -12,70 +12,36 @@ public class DialogManager : Singleton<DialogManager>
     public TextAnimator textAnimator;
     public TextAnimatorPlayer textAnimatorPlayer;
     public DialogContent DContent;
-    public float textSpeed = 0.05f;
-    public bool firstdialogFinished = false;
-    public bool isIntroFinished = false;
-    public bool textFinished;
-    public bool cancelTyping;
-    public int index;
-    //给levelOne的用的
+    public float textSpeed = 0.03f;
     public bool isBEfinished = false;
-    public void Init(string name,DialogContent dialogContent)
+    public bool isIntroFinished = false;
+    public int index;
+    private bool wait;
+    public bool isTyping;
+    public void Init(string name, DialogContent dialogContent)
     {
-        if(name == "Intro")
-        {
-            textObject = GameObject.FindWithTag("TEXT");
-            DContent = dialogContent;
-            BeginDialog(DContent);
-        }
-        if (name == "beforeIntro")
-        {
-            textObject = GameObject.FindWithTag("BETEXT");
-            DContent = dialogContent;
-            BeginDialog(DContent);
-        }
-        if (name == "levelOne")
-        {
-            textObject = GameObject.FindWithTag("BETEXT");
-            DContent = dialogContent;
-            BeginDialogLvOne(DContent);
-        }
-    }
-    public void Init(string name,DialogContent dialogContent, GameObject _textObject)
-    {
-        textObject = _textObject;
+        textObject = GameObject.FindWithTag(name == "beforeIntro" ? "BETEXT" : "TEXT");
         DContent = dialogContent;
         BeginDialog(DContent);
     }
     private void Update()
     {
-        if(SceneManager.GetActiveScene().name == "IntroScene" || SceneManager.GetActiveScene().name == "LevelOne" || SceneManager.GetActiveScene().name == "GameOver" 
-            || SceneManager.GetActiveScene().name == "IntroTwoScene" || SceneManager.GetActiveScene().name == "Successful")
-
+        if (SceneManager.GetActiveScene().name != "TitleScene")
         {
             if (Input.GetMouseButtonDown(0))
             {
-                if (textFinished && !cancelTyping)
+                if (index <= DContent.CNdialogList.Count && IntroController.isFinished)
                 {
-                    if(index <= DContent.dialogList.Count)
-                    {
-                        StartCoroutine(StartDialog(DContent.dialogList));
-                    }
+                    IntroController.isFinished = false;
+                    StartCoroutine(StartDialog(DContent.CNdialogList, DContent.ENdialogList));
                 }
-                else if (!textFinished)
+                else if (!IntroController.isFinished)
                 {
-                    cancelTyping = !cancelTyping;
+                    textAnimatorPlayer.SkipTypewriter();
+                    IntroController.isFinished = true;
                 }
             }
         }
-    }
-    public void BeginDialogLvOne(DialogContent content)
-    {
-        text = textObject.GetComponentInChildren<TextMeshProUGUI>();
-        textAnimatorPlayer = textObject.GetComponentInChildren<TextAnimatorPlayer>();
-        textAnimator = textObject.GetComponentInChildren<TextAnimator>();
-        index = 0;
-        StartCoroutine(StartDialog(content.dialogList));
     }
     public void BeginDialog(DialogContent content)
     {
@@ -83,35 +49,34 @@ public class DialogManager : Singleton<DialogManager>
         textAnimatorPlayer = textObject.GetComponent<TextAnimatorPlayer>();
         textAnimator = textObject.GetComponent<TextAnimator>();
         index = 0;
-        StartCoroutine(StartDialog(content.dialogList));
+        StartCoroutine(StartDialog(content.CNdialogList,content.ENdialogList));
     }
-    public IEnumerator StartDialog(List<string> dialogs)
+    public IEnumerator StartDialog(List<string> cnDialogs,List<string> enDialogs)
     {
+        List<string> dialogs;
+        LanguageOption option = LanguageManager.Instance.CurrentLanguage;
+        if(option == LanguageOption.Chinese)
+        {
+            dialogs = cnDialogs;
+        }else
+        {
+            textAnimatorPlayer.waitForNormalChars = 0.04f;
+            dialogs = enDialogs;
+        }
         if (index < dialogs.Count)
         {
-            yield return null;
-            textFinished = false;
-            text.text = "";
-            //while (!cancelTyping && i < dialogs[index].Length)
-            //{
-            //    text.text += dialogs[index][i];
-            //    i++;
-            //    AudioManager.Instance.PlaySFX(SoundEffect.Typing);
-            //    yield return new WaitForSeconds(textSpeed);
-            //}
-            text.text = dialogs[index];
-            cancelTyping = false;
-            textFinished = true;
+            textAnimatorPlayer.ShowText(dialogs[index]);
             index++;
-        }else if(index >= dialogs.Count && !firstdialogFinished)
-        {
-            firstdialogFinished = true;
-        }else if(index >= dialogs.Count && !isIntroFinished)
+        }
+        else if (index >= dialogs.Count && !isIntroFinished)
         {
             isIntroFinished = true;
-        }else if(index >= dialogs.Count - 2 && !isBEfinished)
+        }
+        else if (index >= dialogs.Count - 2 && !isBEfinished)
         {
             isBEfinished = true;
         }
+
+        yield return null;
     }
 }

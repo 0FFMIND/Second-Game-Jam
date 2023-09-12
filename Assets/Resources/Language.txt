@@ -8,3 +8,12 @@ Settings:设置
 Resolution:分辨率
 Language:语言选项
 Back:回到标题
+Audio Settings:音效调整
+Sound Effects:效果音
+Back Music:背景音
+Your current selections take effect immediately:您当前的选择均会在游戏中和重新进行游戏的情况得到实现
+Music-ZLEX,Translate-YuQing,Test-iz:音乐-泽西，翻译-海辰，测试-以子
+----------Credits----------:----------致谢名单----------
+Art-FYAZASHIRU,AirG:美术-FYAZASHIRU、空气动力锤
+Planning-ANK:策划-暗刻
+Head/Programming/Planning-OFFMIND:负责人/程序/策划-OFFMIND

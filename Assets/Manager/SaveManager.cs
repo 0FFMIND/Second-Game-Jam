@@ -27,7 +27,7 @@ public class SaveManager : Singleton<SaveManager>
         //在系统初始化的时候读取文件
         LoadSettings();
     }
-    public void SaveSettings(List<string> settingsPref)
+    public void SaveSettingsTwo(List<string> settingsPref)
     {
         SaveWriter.Create("Settings")
                   .Write("ResoOpt", settingsPref[0])
@@ -35,8 +35,23 @@ public class SaveManager : Singleton<SaveManager>
                   .Write("BGMvalue", settingsPref[2])
                   .Write("LangOpt", settingsPref[3])
                   .Commit();
-        LoadSettings();
+        LoadSettingsTwo();
     }
+    public void LoadSettingsTwo()
+    {
+        SaveReader.Create("Settings")
+                   .Read<string>("SFXvalue", (r) =>
+                   {
+                       AudioManager.Instance.ChangeSFXVolume(float.Parse(r));
+                       SFXvalue = float.Parse(r);
+                   })
+                   .Read<string>("BGMvalue", (r) =>
+                   {
+                       AudioManager.Instance.ChangeBGMVolume(float.Parse(r));
+                       BGMvalue = float.Parse(r);
+                   });
+    }
+
     public void LoadSettings()
     {
         SaveReader.Create("Settings")

@@ -7,7 +7,7 @@ public class GameManager : Singleton<GameManager>
 {
     private void Update()
     {
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             TransManager.Instance.ChangeScene("TitleScene");
         }
