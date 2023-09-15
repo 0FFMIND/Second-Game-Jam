@@ -44,6 +44,7 @@ public class IntroController : MonoBehaviour
                 if (!isSaveEnd)
                 {
                     isSaveEnd = true;
+                    SaveManager.Instance.IsIntroEnd = true;
                 }
             }
             if (isSaveEnd)

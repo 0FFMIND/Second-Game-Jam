@@ -10,6 +10,13 @@ public class SaveManager : Singleton<SaveManager>
     public float BGMvalue { get; private set; } = 0;
     public bool IsEnglishLanguage { get; private set; } = false;
     public bool IsChineseLanguage { get; private set; } = false;
+    //涉及场景的存档
+    public bool IsIntroEnd { get; set; } = false;
+    //读档
+    public void SkipIntro()
+    {
+
+    }
     public void Init()
     {
         if (!SaveWriter.LoadString("Settings.json"))
@@ -26,6 +33,18 @@ public class SaveManager : Singleton<SaveManager>
         }
         //在系统初始化的时候读取文件
         LoadSettings();
+        //关于关卡
+        if (!SaveWriter.LoadString("LevelSettings.json"))
+        {
+            SaveWriter.Create("LevelSettings")
+                .Write("Intro", "false")
+                .Commit();
+        }
+        LoadLevel();
+    }
+    public void LoadLevel()
+    {
+        //TO DO 一堆
     }
     public void SaveSettingsTwo(List<string> settingsPref)
     {
