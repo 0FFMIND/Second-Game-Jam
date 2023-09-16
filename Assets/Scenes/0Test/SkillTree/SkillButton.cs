@@ -1,18 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class SkillButton : MonoBehaviour
+public class SkillButton : MonoBehaviour, IPointerClickHandler
 {
-    // Start is called before the first frame update
-    void Start()
+    //挂载在每个小skill按键下面
+    public SkillManager skillManager;
+    public SkillData skillData;
+    public void OnPointerClick(PointerEventData eventData)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        skillManager.activeSkill = skillData;
+        skillManager.DisplaySkillInfo();
     }
 }

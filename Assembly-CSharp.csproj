@@ -117,8 +117,9 @@
     <Compile Include="Assets\Scenes\LevelOne\ObjectPooler.cs" />
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\Transition Orders\TransitionOrderCheckerBoard.cs" />
     <Compile Include="Assets\Manager\Singleton.cs" />
-    <Compile Include="Assets\Scenes\3OpenScene\LevelSelection.cs" />
+    <Compile Include="Assets\Scenes\3OpenScene\LevelSystem\LevelSelection.cs" />
     <Compile Include="Assets\Scenes\0Test\SkillTree\SkillButton.cs" />
+    <Compile Include="Assets\Scenes\0Test\GameSystem\Pool.cs" />
     <Compile Include="Assets\Manager\CursorManager.cs" />
     <Compile Include="Assets\Manager\ManagersLoader.cs" />
     <Compile Include="Assets\Manager\SaveSystem\SaveBase.cs" />
@@ -127,7 +128,9 @@
     <Compile Include="Assets\Scenes\1TitleScene\ContinueMenu.cs" />
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\Transition Orders\TransitionEnumRandomizer.cs" />
     <Compile Include="Assets\Scenes\1TitleScene\TitleMenuBase.cs" />
-    <Compile Include="Assets\Scenes\0Test\GameSystem\Pool.cs" />
+    <Compile Include="Assets\Scenes\0Test\DragSystem\CanDrag.cs" />
+    <Compile Include="Assets\Scenes\3OpenScene\LevelSystem\LevelNewIntro.cs" />
+    <Compile Include="Assets\Scenes\0Test\GameSystem\PauseButton.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\ExternalTools\Febucci\Text Animator\Example\Font\OFL.txt" />

@@ -19,8 +19,8 @@ MonoBehaviour:
   - "<wave>\u82E5\u9700\u8FD4\u56DE\u83DC\u5355\u754C\u9762\uFF0C\u8BF7\u6309\u4E0B\u952E\u76D8\u7684ESC\u952E</wave>"
   - "<wave>\u5F53\u524D\u60A8\u7684\u8FDB\u5EA6'\u4ECB\u7ECD\u573A\u666F'\u5DF2\u7ECF\u4FDD\u5B58</wave>"
   ENdialogList:
-  - <wave>Please click the left mouse button to achieve the text reading effect.</wave>
-  - <wave>Similarly, you can double-click the left mouse button for quick reading.</wave>
+  - <wave>Please click the left mouse button to achieve the text reading effect</wave>
+  - <wave>Similarly, you can double-click the left mouse button for quick reading</wave>
   - <wave>If you need to return to the menu interface, press the ESC key on your
-    keyboard.</wave>
-  - '<wave>Your progress in the ''Introduction Scene'' is currently saved.</wave> '
+    keyboard</wave>
+  - '<wave>Your progress in the ''Introduction Scene'' is currently saved</wave> '

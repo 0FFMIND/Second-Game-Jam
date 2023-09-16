@@ -4,7 +4,8 @@ public class SkillData : ScriptableObject
 {
     public int skillID;
     public Sprite skillSprite;
-    public string skillName;
+    public string skillNameCN;
+    public string skillNameEN;
     public int skillLevel;
     [TextArea(1, 8)]
     public string skillDetailCN;

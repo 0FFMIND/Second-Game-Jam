@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class MainMenu : TitleMenuBase<MainMenu>
 {
@@ -11,7 +10,13 @@ public class MainMenu : TitleMenuBase<MainMenu>
     }
     public void OnContinuePressed()
     {
-        // gameObject.GetComponentInParent<TitleController>().continueMenu.Open();
+        if (SaveManager.Instance.IsIntroEnd)
+        {
+            TransManager.Instance.ChangeScene("OpenScene");
+        }else if (!SaveManager.Instance.IsIntroEnd)
+        {
+            TransManager.Instance.ChangeScene("IntroScene");
+        }
     }
     public void OnDeveloperPressed()
     {

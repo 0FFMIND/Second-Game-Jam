@@ -44,7 +44,7 @@ public class IntroController : MonoBehaviour
                 if (!isSaveEnd)
                 {
                     isSaveEnd = true;
-                    SaveManager.Instance.IsIntroEnd = true;
+                    SaveManager.Instance.SaveLevel();
                 }
             }
             if (isSaveEnd)
@@ -67,7 +67,7 @@ public class IntroController : MonoBehaviour
         }
         if (DialogManager.Instance.isBEfinished)
         {
-            // TransManager.Instance.ChangeScene("LevelOne");
+            TransManager.Instance.ChangeScene("OpenScene");
         }
 
     }

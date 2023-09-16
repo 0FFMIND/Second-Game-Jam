@@ -13,10 +13,6 @@ public class SaveManager : Singleton<SaveManager>
     //Éæ¼°³¡¾°µÄ´æµµ
     public bool IsIntroEnd { get; set; } = false;
     //¶Áµµ
-    public void SkipIntro()
-    {
-
-    }
     public void Init()
     {
         if (!SaveWriter.LoadString("Settings.json"))
@@ -42,9 +38,20 @@ public class SaveManager : Singleton<SaveManager>
         }
         LoadLevel();
     }
+    public void SaveLevel()
+    {
+        IsIntroEnd = true;
+        SaveWriter.Create("LevelSettings")
+            .Write("Intro", "true")
+            .Commit();
+    }
     public void LoadLevel()
     {
-        //TO DO Ò»¶Ñ
+        SaveReader.Create("LevelSettings")
+            .Read<string>("Intro", (r) =>
+            {
+                IsIntroEnd = bool.Parse(r);
+            });
     }
     public void SaveSettingsTwo(List<string> settingsPref)
     {

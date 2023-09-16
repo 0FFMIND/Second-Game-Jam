@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillID: 1
   skillSprite: {fileID: 21300000, guid: fab06e0be9375cc4d823efa71629885c, type: 3}
-  skillName: One
+  skillNameCN: "\u6211\u4E5F\u4E0D\u77E5\u9053"
+  skillNameEN: NoName
   skillLevel: 0
   skillDetailCN: "\u4F60\u70B9\u51FB\u7684\u662F\u7B2C\u4E00\u4E2A"
-  skillDetailEN: 
+  skillDetailEN: First
   isUnlocked: 0
   preSkills: []
