@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 53f9860a6eb30ae45b7dc33549dd2969
+timeCreated: 1553312508
+licenseType: Store
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Helvetica-Conth
+  fontNames:
+  - Helvetica-Conth
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scenes\LevelOne\LevelOneController.cs" />
     <Compile Include="Assets\Scenes\1TitleScene\DeveloperMenu.cs" />
     <Compile Include="Assets\Scenes\0Test\SkillTree\SkillManager.cs" />
+    <Compile Include="Assets\Scenes\3OpenScene\LevelSystem\LevelNewIntro.cs" />
     <Compile Include="Assets\Scenes\1TitleScene\ButtonEvent.cs" />
     <Compile Include="Assets\Scenes\LevelOne\Tile\shoot.cs" />
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\Transition Orders\TransitionOrderLines.cs" />
@@ -119,18 +120,21 @@
     <Compile Include="Assets\Manager\Singleton.cs" />
     <Compile Include="Assets\Scenes\3OpenScene\LevelSystem\LevelSelection.cs" />
     <Compile Include="Assets\Scenes\0Test\SkillTree\SkillButton.cs" />
-    <Compile Include="Assets\Scenes\0Test\GameSystem\Pool.cs" />
     <Compile Include="Assets\Manager\CursorManager.cs" />
     <Compile Include="Assets\Manager\ManagersLoader.cs" />
     <Compile Include="Assets\Manager\SaveSystem\SaveBase.cs" />
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\TransitionSetup.cs" />
     <Compile Include="Assets\Scenes\1TitleScene\SettingMenu.cs" />
+    <Compile Include="Assets\Scenes\0Test\DragSystem\CanDrag.cs" />
+    <Compile Include="Assets\ExternalTools\Sci-fi Buttons and Panels\Sci-fi Components Resources\Scripts\JustRotate.cs" />
     <Compile Include="Assets\Scenes\1TitleScene\ContinueMenu.cs" />
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\Transition Orders\TransitionEnumRandomizer.cs" />
     <Compile Include="Assets\Scenes\1TitleScene\TitleMenuBase.cs" />
-    <Compile Include="Assets\Scenes\0Test\DragSystem\CanDrag.cs" />
-    <Compile Include="Assets\Scenes\3OpenScene\LevelSystem\LevelNewIntro.cs" />
-    <Compile Include="Assets\Scenes\0Test\GameSystem\PauseButton.cs" />
+    <Compile Include="Assets\Scenes\4Red_LevelOne\PauseButton.cs" />
+    <Compile Include="Assets\Scenes\4Red_LevelOne\Pool.cs" />
+    <Compile Include="Assets\Scenes\4Red_LevelOne\PathCreator.cs" />
+    <Compile Include="Assets\Scenes\4Red_LevelOne\PathBase.cs" />
+    <Compile Include="Assets\Scenes\3OpenScene\LevelSystem\BallInformation.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\ExternalTools\Febucci\Text Animator\Example\Font\OFL.txt" />

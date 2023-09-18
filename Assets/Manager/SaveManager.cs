@@ -12,6 +12,7 @@ public class SaveManager : Singleton<SaveManager>
     public bool IsChineseLanguage { get; private set; } = false;
     //Éæ¼°³¡¾°µÄ´æµµ
     public bool IsIntroEnd { get; set; } = false;
+    public bool IsOpenEnd { get; set; } = false;
     //¶Áµµ
     public void Init()
     {
@@ -34,6 +35,7 @@ public class SaveManager : Singleton<SaveManager>
         {
             SaveWriter.Create("LevelSettings")
                 .Write("Intro", "false")
+                .Write("Open","false")
                 .Commit();
         }
         LoadLevel();
@@ -43,6 +45,15 @@ public class SaveManager : Singleton<SaveManager>
         IsIntroEnd = true;
         SaveWriter.Create("LevelSettings")
             .Write("Intro", "true")
+            .Write("Open","false")
+            .Commit();
+    }
+    public void SaveOpen()
+    {
+        IsOpenEnd = true;
+        SaveWriter.Create("LevelSettings")
+            .Write("Intro", "true")
+            .Write("Open", "true")
             .Commit();
     }
     public void LoadLevel()
@@ -51,6 +62,10 @@ public class SaveManager : Singleton<SaveManager>
             .Read<string>("Intro", (r) =>
             {
                 IsIntroEnd = bool.Parse(r);
+            })
+            .Read<string>("Open", (r) =>
+            {
+                IsOpenEnd = bool.Parse(r);
             });
     }
     public void SaveSettingsTwo(List<string> settingsPref)

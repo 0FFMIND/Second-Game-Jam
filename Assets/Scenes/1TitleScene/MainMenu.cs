@@ -13,6 +13,14 @@ public class MainMenu : TitleMenuBase<MainMenu>
         if (SaveManager.Instance.IsIntroEnd)
         {
             TransManager.Instance.ChangeScene("OpenScene");
+            if (SaveManager.Instance.IsOpenEnd)
+            {
+                GameObject.FindWithTag("BETEXT").SetActive(false);
+
+            }else if (!SaveManager.Instance.IsOpenEnd)
+            {
+                GameObject.FindWithTag("BETEXT").SetActive(false);
+            }
         }else if (!SaveManager.Instance.IsIntroEnd)
         {
             TransManager.Instance.ChangeScene("IntroScene");

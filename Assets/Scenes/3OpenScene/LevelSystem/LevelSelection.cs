@@ -1,37 +1,80 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class LevelSelection : MonoBehaviour
 {
     // 挂载到每一个小关上面
-    [SerializeField] private bool unlocked;
-    public Image unlockImage;
+    [SerializeField] private bool isUnlocked;
+    public string levelName;
     public GameObject[] stars;
-
-    private void UpdateLevelImage() //取决于unlocked变量进行UI更新
+    public LevelSelection[] preLevel;
+    private void Update()
     {
-        if (!unlocked)
+        if (SaveManager.Instance.IsOpenEnd)
         {
-            unlockImage.gameObject.SetActive(true);
-            for (int i = 0; i < stars.Length; i++)
+            for (int i = 0; i < gameObject.GetComponent<Transform>().childCount; i++)
             {
-                stars[i].gameObject.SetActive(false);
+                gameObject.transform.GetChild(i).gameObject.SetActive(true);
+            }
+            UnlockLevel();
+            UpdateLevelImage();
+        }
+        else
+        {
+            for (int i = 0; i < gameObject.GetComponent<Transform>().childCount; i++)
+            {
+                gameObject.transform.GetChild(i).gameObject.SetActive(false);
             }
         }
-        else if (unlocked)
+    }
+    private void UnlockLevel()
+    {
+        if (preLevel == null)
         {
-            unlockImage.gameObject.SetActive(false);
-            for (int i = 0; i < stars.Length; i++)
+            isUnlocked = true;
+            return;
+        }
+        foreach (var level in preLevel)
+        {
+            if (!level.isUnlocked)
             {
-                stars[i].gameObject.SetActive(true);
+                isUnlocked = false;
+                return;
+            }
+        }
+        isUnlocked = true;
+    }
+    private void UpdateLevelImage() //UI更新
+    {
+        if (!isUnlocked)
+        {
+            foreach (var star in stars)
+            {
+                star.gameObject.SetActive(!isUnlocked);
+            }
+        }
+        else if (isUnlocked)
+        {
+            if (PlayerPrefs.HasKey(levelName))
+            {
+                for (int i = 0; i < PlayerPrefs.GetInt(levelName); i++)
+                {
+                    // TO DO 改变颜色
+                    stars[i].gameObject.SetActive(true);
+                }
+            }
+            else
+            {
+                for (int i = 0; i < stars.Length; i++)
+                {
+                    // TO DO 改变颜色
+                    stars[i].gameObject.SetActive(false);
+                }
             }
         }
     }
     public void PressSelection(string _LevelName)
     {
-        if (unlocked)
+        if (isUnlocked)
         {
             TransManager.Instance.ChangeScene(_LevelName);
         }
