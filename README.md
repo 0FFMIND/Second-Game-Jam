@@ -8,4 +8,4 @@ Completed Manager : CursorManager , TransManager , LanguageManager
 Completed : Title Scene and Intro Scene    
 ***
 -2023/9/16-     
-Completed : Planning Open Scene and First Level Scene     
+Planning ： Open Scene and First Level Scene     
