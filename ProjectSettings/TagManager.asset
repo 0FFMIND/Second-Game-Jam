@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - FADER
+  - TEXT
+  - BETEXT
+  - mouseOne
   layers:
   - Default
   - TransparentFX

@@ -14,22 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   istypped: 0
   CNdialogList:
-  - "<wave>\u606D\u559C\uFF0C\u60A8\u7684\u5C0F\u961F\u5DF2\u7ECF\u987A\u5229\u62B5\u8FBExx\u661F\u7CFB
-    </wave> "
-  - "<wave>\u8FD9\u662F\u4E2A\u7F8E\u4E3D\u7684\u661F\u7CFB\uFF0C\u4F46\u4ECD\u6709\u8BB8\u591A\u6C61\u67D3\u9700\u8981\u60A8\u6765\u5904\u7406
-    </wave> "
-  - "<wave>\u4E3A\u4E86\u6DF1\u5165\u63A2\u7D22\u661F\u7CFB\uFF0C\u60A8\u9700\u8981\u4F9D\u7167\u987A\u5E8F\u901A\u8FC7\u5173\u5361
-    </wave> "
-  - "<wave>\u5173\u5361\u5185\u7684\u6C61\u67D3\u7A0B\u5EA6\u4E5F\u5C06\u968F\u7740\u63A2\u7D22\u7684\u6DF1\u5165\u800C\u9010\u6B65\u589E\u52A0
-    </wave> "
-  - "<wave>\u73B0\u5728\u8BF7\u70B9\u51FB\u7B2C\u4E00\u4E2A\u5173\u5361\uFF0C\u7CFB\u7EDF\u5C06\u4F1A\u4E3A\u60A8\u8BE6\u7EC6\u4ECB\u7ECD\u6E05\u7406\u6C61\u67D3\u6240\u5FC5\u8981\u7684\u64CD\u4F5C
-    </wave> "
+  - "<wave>\u606D\u559C\uFF0C\u60A8\u7684\u5C0F\u961F\u5DF2\u7ECF\u987A\u5229\u62B5\u8FBE\u5F00\u666E\u52D2-62\u6052\u661F\u7CFB</wave>"
+  - "<wave>\u8FD9\u662F\u4E2A\u7F8E\u4E3D\u7684\u661F\u7CFB\uFF0C\u66FE\u7ECF\u662F\u4EBA\u4EEC\u89C2\u6D4B\u5230\u7684\u542B\u6709\u7C7B\u5730\u884C\u661F\u7684\u6052\u661F\u7CFB\u4E4B\u4E00</wave> "
+  - "<wave>\u8FD9\u91CC\u66FE\u7ECF\u662F\u6211\u4EEC\u7684\u76EE\u6807\u4E4B\u4E00\uFF0C\u4F46\u662F\u53D1\u73B0\u4E86\u4E00\u4E9B\u95EE\u9898</wave> "
+  - "<wave>\u5B83\u4EEC\u5730\u8868\u7684\u72B6\u6001\u53D1\u751F\u4E86\u53D8\u5316\uFF0C\u975E\u539F\u751F\u548C\u81EA\u7136\u6F14\u53D8\u7684\u6C61\u67D3\u5DF2\u7ECF\u5360\u636E\u4E86\u76F8\u5F53\u4E00\u7247\u533A\u57DF</wave> "
+  - "<wave>\u73B0\u5728\u8BF7\u767B\u9646\u7B2C\u4E00\u9897\u884C\u661F\uFF0C\u6E05\u7406\u6C61\u67D3\u5E76\u8C03\u6574\u73AF\u5883\u751F\u6001</wave>"
+  - "<wave>\u7A0D\u540E\u4F1A\u6709\u7CFB\u7EDF\u63D0\u4F9B\u64CD\u4F5C\u6307\u5F15\uFF0C\u795D\u60A8\u597D\u8FD0</wave>"
   ENdialogList:
-  - <wave>Congratulations, your team has successfully arrived at the XX galaxy. </wave>
-  - <wave>This is a beautiful galaxy, but there is still a lot of pollution. </wave>
-  - <wave>In order to explore the galaxy further, you need to pass through the levels
-    in sequence. </wave>
-  - <wave>The level of pollution within each stage will also gradually increase as
-    you delve deeper into your exploration. </wave>
-  - <wave>Now, please click on the first level, and the system will provide you with
-    a detailed introduction to the necessary operations for pollution cleanup. </wave>
+  - <wave>Congratulations, your team has successfully arrived at the Kepler-62 star
+    system.</wave>
+  - <wave>This is a beautiful star system, once one of the star systems known to
+    contain Earth-like planets.</wave>
+  - <wave>This place used to be one of our targets, but we found some issues.</wave>
+  - <wave>The surface conditions have changed. Non-native and non-natural pollution
+    has occupied a significant area.</wave>
+  - <wave>Now, please land on the first planet, clean up the pollution, and adjust
+    the environmental ecology.</wave>
+  - <wave>There will be system instructions later. Good luck!</wave>

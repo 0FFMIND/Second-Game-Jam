@@ -7,8 +7,10 @@ public enum SoundEffect
     Click,
     Select,
     Typing,
-    Mousehit,
-    Stronghit,
+    PopUp,
+    UISelect,
+    UIPoint,
+    Beep,
 }
 public enum BackgroundMusic
 {

@@ -14,47 +14,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   istypped: 1
   CNdialogList:
-  - "<wave>\u591A\u5E74\u4EE5\u524D\uFF0C\u4EBA\u7C7B\u7EC4\u7EC7\u4E86\u661F\u9645\u63A2\u9669\u8BA1\u5212\uFF0C\u4E00\u6279\u4F18\u79C0\u7684\u5E74\u8F7B\u4EBA\u81EA\u53D1\u7EC4\u6210\u8230\u961F</wave>"
-  - "<wave>\u4ED6\u4EEC\u521D\u6B21\u8FDC\u822A\u79BB\u5F00\u592A\u9633\u7CFB\uFF0C\u5E0C\u671B\u5728\u8FBD\u9614\u7684\u661F\u9645\u4E2D\u5BFB\u627E\u65B0\u7684\u5BB6\u56ED\u548C\u8D44\u6E90</wave>"
-  - "<wave>\u7136\u800C\uFF0C\u968F\u7740\u661F\u9645\u63A2\u9669\u7684\u8FDB\u884C\uFF0C\u8230\u961F\u4F20\u9001\u7684\u9010\u6E10\u4FE1\u53F7\u5FAE\u5F31\u76F4\u81F3\u5931\u8054</wave>"
-  - "<wave>\u5728\u8230\u961F\u5931\u53BB\u8054\u7CFB\u540E\uFF0C\u4EBA\u4EEC\u8BA4\u4E3A\u8FDC\u884C\u8005\u4EEC\u5DF2\u7ECF\u9047\u96BE</wave>"
-  - "<wave>\u4F46\u4E8B\u5B9E\u662F\uFF0C\u8FDC\u884C\u8005\u4EEC\u5728\u8865\u7ED9\u8017\u5C3D\u524D\u627E\u5230\u4E86\u4E00\u4E2A\u5B89\u5168\u7684\u661F\u7403\uFF0C\u4E3A\u5BFB\u6C42\u5E87\u62A4\u5C55\u5F00\u4E86\u65B0\u7684\u751F\u6D3B</wave>"
-  - "<wave>\u73B0\u5728\uFF0C\u51E0\u5341\u5E74\u8FC7\u53BB\u4E86\uFF0C\u4EBA\u7C7B\u7684\u79D1\u6280\u8FDB\u6B65\u4F7F\u5F97\u5730\u7403\u6307\u6325\u90E8\u80FD\u591F\u91CD\u65B0\u4E0E\u8FDC\u884C\u8005\u8054\u7CFB</wave>"
-  - "<wave>\u8FDC\u884C\u8005\u4EEC\u5E26\u7740\u91CD\u65B0\u51C6\u5907\u7684\u5E0C\u671B\uFF0C\u987A\u5229\u8FD4\u822A\u56DE\u5230\u5BB6\u56ED</wave>"
-  - "<wave>\u7136\u800C\uFF0C\u5728\u8FD4\u56DE\u5730\u7403\u7684\u8FC7\u7A0B\u4E2D\uFF0C\u8FDC\u884C\u8005\u4EEC\u53D1\u73B0\u66FE\u7ECF\u7A7F\u8D8A\u7684\u661F\u9645\u6D77\u6D0B</wave>"
-  - "<wave>\u7531\u4E8E\u5176\u4ED6\u4E0D\u660E\u5916\u6765\u751F\u7269\u548C\u884C\u661F\u81EA\u8EAB\u6D3B\u52A8\u7684\u5F71\u54CD\uFF0C\u661F\u9645\u6D77\u6D0B\u5DF2\u7ECF\u88AB\u6C61\u67D3\u7269\u548C\u5E9F\u5F03\u7269\u6240\u8986\u76D6</wave>"
-  - "<wave>\u4E00\u4E9B\u661F\u7403\u8868\u9762\u88AB\u6C61\u67D3\u548C\u5E9F\u6599\u6240\u8986\u76D6\uFF0C\u661F\u9645\u8F68\u9053\u4E0A\u98D8\u8361\u7740\u592A\u7A7A\u5783\u573E</wave>"
-  - "<wave>\u9762\u5BF9\u8FD9\u4E00\u73B0\u5B9E\uFF0C\u4E00\u652F\u7279\u6B8A\u7684\u56E2\u961F\u5E94\u8FD0\u800C\u751F</wave>"
-  - "<wave>\u4ED6\u4EEC\u6210\u4E3A\u4E86\u661F\u9645\u6E05\u6D01\u8BA1\u5212\u7684\u5173\u952E\u529B\u91CF</wave>"
+  - "<wave>\u591A\u5E74\u4EE5\u524D\uFF0C\u4E3A\u4E86\u63A2\u7D22\u661F\u9645\uFF0C\u4E16\u754C\u653E\u4E0B\u6210\u89C1\uFF0C\u5404\u56FD\u4EBA\u6C11\u534F\u4F5C\u5F00\u53D1\u5E76\u5229\u7528\u592A\u9633\u7CFB\u7684\u8D44\u6E90\uFF0C\u6210\u7ACB\u4E86\u56FD\u9645\u8054\u5408\u592A\u7A7A\u8230\u961F</wave>"
+  - "<wave>\u661F\u9645\u63A2\u9669\u8BA1\u5212\u7531\u6B64\u8BDE\u751F\uFF0C\u4E00\u6279\u53C8\u4E00\u6279\u7684\u5E74\u8F7B\u4EBA\u7EC4\u6210\u8DE8\u56FD\u63A2\u7D22\u8230\u961F\uFF0C\u4ED6\u4EEC\u8FDC\u822A\u79BB\u5F00\u592A\u9633\u7CFB\uFF0C\u5728\u8FBD\u9614\u7684\u661F\u9645\u4E2D\u5BFB\u627E\u65B0\u7684\u5BB6\u56ED</wave>"
+  - "<wave>\u7136\u800C\uFF0C\u968F\u7740\u661F\u9645\u63A2\u9669\u7684\u8FDB\u884C\uFF0C\u51FA\u73B0\u4E86\u5927\u91CF\u62D3\u8352\u65F6\u671F\u51FA\u73B0\u7684\u5E9F\u5F03\u592A\u7A7A\u8BBE\u65BD\u548C\u661F\u7403\u4E0A\u53D1\u73B0\u7684\u591A\u79CD\u6C61\u67D3</wave>"
+  - "<wave>\u7ECF\u56FD\u9645\u592A\u7A7A\u8230\u961F\u4F1A\u8BAE\u51B3\u8BAE\uFF0C\u9700\u8981\u989D\u5916\u6D3E\u9063\u4EBA\u624B\u53BB\u89E3\u51B3\u95EE\u9898</wave>"
+  - "<wave>\u9762\u5BF9\u8FD9\u4E00\u73B0\u5B9E\uFF0C\u4E00\u652F\u7279\u6B8A\u7684\u8230\u961F\u5E94\u8FD0\u800C\u751F\uFF0C\u4ED6\u4EEC\u6210\u4E3A\u4E86\u661F\u9645\u6E05\u6D01\u8BA1\u5212\u7684\u5173\u952E\u529B\u91CF</wave>"
   - "<wave>\u4F5C\u4E3A\u73A9\u5BB6\uFF0C\u4F60\u5C06\u9886\u5BFC\u8FD9\u4E2A\u56E2\u961F\uFF0C\u5EFA\u9020\u5148\u8FDB\u7684\u73AF\u5883\u51C0\u5316\u8BBE\u5907\uFF0C\u5229\u7528\u79D1\u6280\u624B\u6BB5\u6536\u96C6\u548C\u5904\u7406\u5E9F\u5F03\u7269</wave>"
   - "<wave>\u8BF7\u4F60\u63A2\u7D22\u661F\u9645\u7A7A\u95F4\u4E2D\u7684\u5404\u4E2A\u89D2\u843D\uFF0C\u5BFB\u627E\u53D7\u635F\u7684\u751F\u6001\u7CFB\u7EDF\u5E76\u52A0\u4EE5\u4FEE\u590D</wave>"
   - "<wave>\u4E0E\u6B64\u540C\u65F6\uFF0C\u4F60\u5C06\u9762\u4E34\u5404\u79CD\u6311\u6218\u548C\u969C\u788D\uFF0C\u9700\u8981\u5236\u5B9A\u7B56\u7565\u3001\u89E3\u51B3\u95EE\u9898\uFF0C\u4EE5\u4FDD\u62A4\u661F\u9645\u751F\u6001\u7684\u5E73\u8861\u548C\u591A\u6837\u6027</wave>"
   ENdialogList:
-  - <wave>Many years ago, humans initiated the Interstellar Exploration Program,
-    where a group of exceptional young individuals volunteered to form a fleet</wave>
-  - <wave>They embarked on their first interstellar voyage, leaving the solar system
-    in hopes of finding new homes and resources in the vast cosmos</wave>
-  - <wave>However, as the interstellar exploration progressed, the fleet's signals
-    gradually weakened until they lost contact</wave>
-  - <wave>After losing contact with the fleet, people believed that the explorers
-    had met with a tragic fate</wave>
-  - <wave>The truth,  however, was that the explorers had found a safe planet before
-    running out of supplies, where they began a new life in search of refuge</wave>
-  - <wave>Now, decades have passed, and advancements in human technology have enabled
-    Earth Command to re-establish contact with the explorers</wave>
-  - <wave>The explorers returned home with renewed hope, successfully making their
-    way back</wave>
-  - <wave>However, during their return journey to Earth, the explorers discovered
-    the interstellar ocean they had once traversed</wave>
-  - <wave>Due to the influence of extraterrestrial life forms and planetary activities,
-    the interstellar ocean  covered in pollutants and debris</wave>
-  - <wave>Some planet surfaces are covered in pollution and waste, while space debris
-    drifts through interstellar orbits</wave>
-  - <wave>A special team emerged under this situation</wave>
-  - <wave>They became the key force behind the Interstellar Cleanup Initiative</wave>
-  - <wave>As a player, you will lead this team, construct advanced environmental
-    purification devices, and utilize technology to collect and process waste</wave>
-  - <wave>You will explore every corner of interstellar space, seeking damaged ecosystems
-    and working to restore them.</wave>
-  - '<wave>Meanwhile, you will encounter various challenges, requiring you to formulate
-    strategies to  protect the diversity of interstellar ecology</wave> '
+  - <wave>Many years ago, the world set aside its differences to explore the sapce.
+    People collaborated to develop and harness the resources in the solar system,
+    and established the International United Space Fleet.</wave>
+  - <wave>The Interstellar Exploration Program was born, young individualsform multinational
+    exploration fleets. They sail far beyond the solar system, searching for new
+    homes in the space.</wave>
+  - <wave>However, as the interstellar exploration progressed, many space facilities
+    from colonization eras were abandoned and various forms of pollution were discovered
+    both in space and on planets.</wave>
+  - <wave>According to the resolution of the International Space Fleet Conference,
+    additional personnel are required to address the issue.</wave>
+  - <wave>Faced with this reality, a special fleet emerged, and they became the key
+    force behind the Interstellar Cleanup Initiative.</wave>
+  - <wave>As a player, you need to guide this team to construct advanced environmental
+    purification devices, and utilize technological means to collect and handle the
+    waste.</wave>
+  - <wave>You need to explore every corner of interstellar space, searching for damaged
+    ecosystems and working to restore them.</wave>
+  - <wave>Meanwhile, you will face various challenges and obstacles, requiring you
+    to formulate strategies, solve problems, and protect the balance and diversity
+    of interstellar ecology.</wave>

@@ -135,7 +135,7 @@ public class SelectButton : MonoBehaviour
             storageButtons.Add(button);
         }
         SettingUnpressedBtn(otherButton);
-        button.GetComponentInChildren<Text>().color = Color.black;
+        button.GetComponentInChildren<Text>().color = new Color(180 / 255f, 205 / 255f, 1f, 1f);
         button.colors = new ColorBlock {
             normalColor = new Color(1f, 1f, 1f, 1f),
             highlightedColor = Color.white,
@@ -151,7 +151,7 @@ public class SelectButton : MonoBehaviour
     public void SettingUnpressedBtn(SettingBtnCust button)
     {
         button.isPressed = false;
-        button.GetComponentInChildren<Text>().color = Color.white;
+        button.GetComponentInChildren<Text>().color = new Color(180 / 255f, 205 / 255f, 1f, 1f);
         button.colors = new ColorBlock
         {
             normalColor = new Color(1f, 1f, 1f, 0f),

@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/3OpenScene/OpenScene.unity
     guid: 9d1064be07a5a6748811eda953ad3c3e
   - enabled: 1
+    path: Assets/Scenes/4Red_LevelOne/BELevel_Card/BELevelOne.unity
+    guid: 8c2cc0b0d8e735848935fc8f3b0c6734
+  - enabled: 1
     path: Assets/Scenes/4Red_LevelOne/LevelOne.unity
     guid: ac315df868ff01043b2fa0e9a2ebcc71
   m_configObjects: {}

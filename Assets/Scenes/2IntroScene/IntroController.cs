@@ -13,10 +13,10 @@ public class IntroController : MonoBehaviour
     public static bool isFinished = false;
     public void Start()
     {
+        DialogManager.Instance.isBEfinished = false;
         AudioManager.Instance.StopBGM();
         AudioManager.Instance.PlayBGM(BackgroundMusic.IntroScene);
         DialogManager.Instance.isIntroFinished = false;
-        DialogManager.Instance.isBEfinished = false;
         isInit = false;
         isSaveEnd = false;
         //弹出一个显示菜单，显示Intro界面已经储存到continue里面了
@@ -56,7 +56,7 @@ public class IntroController : MonoBehaviour
                 isInit = true;
             }
         }
-        if((DialogManager.Instance.index == 0 || DialogManager.Instance.index == 5 || DialogManager.Instance.index == 8 || DialogManager.Instance.index == 12)&& isInit)
+        if((DialogManager.Instance.index == 0 || DialogManager.Instance.index == 5)&& isInit)
         {
             int index = DialogManager.Instance.index / 4;
             foreach (var image in storyboards)

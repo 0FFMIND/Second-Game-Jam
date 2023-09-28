@@ -34,11 +34,11 @@ public class SettingBtnCust : Button
         isHighlighted = false;
         if (isPressed)
         {
-            GetComponentInChildren<Text>().color = Color.black;
+            GetComponentInChildren<Text>().color = new Color(180 / 255f, 205 / 255f, 1f, 1f);
         }
         else
         {
-            GetComponentInChildren<Text>().color = Color.white;
+            GetComponentInChildren<Text>().color = new Color(180 / 255f, 205 / 255f, 1f, 1f);
         }
     }
     public void Init() {

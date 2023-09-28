@@ -4,23 +4,19 @@ using UnityEngine;
 
 public class MainMenu : TitleMenuBase<MainMenu>
 {
+    public GameObject infoTrigger;
     public void OnStartPressed()
     {
-        TransManager.Instance.ChangeScene("IntroScene");
+        gameObject.GetComponentInParent<TitleController>().nullMenu.Open();
+        infoTrigger.SetActive(true);
     }
+
     public void OnContinuePressed()
     {
         if (SaveManager.Instance.IsIntroEnd)
         {
             TransManager.Instance.ChangeScene("OpenScene");
-            if (SaveManager.Instance.IsOpenEnd)
-            {
-                GameObject.FindWithTag("BETEXT").SetActive(false);
-
-            }else if (!SaveManager.Instance.IsOpenEnd)
-            {
-                GameObject.FindWithTag("BETEXT").SetActive(false);
-            }
+            
         }else if (!SaveManager.Instance.IsIntroEnd)
         {
             TransManager.Instance.ChangeScene("IntroScene");

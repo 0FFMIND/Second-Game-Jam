@@ -29,7 +29,7 @@ public class smallshot : MonoBehaviour
         {
             if (other.GetComponent<EnemyLO>().nowHealth > 0)
             {
-                AudioManager.Instance.PlaySFX(SoundEffect.Stronghit);
+                //AudioManager.Instance.PlaySFX(SoundEffect.Stronghit);
                 other.GetComponent<EnemyLO>().nowHealth = other.GetComponent<EnemyLO>().nowHealth - 4;
                 gameObject.SetActive(false);
             }

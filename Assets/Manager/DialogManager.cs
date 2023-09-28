@@ -16,8 +16,14 @@ public class DialogManager : Singleton<DialogManager>
     public bool isBEfinished = false;
     public bool isIntroFinished = false;
     public int index;
-    private bool wait;
     public bool isTyping;
+    public void UnInit()
+    {
+        textObject = GameObject.FindWithTag(name == "beforeIntro" ? "BETEXT" : "TEXT");
+        text = textObject.GetComponent<TextMeshProUGUI>();
+        textAnimatorPlayer = textObject.GetComponent<TextAnimatorPlayer>();
+        textAnimator = textObject.GetComponent<TextAnimator>();
+    }
     public void Init(string name, DialogContent dialogContent)
     {
         textObject = GameObject.FindWithTag(name == "beforeIntro" ? "BETEXT" : "TEXT");
@@ -30,15 +36,48 @@ public class DialogManager : Singleton<DialogManager>
         {
             if (Input.GetMouseButtonDown(0))
             {
-                if (index <= DContent.CNdialogList.Count && IntroController.isFinished)
+                if(SceneManager.GetActiveScene().name == "IntroScene")
                 {
-                    IntroController.isFinished = false;
-                    StartCoroutine(StartDialog(DContent.CNdialogList, DContent.ENdialogList));
+                    if (index <= DContent.CNdialogList.Count && IntroController.isFinished)
+                    {
+                        IntroController.isFinished = false;
+                        StartCoroutine(StartDialog(DContent.CNdialogList, DContent.ENdialogList));
+                    }
+                    else if (!IntroController.isFinished)
+                    {
+                        textAnimatorPlayer.SkipTypewriter();
+                        IntroController.isFinished = true;
+                    }
                 }
-                else if (!IntroController.isFinished)
+                if (SceneManager.GetActiveScene().name == "OpenScene")
                 {
-                    textAnimatorPlayer.SkipTypewriter();
-                    IntroController.isFinished = true;
+                    if (!SaveManager.Instance.IsOpenEnd && index <= DContent.CNdialogList.Count && LevelNewIntro.isFinished)
+                    {
+                        LevelNewIntro.isFinished = false;
+                        StartCoroutine(StartDialog(DContent.CNdialogList, DContent.ENdialogList));
+                    }
+                    else if (!LevelNewIntro.isFinished && !SaveManager.Instance.IsOpenEnd)
+                    {
+                        textAnimatorPlayer.SkipTypewriter();
+                        LevelNewIntro.isFinished = true;
+                    }
+                    if (SaveManager.Instance.IsOpenEnd)
+                    {
+                        return;
+                    }
+                }
+                if (SceneManager.GetActiveScene().name == "BELevelOne")
+                {
+                    if (index <= DContent.CNdialogList.Count && LevelNewIntro.isFinished)
+                    {
+                        LevelNewIntro.isFinished = false;
+                        StartCoroutine(StartDialog(DContent.CNdialogList, DContent.ENdialogList));
+                    }
+                    else if (!LevelNewIntro.isFinished)
+                    {
+                        textAnimatorPlayer.SkipTypewriter();
+                        LevelNewIntro.isFinished = true;
+                    }
                 }
             }
         }

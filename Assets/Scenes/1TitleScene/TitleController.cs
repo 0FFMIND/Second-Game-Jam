@@ -14,6 +14,7 @@ public class TitleController : MonoBehaviour
     public ContinueMenu continueMenu;
     public DeveloperMenu developerMenu;
     public SettingMenu settingMenu;
+    public NullMenu nullMenu;
 
     private Stack<TitleMenuBase> menuStack = new Stack<TitleMenuBase>();
     private void Start()

@@ -13,6 +13,8 @@ public class SaveManager : Singleton<SaveManager>
     //涉及场景的存档
     public bool IsIntroEnd { get; set; } = false;
     public bool IsOpenEnd { get; set; } = false;
+    public bool IsLevelOneEnd { get; set; } = false;
+    public int IsAngel { get; set; } = 0; // 0 表示还没有进行选择，1 表示天使侧，2 表示恶魔侧
     //读档
     public void Init()
     {
@@ -35,17 +37,50 @@ public class SaveManager : Singleton<SaveManager>
         {
             SaveWriter.Create("LevelSettings")
                 .Write("Intro", "false")
-                .Write("Open","false")
+                .Write("Open", "false")
+                .Write("LevelOne", "false")
+                .Write("Angel", "0")
                 .Commit();
         }
+        LoadLevel();
+    }
+    public void InitLevelSetting()
+    {
+        SaveWriter.Create("LevelSettings")
+        .Write("Intro", "false")
+        .Write("Open", "false")
+        .Write("LevelOne", "false")
+        .Write("Angel", "0")
+        .Commit();
         LoadLevel();
     }
     public void SaveLevel()
     {
         IsIntroEnd = true;
+        IsOpenEnd = false;
         SaveWriter.Create("LevelSettings")
             .Write("Intro", "true")
-            .Write("Open","false")
+            .Write("Open", "false")
+            .Write("LevelOne", IsLevelOneEnd.ToString())
+            .Write("Angel", IsAngel.ToString())
+            .Commit();
+    }
+    public void SetTeam(int select)
+    {
+        IsAngel = select;
+        SaveWriter.Create("LevelSettings")
+            .Write("Angel", select.ToString())
+            .Commit();
+    }
+    public void SaveLevelFalse()
+    {
+        IsIntroEnd = false;
+        IsOpenEnd = false;
+        SaveWriter.Create("LevelSettings")
+            .Write("Intro", "false")
+            .Write("Open", "false")
+            .Write("LevelOne", IsLevelOneEnd.ToString())
+            .Write("Angel", IsAngel.ToString())
             .Commit();
     }
     public void SaveOpen()
@@ -66,7 +101,15 @@ public class SaveManager : Singleton<SaveManager>
             .Read<string>("Open", (r) =>
             {
                 IsOpenEnd = bool.Parse(r);
-            });
+            })
+            .Read<string>("LevelOne", (r) =>
+            {
+                IsLevelOneEnd = bool.Parse(r);
+            })
+            .Read<string>("Angel", (r) =>
+             {
+                 IsAngel = int.Parse(r);
+             });
     }
     public void SaveSettingsTwo(List<string> settingsPref)
     {

@@ -14,7 +14,7 @@ public class ButtonEvent : MonoBehaviour
     }
     public void OnMouseClick()
     {
-        GetComponentInChildren<Text>().color = Color.black;
+        GetComponentInChildren<Text>().color = new Color(180 / 255f, 205 / 255f, 1f, 1f);
         AudioManager.Instance.PlaySFX(SoundEffect.Click);
     }
     public void OnMouseClickTwo()
