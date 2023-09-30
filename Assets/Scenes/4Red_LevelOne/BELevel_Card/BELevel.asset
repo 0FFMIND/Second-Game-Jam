@@ -13,5 +13,14 @@ MonoBehaviour:
   m_Name: BELevel
   m_EditorClassIdentifier: 
   istypped: 0
-  CNdialogList: []
-  ENdialogList: []
+  CNdialogList:
+  - "<wave>\u6211\u660E\u767D\u60A8\u7684\u610F\u613F\u4E86\uFF0C\u8FD9\u662F\u603B\u8D1F\u8D23\u4EBA\u7684\u8EAB\u4EFD\u8BA4\u8BC1\u5361</wave>"
+  - "<wave>\u6574\u7406\u63D0\u51FA\u7684\u8BAE\u6848\u5982\u679C\u4E0D\u7B26\u5408\u4F60\u7684\u9884\u671F\uFF0C\u53EF\u4EE5\u91CD\u65B0\u8981\u6C42\u63D0\u4EA4\uFF0C\u6216\u8005\u6307\u5B9A\u8BAE\u6848\u4E00\u90E8\u5206\u8FDB\u884C\u4FEE\u6539</wave>"
+  - "<wave>\u8BF7\u6CE8\u610F\uFF0C\u6211\u4EEC\u7684\u8BAE\u6848\u6709\u9650\uFF0C\u8BF7\u8C28\u614E\u4F7F\u7528\u4E0E\u9009\u62E9</wave>"
+  ENdialogList:
+  - <wave>I understand your will. Here is your head administrator identification
+    card.</wave>
+  - <wave>If the presented proposals do not meet your expectations, you can request 
+    specify modifications to a part of the proposal.</wave>
+  - <wave>The number of organized proposals is limited, please use and choose them
+    wisely.</wave>

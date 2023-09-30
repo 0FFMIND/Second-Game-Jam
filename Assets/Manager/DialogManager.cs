@@ -36,7 +36,20 @@ public class DialogManager : Singleton<DialogManager>
         {
             if (Input.GetMouseButtonDown(0))
             {
-                if(SceneManager.GetActiveScene().name == "IntroScene")
+                if (SceneManager.GetActiveScene().name == "BELevelOne")
+                {
+                    if (index <= DContent.CNdialogList.Count && BELevelText.isFinished)
+                    {
+                        BELevelText.isFinished = false;
+                        StartCoroutine(StartDialog(DContent.CNdialogList, DContent.ENdialogList));
+                    }
+                    else if (!BELevelText.isFinished)
+                    {
+                        textAnimatorPlayer.SkipTypewriter();
+                        BELevelText.isFinished = true;
+                    }
+                }
+                if (SceneManager.GetActiveScene().name == "IntroScene")
                 {
                     if (index <= DContent.CNdialogList.Count && IntroController.isFinished)
                     {
@@ -66,19 +79,7 @@ public class DialogManager : Singleton<DialogManager>
                         return;
                     }
                 }
-                if (SceneManager.GetActiveScene().name == "BELevelOne")
-                {
-                    if (index <= DContent.CNdialogList.Count && LevelNewIntro.isFinished)
-                    {
-                        LevelNewIntro.isFinished = false;
-                        StartCoroutine(StartDialog(DContent.CNdialogList, DContent.ENdialogList));
-                    }
-                    else if (!LevelNewIntro.isFinished)
-                    {
-                        textAnimatorPlayer.SkipTypewriter();
-                        LevelNewIntro.isFinished = true;
-                    }
-                }
+
             }
         }
     }

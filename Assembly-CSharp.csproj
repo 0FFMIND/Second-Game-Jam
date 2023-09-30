@@ -61,8 +61,10 @@
     <Compile Include="Assets\Manager\SaveSystem\JsonSerialiser.cs" />
     <Compile Include="Assets\Manager\LanguageManager.cs" />
     <Compile Include="Assets\Scenes\1TitleScene\MainMenu.cs" />
+    <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\CardItem\Card.cs" />
     <Compile Include="Assets\Scenes\LevelOne\Tile\Turret.cs" />
     <Compile Include="Assets\Scenes\GameOver\SuccessController.cs" />
+    <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\CardItem\CardData.cs" />
     <Compile Include="Assets\Scenes\1TitleScene\SelectButton.cs" />
     <Compile Include="Assets\Scenes\LevelOne\LevelOneController.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Grid\GridBuildSystem.cs" />
@@ -95,6 +97,7 @@
     <Compile Include="Assets\Manager\SaveManager.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\BELevelText.cs" />
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\Transition Orders\TransitionOrderSpiral.cs" />
+    <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\CardItem\OpenPackage.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\TeamManager.cs" />
     <Compile Include="Assets\Manager\SaveSystem\FileAccess.cs" />
     <Compile Include="Assets\Manager\AudioManager.cs" />
@@ -103,7 +106,6 @@
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\Transition Orders\TransitionOrderAllAtOnce.cs" />
     <Compile Include="Assets\Scenes\LevelOne\LevelOneManager.cs" />
     <Compile Include="Assets\Scenes\3OpenScene\InfoPop.cs" />
-    <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\CardManager.cs" />
     <Compile Include="Assets\Scenes\1TitleScene\TitleController.cs" />
     <Compile Include="Assets\Scenes\LevelOne\DataController.cs" />
     <Compile Include="Assets\Scenes\1TitleScene\SettingBtnCust.cs" />
@@ -124,6 +126,7 @@
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\Transition Orders\TransitionOrderCornerWipe.cs" />
     <Compile Include="Assets\Scenes\GameOver\GameOverController.cs" />
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\Transition Orders\TransitionOrderTeeth.cs" />
+    <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\CardItem\CardStore.cs" />
     <Compile Include="Assets\Scenes\0Test\RaySystem\Security.cs" />
     <Compile Include="Assets\Scenes\LevelOne\Enemy.cs" />
     <Compile Include="Assets\Scenes\LevelTwo\LevelTwoController.cs" />
@@ -133,6 +136,7 @@
     <Compile Include="Assets\Scenes\3OpenScene\LevelSystem\LevelSelection.cs" />
     <Compile Include="Assets\Scenes\0Test\SkillTree\SkillButton.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Grid\GridXY.cs" />
+    <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\CardItem\CardDisplay.cs" />
     <Compile Include="Assets\Manager\CursorManager.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\PauseButton.cs" />
     <Compile Include="Assets\Manager\ManagersLoader.cs" />
@@ -140,11 +144,14 @@
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\TransitionSetup.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Enemy\PathBase.cs" />
     <Compile Include="Assets\Scenes\1TitleScene\SettingMenu.cs" />
+    <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\CardItem\ChangeText.cs" />
     <Compile Include="Assets\Scenes\0Test\DragSystem\CanDrag.cs" />
     <Compile Include="Assets\ExternalTools\Sci-fi Buttons and Panels\Sci-fi Components Resources\Scripts\JustRotate.cs" />
     <Compile Include="Assets\Scenes\1TitleScene\ContinueMenu.cs" />
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\Transition Orders\TransitionEnumRandomizer.cs" />
     <Compile Include="Assets\Scenes\1TitleScene\TitleMenuBase.cs" />
+    <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\CardItem\CardStorePref.cs" />
+    <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\CardItem\DeckManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\ExternalTools\Febucci\Text Animator\Example\Font\OFL.txt" />
@@ -429,6 +436,9 @@
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Assets\Resources\Plugins\jillejr.newtonsoft.json-for-unity@12.0.301\Plugins\Newtonsoft.Json Editor\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.20f1c1\2020.3.20f1c1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -886,6 +896,10 @@
     <ProjectReference Include="Febucci.TextAnimator.Demo.Runtime.csproj">
       <Project>{023E048D-D814-70B9-9F33-7FFBB962F145}</Project>
       <Name>Febucci.TextAnimator.Demo.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="DOTween.Modules.csproj">
+      <Project>{C8071E2A-F5E1-A90F-5229-F2F70B08304D}</Project>
+      <Name>DOTween.Modules</Name>
     </ProjectReference>
     <ProjectReference Include="Febucci.TextAnimator.Demo.Editor.csproj">
       <Project>{5083456E-8B1C-F569-1622-E53A007CA382}</Project>

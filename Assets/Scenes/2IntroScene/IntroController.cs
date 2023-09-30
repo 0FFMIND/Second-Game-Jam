@@ -56,7 +56,7 @@ public class IntroController : MonoBehaviour
                 isInit = true;
             }
         }
-        if((DialogManager.Instance.index == 0 || DialogManager.Instance.index == 5)&& isInit)
+        if((DialogManager.Instance.index == 0 || DialogManager.Instance.index == 4)&& isInit)
         {
             int index = DialogManager.Instance.index / 4;
             foreach (var image in storyboards)

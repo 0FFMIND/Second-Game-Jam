@@ -11,6 +11,7 @@ public enum SoundEffect
     UISelect,
     UIPoint,
     Beep,
+    CardPlace,
 }
 public enum BackgroundMusic
 {

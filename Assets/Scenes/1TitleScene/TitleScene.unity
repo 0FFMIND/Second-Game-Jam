@@ -1867,6 +1867,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 340794081}
   m_CullTransparentMesh: 1
+--- !u!1001 &385214185
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8851941899099644363, guid: 7f440b2f08c94804aa165144fd5ad1a7, type: 3}
+      propertyPath: m_Name
+      value: CardStore
+      objectReference: {fileID: 0}
+    - target: {fileID: 8851941899099644365, guid: 7f440b2f08c94804aa165144fd5ad1a7, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8851941899099644365, guid: 7f440b2f08c94804aa165144fd5ad1a7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.2537037
+      objectReference: {fileID: 0}
+    - target: {fileID: 8851941899099644365, guid: 7f440b2f08c94804aa165144fd5ad1a7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.24861114
+      objectReference: {fileID: 0}
+    - target: {fileID: 8851941899099644365, guid: 7f440b2f08c94804aa165144fd5ad1a7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 99.992874
+      objectReference: {fileID: 0}
+    - target: {fileID: 8851941899099644365, guid: 7f440b2f08c94804aa165144fd5ad1a7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8851941899099644365, guid: 7f440b2f08c94804aa165144fd5ad1a7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8851941899099644365, guid: 7f440b2f08c94804aa165144fd5ad1a7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8851941899099644365, guid: 7f440b2f08c94804aa165144fd5ad1a7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8851941899099644365, guid: 7f440b2f08c94804aa165144fd5ad1a7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8851941899099644365, guid: 7f440b2f08c94804aa165144fd5ad1a7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8851941899099644365, guid: 7f440b2f08c94804aa165144fd5ad1a7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7f440b2f08c94804aa165144fd5ad1a7, type: 3}
 --- !u!1 &437946346
 GameObject:
   m_ObjectHideFlags: 0
@@ -6587,6 +6644,7 @@ MonoBehaviour:
   DialogPrf: {fileID: 8922992427548552584, guid: 8668f4ad11ea9ca43979fb73b08cb4ed, type: 3}
   GaMPrf: {fileID: 1391059110236874053, guid: 46c29c02de24ca54ca4986de6b67e893, type: 3}
   EventPrf: {fileID: 1740325043}
+  CardStorePrf: {fileID: 8851941899099644363, guid: 7f440b2f08c94804aa165144fd5ad1a7, type: 3}
 --- !u!4 &1523663995
 Transform:
   m_ObjectHideFlags: 0
@@ -8582,7 +8640,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.33
-  m_Text: "\u6211\u4EEC\u9700\u8981\u786E\u8BA4\u60A8\u662F\u5426\u8003\u8651\u597D\u4E86\u5220\u9664\u60A8\u4E4B\u524D\u6240\u6709\u7684\u5B58\u6863\u5E76\u5F00\u59CB\u65B0\u7684\u6E38\u620F"
+  m_Text: "\u6211\u4EEC\u9700\u8981\u786E\u8BA4\u60A8\u662F\u5426\u8003\u8651\u597D\u5220\u9664\u60A8\u8FC7\u53BB\u7684\u5B58\u6863\u5E76\u5F00\u59CB\u65B0\u7684\u6E38\u620F"
 --- !u!222 &2088373286
 CanvasRenderer:
   m_ObjectHideFlags: 0

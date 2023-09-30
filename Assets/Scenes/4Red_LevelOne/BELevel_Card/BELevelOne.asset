@@ -14,19 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   istypped: 0
   CNdialogList:
-  - "<wave>\u603B\u8D1F\u8D23\u4EBA\uFF0C\u60A8\u597D\uFF0C\u6211\u662F\u5F00\u666E\u52D262\u661F\u7CFB\u7A7A\u95F4\u7AD9\u7684\u7BA1\u7406\u8005</wave>"
-  - "<wave>\u73B0\u5728\u60A8\u5DF2\u7ECF\u62B5\u8FBEK62-C\u7EA2\u5CA9\u661F\u7684\u4E0A\u7A7A\uFF0C\u8FD9\u91CC\u4F1A\u662F\u6211\u4EEC\u7684\u8D77\u70B9</wave>"
+  - "<wave>\u603B\u8D1F\u8D23\u4EBA\uFF0C\u60A8\u597D\uFF0C\u6211\u662F\u5F00\u666E\u52D262\u661F\u7CFB\u7A7A\u95F4\u7AD9\u7684\u7BA1\u7406\u8005\uFF0C\u73B0\u5728\u60A8\u5DF2\u7ECF\u62B5\u8FBEK62-C\u7EA2\u5CA9\u661F\u7684\u4E0A\u7A7A</wave>"
   - "<wave>\u4E4B\u524D\u7684\u5C45\u6C11\u56E0\u4E3A\u73AF\u5883\u95EE\u9898\u5DF2\u7ECF\u8FC1\u51FA\u751F\u6D3B\u533A\uFF0C\u800C\u661F\u5916\u8F68\u9053\u7684\u89C2\u6D4B\u7AD9\u4E5F\u505C\u8FD0\u5DF2\u4E45</wave>"
-  - "<wave>\u5728\u7EA2\u5CA9\u661F\u672A\u53D7\u7834\u574F\u4E4B\u524D\uFF0C\u5B83\u66FE\u7ECF\u662F\u4E00\u5E45\u7F8E\u4E3D\u7684\u666F\u8C61</wave>"
   - "<wave>\u4F46\u60A8\u4E5F\u77E5\u9053\u7684\u662F\uFF0C\u73AF\u5883\u95EE\u9898\u4ECE\u6765\u90FD\u4E0D\u662F\u6613\u4E8E\u89E3\u51B3\u7684\uFF0C\u7ECF\u5E38\u4F34\u6709\u5404\u79CD\u65B9\u9762\u7684\u538B\u529B\uFF0C\u5C24\u5176\u662F\u5F53\u4E0B\u7684\u60C5\u51B5</wave>"
   - "<wave>\u6211\u8FD9\u91CC\u4E3A\u60A8\u63D0\u4F9B\u4E86\u4E00\u4E2A\u80FD\u514D\u9664\u5E72\u6270\u7684\u65B9\u6CD5</wave>"
   ENdialogList:
-  - <wave>Hello, I'm the head administrator of the Kepler-62 star system space station.</wave>
-  - <wave>You've now arrived above K62-C, the Red Rock Planet. This will be our starting
-    point.</wave>
+  - <wave>Hello, I'm the head administrator of the Kepler-62 star system space station.You've
+    now arrived above K62-C, the Red Rock Planet.</wave>
   - <wave>Inhabitants have relocated from living area due to environmental issues,
     and outer orbital observatories have been out of operation.</wave>
-  - <wave>Before the Red Rock Planet was damaged, it was a beautiful sight.</wave>
   - "<wave>But as you know, environmental problems are never easy to solve, often
     accompanied by pressures, especially in current situation.\u200B</wave>"
   - <wave>Here, I've provided you with a method to minimize interference.</wave>

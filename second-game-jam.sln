@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Febucci.TextAnimator.Runtim
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Febucci.TextAnimator.Demo.Runtime", "Febucci.TextAnimator.Demo.Runtime.csproj", "{023E048D-D814-70B9-9F33-7FFBB962F145}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DOTween.Modules", "DOTween.Modules.csproj", "{C8071E2A-F5E1-A90F-5229-F2F70B08304D}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Febucci.TextAnimator.Editor", "Febucci.TextAnimator.Editor.csproj", "{1B5AF55A-20BB-5CAD-1FFF-2BB66BB9B59C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Febucci.TextAnimator.Demo.Editor", "Febucci.TextAnimator.Demo.Editor.csproj", "{5083456E-8B1C-F569-1622-E53A007CA382}"
@@ -35,6 +37,10 @@ Global
 		{023E048D-D814-70B9-9F33-7FFBB962F145}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{023E048D-D814-70B9-9F33-7FFBB962F145}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{023E048D-D814-70B9-9F33-7FFBB962F145}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8071E2A-F5E1-A90F-5229-F2F70B08304D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8071E2A-F5E1-A90F-5229-F2F70B08304D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8071E2A-F5E1-A90F-5229-F2F70B08304D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8071E2A-F5E1-A90F-5229-F2F70B08304D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1B5AF55A-20BB-5CAD-1FFF-2BB66BB9B59C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1B5AF55A-20BB-5CAD-1FFF-2BB66BB9B59C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B5AF55A-20BB-5CAD-1FFF-2BB66BB9B59C}.Release|Any CPU.ActiveCfg = Release|Any CPU

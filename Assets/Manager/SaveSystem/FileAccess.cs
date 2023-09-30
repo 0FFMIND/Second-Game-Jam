@@ -7,7 +7,7 @@ using System;
 public static class FileAccess 
 {
     private const string _defaultExtension = ".json";
-    private static string BasePath => Path.Combine(Application.persistentDataPath, "CGJ");
+    private static string BasePath => Path.Combine(Application.persistentDataPath, "NOC");
     public static bool SaveString(string filename, bool includesExtension, string value)
     {
         filename = GetFilenameWithExtension(filename, includesExtension);

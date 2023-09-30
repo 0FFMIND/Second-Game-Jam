@@ -14,6 +14,7 @@ public class SaveManager : Singleton<SaveManager>
     public bool IsIntroEnd { get; set; } = false;
     public bool IsOpenEnd { get; set; } = false;
     public bool IsLevelOneEnd { get; set; } = false;
+    public bool IsPoolFinshed { get; set; } = false; // 选好了手牌直接跳过
     public int IsAngel { get; set; } = 0; // 0 表示还没有进行选择，1 表示天使侧，2 表示恶魔侧
     //读档
     public void Init()
@@ -40,6 +41,7 @@ public class SaveManager : Singleton<SaveManager>
                 .Write("Open", "false")
                 .Write("LevelOne", "false")
                 .Write("Angel", "0")
+                .Write("Pool","false")
                 .Commit();
         }
         LoadLevel();
@@ -51,6 +53,7 @@ public class SaveManager : Singleton<SaveManager>
         .Write("Open", "false")
         .Write("LevelOne", "false")
         .Write("Angel", "0")
+        .Write("Pool","false")
         .Commit();
         LoadLevel();
     }
@@ -63,6 +66,7 @@ public class SaveManager : Singleton<SaveManager>
             .Write("Open", "false")
             .Write("LevelOne", IsLevelOneEnd.ToString())
             .Write("Angel", IsAngel.ToString())
+            .Write("Pool",IsPoolFinshed.ToString())
             .Commit();
     }
     public void SetTeam(int select)
@@ -81,6 +85,7 @@ public class SaveManager : Singleton<SaveManager>
             .Write("Open", "false")
             .Write("LevelOne", IsLevelOneEnd.ToString())
             .Write("Angel", IsAngel.ToString())
+            .Write("Pool",IsPoolFinshed.ToString())
             .Commit();
     }
     public void SaveOpen()
@@ -109,7 +114,11 @@ public class SaveManager : Singleton<SaveManager>
             .Read<string>("Angel", (r) =>
              {
                  IsAngel = int.Parse(r);
-             });
+             })
+            .Read<string>("Pool", (r) =>
+            {
+                IsPoolFinshed = bool.Parse(r);
+            });
     }
     public void SaveSettingsTwo(List<string> settingsPref)
     {

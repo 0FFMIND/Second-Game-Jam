@@ -11,6 +11,7 @@ public class TeamManager : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     public int num;
     public void Start()
     {
+        AudioManager.Instance.PlaySFX(SoundEffect.Beep);
         confirm.SetActive(false);
         popInfoCN.SetActive(false);
         popInfoEN.SetActive(false);
@@ -18,7 +19,6 @@ public class TeamManager : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     }
     public void OnPointerClick(PointerEventData eventData)
     {
-        AudioManager.Instance.PlaySFX(SoundEffect.Beep);
         confirm.SetActive(true);
     }
     public void OnPointerEnter(PointerEventData eventData)

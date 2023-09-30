@@ -12,12 +12,13 @@ public class ManagersLoader : MonoBehaviour
     public GameObject DialogPrf;
     public GameObject GaMPrf;
     public GameObject EventPrf;
+    public GameObject CardStorePrf;
     public static bool isInit = false;
     private void Awake()
     {
         if (!isInit)
         {
-            if ( AudioPrf == null || CursorPrf == null || TransPrf == null || LangPrf == null || SavePrf == null || DialogPrf == null || GaMPrf == null || EventPrf == null)
+            if ( AudioPrf == null || CursorPrf == null || TransPrf == null || LangPrf == null || SavePrf == null || DialogPrf == null || GaMPrf == null || EventPrf == null || CardStorePrf == null)
             {
                 Debug.LogError("Please check your ManagersLoader gameObject");
             }
@@ -70,6 +71,12 @@ public class ManagersLoader : MonoBehaviour
                     Destroy(FindObjectOfType<EventManager>().gameObject);
                 }
                 DontDestroyOnLoad(Instantiate(EventPrf));
+
+                if (FindObjectOfType<CardStorePref>() != null)
+                {
+                    Destroy(FindObjectOfType<CardStorePref>().gameObject);
+                }
+                DontDestroyOnLoad(Instantiate(CardStorePrf));
 
                 isInit = true;
             }

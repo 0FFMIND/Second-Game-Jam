@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEditor;
+#if Unity_EDITOR
 [CustomEditor(typeof(PathCreator))] // 意思是它用来扩展PathCreator的编辑器功能
 public class PathEditor : Editor
 {
@@ -154,3 +155,4 @@ public class PathEditor : Editor
         }
     }
 }
+#endif

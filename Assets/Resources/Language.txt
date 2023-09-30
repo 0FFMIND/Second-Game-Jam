@@ -12,7 +12,7 @@ Audio Settings:音效调整
 Sound Effects:效果音
 Back Music:背景音
 Your current selections take effect immediately:您当前的选择均会在游戏中和重新进行游戏的情况得到实现
-Music-ZLEX,Translate-YuQing,Test-iz:音乐-泽西，翻译-海辰，测试-以子
+Music-ZLEX,Translate-YuQing,Test-iz:音乐-泽西，翻译-海辰，测试-黑文
 ----------Credits----------:----------致谢名单----------
 Art-FYAZASHIRU,AirG:美术-FYAZASHIRU、空气动力锤
 Planning-ANK:策划-暗刻
@@ -25,7 +25,7 @@ Back to Menu:返回标题界面
 Satellite 62C-1:卫星62C-1 指引星
 Kepler-62E Nebula:开普勒-62E 涅布拉行星
 Pause:暂停游戏
-We need to make sure you've considered deleting your previous saves and starting a new game:我们需要确认您是否考虑好删除您过去的存档并开始新的游戏
+We need to make sure you've considered deleting your previous saves:我们需要确认您是否考虑好删除您过去的存档并开始新的游戏
 Current speed:当前速度为
 Yes start:开始新游戏
 Not now:我再想想
@@ -39,17 +39,13 @@ Overview:卡片总览
 Red Rock 1-1:红岩星 关卡1-1
 -------------Change Speed------------:---------------速度修改--------------
 --------------Play Options------------:---------------游玩选择--------------
-<wave>Gentle strategy</wave>:<wave>温和策略</wave>
-<wave>Aggressive strategy</wave>:<wave>激进策略</wave>
-<wave>Your chances of drawing an aggressive strategy will card increase by 15%, while the chances of drawing a gentle strategy card decrease by 15%.</wave>:<wave>后续你抽到激进策略卡牌几率增加15%同时温和策略卡牌几率减少15%</wave>
-<wave>Your chances of drawing a gentle strategy card will increase by 15%, while the chances of drawing an aggressive strategy card decrease by 15%.</wave>:<wave>后续你抽到温和策略卡牌几率增加15%同时激进策略卡牌几率减少15%</wave>
 Confirm:玩家确认
 Yes:确认
+Draw Card:抽取卡牌
 No:否认
+Your Strategy-:您当前的策略为-
 Sure to choose the gentle side as your entire game selection?:确定将温和侧作为您的选择吗，请注意这会影响您之后的整个游戏进程
 Sure to choose the aggressive side as your entire game selection?:确定将激进侧作为您的选择吗，请注意这会影响您之后的整个游戏进程
-<wave>The system has detected your decision preference. Please press the left mouse button to enter the tutorial level.</wave>:<wave>系统检测到您已经选择了决策倾向，请按下鼠标左键进入教程关卡</wave>
-
 Huge gaseous planet with only liquid hydrogen inside.The internal energy station has been attacked recently. Attackers are suspected of alien creatures in hydrogen ocean.It is necessary to monitor the  organisms inside the gaseous planet.:一颗巨大的气态行星，内部只有液态氢，是取之不尽的能源宝库。最近内部能源站遭到袭击，攻击者疑似氢海洋里的外星生物，它们的行为方式与外观与之前撞击62C的小行星带来的异星生物高度相似，需要时刻监控气态行星内部生物的动向，以及进行必要的防御设施的建设
 Satellite of Red Rock Star.In the early stages pioneer team conducted a large amount of mineral. Now it is devastated and there is an urgent need to re-stabilize the satellite's surface.:红岩星的卫星。拓荒队建设初期对它进行了大量矿产岩石开采作业。现今已满目疮痍并且如今不再需要它提供任何资源。故亟需派遣队使用行星地形改造模块，使卫星地表结构重新稳定并建立稳定的环境。
 It's the farthest terrestrial planet from any star, with low temperature, a large amount of water.It is not suitable for human but suspected  relics of other alien civilizations.:该星为距离恒星中最远的类地行星。温度低，行星体积巨大，行星表面有大量的水体覆盖，拥有强大的引力和厚重的大气层。相较来说不适合人类生存。但该星疑似存在其他外星文明的遗迹，请小心行事。
