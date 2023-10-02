@@ -1,5 +1,8 @@
+using System;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class CardStore : MonoBehaviour
 {
@@ -26,7 +29,7 @@ public class CardStore : MonoBehaviour
         AcardList.Clear();
         DcardList.Clear();
         string[] dataRow;
-        if(LanguageManager.Instance.CurrentLanguage == LanguageOption.Chinese)
+        if (LanguageManager.Instance.CurrentLanguage == LanguageOption.Chinese)
         {
             dataRow = CNcardData.text.Split('\n');
         }
@@ -37,30 +40,92 @@ public class CardStore : MonoBehaviour
         foreach (var row in dataRow)
         {
             string[] rowArray = row.Split(',');
-            if(rowArray[0] == "#")
+            if (rowArray[0] == "#")
             {
                 continue;
-            }else if(rowArray[0] == "Angel")
+            }
+            else if (rowArray[0] == "Angel")
             {
+                int level = 1;
+                CardState state = CardState.Library;
                 string cardType = rowArray[1];
                 string cardName = rowArray[2];
                 int id = int.Parse(rowArray[3]);
                 string cardEffet = rowArray[4];
                 Texture texture = textureList[id - 1];
+                //决定level
+                try
+                {
+                    string path = Application.persistentDataPath + "/playerData.csv";
+                    Dictionary<int, int> loadPlayerCards = new Dictionary<int, int>();
+                    string[] storeDataRow = File.ReadAllLines(path);
+                    if (storeDataRow.Length == 0)
+                    {
+                        level = 1;
+                    }
+                    else
+                    {
+                        foreach (var data in storeDataRow)
+                        {
+                            string[] array = data.Split(',');
+                            if (array[0] == "card")
+                            {
+                                loadPlayerCards.Add(int.Parse(rowArray[1]), int.Parse(rowArray[2]));
+                            }
+                        }
+                        level = loadPlayerCards[id];
+                    }
+                }
+                catch (Exception e)
+                {
+
+                }
+
                 Color cardPanelColor = Color.white;
                 Color cardNameColor = Color.cyan;
-                AngelCard angelCard = new AngelCard(id, cardName, cardType, cardEffet, texture, cardPanelColor, cardNameColor);
+                AngelCard angelCard = new AngelCard(id, level, state, cardName, cardType, cardEffet, texture, cardPanelColor, cardNameColor);
                 AcardList.Add(angelCard);
-            }else if(rowArray[0] == "Demon")
+            }
+            else if (rowArray[0] == "Demon")
             {
+                int level = 1;
+                CardState state = CardState.Library;
                 string cardType = rowArray[1];
                 string cardName = rowArray[2];
                 int id = int.Parse(rowArray[3]);
                 string cardEffet = rowArray[4];
                 Texture texture = textureList[id - 1];
+                //决定level
+                try
+                {
+                    string path = Application.persistentDataPath + "/playerData.csv";
+                    Dictionary<int, int> loadPlayerCards = new Dictionary<int, int>();
+                    string[] storeDataRow = File.ReadAllLines(path);
+                    if (storeDataRow.Length == 0)
+                    {
+                        level = 1;
+                    }
+                    else
+                    {
+                        foreach (var data in storeDataRow)
+                        {
+                            string[] array = data.Split(',');
+                            if (array[0] == "card")
+                            {
+                                loadPlayerCards.Add(int.Parse(rowArray[1]), int.Parse(rowArray[2]));
+                            }
+                        }
+                        level = loadPlayerCards[id];
+                    }
+                }
+                catch (Exception e)
+                {
+
+                }
+
                 Color cardPanelColor = Color.yellow;
                 Color cardNameColor = Color.yellow;
-                DemonCard demonCard = new DemonCard(id, cardName, cardType, cardEffet, texture, cardPanelColor, cardNameColor);
+                DemonCard demonCard = new DemonCard(id, level, state, cardName, cardType, cardEffet, texture, cardPanelColor, cardNameColor);
                 DcardList.Add(demonCard);
             }
         }

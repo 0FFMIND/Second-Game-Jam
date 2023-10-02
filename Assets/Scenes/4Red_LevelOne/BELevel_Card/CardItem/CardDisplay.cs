@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class CardDisplay : MonoBehaviour
 {
+    public int id;
+    public CardState state;
     public Text cardType;
     public Text cardLevel;
     public RawImage cardImage;
@@ -18,9 +20,10 @@ public class CardDisplay : MonoBehaviour
     }
     public void ShowCard()
     {
+        id = card.id;
+        state = card.state;
         cardName.text = card.cardName;
-        // 后续会放出升级系统
-        cardLevel.text = "1";
+        cardLevel.text = card.level.ToString();
         cardImage.texture = card.tImage;
         cardType.text = card.cardType;
         cardDiscription.text = card.cardEffect;

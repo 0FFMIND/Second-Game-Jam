@@ -17,12 +17,17 @@ public class BELevelText : MonoBehaviour
     public GameObject[] panelAndHover;
     public GameObject cardSystem;
     public GameObject cardPool;
+    public GameObject deckInfo;
+    public GameObject deckChoice;
     public static bool isFinished = false;
     public bool firstFinish = false;
     public bool cardFinish = false;
     public bool poolFinish = false;
+    public bool teamFinish = false;
+    public bool deckFinish = false;
     public void Start()
     {
+        teamFinish = false;
         AudioManager.Instance.StopBGM();
         AudioManager.Instance.PlayBGM(BackgroundMusic.IntroScene);
         introTextTwo.SetActive(false);
@@ -35,6 +40,8 @@ public class BELevelText : MonoBehaviour
         blackCard.SetActive(false);
         cardSystem.SetActive(false);
         cardPool.SetActive(false);
+        deckInfo.SetActive(false);
+        deckChoice.SetActive(false);
         foreach (var obj in panelAndHover)
         {
             obj.SetActive(true);
@@ -42,6 +49,7 @@ public class BELevelText : MonoBehaviour
         DialogManager.Instance.isIntroFinished = false;
         DialogManager.Instance.isBEfinished = true;
         DialogManager.Instance.Init("Intro", IntroDialog);
+        SaveManager.Instance.LoadLevel();
     }
     // 给TextAnimator用的三个组件
     public void PlayTypping()
@@ -60,18 +68,28 @@ public class BELevelText : MonoBehaviour
     {
         poolFinish = true;
     }
+    public void SetTeamFalse()
+    {
+        teamFinish = true;
+    }
+    public void SetDeckFinished()
+    {
+        deckFinish = true;
+    }
     public void Update()
     {
-        if(DialogManager.Instance.isIntroFinished && firstFinish && cardFinish && poolFinish)
+        if (DialogManager.Instance.isIntroFinished && firstFinish && cardFinish && poolFinish && !deckFinish)
         {
             poolFinish = false;
             cardFinish = false;
             cardPool.SetActive(false);
             cardSystem.SetActive(false);
             //新系统蹦出来
+            deckInfo.SetActive(true);
+            deckChoice.SetActive(true);
         }
         // 选择结束进入黑卡和抽牌引导
-        if(DialogManager.Instance.isIntroFinished && SaveManager.Instance.IsAngel != 0 && teamSelect.activeSelf && firstFinish)
+        if (DialogManager.Instance.isIntroFinished && teamFinish && teamSelect.activeSelf && firstFinish)
         {
             AudioManager.Instance.PlaySFX(SoundEffect.Beep);
             teamSelect.SetActive(false);
@@ -80,13 +98,13 @@ public class BELevelText : MonoBehaviour
             DialogManager.Instance.isBEfinished = true;
             DialogManager.Instance.Init("Intro", OtherDialog);
         }
-        if(DialogManager.Instance.index == 2 && firstFinish)
+        if (DialogManager.Instance.index == 1 && firstFinish)
         {
             AudioManager.Instance.PlaySFX(SoundEffect.CardPlace);
             blackCard.SetActive(true);
             cardFinish = true;
         }
-        if(DialogManager.Instance.isIntroFinished && firstFinish && cardFinish)
+        if (DialogManager.Instance.isIntroFinished && firstFinish && cardFinish)
         {
             introTextFour.SetActive(true);
             introTextTwo.SetActive(false);
@@ -101,31 +119,32 @@ public class BELevelText : MonoBehaviour
         }
         if (!DialogManager.Instance.isIntroFinished && DialogManager.Instance.index == 3 && !firstFinish)//用dialogManager来传信号
         {
-            introCG[0].SetActive(false);introCG[1].SetActive(true);
+            introCG[0].SetActive(false); introCG[1].SetActive(true);
+        }
+        if (SaveManager.Instance.IsPoolFinshed && introCG[1].activeSelf && firstFinish && Input.GetMouseButtonDown(0))
+        {
+            TransManager.Instance.ChangeScene("LevelOne");
+        }
+        if (DialogManager.Instance.isIntroFinished && firstFinish && !teamFinish && !SaveManager.Instance.IsPoolFinshed)
+        {
+            introCG[1].SetActive(false); introTextTwo.SetActive(true); introTextOne.SetActive(false); teamSelect.SetActive(true);
         }
         if (DialogManager.Instance.isIntroFinished && !firstFinish)
         {
             firstFinish = true;
             SaveManager.Instance.LoadLevel();
             // 已经选择过了又进入新手关卡
-            if(SaveManager.Instance.IsPoolFinshed && introCG[1].activeSelf)
+            if (SaveManager.Instance.IsPoolFinshed && introCG[1].activeSelf)
             {
-                introTextOne.SetActive(false);introTextTwo.SetActive(true);
-                if(LanguageManager.Instance.CurrentLanguage == LanguageOption.Chinese)
+                introTextOne.SetActive(false); introTextTwo.SetActive(true);
+                if (LanguageManager.Instance.CurrentLanguage == LanguageOption.Chinese)
                 {
                     introTextThree.SetActive(true);
-                }else if(LanguageManager.Instance.CurrentLanguage == LanguageOption.English)
+                }
+                else if (LanguageManager.Instance.CurrentLanguage == LanguageOption.English)
                 {
                     introTextThreeEN.SetActive(true);
                 }
-                if (Input.GetMouseButtonDown(0))
-                {
-                    TransManager.Instance.ChangeScene("LevelOne");
-                }
-            }
-            if(SaveManager.Instance.IsAngel == 0)
-            {
-                introCG[1].SetActive(false); introTextTwo.SetActive(true); introTextOne.SetActive(false); teamSelect.SetActive(true);
             }
         }
     }

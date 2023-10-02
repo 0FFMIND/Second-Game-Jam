@@ -63,23 +63,21 @@
     <Compile Include="Assets\Scenes\1TitleScene\MainMenu.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\CardItem\Card.cs" />
     <Compile Include="Assets\Scenes\LevelOne\Tile\Turret.cs" />
-    <Compile Include="Assets\Scenes\GameOver\SuccessController.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\CardItem\CardData.cs" />
     <Compile Include="Assets\Scenes\1TitleScene\SelectButton.cs" />
-    <Compile Include="Assets\Scenes\LevelOne\LevelOneController.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Grid\GridBuildSystem.cs" />
     <Compile Include="Assets\Scenes\1TitleScene\DeveloperMenu.cs" />
     <Compile Include="Assets\Scenes\0Test\SkillTree\SkillManager.cs" />
     <Compile Include="Assets\Scenes\1TitleScene\NullMenu.cs" />
     <Compile Include="Assets\Scenes\3OpenScene\LevelSystem\LevelNewIntro.cs" />
     <Compile Include="Assets\Scenes\1TitleScene\ButtonEvent.cs" />
+    <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\CardItem\CardStorePref.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Pool.cs" />
     <Compile Include="Assets\Scenes\LevelOne\Tile\shoot.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\BuildingTypeSO.cs" />
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\Transition Orders\TransitionOrderLines.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Enemy\PathFollower.cs" />
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Demo\YourGameLogic.cs" />
-    <Compile Include="Assets\Scenes\4Red_LevelOne\Enemy\PathEditor.cs" />
     <Compile Include="Assets\Manager\SaveSystem\SaveWriter.cs" />
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\Transition Orders\TransitionOrderDiamond.cs" />
     <Compile Include="Assets\Manager\SaveSystem\SaveReader.cs" />
@@ -101,6 +99,7 @@
     <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\TeamManager.cs" />
     <Compile Include="Assets\Manager\SaveSystem\FileAccess.cs" />
     <Compile Include="Assets\Manager\AudioManager.cs" />
+    <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\CardItem\DeckManager.cs" />
     <Compile Include="Assets\Scenes\LevelOne\Tile\Node.cs" />
     <Compile Include="Assets\Scenes\1TitleScene\TextScrolling.cs" />
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\Transition Orders\TransitionOrderAllAtOnce.cs" />
@@ -115,16 +114,15 @@
     <Compile Include="Assets\Scenes\LevelOne\EnemyTwo.cs" />
     <Compile Include="Assets\Scenes\LevelOne\Waypoint.cs" />
     <Compile Include="Assets\Manager\TransManager.cs" />
+    <Compile Include="Assets\Scenes\4Red_LevelOne\LevelOneController.cs" />
     <Compile Include="Assets\Scenes\LevelTwo\LevelTwoManager.cs" />
     <Compile Include="Assets\Manager\EventManager.cs" />
-    <Compile Include="Assets\Scenes\GameOver\StoryToTwo.cs" />
     <Compile Include="Assets\Scenes\2IntroScene\IntroController.cs" />
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Demo\RandomCameraColor.cs" />
     <Compile Include="Assets\Manager\GameManager.cs" />
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\Transitioner.cs" />
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\Transition Orders\TransitionOrderBase.cs" />
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\Transition Orders\TransitionOrderCornerWipe.cs" />
-    <Compile Include="Assets\Scenes\GameOver\GameOverController.cs" />
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\Transition Orders\TransitionOrderTeeth.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\CardItem\CardStore.cs" />
     <Compile Include="Assets\Scenes\0Test\RaySystem\Security.cs" />
@@ -139,6 +137,7 @@
     <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\CardItem\CardDisplay.cs" />
     <Compile Include="Assets\Manager\CursorManager.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\PauseButton.cs" />
+    <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\CardItem\ZoomUI.cs" />
     <Compile Include="Assets\Manager\ManagersLoader.cs" />
     <Compile Include="Assets\Manager\SaveSystem\SaveBase.cs" />
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\TransitionSetup.cs" />
@@ -150,8 +149,8 @@
     <Compile Include="Assets\Scenes\1TitleScene\ContinueMenu.cs" />
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\Transition Orders\TransitionEnumRandomizer.cs" />
     <Compile Include="Assets\Scenes\1TitleScene\TitleMenuBase.cs" />
-    <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\CardItem\CardStorePref.cs" />
-    <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\CardItem\DeckManager.cs" />
+    <Compile Include="Assets\ExternalTools\Sci-Fi UI\Demo_Assets\scripts\GUI_Demo.cs" />
+    <Compile Include="Assets\Scenes\4Red_LevelOne\ArrowController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\ExternalTools\Febucci\Text Animator\Example\Font\OFL.txt" />
@@ -162,19 +161,20 @@
     <None Include="Assets\ExternalTools\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\ExternalTools\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\ExternalTools\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\ExternalTools\Plugins\Demigiant\DOTween\DOTween.XML" />
     <None Include="Assets\ExternalTools\PostProcessing\Shaders\API\Metal.hlsl" />
-    <None Include="Assets\Resources\Plugins\jillejr.newtonsoft.json-for-unity@12.0.301\Plugins\Newtonsoft.Json Portable\Newtonsoft.Json.dll" />
+    <None Include="Assets\ExternalTools\Resources\Plugins\jillejr.newtonsoft.json-for-unity@12.0.301\Plugins\Newtonsoft.Json Portable\Newtonsoft.Json.dll" />
     <None Include="Assets\ExternalTools\PostProcessing\Shaders\API\OpenGL.hlsl" />
     <None Include="Assets\ExternalTools\PostProcessing\Shaders\API\D3D12.hlsl" />
-    <None Include="Assets\Resources\Plugins\jillejr.newtonsoft.json-for-unity@12.0.301\Plugins\Newtonsoft.Json Editor\Newtonsoft.Json.dll" />
+    <None Include="Assets\ExternalTools\Resources\Plugins\jillejr.newtonsoft.json-for-unity@12.0.301\Plugins\Newtonsoft.Json Editor\Newtonsoft.Json.dll" />
     <None Include="Assets\ExternalTools\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\Resources\Plugins\jillejr.newtonsoft.json-for-unity@12.0.301\Plugins\Newtonsoft.Json AOT\Newtonsoft.Json.dll" />
-    <None Include="Assets\Resources\Plugins\jillejr.newtonsoft.json-for-unity@12.0.301\Plugins\Newtonsoft.Json Portable\Newtonsoft.Json.xml" />
+    <None Include="Assets\ExternalTools\Resources\Plugins\jillejr.newtonsoft.json-for-unity@12.0.301\Plugins\Newtonsoft.Json AOT\Newtonsoft.Json.dll" />
+    <None Include="Assets\ExternalTools\Resources\Plugins\jillejr.newtonsoft.json-for-unity@12.0.301\Plugins\Newtonsoft.Json Portable\Newtonsoft.Json.xml" />
     <None Include="Assets\ExternalTools\PostProcessing\Shaders\Colors.hlsl" />
     <None Include="Assets\ExternalTools\PostProcessing\Shaders\API\D3D9.hlsl" />
-    <None Include="Assets\Resources\Plugins\jillejr.newtonsoft.json-for-unity@12.0.301\Plugins\Newtonsoft.Json AOT\Newtonsoft.Json.xml" />
+    <None Include="Assets\ExternalTools\Resources\Plugins\jillejr.newtonsoft.json-for-unity@12.0.301\Plugins\Newtonsoft.Json AOT\Newtonsoft.Json.xml" />
     <None Include="Assets\ExternalTools\PostProcessing\Shaders\StdLib.hlsl" />
-    <None Include="Assets\Resources\Plugins\jillejr.newtonsoft.json-for-unity@12.0.301\Plugins\Newtonsoft.Json Editor\Newtonsoft.Json.xml" />
+    <None Include="Assets\ExternalTools\Resources\Plugins\jillejr.newtonsoft.json-for-unity@12.0.301\Plugins\Newtonsoft.Json Editor\Newtonsoft.Json.xml" />
     <None Include="Assets\ExternalTools\PostProcessing\Shaders\API\Vulkan.hlsl" />
     <None Include="Assets\ExternalTools\Febucci\Text Animator\Integrations\Integrations.txt" />
     <None Include="Assets\ExternalTools\PostProcessing\Shaders\API\XboxOne.hlsl" />
@@ -183,6 +183,7 @@
     <None Include="Assets\ExternalTools\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\ExternalTools\TextMesh Pro\Shaders\TMP_SDF.shader" />
     <None Include="Assets\ExternalTools\PostProcessing\Shaders\ACES.hlsl" />
+    <None Include="Assets\ExternalTools\Plugins\Demigiant\DOTween\DOTween.dll" />
     <None Include="Assets\ExternalTools\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\ExternalTools\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\ExternalTools\PostProcessing\Shaders\API\PSSL.hlsl" />
@@ -196,15 +197,16 @@
     <None Include="Assets\ExternalTools\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\ExternalTools\PostProcessing\Shaders\Blending.hlsl" />
     <None Include="Assets\ExternalTools\Text\ChineseLag.txt" />
-    <None Include="Assets\Resources\Language.txt" />
+    <None Include="Assets\ExternalTools\Resources\Language.txt" />
     <None Include="Assets\ExternalTools\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\ExternalTools\Plugins\Demigiant\DOTween\readme.txt" />
     <None Include="Assets\ExternalTools\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\ExternalTools\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\ExternalTools\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\ExternalTools\PostProcessing\Shaders\API\D3D11.hlsl" />
     <None Include="Assets\ExternalTools\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\ExternalTools\PostProcessing\Shaders\API\Switch.hlsl" />
-    <None Include="Assets\Resources\Plugins\jillejr.newtonsoft.json-for-unity@12.0.301\link.xml" />
+    <None Include="Assets\ExternalTools\Resources\Plugins\jillejr.newtonsoft.json-for-unity@12.0.301\link.xml" />
     <None Include="Assets\ExternalTools\TextMesh Pro\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\ExternalTools\PostProcessing\Shaders\XPostProcessing.hlsl" />
   </ItemGroup>
@@ -435,10 +437,10 @@
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.20f1c1\2020.3.20f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>Assets\Resources\Plugins\jillejr.newtonsoft.json-for-unity@12.0.301\Plugins\Newtonsoft.Json Editor\Newtonsoft.Json.dll</HintPath>
+      <HintPath>Assets\ExternalTools\Resources\Plugins\jillejr.newtonsoft.json-for-unity@12.0.301\Plugins\Newtonsoft.Json Editor\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="DOTween">
-      <HintPath>Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
+      <HintPath>Assets\ExternalTools\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.20f1c1\2020.3.20f1c1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

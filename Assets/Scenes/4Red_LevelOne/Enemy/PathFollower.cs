@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class PathFollower : MonoBehaviour
 {
-    public float Speed = 20f;
-    public float OffsetAmount = 12f;
+    public float Speed;
+    public float OffsetAmount;
 
     private Vector2 PositionOffset;
     private PathBase path;
@@ -20,7 +20,7 @@ public class PathFollower : MonoBehaviour
         segmentIndex = 0;
         PositionOffset = Random.insideUnitCircle * Random.Range(-OffsetAmount, OffsetAmount); // 稍微偏移一点路线
         RecomputeSegment();
-        transform.position = A;
+        transform.position = new Vector3(A.x, A.y, 1f);
     }
 
     void FixedUpdate()
@@ -38,8 +38,8 @@ public class PathFollower : MonoBehaviour
         var tangent = t * t * v1 + t * v2 + v3;
         t = t + Time.deltaTime * Speed / tangent.magnitude;
 
-        transform.position = EvaluateCubic(A, B, C, D, t);
-        transform.eulerAngles = new Vector3(0.0f, 0.0f, Angle(tangent, Vector2.right));
+        transform.position = new Vector3(EvaluateCubic(A, B, C, D, t).x,EvaluateCubic(A,B,C,D,t).y,1f);
+        // transform.eulerAngles = new Vector3(0.0f, 0.0f, Angle(tangent, Vector2.right));
 
         if (gameObject.layer == LayerMask.NameToLayer("enemy")) return;
             //EnemyManager.Instance.UpdateEnemy(gameObject, path.NumSegments - segmentIndex - t);

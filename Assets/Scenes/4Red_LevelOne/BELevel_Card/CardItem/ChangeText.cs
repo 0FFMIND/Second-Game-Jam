@@ -3,30 +3,28 @@ using UnityEngine;
 
 public class ChangeText : MonoBehaviour
 {
-    string text;
     private void Start()
     {
-        text = this.GetComponent<Text>().text;
         SaveManager.Instance.LoadLevel();
         if(SaveManager.Instance.IsAngel == 2)
         {
             if(LanguageManager.Instance.CurrentLanguage == LanguageOption.English)
             {
-                text = "Aggressive";
+                GetComponent<Text>().text = "Aggressive";
             }else if(LanguageManager.Instance.CurrentLanguage == LanguageOption.Chinese)
             {
-                text = "激进";
+                GetComponent<Text>().text = "激进";
             }
         }
         if(SaveManager.Instance.IsAngel == 1)
         {
             if (LanguageManager.Instance.CurrentLanguage == LanguageOption.English)
             {
-                text = "Gentle";
+                GetComponent<Text>().text = "Gentle";
             }
             else if (LanguageManager.Instance.CurrentLanguage == LanguageOption.Chinese)
             {
-                text = "温和";
+                GetComponent<Text>().text = "温和";
             }
         }
     }

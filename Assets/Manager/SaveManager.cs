@@ -48,6 +48,8 @@ public class SaveManager : Singleton<SaveManager>
     }
     public void InitLevelSetting()
     {
+        string path = Application.persistentDataPath + "/playerData.csv";
+        File.Delete(path);
         SaveWriter.Create("LevelSettings")
         .Write("Intro", "false")
         .Write("Open", "false")

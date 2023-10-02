@@ -13,3 +13,6 @@ Planning ： Open Scene and First Level Scene
 -2023/9/28-     
 Completed : Open Scene and intro of First Level Scene     
 Now Planning : First Level Scene, including card system, pick and place system, path-finding system      
+***
+-2023/10/2-    
+Completed : path-finding system, planning of First Level Scene     

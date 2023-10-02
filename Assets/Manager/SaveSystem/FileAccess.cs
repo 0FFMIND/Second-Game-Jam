@@ -1,7 +1,5 @@
 using System.IO;
 using UnityEngine;
-using System.Linq;
-using System.Collections.Generic;
 using System;
 
 public static class FileAccess 

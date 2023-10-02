@@ -30,13 +30,4 @@ public class OpenPackage : MonoBehaviour
             newCard.GetComponent<CardDisplay>().card = cardStore.RandomCard();
         }
     }
-    // 按下确认按钮后
-    public void OnConfirm()
-    {
-        foreach (var card in cardTempStore)
-        {
-            int id = card.GetComponent<CardDisplay>().card.id;
-            cardData.playerCards.Add(id);
-        }
-    }
 }

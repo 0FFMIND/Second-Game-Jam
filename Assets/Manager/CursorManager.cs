@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class CursorManager : Singleton<CursorManager>
 {
-    private Vector2 cursorPos;
+    public Vector2 cursorPos;
     private void Update()
     {
 #if UNITY_ANDROID
