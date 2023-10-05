@@ -14,8 +14,11 @@ public class CardStorePref : Singleton<CardStorePref>
     public Dictionary<int, Card> CardLibrary = new Dictionary<int, Card>();
     public Dictionary<int, CardState> stateCard = new Dictionary<int, CardState>();
     // 用来取走存档的卡牌
-    public Dictionary<int, CardState> loadStateCard;
-    public Dictionary<int, int> loadPlayerCards;
+    public Dictionary<int, CardState> loadStateCard = new Dictionary<int, CardState>();
+    public Dictionary<int, int> loadPlayerCards = new Dictionary<int, int>();
+    // 取走的产能建筑
+    public Dictionary<int, string> loadDspBuildings = new Dictionary<int, string>();
+    public Dictionary<int, string> loadNameBuildings = new Dictionary<int, string>();
     //取卡
     public void GetCard()
     {
@@ -23,12 +26,16 @@ public class CardStorePref : Singleton<CardStorePref>
         {
             LoadCardData();
         }
-        if(loadPlayerCards.Count == 0 && loadStateCard == null)
+        if(loadDspBuildings.Count == 0 || loadNameBuildings.Count == 0)
         {
+            loadDspBuildings.Clear();loadNameBuildings.Clear();
+            LoadBuildings();
+        }
+        if(loadPlayerCards.Count == 0 || loadStateCard.Count == 0)
+        {
+            loadStateCard.Clear();loadPlayerCards.Clear();
             string path = Application.persistentDataPath + "/playerData.csv";
             string[] storeDataRow = File.ReadAllLines(path);
-            loadStateCard = new Dictionary<int, CardState>();
-            loadPlayerCards = new Dictionary<int, int>();
             foreach (var data in storeDataRow)
             {
                 string[] array = data.Split(',');
@@ -37,6 +44,31 @@ public class CardStorePref : Singleton<CardStorePref>
                     loadPlayerCards.Add(int.Parse(array[1]), int.Parse(array[2]));
                     stateCard.Add(int.Parse(array[1]), (CardState)int.Parse(array[3]));
                 }
+            }
+        }
+    }
+    public void LoadBuildings()
+    {
+        string[] dataRow;
+        if (LanguageManager.Instance.CurrentLanguage == LanguageOption.Chinese)
+        {
+            dataRow = CNcardData.text.Split('\n');
+        }
+        else
+        {
+            dataRow = ENcardData.text.Split('\n');
+        }
+        foreach (var row in dataRow)
+        {
+            string[] rowArray = row.Split(',');
+            if (rowArray[0] == "/")
+            {
+                continue;
+            }
+            else if (rowArray[0] == "Building")
+            {
+                loadNameBuildings.Add(int.Parse(rowArray[1]),rowArray[2]);
+                loadDspBuildings.Add(int.Parse(rowArray[1]), rowArray[3]);
             }
         }
     }

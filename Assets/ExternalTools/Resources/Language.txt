@@ -12,7 +12,7 @@ Audio Settings:音效调整
 Sound Effects:效果音
 Back Music:背景音
 Your current selections take effect immediately:您当前的选择均会在游戏中和重新进行游戏的情况得到实现
-Music-ZLEX,Translate-YuQing,Test-iz:音乐-泽西，翻译-海辰，测试-黑文
+Music-ZLEX,Translate-YuQing,Test-HV:音乐-泽西，翻译-海辰，测试-黑文
 ----------Credits----------:----------致谢名单----------
 Art-FYAZASHIRU,AirG:美术-FYAZASHIRU、空气动力锤
 Planning-ANK:策划-暗刻
@@ -43,9 +43,13 @@ Confirm:玩家确认
 Yes:确认
 Draw Card:抽取卡牌
 No:否认
+Powers:储能总量
+Quests List:本局任务列表
 Your Strategy-:您当前的策略为-
 Select your choices and put in deck.:请将您选择的卡牌选三张放入议案系统
 Current Proposals:本局议案
+Weather:当前气候
+Sunshower:太阳雨
 Your proposal system is inadequate. Please ensure three proposals in deck:经系统检查您的本局议案系统不足，请确保议案系统存在三张议案
 Sure to choose the gentle side as your entire game selection?:确定将温和侧作为您的选择吗，请注意这会影响您之后的整个游戏进程
 Sure to choose the aggressive side as your entire game selection?:确定将激进侧作为您的选择吗，请注意这会影响您之后的整个游戏进程

@@ -8,6 +8,12 @@ TagManager:
   - TEXT
   - BETEXT
   - mouseOne
+  - ITEM
+  - POWER
+  - PLACE
+  - RAIN
+  - Regulator
+  - water
   layers:
   - Default
   - TransparentFX
@@ -15,7 +21,7 @@ TagManager:
   - PostProcessing
   - Water
   - UI
-  - 
+  - Building
   - 
   - 
   - 

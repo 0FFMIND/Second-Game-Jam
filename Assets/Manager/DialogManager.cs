@@ -79,7 +79,19 @@ public class DialogManager : Singleton<DialogManager>
                         return;
                     }
                 }
-
+                if (SceneManager.GetActiveScene().name == "LevelOne")
+                {
+                    if (index <= DContent.CNdialogList.Count && LevelOneController.isFinished)
+                    {
+                        LevelOneController.isFinished = false;
+                        StartCoroutine(StartDialog(DContent.CNdialogList, DContent.ENdialogList));
+                    }
+                    else if (!LevelOneController.isFinished)
+                    {
+                        textAnimatorPlayer.SkipTypewriter();
+                        LevelOneController.isFinished = true;
+                    }
+                }
             }
         }
     }

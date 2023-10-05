@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Editor\PathEditor.cs" />
+    <Compile Include="Assets\ExternalTools\RainMaker\Editor\RainMakerEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\ExternalTools\Plugins\Demigiant\DOTween\Editor\DOTweenEditor.dll" />

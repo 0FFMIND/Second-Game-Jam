@@ -6827,7 +6827,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CNcardData: {fileID: 4900000, guid: 7e0ae70b5e998104e88dfa0158f898d5, type: 3}
-  ENcardData: {fileID: 4900000, guid: bb767644bb63eb2469445e52386e4109, type: 3}
+  ENcardData: {fileID: 4900000, guid: 5c6e4ff3e39e43f46a26a5f3e9082f75, type: 3}
   textureList:
   - {fileID: 2800000, guid: 1c56449fb53582947a2a02066494de82, type: 3}
   - {fileID: 2800000, guid: 5cd8b2158b4260843be38c51f8fdcb28, type: 3}

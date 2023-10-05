@@ -1,14 +1,20 @@
-﻿#,Type,Name,Number,Effect
-Angel,Active Card,Stasis Field,1,All monsters' speed reduced by 50% for 3 seconds.
-Angel,Active Card,Quick Repair,2,Restores 200 health to damaged buildings.
-Angel,Active Card,Biological,3,Projection Tower's apply a slow effect over 3 seconds.
-Angel,Active Card,Cleansing Power,4,Energy increases its output by 1.5 times over 3 seconds.
-Angel,Passive Card,Silent Work,5,"All production reduce 10% output, monsters are reduced."
-Angel,Consumable,Defense Center,6,All building health is increased by 1.2 times.
 #,Type,Name,Number,Effect
-Demon,Active Card,Orbital Support,7,Attack outside the map deals 80 damage to a 2x2 area
-Demon,Active Card,Deployment,8,After use the next attack tower you place is free.
-Demon,Active Card,Quick Reload,9,Reload time for turrets is reduced to 70% for 3 seconds.
-Demon,Active Card,Frostbomb,10,"Slows enemies within a 2x2 area, inflicting frost damage"
+Angel,Active Card,Stasis Field,1,All monsters' speed reduced by 80% for 3 seconds.
+Angel,Active Card,Quick Repair,2,Efficient production towers is increased by 1.2 times for 3s.
+Angel,Active Card,Biological,3,Projection Tower's apply a slow effect for 0.3 seconds for 2s.
+Angel,Active Card,Cleansing Power,4,Increases energy output for a designated building by 1.5 times over 3s.
+Angel,Passive Card,Silent Work,5,"All production reduce 10% output, there will be less monsters."
+Angel,Consumable,Defense Center,6,"Building's health is to 120%, monster health is reduced to 90%."
+#,Type,Name,Number,Effect
+Demon,Active Card,Orbital Support,7,Attack outside deals 40 damage every 0.5 s for 2s
+Demon,Active Card,Deployment,8,"After use, the next attack tower you place is free."
+Demon,Active Card,Quick Reload,9,Reload time for turrets is reduced to 70% for 3s .
+Demon,Active Card,Frostbomb,10,inflicting 20 frost damage every 0.5 second for 2s.
 Demon,Passive Card,Ammunition,11,Projection Tower's damage is increased by 1.2 times.
 Demon,Consumable,Sniper Center,12,This center has large attack range and long intervals.
+\,id,Name,Effect,
+Building,1,Solar Energy Generator,"Consumes 40 energy, produces 20 energy every 1.5 seconds.",
+Building,2,Wind Energy Generator,"Consumes 80 energy, produces 30 wind power in every 1.5s.",
+Building,3,Sewage Purification Device,"Consumes 80 energy, clears the area of sewage within 20 seconds..",
+Building,4,Climate Regulator,"Consumes 300 energy, adjust the current climate.",
+Building,5,Normal Projector,"Consumes 80 energy, an attack device used to clear monsters along the way.",

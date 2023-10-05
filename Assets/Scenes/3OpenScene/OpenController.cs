@@ -21,10 +21,15 @@ public class OpenController : MonoBehaviour
             SetAllFalse(upCanvasWhole);
         }else if (SaveManager.Instance.IsOpenEnd && !SaveManager.Instance.IsLevelOneEnd)
         {
+            SetAllFalse(upCanvasWhole);
             SetAllTrue(upCanvasSmall);
             levelNewIntro.SetDeactived();
+        }else if(SaveManager.Instance.IsOpenEnd && SaveManager.Instance.IsLevelOneEnd)
+        {
+            SetAllFalse(upCanvasSmall);
+            levelNewIntro.SetDeactived();
+            SetAllTrue(upCanvasWhole);
         }
-
     }
     private void SetAllFalse(GameObject[] objects)
     {
@@ -46,6 +51,11 @@ public class OpenController : MonoBehaviour
         {
             SetAllTrue(upCanvasSmall);
             levelNewIntro.SetDeactived();
+        }else if(SaveManager.Instance.IsOpenEnd && SaveManager.Instance.IsLevelOneEnd)
+        {
+            SetAllFalse(upCanvasSmall);
+            levelNewIntro.SetDeactived();
+            SetAllTrue(upCanvasWhole);
         }
 
     }

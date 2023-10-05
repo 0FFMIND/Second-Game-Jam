@@ -12,12 +12,14 @@ public class PauseButton : MonoBehaviour
 {
     public GameObject pauseButton;
     public GameObject pausePanel;
+    public GameObject uiPanel;
     public Text sInfo;
     [SerializeField] private GameState gameState;
     //当点击时执行
     private void Start()
     {
         gameState = GameState.normal;
+        uiPanel.SetActive(true);
         pauseButton.SetActive(true);
         pausePanel.SetActive(false);
     }
@@ -59,42 +61,39 @@ public class PauseButton : MonoBehaviour
         UpdateUI();
         Time.timeScale = 0.0f;
         pauseButton.SetActive(false);
+        uiPanel.SetActive(false);
         pausePanel.SetActive(true);
     }
     public void ResumeGameNormal()
     {
-        AudioManager.Instance.PlaySFX(SoundEffect.UISelect);
         gameState = GameState.normal;
         UpdateUI();
     }
     public void ResumeGameSlow()
     {
-        AudioManager.Instance.PlaySFX(SoundEffect.UISelect);
         gameState = GameState.slow;
         UpdateUI();
     }
     public void ResumeGameFast()
     {
-        AudioManager.Instance.PlaySFX(SoundEffect.UISelect);
         gameState = GameState.fast;
         UpdateUI();
 
     }
     public void BackToOpenScene()
     {
-        AudioManager.Instance.PlaySFX(SoundEffect.UISelect);
         Time.timeScale = 1f;
         TransManager.Instance.ChangeScene("OpenScene");
     }
     public void ResumeGameBtn()
     {
-        AudioManager.Instance.PlaySFX(SoundEffect.UISelect);
         EnableUI();
+        uiPanel.SetActive(true);
         pauseButton.SetActive(true);
         pausePanel.SetActive(false);
     }
     public void MouseEnterSFX()
     {
-        AudioManager.Instance.PlaySFX(SoundEffect.UIPoint);
+        AudioManager.Instance.PlaySFX(SoundEffect.Select);
     }
 }

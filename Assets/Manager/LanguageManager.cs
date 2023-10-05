@@ -82,9 +82,9 @@ public class LanguageManager : Singleton<LanguageManager>
             if(obj.GetComponent<Text>() != null)
             {
                 obj.GetComponent<Text>().text = UpdateLanguageText(targetLanguage, obj.GetComponent<Text>().text);
-            }else if(obj.GetComponent<TMP_Text>() != null)
+            }else if(obj.GetComponent<TextMeshProUGUI>() != null)
             {
-                UpdateLanguageText(targetLanguage, obj.GetComponent<TMP_Text>().text);
+                obj.GetComponent<TextMeshProUGUI>().text = UpdateLanguageText(targetLanguage, obj.GetComponent<TextMeshProUGUI>().text);
             }
         }
     }
