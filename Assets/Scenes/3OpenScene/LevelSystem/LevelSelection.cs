@@ -10,6 +10,8 @@ public class LevelSelection : MonoBehaviour
     public LevelSelection[] preLevel;
     public GameObject[] icons;
     public GameObject pollution;
+    public GameObject path;
+    public GameObject infoPoP;
     private void Update()
     {
         if (SaveManager.Instance.IsOpenEnd)
@@ -48,7 +50,7 @@ public class LevelSelection : MonoBehaviour
         isUnlocked = true;
     }
     // 用isUnlocked来设置关卡的可视度/星星颜色
-    private void UpdateLevelImage() 
+    private void UpdateLevelImage()
     {
         if (!isUnlocked) // 当不可解锁的时候星星是不可见的，但是可以见到变灰的图标图案
         {
@@ -62,27 +64,74 @@ public class LevelSelection : MonoBehaviour
                 icon.gameObject.GetComponent<SpriteRenderer>().color = new Color(123f / 255f, 123f / 255f, 123f / 255f, 1f);
             }
         }
-        else if (isUnlocked) // 当解锁了灰的图案就变回原色
+        if (levelName == "LevelTwo")
         {
-            foreach (var icon in icons)
+            if (!isUnlocked)
             {
-                icon.gameObject.GetComponent<SpriteRenderer>().color = Color.white;
+                path.SetActive(false);
+                infoPoP.SetActive(false);
             }
-            if (PlayerPrefs.HasKey(levelName))
+            if (SaveManager.Instance.IsLevelTwoEnd)
             {
-                for (int i = 0; i < PlayerPrefs.GetInt(levelName); i++)
+                isFinished = true;
+            }
+            if (isUnlocked) // 当解锁了灰的图案就变回原色
+            {
+                foreach (var icon in icons)
                 {
-                    pollution.SetActive(false);
-                    stars[i].gameObject.SetActive(true);
-                    stars[i].gameObject.GetComponent<SpriteRenderer>().color = new Color(119f / 255f, 216f / 255f, 1f, 1f);
+                    icon.gameObject.GetComponent<SpriteRenderer>().color = Color.white;
+                }
+                if (SaveManager.Instance.IsLevelTwoEnd)
+                {
+                    for (int i = 0; i < SaveManager.Instance.LevelTwoStar; i++)
+                    {
+                        path.SetActive(true);
+                        pollution.SetActive(false);
+                        stars[i].gameObject.SetActive(true);
+                        stars[i].gameObject.GetComponent<SpriteRenderer>().color = new Color(119f / 255f, 216f / 255f, 1f, 1f);
+                    }
+                }
+                else if (!SaveManager.Instance.IsLevelTwoEnd) // 如果PlayerPrefs没有数值，那就是还没有去玩关卡
+                {
+                    for (int i = 0; i < stars.Length; i++)
+                    {
+                        path.SetActive(false);
+                        stars[i].gameObject.SetActive(true);
+                        stars[i].gameObject.GetComponent<SpriteRenderer>().color = new Color(123f / 255f, 123f / 255f, 123f / 255f, 1f);
+                    }
                 }
             }
-            else if(!PlayerPrefs.HasKey(levelName)) // 如果PlayerPrefs没有数值，那就是还没有去玩关卡
+        }
+        if (levelName == "LevelOne")
+        {
+            if (SaveManager.Instance.IsLevelOneEnd)
             {
-                for (int i = 0; i < stars.Length; i++)
+                isFinished = true;
+            }
+            if (isUnlocked) // 当解锁了灰的图案就变回原色
+            {
+                foreach (var icon in icons)
                 {
-                    stars[i].gameObject.SetActive(true);
-                    stars[i].gameObject.GetComponent<SpriteRenderer>().color = new Color(123f / 255f, 123f / 255f, 123f /255f, 1f);
+                    icon.gameObject.GetComponent<SpriteRenderer>().color = Color.white;
+                }
+                if (SaveManager.Instance.IsLevelOneEnd)
+                {
+                    for (int i = 0; i < SaveManager.Instance.LevelOneStar; i++)
+                    {
+                        pollution.SetActive(false);
+                        stars[i].gameObject.SetActive(true);
+                        stars[i].gameObject.GetComponent<SpriteRenderer>().color = new Color(119f / 255f, 216f / 255f, 1f, 1f);
+                        path.SetActive(true);
+                    }
+                }
+                else if (!SaveManager.Instance.IsLevelOneEnd) // 如果PlayerPrefs没有数值，那就是还没有去玩关卡
+                {
+                    for (int i = 0; i < stars.Length; i++)
+                    {
+                        path.SetActive(false);
+                        stars[i].gameObject.SetActive(true);
+                        stars[i].gameObject.GetComponent<SpriteRenderer>().color = new Color(123f / 255f, 123f / 255f, 123f / 255f, 1f);
+                    }
                 }
             }
         }

@@ -10,7 +10,9 @@ public class SkillButton : MonoBehaviour, IPointerClickHandler
     public SkillData skillData;
     public void OnPointerClick(PointerEventData eventData)
     {
+        AudioManager.Instance.PlaySFX(SoundEffect.UISelect);
         skillManager.activeSkill = skillData;
         skillManager.DisplaySkillInfo();
+        
     }
 }

@@ -19,15 +19,41 @@ public class BuildingManager : MonoBehaviour
     {
         Instance = this;
         buildingTypeList = Resources.Load<BuildingTypeListSO>("BuildingTypeList");
-        activeBuildingType = buildingTypeList.list[0];
     }
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0) && canPlace)
+        if(Input.GetMouseButtonDown(0) && canWaterPlace && activeBuildingType == buildingTypeList.list[3])
+        {
+            if (CanSpawnBuilding(activeBuildingType, GetMouseWorldPosition()))
+            {
+                if (ResourceManager.Instance.CanAfford(activeBuildingType.constructResourceArray))
+                {
+                    ResourceManager.Instance.SpendResource(activeBuildingType.constructResourceArray);
+                    Instantiate(activeBuildingType.prefab, GetMouseWorldPosition(), Quaternion.identity);
+                }
+            }
+
+
+        }
+        if (Input.GetMouseButtonDown(0) && canPlace && activeBuildingType != buildingTypeList.list[3])
         {
             if (activeBuildingType != null && CanSpawnBuilding(activeBuildingType, GetMouseWorldPosition()))
             {
-                Instantiate(activeBuildingType.prefab, GetMouseWorldPosition(), Quaternion.identity);
+                if (ResourceManager.Instance.CanAfford(activeBuildingType.constructResourceArray))
+                {
+                    ResourceManager.Instance.SpendResource(activeBuildingType.constructResourceArray);
+                    if(activeBuildingType == buildingTypeList.list[5] && GameObject.FindGameObjectWithTag("defenseholder") == null)
+                    {
+                        Instantiate(activeBuildingType.prefab, GetMouseWorldPosition(), Quaternion.identity);
+                        return;
+                    }
+                    if(activeBuildingType == buildingTypeList.list[6] && GameObject.FindGameObjectWithTag("shootcenter") != null)
+                    {
+                        Instantiate(activeBuildingType.prefab, GetMouseWorldPosition(), Quaternion.identity);
+                        return;
+                    }
+                    Instantiate(activeBuildingType.prefab, GetMouseWorldPosition(), Quaternion.identity);
+                }
             }
         }
     }
@@ -46,6 +72,10 @@ public class BuildingManager : MonoBehaviour
     {
         canPlace = _isOK;
     }
+    public void InWaterSpace(bool _isWater)
+    {
+        canWaterPlace = _isWater;
+    }
     private bool CanSpawnBuilding(BuildingTypeSO buildingType, Vector3 position)
     {
         List<Collider2D> collider2DList = new List<Collider2D>();
@@ -53,7 +83,7 @@ public class BuildingManager : MonoBehaviour
         Collider2D[] collider2DArray = Physics2D.OverlapCircleAll(position + (Vector3)circleCollider2D.offset, circleCollider2D.radius * 4);
         foreach (var collider in collider2DArray)
         {    
-            if(collider.tag != "PLACE" && collider.tag != "water")
+            if(collider.tag != "PLACE" && collider.tag != "water" && collider.tag != "ignore")
             {
                 collider2DList.Add(collider);
             }

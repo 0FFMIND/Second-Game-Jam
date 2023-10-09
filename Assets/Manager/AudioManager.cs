@@ -12,6 +12,10 @@ public enum SoundEffect
     UIPoint,
     Beep,
     CardPlace,
+    Coins,
+    Hit,
+    Shoot,
+    StrongShoot,
 }
 public enum BackgroundMusic
 {

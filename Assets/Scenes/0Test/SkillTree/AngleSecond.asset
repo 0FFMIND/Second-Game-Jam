@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3337ff8ad8be3104fa79b5b7cf77e234, type: 3}
+  m_Name: AngleSecond
+  m_EditorClassIdentifier: 
+  skillID: 3
+  skillNameCN: "\u51C0\u5316\u7CFB\u7EDF"
+  skillNameEN: Purification System
+  skillDetailCN: "\u4F7F\u5168\u5C40\u51C0\u5316\u8BBE\u5907\u8017\u65F6\u51CF\u5C1120%\u7684\u65F6\u95F4"
+  skillDetailEN: Reduce global purification equipment time by 20%.
+  isUnlocked: 0
+  preSkills:
+  - {fileID: 11400000, guid: b4d6bee9cca642a4d8da00a5bf7b4c67, type: 2}

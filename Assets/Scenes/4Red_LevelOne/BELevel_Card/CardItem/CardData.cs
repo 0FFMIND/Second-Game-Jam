@@ -15,7 +15,6 @@ public class CardData : MonoBehaviour
     private void Start()
     {
         path = Application.persistentDataPath + "/playerData.csv";
-        cardStorePref.LoadCardData();
     }
     public void SavePlayerData()
     {

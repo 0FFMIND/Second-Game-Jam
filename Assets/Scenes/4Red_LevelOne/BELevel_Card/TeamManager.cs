@@ -59,6 +59,8 @@ public class TeamManager : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     {
         AudioManager.Instance.PlaySFX(SoundEffect.UISelect);
         SaveManager.Instance.SetTeam(num);
+        SaveManager.Instance.SaveLevel();
+        SaveManager.Instance.LoadLevel();
     }
 }
 

@@ -17,5 +17,6 @@ public class CursorManager : Singleton<CursorManager>
         cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 #endif
         transform.position = new Vector3(cursorPos.x, cursorPos.y, 1f);
+
     }
 }

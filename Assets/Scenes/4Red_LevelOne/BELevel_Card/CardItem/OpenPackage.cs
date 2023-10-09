@@ -5,13 +5,17 @@ using UnityEngine;
 public class OpenPackage : MonoBehaviour
 {
     public GameObject cardPrefab;
-    public CardStore cardStore;
+    public Cardstr cardStore;
+    public CardStorePref cardStorePref;
     public Transform cardPool;
-    public CardData cardData;
     public List<GameObject> cardTempStore;
     public void OnClickOpen()
     {
         cardTempStore.Clear();
+        if(cardStorePref != null)
+        {
+            cardStorePref.LoadCardData();
+        }
         AudioManager.Instance.PlaySFX(SoundEffect.CardPlace);
         // ÷ÿ≥È«∞«Âø’ø®≈∆
         if (cardPool.childCount != 0)
@@ -22,12 +26,16 @@ public class OpenPackage : MonoBehaviour
                 Destroy(single.gameObject);
             }
         }
-        cardStore.LoadCardData();
         for (int i = 0; i < 5; i++)
-        {
-            GameObject newCard = GameObject.Instantiate(cardPrefab, cardPool);
+        {            GameObject newCard = GameObject.Instantiate(cardPrefab, cardPool);
             cardTempStore.Add(newCard);
-            newCard.GetComponent<CardDisplay>().card = cardStore.RandomCard();
+            if(cardStorePref != null)
+            {
+                newCard.GetComponent<CardDisplay>().card = cardStorePref.RandomCard();
+            }else if(cardStore != null)
+            {
+                newCard.GetComponent<CardDisplay>().card = cardStore.RandomCard();
+            }
         }
     }
 }

@@ -18,6 +18,15 @@ EditorBuildSettings:
     path: Assets/Scenes/4Red_LevelOne/BELevel_Card/BELevelOne.unity
     guid: 8c2cc0b0d8e735848935fc8f3b0c6734
   - enabled: 1
+    path: Assets/Scenes/4Red_LevelOne/BBLevelOne.unity
+    guid: 5a33b7143a2f08240b5579bfc61daca8
+  - enabled: 1
     path: Assets/Scenes/4Red_LevelOne/LevelOne.unity
     guid: ac315df868ff01043b2fa0e9a2ebcc71
+  - enabled: 1
+    path: Assets/Scenes/4Red_LevelOne/BELevelTwo.unity
+    guid: 17e0062817e12d840a741b96ad917b99
+  - enabled: 1
+    path: Assets/Scenes/4Red_LevelOne/LevelTwo.unity
+    guid: 1f9f3a53c2f33744b9685acde7ae9625
   m_configObjects: {}

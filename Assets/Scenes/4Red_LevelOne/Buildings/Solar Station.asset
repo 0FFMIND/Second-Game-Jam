@@ -17,3 +17,6 @@ MonoBehaviour:
   resourceGeneratorData:
     timerMax: 4
     resourceType: {fileID: 11400000, guid: 05044a5f06e0cbb4abc034b254f51cf7, type: 2}
+  constructResourceArray:
+    resourceType: {fileID: 11400000, guid: 05044a5f06e0cbb4abc034b254f51cf7, type: 2}
+    amonut: 40

@@ -123,7 +123,7 @@ public class BELevelText : MonoBehaviour
         }
         if (SaveManager.Instance.IsPoolFinshed && introCG[1].activeSelf && firstFinish && Input.GetMouseButtonDown(0))
         {
-            TransManager.Instance.ChangeScene("LevelOne");
+            TransManager.Instance.ChangeScene("BBLevelOne");
         }
         if (DialogManager.Instance.isIntroFinished && firstFinish && !teamFinish && !SaveManager.Instance.IsPoolFinshed)
         {

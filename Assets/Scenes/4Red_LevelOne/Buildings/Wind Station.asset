@@ -15,5 +15,8 @@ MonoBehaviour:
   nameString: WindStation
   prefab: {fileID: 7003259561803015458, guid: 5f78c51972c7ceb49904e58aecf61e89, type: 3}
   resourceGeneratorData:
-    timerMax: 3
+    timerMax: 2.5
     resourceType: {fileID: 11400000, guid: 05044a5f06e0cbb4abc034b254f51cf7, type: 2}
+  constructResourceArray:
+    resourceType: {fileID: 11400000, guid: 05044a5f06e0cbb4abc034b254f51cf7, type: 2}
+    amonut: 80

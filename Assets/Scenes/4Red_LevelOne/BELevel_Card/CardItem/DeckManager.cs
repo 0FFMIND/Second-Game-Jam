@@ -35,7 +35,7 @@ public class DeckManager : MonoBehaviour
     public void UpdateDeck()
     {
         isDeckFinished = false;
-        if (libraryPanel.childCount >= 2) // 才能进行操作
+        if (libraryPanel.childCount > 2) // 才能进行操作
         {
             for (int i = 0; i < libraryPanel.childCount; i++)
             {

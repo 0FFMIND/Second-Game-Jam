@@ -10,11 +10,17 @@ public class PlaceArea : MonoBehaviour
     private void OnMouseEnter()
     {
         isOK = true;
-        BuildingManager.Instance.InPlaceSpace(isOK);
+        if (BuildingManager.Instance != null)
+        {
+            BuildingManager.Instance.InPlaceSpace(isOK);
+        }
     }
     private void OnMouseExit()
     {
         isOK = false;
-        BuildingManager.Instance.InPlaceSpace(isOK);
+        if (BuildingManager.Instance != null)
+        {
+            BuildingManager.Instance.InPlaceSpace(isOK);
+        }
     }
 }

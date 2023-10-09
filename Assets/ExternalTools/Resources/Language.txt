@@ -34,9 +34,10 @@ Not now:我再想想
 2 x:2 倍速
 Return:返回星球
 Talent:天赋提升
-Skills:技能装备
-Overview:卡片总览
+Skills:策略替换
 Red Rock 1-1:红岩星 关卡1-1
+Red Rock 1-2:红岩星 关卡1-2
+Your Enegy Crystals-:您获得的能量源总数-
 -------------Change Speed------------:---------------速度修改--------------
 --------------Play Options------------:---------------游玩选择--------------
 Confirm:玩家确认
@@ -50,6 +51,16 @@ Select your choices and put in deck.:请将您选择的卡牌选三张放入议�
 Current Proposals:本局议案
 Weather:当前气候
 Sunshower:太阳雨
+Succeed:恭喜通关
+Aggressive:激进
+Gentle:温和
+Replace:替换手牌
+Current Talent-:当前选择天赋-
+Description-:描述-
+This side talent costs 4 crystals:升级该侧天赋，所花费4能量晶体
+This side talent costs 2 crystals:升级该侧天赋，所花费2能量晶体
+If current strategy is gentle, it's easier to upgrade the passive of the gentle side and more difficult to aggressive side and vice versa:请注意，如果当前策略为温和侧，升级温和侧的被动较为容易，而升级激进侧的被动较为困难，激进侧同理
+Please note that drawing cards costs 1 energy crystal per draw and replacement hands are free:您当前的卡牌库为右侧，请注意抽取卡牌每次消耗1能量晶体，不可退还，而替换手牌是免费的，但请谨慎做好决定
 Your proposal system is inadequate. Please ensure three proposals in deck:经系统检查您的本局议案系统不足，请确保议案系统存在三张议案
 Sure to choose the gentle side as your entire game selection?:确定将温和侧作为您的选择吗，请注意这会影响您之后的整个游戏进程
 Sure to choose the aggressive side as your entire game selection?:确定将激进侧作为您的选择吗，请注意这会影响您之后的整个游戏进程

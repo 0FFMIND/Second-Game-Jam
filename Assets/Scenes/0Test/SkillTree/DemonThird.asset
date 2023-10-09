@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3337ff8ad8be3104fa79b5b7cf77e234, type: 3}
+  m_Name: DemonThird
+  m_EditorClassIdentifier: 
+  skillID: 6
+  skillNameCN: "\u9884\u6848\u519B\u68B0"
+  skillNameEN: Pre-plan Ordnance
+  skillDetailCN: "\u6BCF\u4E00\u5C40\u7684\u521D\u59CB\u80FD\u91CF\u4ECE40\u63D0\u5347\u4E3A100"
+  skillDetailEN: The initial power of each round is increased from 40 to 100
+  isUnlocked: 0
+  preSkills:
+  - {fileID: 11400000, guid: f3d17855c46859a4d872e52b679ab563, type: 2}
+  - {fileID: 11400000, guid: 2ed1142888548c148b30fb5dfc9bf7a1, type: 2}

@@ -3,10 +3,11 @@ using UnityEngine.UI;
 
 public class IntroController : MonoBehaviour
 {
+    public static IntroController Instance;
     public GameObject introSave;
     public GameObject introText;
-    bool isSaveEnd = false;
-    bool isInit = false;
+    public bool isSaveEnd = false;
+    public static bool isInit = false;
     public DialogContent BeforeIntroDialog,
                          IntroDialog;
     public Image[] storyboards;
@@ -41,18 +42,9 @@ public class IntroController : MonoBehaviour
         {
             if (DialogManager.Instance.isIntroFinished)//用dialogManager来传信号
             {
-                if (!isSaveEnd)
-                {
-                    isSaveEnd = true;
-                    SaveManager.Instance.SaveLevel();
-                }
-            }
-            if (isSaveEnd)
-            {
                 introText.SetActive(true);
                 introSave.SetActive(false);
                 DialogManager.Instance.Init("Intro", IntroDialog);
-                isSaveEnd = false;
                 isInit = true;
             }
         }
@@ -67,6 +59,9 @@ public class IntroController : MonoBehaviour
         }
         if (DialogManager.Instance.isBEfinished)
         {
+            SaveManager.Instance.IsIntroEnd = true;
+            SaveManager.Instance.SaveLevel();
+            SaveManager.Instance.LoadLevel();
             TransManager.Instance.ChangeScene("OpenScene");
         }
 

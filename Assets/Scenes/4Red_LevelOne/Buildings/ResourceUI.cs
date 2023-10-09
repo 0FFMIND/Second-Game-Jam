@@ -17,6 +17,10 @@ public class ResourceUI : MonoBehaviour
         ResourceManager.Instance.OnResourceAmountChanged += ResourceManager_OnResourceAmountChanged;
         UpdateResourceAmount();
     }
+    private void Update()
+    {
+        UpdateResourceAmount();
+    }
 
     private void ResourceManager_OnResourceAmountChanged(object sender, System.EventArgs e)
     {
@@ -27,13 +31,16 @@ public class ResourceUI : MonoBehaviour
     {
         foreach (ResourceTypeSO resourceType in resourceTypeList.list)
         {
-            int resourceAmount = ResourceManager.Instance.GetResourceAmount(resourceType);
-            GameObject powerUGUI = GameObject.FindWithTag("POWER");
-            if (!resourceTypeTMPDictionary.ContainsKey(resourceType))
+            if(resourceType.name == "Power")
             {
-            resourceTypeTMPDictionary.Add(resourceType, powerUGUI.GetComponent<TextMeshProUGUI>());
+                int resourceAmount = ResourceManager.Instance.GetResourceAmount(resourceType);
+                GameObject powerUGUI = GameObject.FindWithTag("POWER");
+                if (!resourceTypeTMPDictionary.ContainsKey(resourceType))
+                {
+                    resourceTypeTMPDictionary.Add(resourceType, powerUGUI.GetComponent<TextMeshProUGUI>());
+                }
+                resourceTypeTMPDictionary[resourceType].text = resourceAmount.ToString();
             }
-            resourceTypeTMPDictionary[resourceType].text = resourceAmount.ToString();
         }
     }
 }

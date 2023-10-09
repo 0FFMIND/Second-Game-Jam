@@ -10338,9 +10338,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardPrefab: {fileID: 7548547318571737241, guid: cb2a906628add5d4891e22f8a79043ca, type: 3}
-  cardStore: {fileID: 962975534}
+  cardStore: {fileID: 0}
+  cardStorePref: {fileID: 8851941899099644362, guid: 7f440b2f08c94804aa165144fd5ad1a7, type: 3}
   cardPool: {fileID: 83353286}
-  cardData: {fileID: 1126547970}
   cardTempStore: []
 --- !u!21 &1423228280
 Material:

@@ -7,9 +7,9 @@ Angel,Passive Card,Silent Work,5,"All production reduce 10% output, there will b
 Angel,Consumable,Defense Center,6,"Building's health is to 120%, monster health is reduced to 90%."
 #,Type,Name,Number,Effect
 Demon,Active Card,Orbital Support,7,Attack outside deals 40 damage every 0.5 s for 2s
-Demon,Active Card,Deployment,8,"After use, the next attack tower you place is free."
+Demon,Active Card,Deployment,8,After use the next attack tower you place is free.
 Demon,Active Card,Quick Reload,9,Reload time for turrets is reduced to 70% for 3s .
-Demon,Active Card,Frostbomb,10,inflicting 20 frost damage every 0.5 second for 2s.
+Demon,Active Card,Frostbomb,10,Inflicting 20 frost damage every 0.5 second for 2s.
 Demon,Passive Card,Ammunition,11,Projection Tower's damage is increased by 1.2 times.
 Demon,Consumable,Sniper Center,12,This center has large attack range and long intervals.
 \,id,Name,Effect,

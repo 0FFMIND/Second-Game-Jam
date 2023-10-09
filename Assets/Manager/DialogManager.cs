@@ -17,6 +17,7 @@ public class DialogManager : Singleton<DialogManager>
     public bool isIntroFinished = false;
     public int index;
     public bool isTyping;
+    private bool onlyOnce = false;
     public void UnInit()
     {
         textObject = GameObject.FindWithTag(name == "beforeIntro" ? "BETEXT" : "TEXT");
@@ -51,7 +52,15 @@ public class DialogManager : Singleton<DialogManager>
                 }
                 if (SceneManager.GetActiveScene().name == "IntroScene")
                 {
-                    if (index <= DContent.CNdialogList.Count && IntroController.isFinished)
+                    if(index == 2 && !IntroController.isInit && IntroController.isFinished)
+                    {
+                        isIntroFinished = true;
+                    }
+                    if(index == 5 && IntroController.isFinished)
+                    {
+                        isBEfinished = true;
+                    }
+                    else if (IntroController.isFinished)
                     {
                         IntroController.isFinished = false;
                         StartCoroutine(StartDialog(DContent.CNdialogList, DContent.ENdialogList));
@@ -81,12 +90,12 @@ public class DialogManager : Singleton<DialogManager>
                 }
                 if (SceneManager.GetActiveScene().name == "LevelOne")
                 {
-                    if (index <= DContent.CNdialogList.Count && LevelOneController.isFinished)
+                    if (index <= DContent.CNdialogList.Count && LevelOneController.isFinished && LevelOneController.onlyOnce)
                     {
                         LevelOneController.isFinished = false;
                         StartCoroutine(StartDialog(DContent.CNdialogList, DContent.ENdialogList));
                     }
-                    else if (!LevelOneController.isFinished)
+                    else if (!LevelOneController.isFinished && LevelOneController.onlyOnce)
                     {
                         textAnimatorPlayer.SkipTypewriter();
                         LevelOneController.isFinished = true;
@@ -115,7 +124,20 @@ public class DialogManager : Singleton<DialogManager>
             textAnimatorPlayer.waitForNormalChars = 0.04f;
             dialogs = enDialogs;
         }
-        if (index < dialogs.Count)
+        if (SceneManager.GetActiveScene().name == "IntroScene" && isIntroFinished)
+        {
+            textAnimatorPlayer.ShowText(dialogs[index]);
+            index++;
+        }
+        else if (SceneManager.GetActiveScene().name == "IntroScene" && !IntroController.isInit)
+        {
+            if (index <= 2 && !isIntroFinished)
+            {
+                textAnimatorPlayer.ShowText(dialogs[index]);
+                index++;
+            }
+        }
+        else if (index < dialogs.Count)
         {
             textAnimatorPlayer.ShowText(dialogs[index]);
             index++;
@@ -123,10 +145,6 @@ public class DialogManager : Singleton<DialogManager>
         else if (index >= dialogs.Count && !isIntroFinished)
         {
             isIntroFinished = true;
-        }
-        else if (index >= dialogs.Count - 2 && !isBEfinished)
-        {
-            isBEfinished = true;
         }
 
         yield return null;

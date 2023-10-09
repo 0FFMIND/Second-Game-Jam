@@ -20,6 +20,7 @@ public class CardStorePref : Singleton<CardStorePref>
     public Dictionary<int, string> loadDspBuildings = new Dictionary<int, string>();
     public Dictionary<int, string> loadNameBuildings = new Dictionary<int, string>();
     //取卡
+    
     public void GetCard()
     {
         if(CardLibrary.Count == 0)
@@ -31,9 +32,9 @@ public class CardStorePref : Singleton<CardStorePref>
             loadDspBuildings.Clear();loadNameBuildings.Clear();
             LoadBuildings();
         }
-        if(loadPlayerCards.Count == 0 || loadStateCard.Count == 0)
+        if(loadPlayerCards.Count == 0 || loadStateCard.Count == 0 || stateCard.Count == 0)
         {
-            loadStateCard.Clear();loadPlayerCards.Clear();
+            loadStateCard.Clear();loadPlayerCards.Clear();stateCard.Clear();
             string path = Application.persistentDataPath + "/playerData.csv";
             string[] storeDataRow = File.ReadAllLines(path);
             foreach (var data in storeDataRow)
@@ -77,6 +78,7 @@ public class CardStorePref : Singleton<CardStorePref>
     {
         AcardList.Clear();
         DcardList.Clear();
+        CardLibrary.Clear();
         string[] dataRow;
         if (LanguageManager.Instance.CurrentLanguage == LanguageOption.Chinese)
         {
@@ -102,37 +104,7 @@ public class CardStorePref : Singleton<CardStorePref>
                 int id = int.Parse(rowArray[3]);
                 string cardEffet = rowArray[4];
                 Texture texture = textureList[id - 1];
-                //决定level
-                try
-                {
-                    string path = Application.persistentDataPath + "/playerData.csv";
-                    loadPlayerCards = new Dictionary<int, int>();
-                    string[] storeDataRow = File.ReadAllLines(path);
-                    if (storeDataRow.Length == 0)
-                    {
-                        level = 1;
-                        state = CardState.Store;
-                    }
-                    else
-                    {
-                        foreach (var data in storeDataRow)
-                        {
-                            string[] array = data.Split(',');
-                            if (array[0] == "card")
-                            {
-                                loadPlayerCards.Add(int.Parse(rowArray[1]), int.Parse(rowArray[2]));
-                                stateCard.Add(int.Parse(rowArray[1]), (CardState)int.Parse(rowArray[3]));
-                            }
-                        }
-                        level = loadPlayerCards[id];
-                        state = stateCard[id];
-                    }
-                }
-                catch(Exception e)
-                {
-
-                }
-
+               
                 Color cardPanelColor = Color.white;
                 Color cardNameColor = Color.cyan;
                 AngelCard angelCard = new AngelCard(id, level, state, cardName, cardType, cardEffet, texture, cardPanelColor, cardNameColor);
@@ -148,36 +120,7 @@ public class CardStorePref : Singleton<CardStorePref>
                 int id = int.Parse(rowArray[3]);
                 string cardEffet = rowArray[4];
                 Texture texture = textureList[id - 1];
-                //决定level
-                try
-                {
-                    string path = Application.persistentDataPath + "/playerData.csv";
-                    string[] storeDataRow = File.ReadAllLines(path);
-                    if (storeDataRow.Length == 0)
-                    {
-                        level = 1;
-                        state = CardState.Store;
-                    }
-                    else
-                    {
-                        foreach (var data in storeDataRow)
-                        {
-                            string[] array = data.Split(',');
-                            if (array[0] == "card")
-                            {
-                                loadPlayerCards.Add(int.Parse(rowArray[1]), int.Parse(rowArray[2]));
-                                stateCard.Add(int.Parse(rowArray[1]), (CardState)int.Parse(rowArray[3]));
-                            }
-                        }
-                        level = loadPlayerCards[id];
-                        state = stateCard[id];
-                    }
-                }
-                catch(Exception e)
-                {
-
-                }
-
+               
                 Color cardPanelColor = Color.yellow;
                 Color cardNameColor = Color.yellow;
                 DemonCard demonCard = new DemonCard(id, level, state, cardName, cardType, cardEffet, texture, cardPanelColor, cardNameColor);

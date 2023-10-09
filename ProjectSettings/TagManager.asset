@@ -14,6 +14,21 @@ TagManager:
   - RAIN
   - Regulator
   - water
+  - solar
+  - windstation
+  - watercollector
+  - base
+  - cursor
+  - turret
+  - sell
+  - Enemy
+  - sellCanvas
+  - Fx
+  - defenseholder
+  - collector
+  - shootcenter
+  - ignore
+  - skill
   layers:
   - Default
   - TransparentFX
@@ -22,8 +37,8 @@ TagManager:
   - Water
   - UI
   - Building
-  - 
-  - 
+  - Ignore
+  - Enemy
   - 
   - 
   - 

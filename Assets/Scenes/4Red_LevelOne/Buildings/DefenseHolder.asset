@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b4fa6563ae58545941c9ccd1abef9b, type: 3}
+  m_Name: DefenseHolder
+  m_EditorClassIdentifier: 
+  nameString: DefenseHolder
+  prefab: {fileID: 2502098779010760769, guid: 3f75f29dafaefde4fbdda7452f2601d3, type: 3}
+  resourceGeneratorData:
+    timerMax: 4
+    resourceType: {fileID: 11400000, guid: 6fb9792da75d30745aeb6bd2e8d77c7f, type: 2}
+  constructResourceArray:
+    resourceType: {fileID: 11400000, guid: 6fb9792da75d30745aeb6bd2e8d77c7f, type: 2}
+    amonut: 0

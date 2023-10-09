@@ -57,18 +57,23 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\一级万能投射器底座序列帧动画\Turret.cs" />
+    <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\ResourceGeneratorOverlay.cs" />
     <Compile Include="Assets\Manager\SaveSystem\JsonSerialiser.cs" />
     <Compile Include="Assets\Manager\LanguageManager.cs" />
+    <Compile Include="Assets\Scenes\4Red_LevelOne\HealthBar.cs" />
+    <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\WaterArea.cs" />
     <Compile Include="Assets\Scenes\1TitleScene\MainMenu.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\CardItem\Card.cs" />
+    <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\一级万能投射器底座序列帧动画\ObjectPooler.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\CardItem\CardData.cs" />
     <Compile Include="Assets\Scenes\1TitleScene\SelectButton.cs" />
+    <Compile Include="Assets\Scenes\3OpenScene\Cardstr.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Grid\GridBuildSystem.cs" />
     <Compile Include="Assets\Scenes\1TitleScene\DeveloperMenu.cs" />
     <Compile Include="Assets\Scenes\0Test\SkillTree\SkillManager.cs" />
     <Compile Include="Assets\Scenes\1TitleScene\NullMenu.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\ResourceManager.cs" />
-    <Compile Include="Assets\Scenes\4Red_LevelOne\Enemy\EnemyHealth.cs" />
     <Compile Include="Assets\Scenes\3OpenScene\LevelSystem\LevelNewIntro.cs" />
     <Compile Include="Assets\Scenes\1TitleScene\ButtonEvent.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\ResourceGenerator.cs" />
@@ -84,14 +89,14 @@
     <Compile Include="Assets\Scenes\4Red_LevelOne\Enemy\PathCreator.cs" />
     <Compile Include="Assets\Manager\DialogManager.cs" />
     <Compile Include="Assets\ExternalTools\RainMaker\Demo\DemoScriptStartRainOnSpaceBar.cs" />
-    <Compile Include="Assets\Scenes\4Red_LevelOne\Enemy\EnemySpawner.cs" />
+    <Compile Include="Assets\Scenes\4Red_LevelOne\ToLevel.cs" />
     <Compile Include="Assets\Scenes\0Test\SkillTree\SkillData.cs" />
     <Compile Include="Assets\Manager\DialogContent.cs" />
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\Transition Orders\TransitionOrderSideWipe.cs" />
     <Compile Include="Assets\Scenes\3OpenScene\OpenController.cs" />
     <Compile Include="Assets\ExternalTools\RainMaker\Prefab\RainCollision.cs" />
+    <Compile Include="Assets\Scenes\3OpenScene\TextChange.cs" />
     <Compile Include="Assets\ExternalTools\Sci-Fi UI\Demo_Assets\scripts\GUI_Demo.cs" />
-    <Compile Include="Assets\Scenes\4Red_LevelOne\CurrencySystem.cs" />
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\PlaymakerActions\TransitionBlocksLoadLevel.cs" />
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\Transition Blocks\TransitionBlock.cs" />
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\Transition Orders\TransitionOrderRandom.cs" />
@@ -100,6 +105,9 @@
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\Transition Orders\TransitionOrderSpiral.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\CardItem\OpenPackage.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\TeamManager.cs" />
+    <Compile Include="Assets\Scenes\3OpenScene\PowerChange.cs" />
+    <Compile Include="Assets\ExternalTools\RFX_Resources\Scripts\Destroy.cs" />
+    <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\CardItem\SkillGhost.cs" />
     <Compile Include="Assets\Manager\SaveSystem\FileAccess.cs" />
     <Compile Include="Assets\Manager\AudioManager.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\CardItem\DeckManager.cs" />
@@ -113,17 +121,22 @@
     <Compile Include="Assets\Scenes\1TitleScene\SettingBtnCust.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\DropDownLang.cs" />
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\PlaymakerActions\TransitionBlocksLoadLevelNum.cs" />
+    <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\ResourceAmonut.cs" />
     <Compile Include="Assets\Manager\SaveSystem\SaveSettings.cs" />
     <Compile Include="Assets\Manager\TransManager.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\BuildingTypeSelectUI.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\LevelOneController.cs" />
+    <Compile Include="Assets\ExternalTools\StylizedExplosionPack\scripts\destroyMe.cs" />
     <Compile Include="Assets\Manager\EventManager.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\BuildingTypeListSO.cs" />
     <Compile Include="Assets\Scenes\2IntroScene\IntroController.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\ResourceUI.cs" />
+    <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\一级万能投射器底座序列帧动画\Projectile.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\BuildingTypeHolder.cs" />
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Demo\RandomCameraColor.cs" />
     <Compile Include="Assets\Manager\GameManager.cs" />
+    <Compile Include="Assets\ExternalTools\StylizedExplosionPack\scripts\particleColorChanger.cs" />
+    <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\一级万能投射器底座序列帧动画\DamageText.cs" />
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\Transitioner.cs" />
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\Transition Orders\TransitionOrderBase.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\BuildingGhost.cs" />
@@ -133,10 +146,15 @@
     <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\CardItem\CardStore.cs" />
     <Compile Include="Assets\Scenes\0Test\RaySystem\Security.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\ResourceTypeSO.cs" />
+    <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\HandleCollision.cs" />
+    <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\一级万能投射器底座序列帧动画\Spawner.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\ResourceTypeListSO.cs" />
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\Transition Orders\TransitionOrderCheckerBoard.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\ArrowController.cs" />
+    <Compile Include="Assets\ExternalTools\StylizedExplosionPack\scripts\instantiateEffectCaller.cs" />
     <Compile Include="Assets\Manager\Singleton.cs" />
+    <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\一级万能投射器底座序列帧动画\MachineProjectile.cs" />
+    <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\CardItem\ReadId.cs" />
     <Compile Include="Assets\ExternalTools\RainMaker\Demo\DemoScript.cs" />
     <Compile Include="Assets\ExternalTools\RainMaker\Prefab\RainScript.cs" />
     <Compile Include="Assets\Scenes\3OpenScene\LevelSystem\LevelSelection.cs" />
@@ -145,6 +163,11 @@
     <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\CardItem\CardDisplay.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Enemy\Enemy.cs" />
     <Compile Include="Assets\ExternalTools\RainMaker\Demo\DemoScript2D.cs" />
+    <Compile Include="Assets\Scenes\4Red_LevelOne\HealthSystem.cs" />
+    <Compile Include="Assets\Scenes\4Red_LevelOne\Building.cs" />
+    <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\一级万能投射器底座序列帧动画\TankTurretProjectile.cs" />
+    <Compile Include="Assets\ExternalTools\RFX_Resources\Scripts\ParticleScaler.cs" />
+    <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\一级万能投射器底座序列帧动画\EnemyFX.cs" />
     <Compile Include="Assets\Manager\CursorManager.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\PauseButton.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\CardItem\ZoomUI.cs" />
@@ -154,15 +177,17 @@
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\TransitionSetup.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Enemy\PathBase.cs" />
     <Compile Include="Assets\Scenes\1TitleScene\SettingMenu.cs" />
+    <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\一级万能投射器底座序列帧动画\TurretProjectile.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\CardItem\ChangeText.cs" />
+    <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\CardItem\DeckManage.cs" />
     <Compile Include="Assets\Scenes\0Test\DragSystem\CanDrag.cs" />
     <Compile Include="Assets\ExternalTools\Sci-fi Buttons and Panels\Sci-fi Components Resources\Scripts\JustRotate.cs" />
     <Compile Include="Assets\Scenes\1TitleScene\ContinueMenu.cs" />
-    <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\SkillShoot.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\ResourceGeneratorData.cs" />
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\Transition Orders\TransitionEnumRandomizer.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\BuildingManager.cs" />
     <Compile Include="Assets\Scenes\1TitleScene\TitleMenuBase.cs" />
+    <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\BuildingDemolish.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\ExternalTools\Febucci\Text Animator\Example\Font\OFL.txt" />
@@ -179,9 +204,11 @@
     <None Include="Assets\ExternalTools\PostProcessing\Shaders\API\OpenGL.hlsl" />
     <None Include="Assets\ExternalTools\PostProcessing\Shaders\API\D3D12.hlsl" />
     <None Include="Assets\ExternalTools\Resources\Plugins\jillejr.newtonsoft.json-for-unity@12.0.301\Plugins\Newtonsoft.Json Editor\Newtonsoft.Json.dll" />
+    <None Include="Assets\ExternalTools\StylizedExplosionPack\Tips &amp; Documentations.txt" />
     <None Include="Assets\ExternalTools\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\ExternalTools\Resources\Plugins\jillejr.newtonsoft.json-for-unity@12.0.301\Plugins\Newtonsoft.Json AOT\Newtonsoft.Json.dll" />
     <None Include="Assets\ExternalTools\Resources\Plugins\jillejr.newtonsoft.json-for-unity@12.0.301\Plugins\Newtonsoft.Json Portable\Newtonsoft.Json.xml" />
+    <None Include="Assets\ExternalTools\RFX_Resources\Scripts\HowtoPlay.txt" />
     <None Include="Assets\ExternalTools\PostProcessing\Shaders\Colors.hlsl" />
     <None Include="Assets\ExternalTools\PostProcessing\Shaders\API\D3D9.hlsl" />
     <None Include="Assets\ExternalTools\Resources\Plugins\jillejr.newtonsoft.json-for-unity@12.0.301\Plugins\Newtonsoft.Json AOT\Newtonsoft.Json.xml" />
@@ -195,6 +222,7 @@
     <None Include="Assets\ExternalTools\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\ExternalTools\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\ExternalTools\TextMesh Pro\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\ExternalTools\StylizedExplosionPack\shader\alphaBlend_depthBlend_glow.shader" />
     <None Include="Assets\ExternalTools\PostProcessing\Shaders\ACES.hlsl" />
     <None Include="Assets\ExternalTools\Plugins\Demigiant\DOTween\DOTween.dll" />
     <None Include="Assets\ExternalTools\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
@@ -205,6 +233,7 @@
     <None Include="Assets\ExternalTools\PostProcessing\Shaders\API\PSP2.hlsl" />
     <None Include="Assets\ExternalTools\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\ExternalTools\PostProcessing\Shaders\Sampling.hlsl" />
+    <None Include="Assets\ExternalTools\RFX_Resources\Prefabs\Fx\V2\V2_Change.txt" />
     <None Include="Assets\ExternalTools\PostProcessing\Shaders\License.txt" />
     <None Include="Assets\ExternalTools\PostProcessing\Shaders\XNoiseLibrary.hlsl" />
     <None Include="Assets\ExternalTools\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
@@ -212,6 +241,7 @@
     <None Include="Assets\ExternalTools\PostProcessing\Shaders\Blending.hlsl" />
     <None Include="Assets\ExternalTools\Text\ChineseLag.txt" />
     <None Include="Assets\ExternalTools\Resources\Language.txt" />
+    <None Include="Assets\ExternalTools\StylizedExplosionPack\shader\alphaBlend_glow.shader" />
     <None Include="Assets\ExternalTools\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\ExternalTools\Plugins\Demigiant\DOTween\readme.txt" />
     <None Include="Assets\ExternalTools\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />

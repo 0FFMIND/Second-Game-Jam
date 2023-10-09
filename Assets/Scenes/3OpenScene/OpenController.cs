@@ -12,9 +12,7 @@ public class OpenController : MonoBehaviour
     public Text[] texts;
     private void Start()
     {
-        EventManager.Instance.AddEventListener<InfoPop>("ChangeImg", (o) => ImageChange());
         SaveManager.Instance.LoadLevel();
-        
         if (!SaveManager.Instance.IsOpenEnd)
         {
             levelNewIntro.SetActived();
@@ -26,8 +24,8 @@ public class OpenController : MonoBehaviour
             levelNewIntro.SetDeactived();
         }else if(SaveManager.Instance.IsOpenEnd && SaveManager.Instance.IsLevelOneEnd)
         {
-            SetAllFalse(upCanvasSmall);
             levelNewIntro.SetDeactived();
+            SetAllFalse(upCanvasSmall);
             SetAllTrue(upCanvasWhole);
         }
     }
@@ -49,12 +47,12 @@ public class OpenController : MonoBehaviour
     {
         if (SaveManager.Instance.IsOpenEnd && !SaveManager.Instance.IsLevelOneEnd)
         {
-            SetAllTrue(upCanvasSmall);
             levelNewIntro.SetDeactived();
+            SetAllTrue(upCanvasSmall);
         }else if(SaveManager.Instance.IsOpenEnd && SaveManager.Instance.IsLevelOneEnd)
         {
-            SetAllFalse(upCanvasSmall);
             levelNewIntro.SetDeactived();
+            SetAllFalse(upCanvasSmall);
             SetAllTrue(upCanvasWhole);
         }
 
@@ -80,5 +78,9 @@ public class OpenController : MonoBehaviour
     {
         TransManager.Instance.ChangeScene("TitleScene");
         ImageChange();
+    }
+    public void PlayClick()
+    {
+        AudioManager.Instance.PlaySFX(SoundEffect.CardPlace);
     }
 }

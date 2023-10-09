@@ -46,7 +46,10 @@ public class LevelNewIntro : MonoBehaviour
     {
         if (DialogManager.Instance.isIntroFinished)//用dialogManager来传信号
         {
-            SaveManager.Instance.SaveOpen();
+            SaveManager.Instance.IsOpenEnd = true;
+            SaveManager.Instance.IsIntroEnd = true;
+            SaveManager.Instance.SaveLevel();
+            SaveManager.Instance.LoadLevel();
         }
     }
 }
