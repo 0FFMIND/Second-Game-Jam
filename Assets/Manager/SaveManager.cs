@@ -49,7 +49,7 @@ public class SaveManager : Singleton<SaveManager>
         //¹ØÓÚ¹Ø¿¨
         if (!SaveWriter.LoadString("LevelSettings.json"))
         {
-            PlayerPrefs.SetInt("Star", 0);
+            PlayerPrefs.SetInt("Stars", 0);
             SaveWriter.Create("LevelSettings")
                 .Write("Intro", "false")
                 .Write("Open", "false")

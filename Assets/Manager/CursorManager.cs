@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class CursorManager : Singleton<CursorManager>
 {
     public Vector2 cursorPos;
+    private Vector3 pos = new Vector3(-100,-100,0);
     private void Update()
     {
 #if UNITY_ANDROID
@@ -18,5 +19,13 @@ public class CursorManager : Singleton<CursorManager>
 #endif
         transform.position = new Vector3(cursorPos.x, cursorPos.y, 1f);
 
+    }
+    public void SetPos(Vector3 pos)
+    {
+        this.pos = pos;
+    }
+    public Vector3 GetPos()
+    {
+        return pos;
     }
 }

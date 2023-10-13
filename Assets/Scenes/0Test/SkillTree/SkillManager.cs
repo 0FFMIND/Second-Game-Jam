@@ -60,9 +60,9 @@ public class SkillManager : MonoBehaviour
     {
         SaveManager.Instance.LoadLevel();
         if (SaveManager.Instance.isBuffOne && SaveManager.Instance.isBuffThree && SaveManager.Instance.isBuffFive) return;
-        int num = PlayerPrefs.GetInt("Star") -2;
+        int num = PlayerPrefs.GetInt("Stars") -4;
         if (num < 0) return;
-        PlayerPrefs.SetInt("Star", num);
+        PlayerPrefs.SetInt("Stars", num);
         if (!SaveManager.Instance.isBuffOne)
         {
             SaveManager.Instance.isBuffOne = true;
@@ -92,9 +92,9 @@ public class SkillManager : MonoBehaviour
     {
         SaveManager.Instance.LoadLevel();
         if (SaveManager.Instance.isBuffOne && SaveManager.Instance.isBuffThree && SaveManager.Instance.isBuffFive) return;
-        int num = PlayerPrefs.GetInt("Star") - 4;
+        int num = PlayerPrefs.GetInt("Stars") - 7;
         if (num < 0) return;
-        PlayerPrefs.SetInt("Star", num);
+        PlayerPrefs.SetInt("Stars", num);
         if (!SaveManager.Instance.isBuffOne)
         {
             SaveManager.Instance.isBuffOne = true;
@@ -124,9 +124,9 @@ public class SkillManager : MonoBehaviour
     {
         SaveManager.Instance.LoadLevel();
         if (SaveManager.Instance.isBuffTwo && SaveManager.Instance.isBuffFour && SaveManager.Instance.isBuffSix) return;
-        int num = PlayerPrefs.GetInt("Star") - 2;
+        int num = PlayerPrefs.GetInt("Stars") - 4;
         if (num < 0) return;
-        PlayerPrefs.SetInt("Star", num);
+        PlayerPrefs.SetInt("Stars", num);
         if (!SaveManager.Instance.isBuffTwo)
         {
             SaveManager.Instance.isBuffTwo = true;
@@ -156,9 +156,9 @@ public class SkillManager : MonoBehaviour
     {
         SaveManager.Instance.LoadLevel();
         if (SaveManager.Instance.isBuffTwo && SaveManager.Instance.isBuffFour && SaveManager.Instance.isBuffSix) return;
-        int num = PlayerPrefs.GetInt("Star") - 4;
+        int num = PlayerPrefs.GetInt("Stars") - 7;
         if (num < 0) return;
-        PlayerPrefs.SetInt("Star", num);
+        PlayerPrefs.SetInt("Stars", num);
         if (!SaveManager.Instance.isBuffTwo)
         {
             SaveManager.Instance.isBuffTwo = true;

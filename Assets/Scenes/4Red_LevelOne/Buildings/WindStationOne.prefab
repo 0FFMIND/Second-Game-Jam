@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1020822100006504228}
   - component: {fileID: 7416279127851924269}
   - component: {fileID: 122345818121303914}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Button
   m_TagString: sell
   m_Icon: {fileID: 0}
@@ -145,7 +145,7 @@ GameObject:
   - component: {fileID: 3049370435848633581}
   - component: {fileID: 7444965806153899172}
   - component: {fileID: 440800194336010186}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Canvas
   m_TagString: sellCanvas
   m_Icon: {fileID: 0}
@@ -258,7 +258,7 @@ GameObject:
   - component: {fileID: 7850923765209484226}
   - component: {fileID: 7189551280598010982}
   - component: {fileID: 8244699645395566321}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Image
   m_TagString: sell
   m_Icon: {fileID: 0}
@@ -306,7 +306,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.20104408, g: 1, b: 0, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -338,7 +338,7 @@ GameObject:
   - component: {fileID: 2540605973087774677}
   - component: {fileID: -654027377840801843}
   - component: {fileID: 1100016061215244992}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: WindStationOne
   m_TagString: windstation
   m_Icon: {fileID: 0}
@@ -439,7 +439,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffb7c06b97fcea44c8b8ea018b6b1844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timer: 0
   isOnce: 0
+  produce: 20
 --- !u!95 &3654404798916739061
 Animator:
   serializedVersion: 3
@@ -560,9 +562,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1800095361466930684, guid: ea5402a6edbf2354abbf787207c50cb2, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1936250334465503654, guid: ea5402a6edbf2354abbf787207c50cb2, type: 3}
       propertyPath: m_Name
       value: ResourceGeneratorOverlay
+      objectReference: {fileID: 0}
+    - target: {fileID: 1936250334465503654, guid: ea5402a6edbf2354abbf787207c50cb2, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2343537436854526746, guid: ea5402a6edbf2354abbf787207c50cb2, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3647630591083172880, guid: ea5402a6edbf2354abbf787207c50cb2, type: 3}
       propertyPath: resourceGenerator

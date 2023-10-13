@@ -29,6 +29,7 @@ TagManager:
   - shootcenter
   - ignore
   - skill
+  - water2
   layers:
   - Default
   - TransparentFX

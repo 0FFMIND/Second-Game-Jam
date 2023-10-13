@@ -37,6 +37,7 @@ Talent:天赋提升
 Skills:策略替换
 Red Rock 1-1:红岩星 关卡1-1
 Red Rock 1-2:红岩星 关卡1-2
+Red Rock 1-3:红岩星 关卡1-3
 Your Enegy Crystals-:您获得的能量源总数-
 -------------Change Speed------------:---------------速度修改--------------
 --------------Play Options------------:---------------游玩选择--------------
@@ -51,16 +52,22 @@ Select your choices and put in deck.:请将您选择的卡牌选三张放入议�
 Current Proposals:本局议案
 Weather:当前气候
 Sunshower:太阳雨
+Foggy:云雾天
 Succeed:恭喜通关
 Aggressive:激进
 Gentle:温和
 Replace:替换手牌
 Current Talent-:当前选择天赋-
 Description-:描述-
+Snowy:雪天
+Dark Ocean 2-1:暗洋星 关卡2-1
+Dark Ocean 2-2:暗洋星 关卡2-2
+Dark Ocean 2-3:暗洋星 关卡2-3
+Story End?:故事的最后？
+This side talent costs 7 crystals:升级该侧天赋，所花费7能量晶体
 This side talent costs 4 crystals:升级该侧天赋，所花费4能量晶体
-This side talent costs 2 crystals:升级该侧天赋，所花费2能量晶体
 If current strategy is gentle, it's easier to upgrade the passive of the gentle side and more difficult to aggressive side and vice versa:请注意，如果当前策略为温和侧，升级温和侧的被动较为容易，而升级激进侧的被动较为困难，激进侧同理
-Please note that drawing cards costs 1 energy crystal per draw and replacement hands are free:您当前的卡牌库为右侧，请注意抽取卡牌每次消耗1能量晶体，不可退还，而替换手牌是免费的，但请谨慎做好决定
+Please note that drawing cards costs 3 energy crystal per draw and replacement hands are free:您当前的卡牌库为右侧，请注意抽取卡牌每次消耗3能量晶体，不可退还，而替换手牌是免费的，但请谨慎做好决定
 Your proposal system is inadequate. Please ensure three proposals in deck:经系统检查您的本局议案系统不足，请确保议案系统存在三张议案
 Sure to choose the gentle side as your entire game selection?:确定将温和侧作为您的选择吗，请注意这会影响您之后的整个游戏进程
 Sure to choose the aggressive side as your entire game selection?:确定将激进侧作为您的选择吗，请注意这会影响您之后的整个游戏进程
@@ -68,4 +75,4 @@ Huge gaseous planet with only liquid hydrogen inside.The internal energy station
 Satellite of Red Rock Star.In the early stages pioneer team conducted a large amount of mineral. Now it is devastated and there is an urgent need to re-stabilize the satellite's surface.:红岩星的卫星。拓荒队建设初期对它进行了大量矿产岩石开采作业。现今已满目疮痍并且如今不再需要它提供任何资源。故亟需派遣队使用行星地形改造模块，使卫星地表结构重新稳定并建立稳定的环境。
 It's the farthest terrestrial planet from any star, with low temperature, a large amount of water.It is not suitable for human but suspected  relics of other alien civilizations.:该星为距离恒星中最远的类地行星。温度低，行星体积巨大，行星表面有大量的水体覆盖，拥有强大的引力和厚重的大气层。相较来说不适合人类生存。但该星疑似存在其他外星文明的遗迹，请小心行事。
 62D is a planet discovered after 62C, far away from the star. Artificial sun supplements the light, and ecological species is chosen to native. Now a security incident has occurred in Energy District city.:62D是继62C后探测另一个条件适宜的行星。距离恒星稍远，需要人造太阳补齐生物需要的光照条件。它水土，生态物种按照本土选育，总体条件几乎与地球无异。现今地外核心城区能源区发生了重大安全事件，这里的居民已经联系了母星，静待专业的抢救队支援。
-Kepler-62C is discovered a Earth-like planet. It was one of the earliest landing sites. Liquid water was confirmed to exist. After small asteroid impact, unusual signs of life activity have been detected.:开普勒62C是发现过的一颗与自然环境相对接近的类地行星，曾经拓荒队最早着陆的地方。已经探明存在液态水，但在受到一次小行星撞击破坏后幸存人员已经暂时撤离。目前探测发现异常生命活动，需要马上前往调查。
+Kepler-62C is discovered a Earth-like planet. It was one of the earliest landing sites. Liquid water was confirmed to exist. After small asteroid impact, unusual signs of life activity have been detected.:开普勒62C是发现过的一颗与自然环境相对接近的类地行星，曾经拓荒队最早着陆的地方。轨道仍存在当时废弃的大型空间站残骸。已经探明存在液态水，但在受到一次小行星撞击破坏后幸存人员已经暂时撤离。目前探测发现异常生命活动，需要马上前往调查

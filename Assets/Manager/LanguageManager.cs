@@ -27,6 +27,10 @@ public class LanguageManager : Singleton<LanguageManager>
             SwitchLanguage(CurrentLanguage);
         }
         ChangeLanguage();
+        if(SceneManager.GetActiveScene().name != "TitleScene")
+        {
+            SwitchLanguage(CurrentLanguage);
+        }
     }
     private void ChangeLanguage()
     {
@@ -82,7 +86,8 @@ public class LanguageManager : Singleton<LanguageManager>
             if(obj.GetComponent<Text>() != null)
             {
                 obj.GetComponent<Text>().text = UpdateLanguageText(targetLanguage, obj.GetComponent<Text>().text);
-            }else if(obj.GetComponent<TextMeshProUGUI>() != null)
+            }
+            if(obj.GetComponent<TextMeshProUGUI>() != null)
             {
                 obj.GetComponent<TextMeshProUGUI>().text = UpdateLanguageText(targetLanguage, obj.GetComponent<TextMeshProUGUI>().text);
             }

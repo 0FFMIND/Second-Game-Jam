@@ -2,6 +2,7 @@ using System;
 using UnityEngine.UI;
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class Enemy : MonoBehaviour
 {
@@ -37,7 +38,6 @@ public class Enemy : MonoBehaviour
 
     public void DealDamage(float damageReceived)
     {
-        _enemyFX.EnemyHit(this, damageReceived);
         AudioManager.Instance.PlaySFX(SoundEffect.Hit);
         CurrentHealth = _enemyHealth.GetHealthAmount();
         CurrentHealth -= damageReceived;
@@ -46,9 +46,14 @@ public class Enemy : MonoBehaviour
             StartCoroutine(PlayDead());
         }
         else
+        {
+            if (SkillGhost.isCardThree)
+            {
+                this.gameObject.GetComponent<PathFollower>().Speed = 0.3f;
+            }
             StartCoroutine(PlayHurt());
         }
-
+    }
 
     private void Start()
     {
@@ -91,6 +96,14 @@ public class Enemy : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.tag == "base")
+        {
+            Vector3 EndPos = transform.position;
+            EndPointReached(EndPos);
+        }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.transform.gameObject.tag == "base")
         {
             Vector3 EndPos = transform.position;
             EndPointReached(EndPos);
@@ -149,6 +162,17 @@ public class Enemy : MonoBehaviour
                 GameObject.FindGameObjectsWithTag("shootcenter")[i].GetComponent<Building>().healthSystem.Damage(10);
             }
         }
+        if(SceneManager.GetActiveScene().name == "LevelThree" || SceneManager.GetActiveScene().name == "LevelFour" || SceneManager.GetActiveScene().name == "LevelFive" || SceneManager.GetActiveScene().name == "LevelSix")
+        {
+            if (GameObject.FindGameObjectsWithTag("base") != null)
+            {
+                for (int i = 0; i < GameObject.FindGameObjectsWithTag("base").Length; i++)
+                {
+                    GameObject.FindGameObjectsWithTag("base")[i].GetComponent<Building>().healthSystem.Damage(10);
+                }
+            }
+        }
+
     }
 
 }

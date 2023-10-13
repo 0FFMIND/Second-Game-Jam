@@ -6,12 +6,13 @@ public class InfoPop : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler,
 {
     public GameObject information;
     public string gameScene;
+    public LevelSelection levelSelection;
     public void OnPointerClick(PointerEventData eventData)
     {
         if (SaveManager.Instance.IsOpenEnd)
         {
             AudioManager.Instance.PlaySFX(SoundEffect.PopUp);
-            if(gameScene != "")
+            if(gameScene != "" && levelSelection.isUnlocked)
             {
                 EventManager.Instance.EventTrigger("ChangeImg", this);
                 information.SetActive(false);
@@ -21,7 +22,8 @@ public class InfoPop : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler,
     }
     private bool CanInfoPop()
     {
-        return true;
+        if (!levelSelection.isUnlocked) return false;
+        else return true;
     }
     public void OnPointerEnter(PointerEventData eventData)
     {

@@ -29,8 +29,9 @@ MonoBehaviour:
     top right is the stop buttom. On the bottom left are the skill cards , and at
     the bottom are the cleaning devices for this game.</wave>
   - <wave>In order to gain energy, please build your first solar device to establish
-    an economic source. Similarly, you can upgrade buildings or buy/sell wind energy
-    device to gain more energy.</wave>
-  - <wave>If you complete all the tasks in this game, you can earn a total of three
-    energy crystals to enhance your future buff effects. The first wave of enemies
-    will arrive in 30 seconds, so please prepare yourself.</wave>
+    an economic source. Additionally, you can sell buildings, click the green or
+    ghost icons with the right mouse button to clear them, or purchase powerful wind
+    energy equipment to gain more energy sources.</wave>
+  - <wave>Please pay attention to the task list and the right-click functionality.
+    You can only pass this level if you complete all the tasks in this game. The
+    first enemy will arrive in 30 seconds, so please prepare accordingly.</wave>

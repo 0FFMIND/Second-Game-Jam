@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class IntroController : MonoBehaviour
 {
     public static IntroController Instance;
@@ -16,7 +16,14 @@ public class IntroController : MonoBehaviour
     {
         DialogManager.Instance.isBEfinished = false;
         AudioManager.Instance.StopBGM();
-        AudioManager.Instance.PlayBGM(BackgroundMusic.IntroScene);
+        if(SceneManager.GetActiveScene().name == "IntroScene")
+        {
+            AudioManager.Instance.PlayBGM(BackgroundMusic.IntroScene);
+        }
+        if(SceneManager.GetActiveScene().name == "EndScene")
+        {
+            AudioManager.Instance.PlayBGM(BackgroundMusic.End);
+        }
         DialogManager.Instance.isIntroFinished = false;
         isInit = false;
         isSaveEnd = false;
@@ -59,10 +66,21 @@ public class IntroController : MonoBehaviour
         }
         if (DialogManager.Instance.isBEfinished)
         {
-            SaveManager.Instance.IsIntroEnd = true;
-            SaveManager.Instance.SaveLevel();
-            SaveManager.Instance.LoadLevel();
-            TransManager.Instance.ChangeScene("OpenScene");
+            if(SceneManager.GetActiveScene().name == "IntroScene")
+            {
+                AudioManager.Instance.StopBGM();
+                SaveManager.Instance.IsIntroEnd = true;
+                SaveManager.Instance.SaveLevel();
+                SaveManager.Instance.LoadLevel();
+                TransManager.Instance.ChangeScene("OpenScene");
+            }
+            if (SceneManager.GetActiveScene().name == "EndScene")
+            {
+                AudioManager.Instance.StopBGM();
+                SaveManager.Instance.SaveLevel();
+                SaveManager.Instance.LoadLevel();
+                TransManager.Instance.ChangeScene("TitleScene");
+            }
         }
 
     }

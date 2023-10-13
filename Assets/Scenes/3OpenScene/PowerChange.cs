@@ -13,13 +13,16 @@ public class PowerChange : MonoBehaviour
     }
     private void Update()
     {
-        text.text = PlayerPrefs.GetInt("Star").ToString();
+        text.text = PlayerPrefs.GetInt("Stars").ToString();
     }
     public void CostMoney(int money)
     {
-        int num = PlayerPrefs.GetInt("Star") - money;
-        if (num <= 0) return;
-        PlayerPrefs.SetInt("Star", num);
-        openPackage.OnClickOpen();
+        int num = PlayerPrefs.GetInt("Stars") - money;
+        if (num < 0) return;
+        PlayerPrefs.SetInt("Stars", num);
+        if(money == 3)
+        {
+            openPackage.OnClickOpen();
+        }
     } 
 }

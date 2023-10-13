@@ -1,11 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class ResourceGenerator : MonoBehaviour
 {
     private BuildingTypeSO buildingType;
-    private float timer = 0;
+    public float timer = 0;
     private float timerMax;
     public bool isOnce = false;
     public int produce = 20;
@@ -67,8 +66,15 @@ public class ResourceGenerator : MonoBehaviour
                 isOnce = !isOnce;
                 if (!isOnce)
                 {
-                    AudioManager.Instance.PlaySFX(SoundEffect.Coins);
-                    ResourceManager.Instance.isWaterClear = true;
+                    if (SceneManager.GetActiveScene().name == "LevelOne")
+                    {
+                        AudioManager.Instance.PlaySFX(SoundEffect.Coins);
+                        ResourceManager.Instance.isWaterClear = true;
+                    }
+                    else if (SceneManager.GetActiveScene().name == "LevelTwo")
+                    {
+                        AudioManager.Instance.PlaySFX(SoundEffect.Coins);
+                    }
                 }
             }
         }

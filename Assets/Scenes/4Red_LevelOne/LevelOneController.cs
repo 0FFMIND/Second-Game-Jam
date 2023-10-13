@@ -108,7 +108,7 @@ public class LevelOneController : MonoBehaviour
     private void Update()
     {
         timer += Time.deltaTime;
-        if(timer > 30f)
+        if(timer > 30f && timer < 30.01f)
         {
             AudioManager.Instance.PlaySFX(SoundEffect.Beep);
         }
@@ -156,6 +156,10 @@ public class LevelOneController : MonoBehaviour
             PlayerPrefs.SetInt("Stars", 3);
             SaveManager.Instance.SaveLevel();
             SaveManager.Instance.LoadLevel();
+            successpanel.SetActive(true);
+        }
+        if (isStarOne && isStarTwo && isStarThree && SaveManager.Instance.IsLevelOneEnd)
+        {
             successpanel.SetActive(true);
 
         }

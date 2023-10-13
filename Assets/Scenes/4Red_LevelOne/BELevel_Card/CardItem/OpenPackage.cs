@@ -1,4 +1,4 @@
-
+using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,6 +12,10 @@ public class OpenPackage : MonoBehaviour
     public void OnClickOpen()
     {
         cardTempStore.Clear();
+        if(cardStore!= null)
+        {
+            cardStore.LoadCardData();
+        }
         if(cardStorePref != null)
         {
             cardStorePref.LoadCardData();

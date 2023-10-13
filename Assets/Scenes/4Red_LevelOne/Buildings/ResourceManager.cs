@@ -30,6 +30,18 @@ public class ResourceManager : MonoBehaviour
                     resourceAmountDictionary[resourceType] = 40;
                 }
             }
+            if (resourceType.name == "Wind")
+            {
+                SaveManager.Instance.LoadLevel();
+                if (SaveManager.Instance.isBuffSix)
+                {
+                    resourceAmountDictionary[resourceType] = 100;
+                }
+                else
+                {
+                    resourceAmountDictionary[resourceType] = 40;
+                }
+            }
         }
     }
     public void AddResource(ResourceTypeSO resourceType, int amount)

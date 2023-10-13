@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3646603774100239853}
   - component: {fileID: -8512872437262634218}
   - component: {fileID: 6249734174739772315}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: ClimateRegulator
   m_TagString: Regulator
   m_Icon: {fileID: 0}
@@ -115,7 +115,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffb7c06b97fcea44c8b8ea018b6b1844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timer: 0
   isOnce: 0
+  produce: 20
 --- !u!95 &2553066728281877965
 Animator:
   serializedVersion: 3

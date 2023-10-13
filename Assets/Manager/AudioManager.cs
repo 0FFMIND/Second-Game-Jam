@@ -23,6 +23,7 @@ public enum BackgroundMusic
     IntroScene,
     LevelOneScene,
     LevelTwoScene,
+    End,
 }
 public class AudioManager : Singleton<AudioManager>
 {
@@ -75,11 +76,18 @@ public class AudioManager : Singleton<AudioManager>
             bgm[i].Stop();
         }
     }
+    public void PauseBGM()
+    {
+        for (int i = 0; i < bgm.Length; i++)
+        {
+            bgm[i].Pause();
+        }
+    }
     public void PlayBGM(BackgroundMusic backgroundMusicenum)
     {
         foreach (var single in bgm)
         {
-            single.Stop();
+            single.Pause();
         }
         if((int)backgroundMusicenum < bgm.Length)
         {

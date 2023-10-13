@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scenes\1TitleScene\MainMenu.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\CardItem\Card.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\一级万能投射器底座序列帧动画\ObjectPooler.cs" />
+    <Compile Include="Assets\Scenes\4Red_LevelOne\ParseLangTwo.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\CardItem\CardData.cs" />
     <Compile Include="Assets\Scenes\1TitleScene\SelectButton.cs" />
     <Compile Include="Assets\Scenes\3OpenScene\Cardstr.cs" />
@@ -79,6 +80,7 @@
     <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\ResourceGenerator.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\CardItem\CardStorePref.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Pool.cs" />
+    <Compile Include="Assets\Scenes\LevelFour\LevelFourController.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\BuildingTypeSO.cs" />
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\Transition Orders\TransitionOrderLines.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Enemy\PathFollower.cs" />
@@ -111,9 +113,12 @@
     <Compile Include="Assets\Manager\SaveSystem\FileAccess.cs" />
     <Compile Include="Assets\Manager\AudioManager.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\CardItem\DeckManager.cs" />
+    <Compile Include="Assets\Palmov Island\Snow VFX\Scripts\VFXControl\VFXController.cs" />
     <Compile Include="Assets\Scenes\1TitleScene\TextScrolling.cs" />
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\Transition Orders\TransitionOrderAllAtOnce.cs" />
     <Compile Include="Assets\ExternalTools\RainMaker\Prefab\RainScript2D.cs" />
+    <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\isWaterCollect.cs" />
+    <Compile Include="Assets\Scenes\3OpenScene\InfoPoPtwo.cs" />
     <Compile Include="Assets\Scenes\3OpenScene\InfoPop.cs" />
     <Compile Include="Assets\Scenes\1TitleScene\TitleController.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Grid\GridOnScene.cs" />
@@ -123,6 +128,7 @@
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\PlaymakerActions\TransitionBlocksLoadLevelNum.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\ResourceAmonut.cs" />
     <Compile Include="Assets\Manager\SaveSystem\SaveSettings.cs" />
+    <Compile Include="Assets\Scenes\LevelFour\LevelFiveController.cs" />
     <Compile Include="Assets\Manager\TransManager.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\BuildingTypeSelectUI.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\LevelOneController.cs" />
@@ -131,6 +137,7 @@
     <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\BuildingTypeListSO.cs" />
     <Compile Include="Assets\Scenes\2IntroScene\IntroController.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\ResourceUI.cs" />
+    <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\一级万能投射器底座序列帧动画\PathFollower2.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\一级万能投射器底座序列帧动画\Projectile.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\BuildingTypeHolder.cs" />
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Demo\RandomCameraColor.cs" />
@@ -139,6 +146,7 @@
     <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\一级万能投射器底座序列帧动画\DamageText.cs" />
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\Transitioner.cs" />
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\Transition Orders\TransitionOrderBase.cs" />
+    <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\LevelThreeController.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\BuildingGhost.cs" />
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\Transition Orders\TransitionOrderCornerWipe.cs" />
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\Transition Orders\TransitionOrderTeeth.cs" />
@@ -147,6 +155,7 @@
     <Compile Include="Assets\Scenes\0Test\RaySystem\Security.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\ResourceTypeSO.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\HandleCollision.cs" />
+    <Compile Include="Assets\Scenes\LevelFour\AllHealth.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\一级万能投射器底座序列帧动画\Spawner.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\ResourceTypeListSO.cs" />
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\Transition Orders\TransitionOrderCheckerBoard.cs" />
@@ -158,6 +167,7 @@
     <Compile Include="Assets\ExternalTools\RainMaker\Demo\DemoScript.cs" />
     <Compile Include="Assets\ExternalTools\RainMaker\Prefab\RainScript.cs" />
     <Compile Include="Assets\Scenes\3OpenScene\LevelSystem\LevelSelection.cs" />
+    <Compile Include="Assets\Scenes\4Red_LevelOne\AllHealthTwo.cs" />
     <Compile Include="Assets\Scenes\0Test\SkillTree\SkillButton.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Grid\GridXY.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\CardItem\CardDisplay.cs" />
@@ -166,6 +176,7 @@
     <Compile Include="Assets\Scenes\4Red_LevelOne\HealthSystem.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Building.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\一级万能投射器底座序列帧动画\TankTurretProjectile.cs" />
+    <Compile Include="Assets\Scenes\4Red_LevelOne\LevelTwoController.cs" />
     <Compile Include="Assets\ExternalTools\RFX_Resources\Scripts\ParticleScaler.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\一级万能投射器底座序列帧动画\EnemyFX.cs" />
     <Compile Include="Assets\Manager\CursorManager.cs" />
@@ -177,12 +188,14 @@
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\TransitionSetup.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Enemy\PathBase.cs" />
     <Compile Include="Assets\Scenes\1TitleScene\SettingMenu.cs" />
+    <Compile Include="Assets\Scenes\LevelFour\LevelSixController.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\一级万能投射器底座序列帧动画\TurretProjectile.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\CardItem\ChangeText.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\CardItem\DeckManage.cs" />
     <Compile Include="Assets\Scenes\0Test\DragSystem\CanDrag.cs" />
     <Compile Include="Assets\ExternalTools\Sci-fi Buttons and Panels\Sci-fi Components Resources\Scripts\JustRotate.cs" />
     <Compile Include="Assets\Scenes\1TitleScene\ContinueMenu.cs" />
+    <Compile Include="Assets\Scenes\4Red_LevelOne\PraseLang.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\ResourceGeneratorData.cs" />
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\Transition Orders\TransitionEnumRandomizer.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\BuildingManager.cs" />

@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 8802743053626562536}
   - component: {fileID: 1061214750}
   - component: {fileID: 3653848630660632704}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: RotatePoint
   m_TagString: ignore
   m_Icon: {fileID: 0}
@@ -415,7 +415,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffb7c06b97fcea44c8b8ea018b6b1844, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timer: 0
   isOnce: 0
+  produce: 20
 --- !u!114 &1468036448516917655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -438,7 +440,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1468036448546046802}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ProjectileSpawnPos
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -469,7 +471,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1468036448927272703}
   - component: {fileID: 1468036448927272702}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FireBarrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -715,7 +717,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.20104408, g: 1, b: 0, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:

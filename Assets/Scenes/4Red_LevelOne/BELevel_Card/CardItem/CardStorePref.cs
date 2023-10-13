@@ -134,28 +134,28 @@ public class CardStorePref : Singleton<CardStorePref>
     {
         int num = Random.Range(0, 100);
         SaveManager.Instance.LoadLevel();
-        if (SaveManager.Instance.IsAngel == 2 && num > 35)
+        if (SaveManager.Instance.IsAngel == 1 && num > 35)
         {
             int random = Random.Range(0, AcardList.Count);
             Card card = AcardList[random];
             AcardList.RemoveAt(random);
             return card;
         }
-        else if (SaveManager.Instance.IsAngel == 2 && num < 35)
-        {
-            int random = Random.Range(0, DcardList.Count);
-            Card card = DcardList[random];
-            DcardList.RemoveAt(random);
-            return card;
-        }
-        else if (SaveManager.Instance.IsAngel == 1 && num > 35)
-        {
-            int random = Random.Range(0, DcardList.Count);
-            Card card = DcardList[random];
-            DcardList.RemoveAt(random);
-            return card;
-        }
         else if (SaveManager.Instance.IsAngel == 1 && num < 35)
+        {
+            int random = Random.Range(0, DcardList.Count);
+            Card card = DcardList[random];
+            DcardList.RemoveAt(random);
+            return card;
+        }
+        else if (SaveManager.Instance.IsAngel == 2 && num > 35)
+        {
+            int random = Random.Range(0, DcardList.Count);
+            Card card = DcardList[random];
+            DcardList.RemoveAt(random);
+            return card;
+        }
+        else if (SaveManager.Instance.IsAngel == 2 && num < 35)
         {
             int random = Random.Range(0, AcardList.Count);
             Card card = AcardList[random];

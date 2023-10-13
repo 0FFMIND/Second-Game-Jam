@@ -22,12 +22,14 @@ public class BuildingManager : MonoBehaviour
     }
     private void Update()
     {
-        if(Input.GetMouseButtonDown(0) && canWaterPlace && activeBuildingType == buildingTypeList.list[3])
+
+        if (Input.GetMouseButtonDown(0) && canWaterPlace && (activeBuildingType == buildingTypeList.list[3] || activeBuildingType == buildingTypeList.list[9]))
         {
             if (CanSpawnBuilding(activeBuildingType, GetMouseWorldPosition()))
             {
                 if (ResourceManager.Instance.CanAfford(activeBuildingType.constructResourceArray))
                 {
+                    AudioManager.Instance.PlaySFX(SoundEffect.UISelect);
                     ResourceManager.Instance.SpendResource(activeBuildingType.constructResourceArray);
                     Instantiate(activeBuildingType.prefab, GetMouseWorldPosition(), Quaternion.identity);
                 }
@@ -35,24 +37,42 @@ public class BuildingManager : MonoBehaviour
 
 
         }
-        if (Input.GetMouseButtonDown(0) && canPlace && activeBuildingType != buildingTypeList.list[3])
+        if (Input.GetMouseButtonDown(0) && canPlace && (activeBuildingType != buildingTypeList.list[3] && activeBuildingType != buildingTypeList.list[9]))
         {
             if (activeBuildingType != null && CanSpawnBuilding(activeBuildingType, GetMouseWorldPosition()))
             {
                 if (ResourceManager.Instance.CanAfford(activeBuildingType.constructResourceArray))
                 {
                     ResourceManager.Instance.SpendResource(activeBuildingType.constructResourceArray);
-                    if(activeBuildingType == buildingTypeList.list[5] && GameObject.FindGameObjectWithTag("defenseholder") == null)
+                    if(activeBuildingType == buildingTypeList.list[5])
                     {
-                        Instantiate(activeBuildingType.prefab, GetMouseWorldPosition(), Quaternion.identity);
-                        return;
+                        if(GameObject.FindGameObjectWithTag("defenseholder") == null && GameObject.FindGameObjectsWithTag("defenseholder").Length == 0)
+                        {
+                            AudioManager.Instance.PlaySFX(SoundEffect.UISelect);
+                            Instantiate(activeBuildingType.prefab, GetMouseWorldPosition(), Quaternion.identity);
+                            return;
+                        }
+                        else
+                        {
+                            return;
+                        }
                     }
-                    if(activeBuildingType == buildingTypeList.list[6] && GameObject.FindGameObjectWithTag("shootcenter") != null)
+                    if(activeBuildingType == buildingTypeList.list[6])
                     {
-                        Instantiate(activeBuildingType.prefab, GetMouseWorldPosition(), Quaternion.identity);
-                        return;
+                        if (GameObject.FindGameObjectWithTag("shootcenter") == null && GameObject.FindGameObjectsWithTag("shootcenter").Length == 0)
+                        {
+                            AudioManager.Instance.PlaySFX(SoundEffect.UISelect);
+                            Instantiate(activeBuildingType.prefab, GetMouseWorldPosition(), Quaternion.identity);
+                            return;
+                        }
+                        else
+                        {
+                            return;
+                        }
                     }
+                    AudioManager.Instance.PlaySFX(SoundEffect.UISelect);
                     Instantiate(activeBuildingType.prefab, GetMouseWorldPosition(), Quaternion.identity);
+                    return;
                 }
             }
         }
@@ -83,7 +103,7 @@ public class BuildingManager : MonoBehaviour
         Collider2D[] collider2DArray = Physics2D.OverlapCircleAll(position + (Vector3)circleCollider2D.offset, circleCollider2D.radius * 4);
         foreach (var collider in collider2DArray)
         {    
-            if(collider.tag != "PLACE" && collider.tag != "water" && collider.tag != "ignore")
+            if(collider.tag != "PLACE" && collider.tag != "water" && collider.tag != "ignore" && collider.tag != "water2")
             {
                 collider2DList.Add(collider);
             }

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DeckManager : MonoBehaviour
 {
@@ -107,10 +108,39 @@ public class DeckManager : MonoBehaviour
             isDeckFinished = false;
             Text1.SetActive(false);Text2.SetActive(false);Text3.SetActive(false);
             SaveCard();
+            AudioManager.Instance.PlaySFX(SoundEffect.UISelect);
             SaveManager.Instance.IsPoolFinshed = true;
             SaveManager.Instance.SaveLevel();
             SaveManager.Instance.LoadLevel();
-            TransManager.Instance.ChangeScene("LevelOne");
+            AudioManager.Instance.StopBGM();
+            if(SceneManager.GetActiveScene().name == "BELevelOne")
+            {
+                TransManager.Instance.ChangeScene("LevelOne");
+            }
+            if(SceneManager.GetActiveScene().name == "BBLevelOne")
+            {
+                TransManager.Instance.ChangeScene("LevelOne");
+            }
+            if(SceneManager.GetActiveScene().name == "BELevelTwo")
+            {
+                TransManager.Instance.ChangeScene("LevelTwo");
+            }
+            if (SceneManager.GetActiveScene().name == "BELevelThree")
+            {
+                TransManager.Instance.ChangeScene("LevelThree");
+            }
+            if (SceneManager.GetActiveScene().name == "BELevelFour")
+            {
+                TransManager.Instance.ChangeScene("LevelFour");
+            }
+            if (SceneManager.GetActiveScene().name == "BELevelFive")
+            {
+                TransManager.Instance.ChangeScene("LevelFive");
+            }
+            if (SceneManager.GetActiveScene().name == "BELevelSix")
+            {
+                TransManager.Instance.ChangeScene("LevelSix");
+            }
         }
     }
     public void SaveCard()
