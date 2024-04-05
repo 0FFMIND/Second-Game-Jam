@@ -16,7 +16,7 @@ public class SettingBtnCust : Button
     public event Action<SettingBtnCust> UnPressedBtn;
     public event Action<SettingBtnCust> HighlightedBtn;
     public E_nowOptions nowOptions;
-    public bool isFirst = false;
+    public bool isReso = false;
     public bool isPressed = false;
     public bool isHighlighted;
     //¸øEvent TriggerÌá¹©

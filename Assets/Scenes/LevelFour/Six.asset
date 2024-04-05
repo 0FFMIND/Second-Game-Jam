@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a425ffcc44735d1449ee7f2ee6f38529, type: 3}
+  m_Name: Six
+  m_EditorClassIdentifier: 
+  istypped: 0
+  CNdialogList:
+  - "<wave>\u8D1F\u8D23\u4EBA\uFF0C\u60A8\u597D\uFF0C\u6B22\u8FCE\u6765\u5230\u6697\u6D0B\u661F\u7B2C\u4E09\u5173\uFF0C\u8FD9\u91CC\u5904\u4E8E\u6781\u5BD2\u5730\u5E26\uFF0C\u6F2B\u5929\u7684\u96EA\u82B1\u5728\u8FD9\u91CC\u98DE\u821E\uFF0C\u540C\u6837\uFF0C\u60A8\u53EF\u4EE5\u5355\u51FB\u9F20\u6807\u53F3\u952E\u8DF3\u8FC7\u5F15\u5BFC\u83DC\u5355</wave>"
+  - "<wave>\u8BF7\u6CE8\u610F\uFF0C\u672C\u5173\u4E3A\u6697\u6D0B\u661F\u6700\u540E\u4E00\u5173\uFF0C\u66B4\u98CE\u96EA\u4F1A\u5728\u6BCF\u4E09\u79D2\u5185\u6263\u9664\u60A8\u672C\u573A\u5EFA\u7B51\u7269\u8840\u91CF\uFF0C\u8BF7\u6CE8\u610F\u60A8\u7684\u65F6\u95F4\u89C4\u5212\u4EE5\u53CA\u5730\u5757\u89C4\u5212</wave>"
+  - "<wave>\u540C\u6837\uFF0C\u8FD9\u91CC\u6709\u4FB5\u5360\u57FA\u5730\u7684\u751F\u7269\uFF0C\u8BF7\u9632\u6B62\u654C\u4EBA\u8FDB\u653B\uFF0C\u540C\u65F6\u5E03\u7F6E\u5783\u573E\u56DE\u6536\u88C5\u7F6E\u5BF9\u6B64\u56DE\u6536\uFF0C\u4E0E\u6B64\u4E0D\u540C\u7684\u662F\uFF0C\u672C\u5173\u9700\u8981\u653E\u7F6E\u4E09\u53F0\u6C14\u5019\u8C03\u8282\u5668</wave>"
+  - "<wave>\u4EE5\u4E0A\uFF0C\u53EA\u6709\u4EFB\u52A1\u5217\u8868\u4E2D\u7684\u4EFB\u52A1\u6089\u6570\u5B8C\u6210\u624D\u80FD\u901A\u5173\u672C\u5173\u5361\uFF0C\u8BF7\u6CE8\u610F\u67E5\u770B\u4EFB\u52A1\u5217\u8868\uFF0C\u7B2C\u4E00\u6CE2\u654C\u4EBA\u4F1A\u572830\u79D2\u540E\u5230\u6765\uFF0C\u795D\u60A8\u597D\u8FD0</wave>"
+  ENdialogList:
+  - <wave>Hello, Head Administrator, welcome to the second level of orbit of the
+    Dark Sea. This area is in an extremely cold zone, with snowflakes swirling in
+    the air. Similarly, you can click the right mouse button to skip the tutorial.</wave>
+  - <wave>Please note that this is third level of Dark Sea Star the blizzard will
+    deduct the amount of health of your building every three seconds, please pay
+    attention to your time planning and plot planning</wave>
+  - <wave>There are creatures encroaching on the base, so please prevent enemy attacks
+    and set up garbage collection devices to collect them. Differently, this level
+    requires three climate regulators</wave>
+  - <wave>Only the tasks in the quests list can be completed to clear this level,
+    please pay attention to check the task list. The first wave of enemies will arrive
+    in 30 seconds.</wave>

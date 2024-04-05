@@ -33,8 +33,9 @@ public class BuildingGhost : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(1) || CursorManager.isGhostOpen)
         {
+            CursorManager.isGhostOpen = false;
             Hide();
             BuildingManager.Instance.activeBuildingType = null;
         }

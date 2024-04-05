@@ -23,9 +23,6 @@ public class EventInfo : IEventInfo
     }
 }
 // 事件中心使用例子
-// 在一个函数最后通知这个怪物死亡EventManager.Instance.EventTrigger("MonsterDead",this)
-// 在需要监听的脚本中首先加EventManger.Instance.AddEventListener<Monster>("MonsterDead",(o) => MyFunction(o))
-// 在死亡的时候就会唤醒监听脚本中的MyFunction(object o){}
 public class EventManager : Singleton<EventManager>
 {
     // string是事件名字，接口是监听事件的委托函数

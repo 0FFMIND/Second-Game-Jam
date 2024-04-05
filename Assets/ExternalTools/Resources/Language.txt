@@ -24,42 +24,45 @@ Rewatch Intro:重看介绍界面
 Back to Menu:返回标题界面
 Satellite 62C-1:卫星62C-1 指引星
 Kepler-62E Nebula:开普勒-62E 涅布拉行星
-Pause:暂停游戏
+暂停游戏:Pause
 We need to make sure you've considered deleting your previous saves:我们需要确认您是否考虑好删除您过去的存档并开始新的游戏
-Current speed:当前速度为
+当前速度为:Current speed
 Yes start:开始新游戏
 Not now:我再想想
 0.5x:0.5倍速
 1 x:1 倍速
 2 x:2 倍速
-Return:返回星球
+返回星球:Return
 Talent:天赋提升
 Skills:策略替换
 Red Rock 1-1:红岩星 关卡1-1
 Red Rock 1-2:红岩星 关卡1-2
 Red Rock 1-3:红岩星 关卡1-3
 Your Enegy Crystals-:您获得的能量源总数-
--------------Change Speed------------:---------------速度修改--------------
---------------Play Options------------:---------------游玩选择--------------
+---------------速度修改---------------:------------Change Speed------------
+---------------游玩选择---------------:-------------Play Options------------
 Confirm:玩家确认
 Yes:确认
 Draw Card:抽取卡牌
 No:否认
-Powers:储能总量
-Quests List:本局任务列表
+储能总量:Powers
+本局任务列表:Quests List
 Your Strategy-:您当前的策略为-
 Select your choices and put in deck.:请将您选择的卡牌选三张放入议案系统
 Current Proposals:本局议案
-Weather:当前气候
-Sunshower:太阳雨
-Foggy:云雾天
-Succeed:恭喜通关
+继续游戏:Continue
+当前气候:Weather
+太阳雨:Sunshower
+云雾天:Foggy
+回收建筑:Recycle
+去掉虚影:NoGhost
+恭喜通关:Succeed
 Aggressive:激进
 Gentle:温和
 Replace:替换手牌
 Current Talent-:当前选择天赋-
 Description-:描述-
-Snowy:雪天
+雪天:Snowy
 Dark Ocean 2-1:暗洋星 关卡2-1
 Dark Ocean 2-2:暗洋星 关卡2-2
 Dark Ocean 2-3:暗洋星 关卡2-3

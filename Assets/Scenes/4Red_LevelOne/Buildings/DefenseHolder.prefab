@@ -327,6 +327,7 @@ GameObject:
   - component: {fileID: 8609652620791062817}
   - component: {fileID: 7868111394067287680}
   - component: {fileID: 6115435343969601111}
+  - component: {fileID: 6973918656567828397}
   m_Layer: 0
   m_Name: DefenseHolder
   m_TagString: defenseholder
@@ -492,6 +493,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthSystem: {fileID: 0}
+--- !u!114 &6973918656567828397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2502098779010760797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fea0de74f42ba3e48b08ac157fd99309, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2856395274409635584
 GameObject:
   m_ObjectHideFlags: 0

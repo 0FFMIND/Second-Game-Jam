@@ -1531,6 +1531,7 @@ MonoBehaviour:
   popInfoEN: {fileID: 1467009303}
   popLine: {fileID: 316967562}
   confirm: {fileID: 438387033}
+  onlyOnce: 0
   num: 1
 --- !u!114 &198157862
 MonoBehaviour:
@@ -2016,7 +2017,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerAnimPlayerOnChange: 0
-  effectIntensityMultiplier: 30
+  effectIntensityMultiplier: 10
   appearancesContainer:
     tagsFallback_Appearances:
     - size
@@ -2494,7 +2495,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerAnimPlayerOnChange: 0
-  effectIntensityMultiplier: 30
+  effectIntensityMultiplier: 10
   appearancesContainer:
     tagsFallback_Appearances:
     - size
@@ -3482,7 +3483,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerAnimPlayerOnChange: 0
-  effectIntensityMultiplier: 30
+  effectIntensityMultiplier: 10
   appearancesContainer:
     tagsFallback_Appearances:
     - size
@@ -4136,7 +4137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerAnimPlayerOnChange: 0
-  effectIntensityMultiplier: 30
+  effectIntensityMultiplier: 10
   appearancesContainer:
     tagsFallback_Appearances:
     - size
@@ -5831,6 +5832,7 @@ MonoBehaviour:
   popInfoEN: {fileID: 1807075329}
   popLine: {fileID: 1276761404}
   confirm: {fileID: 1272937330}
+  onlyOnce: 0
   num: 1
 --- !u!1 &887951221
 GameObject:
@@ -5884,7 +5886,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerAnimPlayerOnChange: 0
-  effectIntensityMultiplier: 30
+  effectIntensityMultiplier: 10
   appearancesContainer:
     tagsFallback_Appearances:
     - size
@@ -6894,7 +6896,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerAnimPlayerOnChange: 0
-  effectIntensityMultiplier: 30
+  effectIntensityMultiplier: 10
   appearancesContainer:
     tagsFallback_Appearances:
     - size
@@ -7956,7 +7958,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerAnimPlayerOnChange: 1
-  effectIntensityMultiplier: 30
+  effectIntensityMultiplier: 10
   appearancesContainer:
     tagsFallback_Appearances:
     - size
@@ -8818,7 +8820,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerAnimPlayerOnChange: 0
-  effectIntensityMultiplier: 30
+  effectIntensityMultiplier: 10
   appearancesContainer:
     tagsFallback_Appearances:
     - size
@@ -10209,6 +10211,7 @@ MonoBehaviour:
   popInfoEN: {fileID: 1467009303}
   popLine: {fileID: 0}
   confirm: {fileID: 438387033}
+  onlyOnce: 0
   num: 2
 --- !u!114 &1334356079
 MonoBehaviour:
@@ -10681,7 +10684,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerAnimPlayerOnChange: 1
-  effectIntensityMultiplier: 30
+  effectIntensityMultiplier: 10
   appearancesContainer:
     tagsFallback_Appearances:
     - size
@@ -11178,7 +11181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerAnimPlayerOnChange: 0
-  effectIntensityMultiplier: 30
+  effectIntensityMultiplier: 10
   appearancesContainer:
     tagsFallback_Appearances:
     - size
@@ -11754,7 +11757,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerAnimPlayerOnChange: 0
-  effectIntensityMultiplier: 30
+  effectIntensityMultiplier: 10
   appearancesContainer:
     tagsFallback_Appearances:
     - size
@@ -12140,7 +12143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerAnimPlayerOnChange: 1
-  effectIntensityMultiplier: 30
+  effectIntensityMultiplier: 10
   appearancesContainer:
     tagsFallback_Appearances:
     - size
@@ -14055,7 +14058,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerAnimPlayerOnChange: 0
-  effectIntensityMultiplier: 30
+  effectIntensityMultiplier: 10
   appearancesContainer:
     tagsFallback_Appearances:
     - size

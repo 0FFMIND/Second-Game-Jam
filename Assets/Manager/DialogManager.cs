@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using Febucci.UI;
 using UnityEngine.SceneManagement;
+using System.Linq;
 
 public class DialogManager : Singleton<DialogManager>
 {
@@ -37,142 +38,152 @@ public class DialogManager : Singleton<DialogManager>
         {
             if (Input.GetMouseButtonDown(0))
             {
-                if (SceneManager.GetActiveScene().name == "BELevelOne")
-                {
-                    if (index <= DContent.CNdialogList.Count && BELevelText.isFinished)
-                    {
-                        BELevelText.isFinished = false;
-                        StartCoroutine(StartDialog(DContent.CNdialogList, DContent.ENdialogList));
-                    }
-                    else if (!BELevelText.isFinished)
-                    {
-                        textAnimatorPlayer.SkipTypewriter();
-                        BELevelText.isFinished = true;
-                    }
-                }
-                if (SceneManager.GetActiveScene().name == "IntroScene" || SceneManager.GetActiveScene().name == "EndScene")
-                {
-                    if(index == 2 && !IntroController.isInit && IntroController.isFinished)
-                    {
-                        isIntroFinished = true;
-                    }
-                    if(index == 5 && IntroController.isFinished && SceneManager.GetActiveScene().name == "IntroScene")
-                    {
-                        isBEfinished = true;
-                    }
-                    else if (index == 3 && IntroController.isFinished && SceneManager.GetActiveScene().name == "EndScene")
-                    {
-                        isBEfinished = true;
-                    }
-                    else if (IntroController.isFinished)
-                    {
-                        IntroController.isFinished = false;
-                        StartCoroutine(StartDialog(DContent.CNdialogList, DContent.ENdialogList));
-                    }
-                    else if (!IntroController.isFinished)
-                    {
-                        textAnimatorPlayer.SkipTypewriter();
-                        IntroController.isFinished = true;
-                    }
-                }
-                if (SceneManager.GetActiveScene().name == "OpenScene")
-                {
-                    if (!SaveManager.Instance.IsOpenEnd && index <= DContent.CNdialogList.Count && LevelNewIntro.isFinished)
-                    {
-                        LevelNewIntro.isFinished = false;
-                        StartCoroutine(StartDialog(DContent.CNdialogList, DContent.ENdialogList));
-                    }
-                    else if (!LevelNewIntro.isFinished && !SaveManager.Instance.IsOpenEnd)
-                    {
-                        textAnimatorPlayer.SkipTypewriter();
-                        LevelNewIntro.isFinished = true;
-                    }
-                    if (SaveManager.Instance.IsOpenEnd)
-                    {
-                        return;
-                    }
-                }
-                if (SceneManager.GetActiveScene().name == "LevelOne")
-                {
-                    if (index <= DContent.CNdialogList.Count && LevelOneController.isFinished && LevelOneController.onlyOnce)
-                    {
-                        LevelOneController.isFinished = false;
-                        StartCoroutine(StartDialog(DContent.CNdialogList, DContent.ENdialogList));
-                    }
-                    else if (!LevelOneController.isFinished && LevelOneController.onlyOnce)
-                    {
-                        textAnimatorPlayer.SkipTypewriter();
-                        LevelOneController.isFinished = true;
-                    }
-                }
-                if (SceneManager.GetActiveScene().name == "LevelTwo")
-                {
-                    if (index <= DContent.CNdialogList.Count && LevelTwoController.isFinished && LevelTwoController.onlyOnce)
-                    {
-                        LevelTwoController.isFinished = false;
-                        StartCoroutine(StartDialog(DContent.CNdialogList, DContent.ENdialogList));
-                    }
-                    else if (!LevelTwoController.isFinished && LevelTwoController.onlyOnce)
-                    {
-                        textAnimatorPlayer.SkipTypewriter();
-                        LevelTwoController.isFinished = true;
-                    }
-                }
-                if (SceneManager.GetActiveScene().name == "LevelThree")
-                {
-                    if (index <= DContent.CNdialogList.Count && LevelThreeController.isFinished && LevelThreeController.onlyOnce)
-                    {
-                        LevelThreeController.isFinished = false;
-                        StartCoroutine(StartDialog(DContent.CNdialogList, DContent.ENdialogList));
-                    }
-                    else if (!LevelThreeController.isFinished && LevelThreeController.onlyOnce)
-                    {
-                        textAnimatorPlayer.SkipTypewriter();
-                        LevelThreeController.isFinished = true;
-                    }
-                }
-                if (GameObject.Find("BackgroundCanvas").gameObject.GetComponent<LevelFourController>() != null)
-                {
-                    if (index <= DContent.CNdialogList.Count && LevelFourController.isFinished && LevelFourController.onlyOnce)
-                    {
-                        LevelFourController.isFinished = false;
-                        StartCoroutine(StartDialog(DContent.CNdialogList, DContent.ENdialogList));
-                    }
-                    else if (!LevelFourController.isFinished && LevelFourController.onlyOnce)
-                    {
-                        textAnimatorPlayer.SkipTypewriter();
-                        LevelFourController.isFinished = true;
-                    }
-                }
-                if (GameObject.Find("BackgroundCanvas").gameObject.GetComponent<LevelFiveController>() != null)
-                {
-                    if (index <= DContent.CNdialogList.Count && LevelFiveController.isFinished && LevelFiveController.onlyOnce)
-                    {
-                        LevelFiveController.isFinished = false;
-                        StartCoroutine(StartDialog(DContent.CNdialogList, DContent.ENdialogList));
-                    }
-                    else if (!LevelFiveController.isFinished && LevelFiveController.onlyOnce)
-                    {
-                        textAnimatorPlayer.SkipTypewriter();
-                        LevelFiveController.isFinished = true;
-                    }
-                }
-                if (GameObject.Find("BackgroundCanvas").gameObject.GetComponent<LevelSixController>() != null)
-                {
-                    if (index <= DContent.CNdialogList.Count && LevelSixController.isFinished && LevelSixController.onlyOnce)
-                    {
-                        LevelSixController.isFinished = false;
-                        StartCoroutine(StartDialog(DContent.CNdialogList, DContent.ENdialogList));
-                    }
-                    else if (!LevelSixController.isFinished && LevelSixController.onlyOnce)
-                    {
-                        textAnimatorPlayer.SkipTypewriter();
-                        LevelSixController.isFinished = true;
-                    }
-                }
+                DialogControl();
+            }
+            else if(Input.touches.Length != 0 && Input.touches[0].phase == TouchPhase.Began)
+            {
+                DialogControl();
             }
         }
     }
+
+    private void DialogControl()
+    {
+        if (SceneManager.GetActiveScene().name == "BELevelOne")
+        {
+            if (index <= DContent.CNdialogList.Count && BELevelText.isFinished)
+            {
+                BELevelText.isFinished = false;
+                StartCoroutine(StartDialog(DContent.CNdialogList, DContent.ENdialogList));
+            }
+            else if (!BELevelText.isFinished)
+            {
+                textAnimatorPlayer.SkipTypewriter();
+                BELevelText.isFinished = true;
+            }
+        }
+        if (SceneManager.GetActiveScene().name == "IntroScene" || SceneManager.GetActiveScene().name == "EndScene")
+        {
+            if (index == 2 && !IntroController.isInit && IntroController.isFinished)
+            {
+                isIntroFinished = true;
+            }
+            if (index == 5 && IntroController.isFinished && SceneManager.GetActiveScene().name == "IntroScene")
+            {
+                isBEfinished = true;
+            }
+            else if (index == 3 && IntroController.isFinished && SceneManager.GetActiveScene().name == "EndScene")
+            {
+                isBEfinished = true;
+            }
+            else if (IntroController.isFinished)
+            {
+                IntroController.isFinished = false;
+                StartCoroutine(StartDialog(DContent.CNdialogList, DContent.ENdialogList));
+            }
+            else if (!IntroController.isFinished)
+            {
+                textAnimatorPlayer.SkipTypewriter();
+                IntroController.isFinished = true;
+            }
+        }
+        if (SceneManager.GetActiveScene().name == "OpenScene")
+        {
+            if (!SaveManager.Instance.IsOpenEnd && index <= DContent.CNdialogList.Count && LevelNewIntro.isFinished)
+            {
+                LevelNewIntro.isFinished = false;
+                StartCoroutine(StartDialog(DContent.CNdialogList, DContent.ENdialogList));
+            }
+            else if (!LevelNewIntro.isFinished && !SaveManager.Instance.IsOpenEnd)
+            {
+                textAnimatorPlayer.SkipTypewriter();
+                LevelNewIntro.isFinished = true;
+            }
+            if (SaveManager.Instance.IsOpenEnd)
+            {
+                return;
+            }
+        }
+        if (SceneManager.GetActiveScene().name == "LevelOne")
+        {
+            if (index <= DContent.CNdialogList.Count && LevelOneController.isFinished && LevelOneController.onlyOnce)
+            {
+                LevelOneController.isFinished = false;
+                StartCoroutine(StartDialog(DContent.CNdialogList, DContent.ENdialogList));
+            }
+            else if (!LevelOneController.isFinished && LevelOneController.onlyOnce)
+            {
+                textAnimatorPlayer.SkipTypewriter();
+                LevelOneController.isFinished = true;
+            }
+        }
+        if (SceneManager.GetActiveScene().name == "LevelTwo")
+        {
+            if (index <= DContent.CNdialogList.Count && LevelTwoController.isFinished && LevelTwoController.onlyOnce)
+            {
+                LevelTwoController.isFinished = false;
+                StartCoroutine(StartDialog(DContent.CNdialogList, DContent.ENdialogList));
+            }
+            else if (!LevelTwoController.isFinished && LevelTwoController.onlyOnce)
+            {
+                textAnimatorPlayer.SkipTypewriter();
+                LevelTwoController.isFinished = true;
+            }
+        }
+        if (SceneManager.GetActiveScene().name == "LevelThree")
+        {
+            if (index <= DContent.CNdialogList.Count && LevelThreeController.isFinished && LevelThreeController.onlyOnce)
+            {
+                LevelThreeController.isFinished = false;
+                StartCoroutine(StartDialog(DContent.CNdialogList, DContent.ENdialogList));
+            }
+            else if (!LevelThreeController.isFinished && LevelThreeController.onlyOnce)
+            {
+                textAnimatorPlayer.SkipTypewriter();
+                LevelThreeController.isFinished = true;
+            }
+        }
+        if (GameObject.Find("BackgroundCanvas").gameObject.GetComponent<LevelFourController>() != null)
+        {
+            if (index <= DContent.CNdialogList.Count && LevelFourController.isFinished && LevelFourController.onlyOnce)
+            {
+                LevelFourController.isFinished = false;
+                StartCoroutine(StartDialog(DContent.CNdialogList, DContent.ENdialogList));
+            }
+            else if (!LevelFourController.isFinished && LevelFourController.onlyOnce)
+            {
+                textAnimatorPlayer.SkipTypewriter();
+                LevelFourController.isFinished = true;
+            }
+        }
+        if (GameObject.Find("BackgroundCanvas").gameObject.GetComponent<LevelFiveController>() != null)
+        {
+            if (index <= DContent.CNdialogList.Count && LevelFiveController.isFinished && LevelFiveController.onlyOnce)
+            {
+                LevelFiveController.isFinished = false;
+                StartCoroutine(StartDialog(DContent.CNdialogList, DContent.ENdialogList));
+            }
+            else if (!LevelFiveController.isFinished && LevelFiveController.onlyOnce)
+            {
+                textAnimatorPlayer.SkipTypewriter();
+                LevelFiveController.isFinished = true;
+            }
+        }
+        if (GameObject.Find("BackgroundCanvas").gameObject.GetComponent<LevelSixController>() != null)
+        {
+            if (index <= DContent.CNdialogList.Count && LevelSixController.isFinished && LevelSixController.onlyOnce)
+            {
+                LevelSixController.isFinished = false;
+                StartCoroutine(StartDialog(DContent.CNdialogList, DContent.ENdialogList));
+            }
+            else if (!LevelSixController.isFinished && LevelSixController.onlyOnce)
+            {
+                textAnimatorPlayer.SkipTypewriter();
+                LevelSixController.isFinished = true;
+            }
+        }
+    }
+
     public void BeginDialog(DialogContent content)
     {
         text = textObject.GetComponent<TextMeshProUGUI>();

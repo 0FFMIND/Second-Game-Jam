@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a425ffcc44735d1449ee7f2ee6f38529, type: 3}
+  m_Name: BEEnd
+  m_EditorClassIdentifier: 
+  istypped: 0
+  CNdialogList:
+  - "<wave>\u8D1F\u8D23\u4EBA\uFF0C\u611F\u8C22\u60A8\u5BF9\u5F00\u666E\u52D2-62\u661F\u7CFB\u4E2D\u7EA2\u5CA9\u661F\u548C\u6697\u6D0B\u661F\u7684\u6E05\u6D01\uFF0C\u8FD9\u662F\u901A\u5173\u754C\u9762</wave>"
+  - "<wave>\u56E0\u4E3A\u6E05\u6D01\u5176\u4ED6\u5730\u533A\u9700\u8981\u989D\u5916\u7684\u6E05\u6D01\u88C5\u7F6E\uFF0C\u9700\u8981\u60A8\u8FD4\u56DE\u672C\u90E8\u62FF\u53D6\uFF0C\u8FD9\u91CC\u4E3A\u8DEF\u9014\u7684\u7B49\u5F85\u800C\u611F\u5230\u62B1\u6B49</wave>"
+  ENdialogList:
+  - <wave>Administrator, thank you for your efforts in cleaning up Red Rock Planet
+    and Dark Sea in the Kepler-62 system. This is the level completion interface.</wave>
+  - <wave>Because cleaning other areas requires additional cleaning equipment, we
+    need you to return to the headquarters to collect them. We apologize for the
+    wait.</wave>

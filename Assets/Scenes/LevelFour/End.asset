@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a425ffcc44735d1449ee7f2ee6f38529, type: 3}
+  m_Name: End
+  m_EditorClassIdentifier: 
+  istypped: 0
+  CNdialogList:
+  - "<wave>\u611F\u8C22\u60A8\u7684\u6E38\u73A9\uFF0C\u540E\u7EED\u4F1A\u5F00\u53D1\u5176\u4ED6\u661F\u7CFB\u7684\u6E05\u6D01\u8BA1\u5212\u4EE5\u53CAhard\u6A21\u5F0F</wave>"
+  - "<wave>\u540C\u6837\uFF0C\u60A8\u53EF\u4EE5\u91CD\u65B0\u5F00\u59CB\u6E38\u620F\u9009\u62E9\u4E0D\u540C\u7B56\u7565\u6E38\u73A9\u63A2\u7D22\u65B0\u7684\u901A\u5173\u4EE5\u53CA\u60C5\u8282\u65B9\u5F0F</wave>"
+  - "<wave>\u5728\u6B64\u7ED3\u675F\u540E\u4F1A\u8FD4\u56DE\u4E3B\u83DC\u5355\uFF0C\u611F\u8C22\u60A8\u7684\u8046\u542C\uFF0C\u795D\u60A8\u65C5\u9014\u6109\u5FEB</wave>"
+  ENdialogList:
+  - <wave>Thank you for playing. In the future, we will develop cleaning plans for
+    other star systems as well as a hard mode. Stay tuned!</wave>
+  - <wave>Similarly, you can start the game again, choose different strategies, and
+    explore new ways to complete the levels and story.</wave>
+  - <wave>At the end, you will return to the main menu. Thank you for your attention,
+    and have a great journey!</wave>

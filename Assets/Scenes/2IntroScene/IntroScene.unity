@@ -475,6 +475,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   introSave: {fileID: 462216532}
   introText: {fileID: 1184152103}
+  isSaveEnd: 0
   BeforeIntroDialog: {fileID: 11400000, guid: 5b78bbf0a8e44af4eb5cbeae6283bbb7, type: 2}
   IntroDialog: {fileID: 11400000, guid: 593283babc6105240a171d8016ea8c05, type: 2}
   storyboards:
@@ -1038,7 +1039,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerAnimPlayerOnChange: 1
-  effectIntensityMultiplier: 30
+  effectIntensityMultiplier: 15
   appearancesContainer:
     tagsFallback_Appearances:
     - size
@@ -1612,7 +1613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerAnimPlayerOnChange: 1
-  effectIntensityMultiplier: 50
+  effectIntensityMultiplier: 20
   appearancesContainer:
     tagsFallback_Appearances:
     - size

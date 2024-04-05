@@ -14,7 +14,6 @@ public class HealthBar : MonoBehaviour
     }
     private void HealthSystem_OnDamaged(object sender, System.EventArgs e)
     {
-        AudioManager.Instance.PlaySFX(SoundEffect.Hit);
         UpdateBar();
     }
     private void UpdateBar()

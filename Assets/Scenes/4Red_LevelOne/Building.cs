@@ -20,7 +20,7 @@ public class Building : MonoBehaviour
     {
         sellPanel = GameObject.FindGameObjectsWithTag("sell");
         sellCanvas = GameObject.FindGameObjectsWithTag("sellCanvas");
-        if (Input.GetMouseButtonDown(1) && isOpen)
+        if ((Input.GetMouseButtonDown(1) || !CursorManager.isSellOpen) && isOpen)
         {
             isOpen = !isOpen;
             for (int i = 0; i < sellPanel.Length; i++)
@@ -28,7 +28,7 @@ public class Building : MonoBehaviour
                 sellPanel[i].SetActive(false);
             }
         }
-        else if(Input.GetMouseButtonDown(1) && !isOpen)
+        else if((Input.GetMouseButtonDown(1) || CursorManager.isSellOpen) && !isOpen)
         {
             isOpen = !isOpen;
             for (int i = 0; i < sellCanvas.Length; i++)

@@ -28,7 +28,11 @@ public class HealthSystem : MonoBehaviour
     }
     public void Damage(int damageAmonut)
     {
-        AudioManager.Instance.PlaySFX(SoundEffect.Hit);
+        if (damageAmonut > 0)
+        {
+            AudioManager.Instance.StopSFX();
+            AudioManager.Instance.PlaySFX(SoundEffect.Hit);
+        }
         healthAmount -= damageAmonut;
         healthAmount = Mathf.Clamp(healthAmount, 0, healthAmountMax);
         OnDamaged?.Invoke(this, EventArgs.Empty);

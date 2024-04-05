@@ -23,12 +23,13 @@ public class BuildingManager : MonoBehaviour
     private void Update()
     {
 
-        if (Input.GetMouseButtonDown(0) && canWaterPlace && (activeBuildingType == buildingTypeList.list[3] || activeBuildingType == buildingTypeList.list[9]))
+        if ((Input.GetMouseButtonDown(0) || Input.touches[0].phase == TouchPhase.Began) && canWaterPlace && (activeBuildingType == buildingTypeList.list[3] || activeBuildingType == buildingTypeList.list[9]))
         {
             if (CanSpawnBuilding(activeBuildingType, GetMouseWorldPosition()))
             {
                 if (ResourceManager.Instance.CanAfford(activeBuildingType.constructResourceArray))
                 {
+                    AudioManager.Instance.StopSFX();
                     AudioManager.Instance.PlaySFX(SoundEffect.UISelect);
                     ResourceManager.Instance.SpendResource(activeBuildingType.constructResourceArray);
                     Instantiate(activeBuildingType.prefab, GetMouseWorldPosition(), Quaternion.identity);
@@ -37,7 +38,7 @@ public class BuildingManager : MonoBehaviour
 
 
         }
-        if (Input.GetMouseButtonDown(0) && canPlace && (activeBuildingType != buildingTypeList.list[3] && activeBuildingType != buildingTypeList.list[9]))
+        if ((Input.GetMouseButtonDown(0) || Input.touches[0].phase == TouchPhase.Began) && canPlace && (activeBuildingType != buildingTypeList.list[3] && activeBuildingType != buildingTypeList.list[9]))
         {
             if (activeBuildingType != null && CanSpawnBuilding(activeBuildingType, GetMouseWorldPosition()))
             {
@@ -48,6 +49,7 @@ public class BuildingManager : MonoBehaviour
                     {
                         if(GameObject.FindGameObjectWithTag("defenseholder") == null && GameObject.FindGameObjectsWithTag("defenseholder").Length == 0)
                         {
+                            AudioManager.Instance.StopSFX();
                             AudioManager.Instance.PlaySFX(SoundEffect.UISelect);
                             Instantiate(activeBuildingType.prefab, GetMouseWorldPosition(), Quaternion.identity);
                             return;
@@ -61,6 +63,7 @@ public class BuildingManager : MonoBehaviour
                     {
                         if (GameObject.FindGameObjectWithTag("shootcenter") == null && GameObject.FindGameObjectsWithTag("shootcenter").Length == 0)
                         {
+                            AudioManager.Instance.StopSFX();
                             AudioManager.Instance.PlaySFX(SoundEffect.UISelect);
                             Instantiate(activeBuildingType.prefab, GetMouseWorldPosition(), Quaternion.identity);
                             return;
@@ -70,6 +73,7 @@ public class BuildingManager : MonoBehaviour
                             return;
                         }
                     }
+                    AudioManager.Instance.StopSFX();
                     AudioManager.Instance.PlaySFX(SoundEffect.UISelect);
                     Instantiate(activeBuildingType.prefab, GetMouseWorldPosition(), Quaternion.identity);
                     return;

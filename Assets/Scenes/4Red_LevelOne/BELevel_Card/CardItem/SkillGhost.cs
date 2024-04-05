@@ -150,7 +150,7 @@ public class SkillGhost : MonoBehaviour
             {
                 TimerFour += Time.deltaTime;
             }
-            if (TimerFour > 3f)
+            if (TimerFour > 8f)
             {
                 isCardFour = false;
                 if (GameObject.FindGameObjectsWithTag("solar") != null && GameObject.FindGameObjectsWithTag("solar").Length != 0)
@@ -219,7 +219,7 @@ public class SkillGhost : MonoBehaviour
             {
                 TimerThree += Time.deltaTime;
             }
-            if (TimerThree > 3f)
+            if (TimerThree > 8f)
             {
                 isCardThree = false;
             }
@@ -234,7 +234,7 @@ public class SkillGhost : MonoBehaviour
 
                 if (onlyNineOne)
                 {
-                    shootcenter.GetComponentInChildren<TankTurretProjectile>().DelayPerShot = shootcenter.GetComponentInChildren<TankTurretProjectile>().DelayPerShot * 0.5f;
+                    shootcenter.GetComponentInChildren<TankTurretProjectile>().DelayPerShot = shootcenter.GetComponentInChildren<TankTurretProjectile>().DelayPerShot * 0.2f;
                 }
             }
             if (GameObject.FindGameObjectsWithTag("turret") != null)
@@ -245,7 +245,7 @@ public class SkillGhost : MonoBehaviour
                 {
                     if (onlyNineOne)
                     {
-                        turrets[i].GetComponentInChildren<TankTurretProjectile>().DelayPerShot = turrets[i].GetComponentInChildren<TankTurretProjectile>().DelayPerShot * 0.5f;
+                        turrets[i].GetComponentInChildren<TankTurretProjectile>().DelayPerShot = turrets[i].GetComponentInChildren<TankTurretProjectile>().DelayPerShot * 0.2f;
                     }
                 }
             }
@@ -267,13 +267,13 @@ public class SkillGhost : MonoBehaviour
                     GameObject[] turrets = GameObject.FindGameObjectsWithTag("turret");
                     for (int i = 0; i < turrets.Length; i++)
                     {
-                        turrets[i].GetComponentInChildren<TankTurretProjectile>().DelayPerShot = turrets[i].GetComponentInChildren<TankTurretProjectile>().DelayPerShot * 2f;
+                        turrets[i].GetComponentInChildren<TankTurretProjectile>().DelayPerShot = turrets[i].GetComponentInChildren<TankTurretProjectile>().DelayPerShot * 5f;
                     }
                 }
                 if (GameObject.FindGameObjectWithTag("shootcenter") != null)
                 {
                     GameObject shootcenter = GameObject.FindGameObjectWithTag("shootcenter");
-                    shootcenter.GetComponentInChildren<TankTurretProjectile>().DelayPerShot = shootcenter.GetComponentInChildren<TankTurretProjectile>().DelayPerShot * 2f;
+                    shootcenter.GetComponentInChildren<TankTurretProjectile>().DelayPerShot = shootcenter.GetComponentInChildren<TankTurretProjectile>().DelayPerShot * 5f;
                 }
             }
         }
@@ -288,12 +288,25 @@ public class SkillGhost : MonoBehaviour
                 {
                     if (onlyOneOne)
                     {
-                        speeds.Add(enemies[i].GetComponent<PathFollower>().Speed);
+                        if(enemies[i].GetComponent<PathFollower>() != null)
+                        {
+                            speeds.Add(enemies[i].GetComponent<PathFollower>().Speed);
+                        }
+                        if(enemies[i].GetComponent<PathFollower2>() != null)
+                        {
+                            speeds.Add(enemies[i].GetComponent<PathFollower2>().Speed);
+                        }
                     }
                 }
                 for (int i = 0; i < enemies.Length; i++)
                 {
-                    enemies[i].GetComponent<PathFollower>().Speed = speeds[i] * 0.8f;
+                    if(enemies[i].GetComponent<PathFollower>() != null)
+                    {
+                        enemies[i].GetComponent<PathFollower>().Speed = speeds[i] * 0.5f;
+                    }else if(enemies[i].GetComponent<PathFollower2>() != null)
+                    {
+                        enemies[i].GetComponent<PathFollower2>().Speed = speeds[i] * 0.5f;
+                    }
                 }
             }
             if (onlyOneOne)
@@ -314,7 +327,14 @@ public class SkillGhost : MonoBehaviour
                     GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
                     for (int i = 0; i < enemies.Length; i++)
                     {
-                        enemies[i].GetComponent<PathFollower>().Speed = speeds[i];
+                        if (enemies[i].GetComponent<PathFollower>() != null)
+                        {
+                            enemies[i].GetComponent<PathFollower>().Speed = speeds[i];
+                        }
+                        else if (enemies[i].GetComponent<PathFollower2>() != null)
+                        {
+                            enemies[i].GetComponent<PathFollower2>().Speed = speeds[i];
+                        }
                     }
                 }
             }
@@ -333,12 +353,26 @@ public class SkillGhost : MonoBehaviour
                     {
                         if (onlyTenOne)
                         {
-                            speeds.Add(enemies[i].GetComponent<PathFollower>().Speed);
+                            if (enemies[i].GetComponent<PathFollower>() != null)
+                            {
+                                speeds.Add(enemies[i].GetComponent<PathFollower>().Speed);
+                            }
+                            if (enemies[i].GetComponent<PathFollower2>() != null)
+                            {
+                                speeds.Add(enemies[i].GetComponent<PathFollower2>().Speed);
+                            }
                         }
                     }
                     for (int i = 0; i < enemies.Length; i++)
                     {
-                        enemies[i].GetComponent<PathFollower>().Speed = speeds[i] * 0.7f;
+                        if (enemies[i].GetComponent<PathFollower>() != null)
+                        {
+                            enemies[i].GetComponent<PathFollower>().Speed = speeds[i] * 0.5f;
+                        }
+                        else if (enemies[i].GetComponent<PathFollower2>() != null)
+                        {
+                            enemies[i].GetComponent<PathFollower2>().Speed = speeds[i] * 0.5f;
+                        }
                     }
                 }
                 catch(Exception e)
@@ -356,7 +390,7 @@ public class SkillGhost : MonoBehaviour
                 TimerTen += Time.deltaTime;
             }
             
-            if (TimerTen > 2f)
+            if (TimerTen > 5f)
             {
                 isCardTen = false;
                 if (GameObject.FindGameObjectsWithTag("Enemy") != null)
@@ -366,10 +400,17 @@ public class SkillGhost : MonoBehaviour
                     {
                         for (int i = 0; i < enemies.Length; i++)
                         {
-                            enemies[i].GetComponent<PathFollower>().Speed = speeds[i];
+                            if (enemies[i].GetComponent<PathFollower>() != null)
+                            {
+                                enemies[i].GetComponent<PathFollower>().Speed = speeds[i];
+                            }
+                            else if (enemies[i].GetComponent<PathFollower2>() != null)
+                            {
+                                enemies[i].GetComponent<PathFollower2>().Speed = speeds[i];
+                            }
                         }
                     }
-                    catch(Exception e)
+                    catch (Exception e)
                     {
 
                     }
@@ -381,8 +422,8 @@ public class SkillGhost : MonoBehaviour
 
                 for (int i = 0; i < enemies.Length; i++)
                 {
-                    enemies[i].GetComponent<HealthSystem>().Damage(5);
-                    enemies[i].GetComponent<Enemy>().DealDamage(5);
+                    enemies[i].GetComponent<HealthSystem>().Damage(10);
+                    enemies[i].GetComponent<Enemy>().DealDamage(10);
                 }
             }
             if (GameObject.FindGameObjectsWithTag("Enemy") != null && TimerTen > 0.5f && TimerTen < 0.51f)
@@ -427,7 +468,7 @@ public class SkillGhost : MonoBehaviour
             {
                 TimerSeven += Time.deltaTime;
             }
-            if (TimerSeven > 2f)
+            if (TimerSeven > 3f)
             {
                 isCardSeven = false;
             }

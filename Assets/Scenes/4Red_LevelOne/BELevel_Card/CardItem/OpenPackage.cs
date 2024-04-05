@@ -31,7 +31,8 @@ public class OpenPackage : MonoBehaviour
             }
         }
         for (int i = 0; i < 5; i++)
-        {            GameObject newCard = GameObject.Instantiate(cardPrefab, cardPool);
+        {
+            GameObject newCard = GameObject.Instantiate(cardPrefab, cardPool);
             cardTempStore.Add(newCard);
             if(cardStorePref != null)
             {

@@ -121,7 +121,7 @@ public class BELevelText : MonoBehaviour
         {
             introCG[0].SetActive(false); introCG[1].SetActive(true);
         }
-        if (SaveManager.Instance.IsPoolFinshed && introCG[1].activeSelf && firstFinish && Input.GetMouseButtonDown(0))
+        if (SaveManager.Instance.IsPoolFinshed && introCG[1].activeSelf && firstFinish && (Input.GetMouseButtonDown(0)|| Input.touches[0].phase == TouchPhase.Began))
         {
             TransManager.Instance.ChangeScene("BBLevelOne");
         }

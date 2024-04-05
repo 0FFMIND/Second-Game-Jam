@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class CursorManager : Singleton<CursorManager>
 {
+    public static bool isSellOpen = false;
+    public static bool isGhostOpen = false;
     public Vector2 cursorPos;
     private Vector3 pos = new Vector3(-100,-100,0);
     private void Update()

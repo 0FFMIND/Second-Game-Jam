@@ -107,7 +107,10 @@ public class LevelOneController : MonoBehaviour
     }
     private void Update()
     {
-        timer += Time.deltaTime;
+        if(IntroPanel.activeSelf == false)
+        {
+            timer += Time.deltaTime;
+        }
         if(timer > 30f && timer < 30.01f)
         {
             AudioManager.Instance.PlaySFX(SoundEffect.Beep);

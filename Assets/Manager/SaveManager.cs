@@ -11,7 +11,7 @@ public class SaveManager : Singleton<SaveManager>
     public bool IsEnglishLanguage { get; private set; } = false;
     public bool IsChineseLanguage { get; private set; } = false;
     //涉及场景的存档
-    public bool IsIntroEnd { get; set; } = false;
+    public bool IsIntroEnd { get; set; } = false; //是否在介绍模式，牵扯到一些UI显示
     public bool IsOpenEnd { get; set; } = false;
     public bool IsLevelOneEnd { get; set; } = false;
     public bool IsPoolFinshed { get; set; } = false; // 选好了手牌直接跳过
@@ -39,10 +39,10 @@ public class SaveManager : Singleton<SaveManager>
                       .Write("ResoOpt", "highReso")
                       .Write("SFXvalue", "0.5")
                       .Write("BGMvalue","0.5")
-                      .Write("LangOpt", "chnLang")
+                      .Write("LangOpt", "engLang")
                       .Commit();
             IsHighResolution = true;
-            IsChineseLanguage = true;
+            IsEnglishLanguage = true;
         }
         //在系统初始化的时候读取文件
         LoadSettings();

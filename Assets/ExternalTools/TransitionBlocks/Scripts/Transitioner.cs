@@ -107,7 +107,9 @@ public class Transitioner : MonoBehaviour
     }
 
     #endregion
-    
+
+
+    #region Load scene using string
     public void TransitionToScene(string sceneName, bool waitUntilReady = false)
     {
         if (_canTransition)
@@ -125,7 +127,10 @@ public class Transitioner : MonoBehaviour
         yield return StartCoroutine(Transition(TransitionType.Out));
         SceneManager.LoadScene(sceneName);
     }
+    #endregion
 
+
+    #region Load Scene using index
     public void TransitionToScene(int sceneNumber, bool waitUntilReady = false)
     {
         if (_canTransition)
@@ -143,7 +148,10 @@ public class Transitioner : MonoBehaviour
         yield return StartCoroutine(Transition(TransitionType.Out));
         SceneManager.LoadScene(sceneNumber);
     }
+    #endregion
 
+
+    #region YourGameLogic
     public void TransitionOutWithoutChangingScene()
     {
         if (_canTransition)
@@ -157,6 +165,13 @@ public class Transitioner : MonoBehaviour
         Destroy(_transitionOrdererObject);
         StartCoroutine(ActualTransitionIn());
     }
+
+    public void FinishTransition()
+    {
+        _transitionInTriggered = true;
+    }
+    #endregion
+
 
     private void OnEnable()
     {
@@ -177,10 +192,6 @@ public class Transitioner : MonoBehaviour
         }
     }
 
-    public void FinishTransition()
-    {
-        _transitionInTriggered = true;
-    }
 
     private IEnumerator ActualTransitionIn()
     {

@@ -16,6 +16,7 @@ public enum SoundEffect
     Hit,
     Shoot,
     StrongShoot,
+    Health,
 }
 public enum BackgroundMusic
 {
@@ -48,11 +49,11 @@ public class AudioManager : Singleton<AudioManager>
     }
     private void ChangeAudioValue(float changeValue,AudioSource clip)
     {
-        if (clip.volume + changeValue > 1)
+        if (changeValue > 1)
         {
             clip.volume = 1;
         }
-        else if (clip.volume + changeValue < 0)
+        else if (changeValue < 0)
         {
             clip.volume = 0;
         }
@@ -67,6 +68,13 @@ public class AudioManager : Singleton<AudioManager>
         foreach (var clip in bgm)
         {
             ChangeAudioValue(changeValue, clip);
+        }
+    }
+    public void StopSFX()
+    {
+        for (int i = 0; i < bgm.Length; i++)
+        {
+            sfx[i].Stop();
         }
     }
     public void StopBGM()

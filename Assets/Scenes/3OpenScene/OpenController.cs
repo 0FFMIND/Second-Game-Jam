@@ -59,13 +59,16 @@ public class OpenController : MonoBehaviour
     }
     public void ImageChange()
     {
-        foreach (var image in images)
+        if (Transitioner.Instance.CanTransition())
         {
-            image.color = new Color(0f, 0f, 0f, 0f);
-        }
-        foreach (var text in texts)
-        {
-            text.gameObject.SetActive(false);
+            foreach (var image in images)
+            {
+                image.color = new Color(0f, 0f, 0f, 0f);
+            }
+            foreach (var text in texts)
+            {
+                text.gameObject.SetActive(false);
+            }
         }
     }
     public void ReturnIntro()

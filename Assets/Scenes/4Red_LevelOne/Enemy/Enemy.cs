@@ -49,7 +49,7 @@ public class Enemy : MonoBehaviour
         {
             if (SkillGhost.isCardThree)
             {
-                this.gameObject.GetComponent<PathFollower>().Speed = 0.3f;
+                this.gameObject.GetComponent<PathFollower>().Speed = 0.2f;
             }
             StartCoroutine(PlayHurt());
         }

@@ -54,6 +54,7 @@ public class TitleController : MonoBehaviour
     }
     public void OpenMenu(TitleMenuBase menu)
     {
+        //将菜单池里的菜单设置为false然后加入需要的菜单
         if (menuStack.Count > 0)
         {
             foreach (var singlemenu in menuStack)
