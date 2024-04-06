@@ -1,0 +1,1589 @@
+Using pre-set license
+Built from '2020.3/china_unity/release' branch; Version is '2020.3.20f1c1 (256576dc9522) revision 2450806'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19045.4170; Version 2009; 64bit' Language: 'zh' Physical Memory: 16114 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.20f1c1\2020.3.20f1c1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/Second-Game-Jam
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+63751
+Successfully changed project path to: D:/Second-Game-Jam
+D:/Second-Game-Jam
+Using Asset Import Pipeline V2.
+AS: AutoStreaming module initializing.Refreshing native plugins compatible for Editor in 78.10 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.20f1c1 (256576dc9522)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.20f1c1/2020.3.20f1c1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Second-Game-Jam/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2560)
+    Vendor:   
+    VRAM:     6009 MB
+    Driver:   31.0.15.3667
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.20f1c1/2020.3.20f1c1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.20f1c1/2020.3.20f1c1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.20f1c1/2020.3.20f1c1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56248
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.20f1c1/2020.3.20f1c1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.20f1c1/2020.3.20f1c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002354 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 64.74 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.826 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2826ms)
+		BeginReloadAssembly (51ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (523ms)
+			LoadAssemblies (49ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (183ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (199ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (65ms)
+				BeforeProcessingInitializeOnLoad (14ms)
+				ProcessInitializeOnLoadAttributes (82ms)
+				ProcessInitializeOnLoadMethodAttributes (32ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003908 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 53.21 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.068 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1068ms)
+		BeginReloadAssembly (150ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (841ms)
+			LoadAssemblies (84ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (259ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (335ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (53ms)
+				BeforeProcessingInitializeOnLoad (74ms)
+				ProcessInitializeOnLoadAttributes (188ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2501 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 136.8 MB.
+System memory in use after: 137.0 MB.
+
+Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 2966.
+Total: 2.667900 ms (FindLiveObjects: 0.278800 ms CreateObjectMapping: 0.080400 ms MarkObjects: 2.220600 ms  DeleteObjects: 0.087200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/ExternalTools/AllIn1SpriteShader/Demo/Animation/Fade.controller
+  artifactKey: Guid(2025469cc6b8be543a1b93993e746b75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/AllIn1SpriteShader/Demo/Animation/Fade.controller using Guid(2025469cc6b8be543a1b93993e746b75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7d80178a62380e7560f65ba96c7f0a3') in 0.025673 seconds 
+  Import took 0.029979 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/ExternalTools/Shapeforms Audio Free Sound Effects/Cassette Preview/AUDIO/FAST_FORWARD_LOOP_02.wav
+  artifactKey: Guid(846a3cecc85184967834e9df7b344754) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Shapeforms Audio Free Sound Effects/Cassette Preview/AUDIO/FAST_FORWARD_LOOP_02.wav using Guid(846a3cecc85184967834e9df7b344754) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'defdf4176ddb8af946247a0208f9c132') in 0.069653 seconds 
+  Import took 0.073163 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/ExternalTools/RainMaker/Prefab/RainPrefab.prefab
+  artifactKey: Guid(69b40ef7ee16c834c844b3fa26e0fdda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/RainMaker/Prefab/RainPrefab.prefab using Guid(69b40ef7ee16c834c844b3fa26e0fdda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba58dcb7b63aa7c0328f0b36ed817e6b') in 0.031412 seconds 
+  Import took 0.036008 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_FadeAndSlideFromBottom.prefab
+  artifactKey: Guid(dcf66d11c242c5745be0d2cc345725c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_FadeAndSlideFromBottom.prefab using Guid(dcf66d11c242c5745be0d2cc345725c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e6cb57561b9bcaf8486b2039e80c192') in 0.025489 seconds 
+  Import took 0.030303 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_FadeInSteps.prefab
+  artifactKey: Guid(fb2c3eb951de8b54fa28fd715ff04aeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_FadeInSteps.prefab using Guid(fb2c3eb951de8b54fa28fd715ff04aeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '267128f9d81a0a215a3909c01e52c7ec') in 0.020780 seconds 
+  Import took 0.026516 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/ExternalTools/RainMaker/Prefab/RainPrefab2D.prefab
+  artifactKey: Guid(b046278bb9b6e104790392b566667ba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/RainMaker/Prefab/RainPrefab2D.prefab using Guid(b046278bb9b6e104790392b566667ba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85141226c1163300ab2630fda48739ba') in 0.044095 seconds 
+  Import took 0.048344 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/ExternalTools/Febucci/Text Animator/Scripts/Runtime/Effects/Behavior Effects/Defaults/FadeBehavior.cs
+  artifactKey: Guid(d1f1dde3a46b6e748885a8d202c32044) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Febucci/Text Animator/Scripts/Runtime/Effects/Behavior Effects/Defaults/FadeBehavior.cs using Guid(d1f1dde3a46b6e748885a8d202c32044) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7be4d262fb6318a08ea457212e21ba2') in 0.003216 seconds 
+  Import took 0.007015 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_FadeInWobblySteps.prefab
+  artifactKey: Guid(b283eeb031dc9ad4f9d0b73520645c54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_FadeInWobblySteps.prefab using Guid(b283eeb031dc9ad4f9d0b73520645c54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e664ac5632c63658a5bfa5464bc404a2') in 0.014454 seconds 
+  Import took 0.018610 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000358 seconds.
+  path: Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_FadeAndSlideFromTop.prefab
+  artifactKey: Guid(733bb9dca5aa5764e94cbaa6c779847a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_FadeAndSlideFromTop.prefab using Guid(733bb9dca5aa5764e94cbaa6c779847a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f5f4298d2b467d974193d94b7979f2c') in 0.022416 seconds 
+  Import took 0.026397 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/ExternalTools/RainMaker/Demo/Standard Assets/Environment/TerrainAssets/SurfaceTextures/CliffAlbedoSpecular.psd
+  artifactKey: Guid(18214e9d6af6248559d501391856f1c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/RainMaker/Demo/Standard Assets/Environment/TerrainAssets/SurfaceTextures/CliffAlbedoSpecular.psd using Guid(18214e9d6af6248559d501391856f1c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb6a9a5f8e6b2b45386f56fd88b3d230') in 0.003264 seconds 
+  Import took 0.007922 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/ExternalTools/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset
+  artifactKey: Guid(f952c082cb03451daed3ee968ac6c63e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset using Guid(f952c082cb03451daed3ee968ac6c63e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe7d18d05c5cb4771e20e1f22d6e6f31') in 0.004659 seconds 
+  Import took 0.010508 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000379 seconds.
+  path: Assets/ExternalTools/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '714618fcbb09863a4488f88121676da5') in 0.051038 seconds 
+  Import took 0.056885 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/ExternalTools/TransitionBlocks/Prefabs/Example Transitioners/RandomFadeTransitioner.prefab
+  artifactKey: Guid(92ca2a66a33ea0c4c9ae5b91ee46d357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/TransitionBlocks/Prefabs/Example Transitioners/RandomFadeTransitioner.prefab using Guid(92ca2a66a33ea0c4c9ae5b91ee46d357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56007dd189fae886e6f74abad76cea5e') in 0.003762 seconds 
+  Import took 0.010126 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/ExternalTools/Shapeforms Audio Free Sound Effects/Cassette Preview/AUDIO/REWIND_FAST_FORWARD_09.wav
+  artifactKey: Guid(d8e27b2312aff4681875d54cadb4820a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Shapeforms Audio Free Sound Effects/Cassette Preview/AUDIO/REWIND_FAST_FORWARD_09.wav using Guid(d8e27b2312aff4681875d54cadb4820a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd503ddb99334779e24771f84e1b1ed01') in 0.009093 seconds 
+  Import took 0.014820 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/ExternalTools/Shapeforms Audio Free Sound Effects/Sci Fi Weapons Cyberpunk Arsenal Preview/AUDIO/BLLTBy_Bullet By Centred Fast_02.wav
+  artifactKey: Guid(feaaec11b7c20462eb6660365bbeb1ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Shapeforms Audio Free Sound Effects/Sci Fi Weapons Cyberpunk Arsenal Preview/AUDIO/BLLTBy_Bullet By Centred Fast_02.wav using Guid(feaaec11b7c20462eb6660365bbeb1ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37ee8c87771ed5df6132b37a0b324bd5') in 0.008230 seconds 
+  Import took 0.013081 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/ExternalTools/TransitionBlocks/Prefabs/Example Transitioners/FadeBarsTransitioner.prefab
+  artifactKey: Guid(cad1bc05ae06cbf43bc8ec1f897b80b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/TransitionBlocks/Prefabs/Example Transitioners/FadeBarsTransitioner.prefab using Guid(cad1bc05ae06cbf43bc8ec1f897b80b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b21bb72abf0514e583d463fd444de496') in 0.004596 seconds 
+  Import took 0.010494 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_Fade.prefab
+  artifactKey: Guid(678db6530e9be224d96249881320eab0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_Fade.prefab using Guid(678db6530e9be224d96249881320eab0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2db38e401a35dbc1e6d917dc930188c6') in 0.017857 seconds 
+  Import took 0.022744 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/ExternalTools/RFX_Resources/Model/Materials/02 - Default.mat
+  artifactKey: Guid(a75f970aca408cd44922c9a5ffd0ccbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/RFX_Resources/Model/Materials/02 - Default.mat using Guid(a75f970aca408cd44922c9a5ffd0ccbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '256307133542ff6fbb35698b5c89554f') in 0.061470 seconds 
+  Import took 0.066781 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_FadeAndSlideFromLeft.prefab
+  artifactKey: Guid(ac465f36cf2018f4cbcf687426c5aef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_FadeAndSlideFromLeft.prefab using Guid(ac465f36cf2018f4cbcf687426c5aef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8af9153ae9ee8e3eb1163e27bd92dd92') in 0.019537 seconds 
+  Import took 0.023717 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/ExternalTools/Shapeforms Audio Free Sound Effects/The Mint – Coins and Money Preview/AUDIO/Coins in Sack Dropped on Soft Surface.wav
+  artifactKey: Guid(19a5b18b079f844bba783a9ec5f32efa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Shapeforms Audio Free Sound Effects/The Mint – Coins and Money Preview/AUDIO/Coins in Sack Dropped on Soft Surface.wav using Guid(19a5b18b079f844bba783a9ec5f32efa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f712272f8d1a30736434f3cdb8d0423d') in 0.009040 seconds 
+  Import took 0.013649 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/ExternalTools/Febucci/Text Animator/Scripts/Runtime/Effects/Appearance Effects/Defaults/FadeAppearance.cs
+  artifactKey: Guid(6d26528e73e36f64dab95b69625232a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Febucci/Text Animator/Scripts/Runtime/Effects/Appearance Effects/Defaults/FadeAppearance.cs using Guid(6d26528e73e36f64dab95b69625232a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dab72c67528bf3c78a52b42a360862d5') in 0.001107 seconds 
+  Import took 0.004956 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_FadeAndSlideFromRight.prefab
+  artifactKey: Guid(33cab64ea0e746b409206c2f4c057533) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_FadeAndSlideFromRight.prefab using Guid(33cab64ea0e746b409206c2f4c057533) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91829316e24d120e15202a4cdbc78f24') in 0.011720 seconds 
+  Import took 0.015619 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/ExternalTools/RFX_Resources/Model/Materials/01 - Default.mat
+  artifactKey: Guid(82b5b96e92bd0ca488aa552e8f74c1d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/RFX_Resources/Model/Materials/01 - Default.mat using Guid(82b5b96e92bd0ca488aa552e8f74c1d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5169b6c55aef90aa11377f14313c2889') in 0.007669 seconds 
+  Import took 0.012319 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.036343 seconds.
+  path: Assets/Manager/Prefabs/Fader.prefab
+  artifactKey: Guid(150e9f6600c6cd5449f1b85172a1a35b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Manager/Prefabs/Fader.prefab using Guid(150e9f6600c6cd5449f1b85172a1a35b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd1ad3e6eb75d095f8c1faec2a719811') in 0.004259 seconds 
+  Import took 0.009191 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 37.453447 seconds.
+  path: Assets/ExternalTools/AllIn1SpriteShader/Demo/Animation/Fade.anim
+  artifactKey: Guid(e6ea2b9990f282841809c38407852410) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/AllIn1SpriteShader/Demo/Animation/Fade.anim using Guid(e6ea2b9990f282841809c38407852410) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b87a4df1611cd4ed011c1f5010328b1') in 0.003336 seconds 
+  Import took 0.008048 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.250152 seconds.
+  path: Assets/Plugins/Android
+  artifactKey: Guid(d845c1dd80f598e43b7f0a26adcf05ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Android using Guid(d845c1dd80f598e43b7f0a26adcf05ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a3eb20aa7cf21136b1cd10f32be95d3') in 0.001336 seconds 
+  Import took 0.005167 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003313 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.176 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1176ms)
+		BeginReloadAssembly (154ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (57ms)
+		EndReloadAssembly (950ms)
+			LoadAssemblies (96ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (361ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (334ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (90ms)
+				ProcessInitializeOnLoadAttributes (225ms)
+				ProcessInitializeOnLoadMethodAttributes (6ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2447 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 134.7 MB.
+System memory in use after: 134.9 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 3016.
+Total: 4.102200 ms (FindLiveObjects: 0.330800 ms CreateObjectMapping: 0.115600 ms MarkObjects: 3.610500 ms  DeleteObjects: 0.040700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002224 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.168 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1168ms)
+		BeginReloadAssembly (143ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (49ms)
+		EndReloadAssembly (954ms)
+			LoadAssemblies (90ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (340ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (367ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (95ms)
+				ProcessInitializeOnLoadAttributes (251ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.32 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2447 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 134.8 MB.
+System memory in use after: 135.0 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 3020.
+Total: 3.926300 ms (FindLiveObjects: 0.375800 ms CreateObjectMapping: 0.081900 ms MarkObjects: 3.425800 ms  DeleteObjects: 0.041300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 78.283801 seconds.
+  path: Assets/ExternalTools/Text
+  artifactKey: Guid(d2792e4aec4827a4cadb2bf25fe6fb6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Text using Guid(d2792e4aec4827a4cadb2bf25fe6fb6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fba2707acd18181bfd741904f3f40cd0') in 0.007781 seconds 
+  Import took 0.014859 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.349884 seconds.
+  path: Assets/ExternalTools/TextMesh Pro
+  artifactKey: Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/TextMesh Pro using Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6170b652e791f28e2dae01803c8e71bf') in 0.001216 seconds 
+  Import took 0.006613 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.018407 seconds.
+  path: Assets/ExternalTools/TransitionBlocks/Scripts/Transitioner1.cs
+  artifactKey: Guid(fd5465358e9d8ca43a8495211bfca111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/TransitionBlocks/Scripts/Transitioner1.cs using Guid(fd5465358e9d8ca43a8495211bfca111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '148165eb92d4c145043c89e7b340d5ab') in 0.001244 seconds 
+  Import took 0.004957 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.047802 seconds.
+  path: Assets/ExternalTools/TransitionBlocks/Scripts/Transitioner.cs
+  artifactKey: Guid(fd5465358e9d8ca43a8495211bfca111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/TransitionBlocks/Scripts/Transitioner.cs using Guid(fd5465358e9d8ca43a8495211bfca111) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '770e513bd1a5307680032fd3acda020c') in 0.046342 seconds 
+  Import took 0.051315 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003189 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.092 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1093ms)
+		BeginReloadAssembly (112ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (913ms)
+			LoadAssemblies (84ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (336ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (50ms)
+			SetupLoadedEditorAssemblies (314ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (76ms)
+				ProcessInitializeOnLoadAttributes (223ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.97 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2447 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 134.8 MB.
+System memory in use after: 135.0 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 3024.
+Total: 2.597900 ms (FindLiveObjects: 0.192900 ms CreateObjectMapping: 0.047300 ms MarkObjects: 2.337900 ms  DeleteObjects: 0.018200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 26.934734 seconds.
+  path: Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_GrowAndClockRotate.prefab
+  artifactKey: Guid(f0685f027503dbe40bf9446d12499e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_GrowAndClockRotate.prefab using Guid(f0685f027503dbe40bf9446d12499e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd075c337c2cdb95837c4fa3e0b356e25') in 0.073382 seconds 
+  Import took 0.078984 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_GrowAndSlideFromRight.prefab
+  artifactKey: Guid(cf960d31e1f19f245a99a8e4f12442a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_GrowAndSlideFromRight.prefab using Guid(cf960d31e1f19f245a99a8e4f12442a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ee319727f9a16b83c215104b9087275') in 0.021324 seconds 
+  Import took 0.026699 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_GrowAndOffsetWobble.prefab
+  artifactKey: Guid(ec1fa9a32947d0346ac3316562cab7a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_GrowAndOffsetWobble.prefab using Guid(ec1fa9a32947d0346ac3316562cab7a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c30c2e11111333bdb2f42e54fd0a728') in 0.039417 seconds 
+  Import took 0.044824 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_GrowAndSlideFromTop.prefab
+  artifactKey: Guid(fbb4f06b66d0a0448adb2f38c9b396bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_GrowAndSlideFromTop.prefab using Guid(fbb4f06b66d0a0448adb2f38c9b396bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84b1fcd8f9813bbea8a6f2766ea893c8') in 0.024356 seconds 
+  Import took 0.029487 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_GrowAndWobble.prefab
+  artifactKey: Guid(fec4bd8d243b73040ad8ecc2576b3f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_GrowAndWobble.prefab using Guid(fec4bd8d243b73040ad8ecc2576b3f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcf99708391efb321d7dd58a2f273d34') in 0.019414 seconds 
+  Import took 0.024164 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_GrowSidewaysAndSlightRotate.prefab
+  artifactKey: Guid(05b1d03e0b9aab34785aebc923359833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_GrowSidewaysAndSlightRotate.prefab using Guid(05b1d03e0b9aab34785aebc923359833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6126fc46b697f43b93facd475e68c4c8') in 0.013559 seconds 
+  Import took 0.018886 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_GrowAndWiggleRotate.prefab
+  artifactKey: Guid(71cbfac10db8b174e8e88000a012b192) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_GrowAndWiggleRotate.prefab using Guid(71cbfac10db8b174e8e88000a012b192) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f832c8db78022331e2b5bcfb8fc61e20') in 0.014686 seconds 
+  Import took 0.018800 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_GrowInWobblySteps.prefab
+  artifactKey: Guid(e3dbb4c82f07b93458509c911031511c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_GrowInWobblySteps.prefab using Guid(e3dbb4c82f07b93458509c911031511c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2954a77e26d1b65845840c1f5c25b9f4') in 0.013944 seconds 
+  Import took 0.018650 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_GrowAndTwist.prefab
+  artifactKey: Guid(ec98876ddd614254ebb229b09cbe4fa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_GrowAndTwist.prefab using Guid(ec98876ddd614254ebb229b09cbe4fa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '897dca361248f06984f2d603e87eff37') in 0.014653 seconds 
+  Import took 0.019139 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_GrowAndDropBounce.prefab
+  artifactKey: Guid(9931950f6db1a004b9396666b8e72eb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_GrowAndDropBounce.prefab using Guid(9931950f6db1a004b9396666b8e72eb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe038d05cbc6f68cc5179a3337a5b596') in 0.017288 seconds 
+  Import took 0.022036 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_GrowVertically.prefab
+  artifactKey: Guid(a9419114288488c41a71bccae170caeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_GrowVertically.prefab using Guid(a9419114288488c41a71bccae170caeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47f7f48b3b6666a48fbd2c9abbc2fbd8') in 0.013959 seconds 
+  Import took 0.019986 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_GrowAndRotateClockwise.prefab
+  artifactKey: Guid(d4af0d3de92ef5a42959b91b3292aa85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_GrowAndRotateClockwise.prefab using Guid(d4af0d3de92ef5a42959b91b3292aa85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1217f1f90c6a549d7c77b7741bbdb605') in 0.016324 seconds 
+  Import took 0.022522 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_GrowAndSlideFromBottom.prefab
+  artifactKey: Guid(79dea08f50718df4cadfb22e1253fe36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_GrowAndSlideFromBottom.prefab using Guid(79dea08f50718df4cadfb22e1253fe36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '030dfed6fdd99311b2f6e8ba74df9202') in 0.025999 seconds 
+  Import took 0.031827 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_GrowAndWiggleMove.prefab
+  artifactKey: Guid(40cc6ca1a423faf4d900b5280bef1799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_GrowAndWiggleMove.prefab using Guid(40cc6ca1a423faf4d900b5280bef1799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf97abc6ba646bdde1640be410f42797') in 0.014110 seconds 
+  Import took 0.019154 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_GrowInSteps.prefab
+  artifactKey: Guid(f0ba8416e85c17142b0a2f8de4aa587f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_GrowInSteps.prefab using Guid(f0ba8416e85c17142b0a2f8de4aa587f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f26946f4ed2d10a3318ed8ba6002f74a') in 0.015163 seconds 
+  Import took 0.021338 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_GrowAndRotateCounterClockwise.prefab
+  artifactKey: Guid(516c084355e27ce4a8ba43d84db4def9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_GrowAndRotateCounterClockwise.prefab using Guid(516c084355e27ce4a8ba43d84db4def9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b20549fc825f6380e4710642ab41cb3b') in 0.013292 seconds 
+  Import took 0.019093 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_GrowSmooth.prefab
+  artifactKey: Guid(d712b27318a77ba4ca763cb7e93b1909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_GrowSmooth.prefab using Guid(d712b27318a77ba4ca763cb7e93b1909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04606218fdac277211353b149443de2b') in 0.016273 seconds 
+  Import took 0.024464 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000374 seconds.
+  path: Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_GrowSmoothAndClockRotate.prefab
+  artifactKey: Guid(2bf08834e2c74ca42becc8c478df68fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_GrowSmoothAndClockRotate.prefab using Guid(2bf08834e2c74ca42becc8c478df68fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1534fd25d21aaaa582d9a9ff0488ad8b') in 0.011383 seconds 
+  Import took 0.017364 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_GrowInOffsetSteps.prefab
+  artifactKey: Guid(31ecfd1d7c0b3e947ade69b03fc4e7bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_GrowInOffsetSteps.prefab using Guid(31ecfd1d7c0b3e947ade69b03fc4e7bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d089bf43680991d231e71dc0f8fbb90') in 0.015571 seconds 
+  Import took 0.020608 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_GrowHorizontally.prefab
+  artifactKey: Guid(b54570c0db3a6bd4e8c1bffffd8641f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_GrowHorizontally.prefab using Guid(b54570c0db3a6bd4e8c1bffffd8641f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9322bbf626d22fb00dd7567f3a0827f7') in 0.012249 seconds 
+  Import took 0.018721 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_NoAnimation.prefab
+  artifactKey: Guid(a1899ee002628484fa818214929531e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_NoAnimation.prefab using Guid(a1899ee002628484fa818214929531e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '320a144810c546b8f4bfda655b9eeb07') in 0.010859 seconds 
+  Import took 0.015827 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_GrowAndSlideFromLeft.prefab
+  artifactKey: Guid(4f77bea0d0de694489a2c738007b5cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Blocks/TB_GrowAndSlideFromLeft.prefab using Guid(4f77bea0d0de694489a2c738007b5cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fbfda2852a19ae244c4fb6182e7f02e') in 0.012404 seconds 
+  Import took 0.018491 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.728119 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Buildings/1/0.png
+  artifactKey: Guid(daa5bc65beefbcd438a0504c8b4cf20f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Buildings/1/0.png using Guid(daa5bc65beefbcd438a0504c8b4cf20f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3e0a7c325a59a74b8a192948ab34786') in 0.023911 seconds 
+  Import took 0.028764 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Buildings/风力发电站三级/0002.png
+  artifactKey: Guid(f239b271202baa24e8c498e35035cf80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Buildings/风力发电站三级/0002.png using Guid(f239b271202baa24e8c498e35035cf80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '985fdd93277c94f92ac612b5e3cd04e6') in 0.010352 seconds 
+  Import took 0.014217 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Buildings/气候调节器/0001.png
+  artifactKey: Guid(587e07f97e64f8b4d81e92bec4446919) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Buildings/气候调节器/0001.png using Guid(587e07f97e64f8b4d81e92bec4446919) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b99053799de86c871f81c76f22bbae6e') in 0.012722 seconds 
+  Import took 0.016415 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Buildings/WaterCollecter/污水处理厂二级/0003.png
+  artifactKey: Guid(66f7a55fa81eede4a9b2934be588c2ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Buildings/WaterCollecter/污水处理厂二级/0003.png using Guid(66f7a55fa81eede4a9b2934be588c2ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2acb6eca8530f189c0d0ff01fcac28c9') in 0.012399 seconds 
+  Import took 0.016521 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Buildings/一级万能投射器底座序列帧动画/0001.png
+  artifactKey: Guid(f007dfe0663985f4180dc72ee05e4704) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Buildings/一级万能投射器底座序列帧动画/0001.png using Guid(f007dfe0663985f4180dc72ee05e4704) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eeee2f631b9ec443642f9c559eb0622b') in 0.013342 seconds 
+  Import took 0.017483 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Buildings/万能投射器二级底座/0001.png
+  artifactKey: Guid(37419aae6be017740ac63e9090bc16f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Buildings/万能投射器二级底座/0001.png using Guid(37419aae6be017740ac63e9090bc16f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffaee42105ff2c056ca73635f986a8d8') in 0.014614 seconds 
+  Import took 0.018418 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Buildings/一级万能投射器底座序列帧动画/废料回收设备2/0001.png
+  artifactKey: Guid(62ee7be6f05a3804bbf53ffc21712b31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Buildings/一级万能投射器底座序列帧动画/废料回收设备2/0001.png using Guid(62ee7be6f05a3804bbf53ffc21712b31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b83f69095205c7fb6744a790b17c357') in 0.009805 seconds 
+  Import took 0.013976 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Buildings/一级万能投射器底座序列帧动画/一级万能投射器炮塔序列帧动画0/0001.png
+  artifactKey: Guid(0daa73ac90d3cf54ab932bcef33ff09c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Buildings/一级万能投射器底座序列帧动画/一级万能投射器炮塔序列帧动画0/0001.png using Guid(0daa73ac90d3cf54ab932bcef33ff09c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f121883cdba8198fc2cbcede56576e0') in 0.012003 seconds 
+  Import took 0.015854 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Buildings/气候调节器/0003.png
+  artifactKey: Guid(c7f6093df2ac772438d5a18b6cc584f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Buildings/气候调节器/0003.png using Guid(c7f6093df2ac772438d5a18b6cc584f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '051d6b531177259e2c7ed2c862f8fe29') in 0.011977 seconds 
+  Import took 0.016370 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Buildings/1/2.png
+  artifactKey: Guid(7ac9a9c032e35ce49bbe7fb1b534fdde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Buildings/1/2.png using Guid(7ac9a9c032e35ce49bbe7fb1b534fdde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85755ce51edae9e901df1c98196742e3') in 0.014068 seconds 
+  Import took 0.018902 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000308 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Buildings/1/3.png
+  artifactKey: Guid(ede550f78a6d4d34792d20c6fe866e52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Buildings/1/3.png using Guid(ede550f78a6d4d34792d20c6fe866e52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55b886b2dda6df7ee834b66492399032') in 0.013100 seconds 
+  Import took 0.017487 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Buildings/万能投射器二级底座/万能投射器二级炮塔0/0003.png
+  artifactKey: Guid(1d0a430ee7b7f4a4fad9457bba7c7b88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Buildings/万能投射器二级底座/万能投射器二级炮塔0/0003.png using Guid(1d0a430ee7b7f4a4fad9457bba7c7b88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9c2442ba2313e2106a63252672562df') in 0.014520 seconds 
+  Import took 0.018460 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Buildings/风力发电站二级/0002.png
+  artifactKey: Guid(76b74ba779f546442a3fa86ade59fefc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Buildings/风力发电站二级/0002.png using Guid(76b74ba779f546442a3fa86ade59fefc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0074775c1a11933e7e5fa4a16f78b922') in 0.012533 seconds 
+  Import took 0.016513 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Buildings/狙击中心/0003.png
+  artifactKey: Guid(1d626117366bed44884a9310fa21b6d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Buildings/狙击中心/0003.png using Guid(1d626117366bed44884a9310fa21b6d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dafeb23beb184fd22afa9611d27a0e81') in 0.013373 seconds 
+  Import took 0.018260 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Buildings/一级万能投射器底座序列帧动画/0002.png
+  artifactKey: Guid(b445fe72b30357e418b4ccd84564d01f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Buildings/一级万能投射器底座序列帧动画/0002.png using Guid(b445fe72b30357e418b4ccd84564d01f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6202a82cc35b7035c4a13a149d9943d6') in 0.011758 seconds 
+  Import took 0.018267 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Scenes/3OpenScene/Arts/Arts/1怪物路径.png
+  artifactKey: Guid(050e73aac003b634b83a7c4f78253c39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/3OpenScene/Arts/Arts/1怪物路径.png using Guid(050e73aac003b634b83a7c4f78253c39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d686454aa30ee9040fd193f15138a28') in 0.013163 seconds 
+  Import took 0.017858 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/Scenes/3OpenScene/Arts/Arts/2地图最底层.png
+  artifactKey: Guid(5b59ee8716d618f4db2484c0906077dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/3OpenScene/Arts/Arts/2地图最底层.png using Guid(5b59ee8716d618f4db2484c0906077dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de59982c77e79e28de466e417fcd4f2d') in 0.015482 seconds 
+  Import took 0.020273 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Buildings/风力发电站二级/0003.png
+  artifactKey: Guid(abeaf6fa07845eb47a4ef6ab00553d11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Buildings/风力发电站二级/0003.png using Guid(abeaf6fa07845eb47a4ef6ab00553d11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41d8c17ac1d5035c06d6860df948496b') in 0.009099 seconds 
+  Import took 0.012778 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Buildings/一级万能投射器底座序列帧动画/废料回收设备2/0002.png
+  artifactKey: Guid(61a9818c06d014d4fa8e6a6797c9f2aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Buildings/一级万能投射器底座序列帧动画/废料回收设备2/0002.png using Guid(61a9818c06d014d4fa8e6a6797c9f2aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d4b1ef27667bec1fae333b0f1e2e797') in 0.007598 seconds 
+  Import took 0.012439 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Buildings/风力发电站二级/0001.png
+  artifactKey: Guid(fb4e25c78602629419ea146c4880cd60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Buildings/风力发电站二级/0001.png using Guid(fb4e25c78602629419ea146c4880cd60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88062c7e602c1944e7bbbdfd362f26fb') in 0.010788 seconds 
+  Import took 0.016882 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Buildings/WaterCollecter/污水处理厂一级/0002.png
+  artifactKey: Guid(1c7b88379d97f0c48958f55702ec5adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Buildings/WaterCollecter/污水处理厂一级/0002.png using Guid(1c7b88379d97f0c48958f55702ec5adb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e8b0736258511073d1e5554d0d3c57f') in 0.008273 seconds 
+  Import took 0.012308 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Buildings/气候调节器/0002.png
+  artifactKey: Guid(f31ee6d09a3dcd54babc71e921279fc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Buildings/气候调节器/0002.png using Guid(f31ee6d09a3dcd54babc71e921279fc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2d1ad1bbbcccbf5400cc719488476c0') in 0.010886 seconds 
+  Import took 0.015953 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Buildings/DenfenseTwoer/0001.png
+  artifactKey: Guid(1ece00be2f1a1bd4bb0794251eed77e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Buildings/DenfenseTwoer/0001.png using Guid(1ece00be2f1a1bd4bb0794251eed77e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f989e60e237f6d7c5aa6fcdae1738e7') in 0.009649 seconds 
+  Import took 0.014471 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Buildings/狙击中心/0001.png
+  artifactKey: Guid(77e368dc1ae623c4498885cf25d3ffe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Buildings/狙击中心/0001.png using Guid(77e368dc1ae623c4498885cf25d3ffe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7edbb8e9791fd3daefd9ab34943ad8ba') in 0.008795 seconds 
+  Import took 0.013168 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000341 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Buildings/DenfenseTwoer/0002.png
+  artifactKey: Guid(00482f002fa53544a810f32f11da10df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Buildings/DenfenseTwoer/0002.png using Guid(00482f002fa53544a810f32f11da10df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9097622566f46c25bf40092334f9d3f8') in 0.008453 seconds 
+  Import took 0.013504 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Buildings/一级万能投射器底座序列帧动画/一级万能投射器炮塔序列帧动画0/0003.png
+  artifactKey: Guid(ffd9f418a4774c0478dd033636905563) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Buildings/一级万能投射器底座序列帧动画/一级万能投射器炮塔序列帧动画0/0003.png using Guid(ffd9f418a4774c0478dd033636905563) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61c3e7d1a857220457195bb293d6f084') in 0.008909 seconds 
+  Import took 0.015677 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/Scenes/3OpenScene/Arts/Arts/0地图最顶层.png
+  artifactKey: Guid(47f56218e0ac96641b5bc1a1cafa9925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/3OpenScene/Arts/Arts/0地图最顶层.png using Guid(47f56218e0ac96641b5bc1a1cafa9925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10048cf36acae7d452f3dcead5b72ae5') in 0.007981 seconds 
+  Import took 0.012686 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Buildings/一级万能投射器底座序列帧动画/0003.png
+  artifactKey: Guid(fa63a44f48fdb464692ab771f0436b2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Buildings/一级万能投射器底座序列帧动画/0003.png using Guid(fa63a44f48fdb464692ab771f0436b2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a0cd101e43095598be52062589acad8') in 0.008924 seconds 
+  Import took 0.013563 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Buildings/1/1.png
+  artifactKey: Guid(27bd616d716777143b2bc0ec3bf41758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Buildings/1/1.png using Guid(27bd616d716777143b2bc0ec3bf41758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae2f17e3e776972bbd59b17a90b5f9aa') in 0.007568 seconds 
+  Import took 0.013647 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Buildings/WaterCollecter/污水处理厂二级/0001.png
+  artifactKey: Guid(27e42637f143f2a4696aa1ecf5797617) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Buildings/WaterCollecter/污水处理厂二级/0001.png using Guid(27e42637f143f2a4696aa1ecf5797617) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15a1d699252e0c6d625f80bae39c35b3') in 0.009074 seconds 
+  Import took 0.013881 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Buildings/DenfenseTwoer/0003.png
+  artifactKey: Guid(ed2edcc8fdfc7054580ab4fd81230b55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Buildings/DenfenseTwoer/0003.png using Guid(ed2edcc8fdfc7054580ab4fd81230b55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23162a7a72be8cda9d3836934e69f9ae') in 0.009884 seconds 
+  Import took 0.014896 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Buildings/万能投射器二级底座/万能投射器二级炮塔0/0002.png
+  artifactKey: Guid(c4610a3263fe627488cb0c204f911469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Buildings/万能投射器二级底座/万能投射器二级炮塔0/0002.png using Guid(c4610a3263fe627488cb0c204f911469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7436902261c2447571e5922f28ba3f67') in 0.008986 seconds 
+  Import took 0.014216 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Buildings/WaterCollecter/污水处理厂一级/0003.png
+  artifactKey: Guid(82498b2f20a107f47a846a9f991bf99f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Buildings/WaterCollecter/污水处理厂一级/0003.png using Guid(82498b2f20a107f47a846a9f991bf99f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55620b07465872ce287942eaa7da033e') in 0.010702 seconds 
+  Import took 0.016265 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Buildings/一级万能投射器底座序列帧动画/一级万能投射器炮塔序列帧动画0/0002.png
+  artifactKey: Guid(ffce9f963909a3e4c826c9a4ff637658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Buildings/一级万能投射器底座序列帧动画/一级万能投射器炮塔序列帧动画0/0002.png using Guid(ffce9f963909a3e4c826c9a4ff637658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26e80df00dcc2c7e2467eb0c35cd8a6c') in 0.009240 seconds 
+  Import took 0.013084 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Buildings/一级万能投射器底座序列帧动画/废料回收设备2/0003.png
+  artifactKey: Guid(5f22a0e4cdb3cf046bfe8763d8d80403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Buildings/一级万能投射器底座序列帧动画/废料回收设备2/0003.png using Guid(5f22a0e4cdb3cf046bfe8763d8d80403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '284b31412dfa267acaf54b60967a5eb0') in 0.008312 seconds 
+  Import took 0.012987 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000452 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Buildings/风力发电站三级/0001.png
+  artifactKey: Guid(efa3211441951454b95c4203d946d2b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Buildings/风力发电站三级/0001.png using Guid(efa3211441951454b95c4203d946d2b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9df12f3e50f84c0800d472d85febffef') in 0.006877 seconds 
+  Import took 0.012259 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000333 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Buildings/WaterCollecter/污水处理厂一级/0001.png
+  artifactKey: Guid(a1cbed18459289e41b2a8c5220b57ecb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Buildings/WaterCollecter/污水处理厂一级/0001.png using Guid(a1cbed18459289e41b2a8c5220b57ecb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf6564f66fd0fb85e877d97c72f29016') in 0.006735 seconds 
+  Import took 0.010153 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Buildings/万能投射器二级底座/万能投射器二级炮塔0/0001.png
+  artifactKey: Guid(9767c1a8a7fb32c499fc013fbcc429f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Buildings/万能投射器二级底座/万能投射器二级炮塔0/0001.png using Guid(9767c1a8a7fb32c499fc013fbcc429f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd09d6553bf54b71b577f649df0f45f1d') in 0.008771 seconds 
+  Import took 0.014297 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Buildings/一级万能投射器底座序列帧动画/一级万能投射器炮塔序列帧动画0/0001 1.png
+  artifactKey: Guid(c0118603002313849b988708bc9c428f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Buildings/一级万能投射器底座序列帧动画/一级万能投射器炮塔序列帧动画0/0001 1.png using Guid(c0118603002313849b988708bc9c428f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e4bca6eb0bb1b2c6db14c700b61b88e') in 0.009040 seconds 
+  Import took 0.014182 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Buildings/一级万能投射器底座序列帧动画/一级万能投射器炮塔序列帧动画0/0004.png
+  artifactKey: Guid(b399488011a7de644a80e5210b576f7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Buildings/一级万能投射器底座序列帧动画/一级万能投射器炮塔序列帧动画0/0004.png using Guid(b399488011a7de644a80e5210b576f7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44fa4fe98c701f2795ef816d2f501ecf') in 0.007044 seconds 
+  Import took 0.012382 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Buildings/WaterCollecter/污水处理厂二级/0002.png
+  artifactKey: Guid(d3f480b29829f774c8c6615461776df2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Buildings/WaterCollecter/污水处理厂二级/0002.png using Guid(d3f480b29829f774c8c6615461776df2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '720a0ef83b8d57e0757bcc5e5448a637') in 0.007820 seconds 
+  Import took 0.013199 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Buildings/一级万能投射器底座序列帧动画/0001 1.png
+  artifactKey: Guid(8af88e0e4feea1a4b8cffaaa02393028) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Buildings/一级万能投射器底座序列帧动画/0001 1.png using Guid(8af88e0e4feea1a4b8cffaaa02393028) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd346e7ad5e287b2b10030290e4a52634') in 0.007008 seconds 
+  Import took 0.010475 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Buildings/狙击中心/0002.png
+  artifactKey: Guid(689b2f97fab13d649b136fe9310912a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Buildings/狙击中心/0002.png using Guid(689b2f97fab13d649b136fe9310912a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5dec0a21c7cf3c4ca0131ffb4bd1ae6') in 0.006692 seconds 
+  Import took 0.010540 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000332 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Buildings/风力发电站三级/0003.png
+  artifactKey: Guid(104cd618f2c2bc8449f7d0d9abbc2c6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Buildings/风力发电站三级/0003.png using Guid(104cd618f2c2bc8449f7d0d9abbc2c6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90af8d6300fcfbc339770920aece3d0d') in 0.007650 seconds 
+  Import took 0.012578 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.442318 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Enemy/angelbaby7/angelbaby1.png
+  artifactKey: Guid(fca1abf5d911b21458ff1aed89874286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Enemy/angelbaby7/angelbaby1.png using Guid(fca1abf5d911b21458ff1aed89874286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee013bd55824e3b7f7372b9a7b9c3982') in 0.008509 seconds 
+  Import took 0.012779 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Enemy/dead/dead/baobao-dead-export3.png
+  artifactKey: Guid(15320337184b6bc4cbd4b0c33db6d845) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Enemy/dead/dead/baobao-dead-export3.png using Guid(15320337184b6bc4cbd4b0c33db6d845) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a031d9061bc3ab61004b112a689e70b') in 0.009080 seconds 
+  Import took 0.013330 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Enemy/dead/dead/baobao-dead-export16.png
+  artifactKey: Guid(c21acc76ab8570e4ea26763d5e8df827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Enemy/dead/dead/baobao-dead-export16.png using Guid(c21acc76ab8570e4ea26763d5e8df827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7ca013f11dbb7b6d0a96ce45684424c') in 0.009066 seconds 
+  Import took 0.013540 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Enemy/dead/dead/baobao-dead-export10.png
+  artifactKey: Guid(2f22538a010c52848ba805a84985f571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Enemy/dead/dead/baobao-dead-export10.png using Guid(2f22538a010c52848ba805a84985f571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfed9da44877feb919492df8fea25010') in 0.011871 seconds 
+  Import took 0.017341 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Enemy/baobao-dead/baobao-dead8.png
+  artifactKey: Guid(414643de2410acb44b2bc36e02c59e37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Enemy/baobao-dead/baobao-dead8.png using Guid(414643de2410acb44b2bc36e02c59e37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e5113eda2cae2e3aa0378d131c20660') in 0.009764 seconds 
+  Import took 0.014528 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Enemy/dead/dead/baobao-dead-export12.png
+  artifactKey: Guid(b08713512d9309741a53f22e910c3936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Enemy/dead/dead/baobao-dead-export12.png using Guid(b08713512d9309741a53f22e910c3936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bcfcdf9e9577439f866b071690f4baa') in 0.010627 seconds 
+  Import took 0.014998 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Enemy/baobao-dead/baobao-dead4.png
+  artifactKey: Guid(60e80fef310e7ad4891329339a8c4d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Enemy/baobao-dead/baobao-dead4.png using Guid(60e80fef310e7ad4891329339a8c4d7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8102253c80b7df63f384dea02424f1a1') in 0.008124 seconds 
+  Import took 0.012452 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Enemy/dead/dead/baobao-dead-export17.png
+  artifactKey: Guid(3efa894e97f24034dadd1de649b88da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Enemy/dead/dead/baobao-dead-export17.png using Guid(3efa894e97f24034dadd1de649b88da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f3d50276da2b3e4d05aa453cf0ba231') in 0.009689 seconds 
+  Import took 0.014924 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Background.png
+  artifactKey: Guid(a7c6b4b67b3ac9147b0eab538f188e0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Background.png using Guid(a7c6b4b67b3ac9147b0eab538f188e0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c62eb04651564654a76c1be84c1215d') in 0.033987 seconds 
+  Import took 0.037857 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Enemy/dead/dead/baobao-dead-export4.png
+  artifactKey: Guid(888dc96e6b30fcc48a5027d7bbb1fd4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Enemy/dead/dead/baobao-dead-export4.png using Guid(888dc96e6b30fcc48a5027d7bbb1fd4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9c490cbd68a13afe12000ddeea8f5f0') in 0.008376 seconds 
+  Import took 0.012037 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Enemy/dead/dead/baobao-dead-export6.png
+  artifactKey: Guid(46275817d2a8f0f45afbf7df03d8b8f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Enemy/dead/dead/baobao-dead-export6.png using Guid(46275817d2a8f0f45afbf7df03d8b8f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8eb1ec0ff99ca1d83a02739016cb915') in 0.011963 seconds 
+  Import took 0.016684 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Enemy/baobao-dead/baobao-dead9.png
+  artifactKey: Guid(a8d73a271a6c22c4d89d566c280202e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Enemy/baobao-dead/baobao-dead9.png using Guid(a8d73a271a6c22c4d89d566c280202e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41a3af5c34eb431229c96f1c448e7e88') in 0.007746 seconds 
+  Import took 0.011241 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Enemy/dead/dead/baobao-dead-export13.png
+  artifactKey: Guid(6f92df7243b01b247bafe74652dfce3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Enemy/dead/dead/baobao-dead-export13.png using Guid(6f92df7243b01b247bafe74652dfce3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce334622b0650504fb74d5879663f29f') in 0.009115 seconds 
+  Import took 0.013630 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Enemy/dead/dead/baobao-dead-export15.png
+  artifactKey: Guid(bda9bc11083c0d549b5661b19407363f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Enemy/dead/dead/baobao-dead-export15.png using Guid(bda9bc11083c0d549b5661b19407363f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b69ee24236da5ef89c678be2982d4824') in 0.011304 seconds 
+  Import took 0.016267 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Enemy/angelbaby7/angelbaby3.png
+  artifactKey: Guid(287e08bda4722904aad7604f160fa7b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Enemy/angelbaby7/angelbaby3.png using Guid(287e08bda4722904aad7604f160fa7b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e83d3d40bde80fe1d3486dc9a822170') in 0.008895 seconds 
+  Import took 0.013948 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Enemy/angelbaby7/angelbaby7.png
+  artifactKey: Guid(07094e89f63186b4d883f4d1295d9d03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Enemy/angelbaby7/angelbaby7.png using Guid(07094e89f63186b4d883f4d1295d9d03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36bedf340c1838ce9fe077111dd5a337') in 0.012267 seconds 
+  Import took 0.016669 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Enemy/dead/dead/baobao-dead-export18.png
+  artifactKey: Guid(34421f5598b8ec340aae7d7fec1aeb5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Enemy/dead/dead/baobao-dead-export18.png using Guid(34421f5598b8ec340aae7d7fec1aeb5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af94223f5e081f68b4a4147911a4ceb2') in 0.009159 seconds 
+  Import took 0.013604 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Enemy/dead/dead/baobao-dead-export11.png
+  artifactKey: Guid(64268ad58e1cdad408b02ccd349d23a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Enemy/dead/dead/baobao-dead-export11.png using Guid(64268ad58e1cdad408b02ccd349d23a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8897262fa9019b563bc6f75e24614aa6') in 0.013440 seconds 
+  Import took 0.018464 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Enemy/dead/dead/baobao-dead-export14.png
+  artifactKey: Guid(173e3efb6f13d024b8cbd071378128e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Enemy/dead/dead/baobao-dead-export14.png using Guid(173e3efb6f13d024b8cbd071378128e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5c169328f4cbe1bcbd3f14ecc48ad97') in 0.011143 seconds 
+  Import took 0.016589 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Enemy/baobao-dead/baobao-dead3.png
+  artifactKey: Guid(4ba8878544001ec4a98a8b047b002b9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Enemy/baobao-dead/baobao-dead3.png using Guid(4ba8878544001ec4a98a8b047b002b9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '172a0176ef56d6d20837afc236e592a0') in 0.011066 seconds 
+  Import took 0.015752 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Enemy/dead/dead/baobao-dead-export5.png
+  artifactKey: Guid(4599cebf572ddcf4a8b7cb1f37c08229) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Enemy/dead/dead/baobao-dead-export5.png using Guid(4599cebf572ddcf4a8b7cb1f37c08229) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e688def61ef40ec0ad27104669b9ce6') in 0.010154 seconds 
+  Import took 0.014782 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Enemy/angelbaby7/angelbaby6.png
+  artifactKey: Guid(d8ca1899c3071054483f67fb19afdce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Enemy/angelbaby7/angelbaby6.png using Guid(d8ca1899c3071054483f67fb19afdce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc4c5aa444b827bd6545e95894a440fa') in 0.013069 seconds 
+  Import took 0.017672 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Enemy/baobao-dead/baobao-dead5.png
+  artifactKey: Guid(97612d8699b7c7349aff451518cce12d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Enemy/baobao-dead/baobao-dead5.png using Guid(97612d8699b7c7349aff451518cce12d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67d4008f7eb7c732f0fb81331d8403b0') in 0.008392 seconds 
+  Import took 0.012939 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Enemy/dead/dead/baobao-dead-export1.png
+  artifactKey: Guid(9671d5b94fadc914d976189324423ec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Enemy/dead/dead/baobao-dead-export1.png using Guid(9671d5b94fadc914d976189324423ec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd388e23667831c661609fbe0e04f77c4') in 0.012509 seconds 
+  Import took 0.017763 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Enemy/dead/dead/baobao-dead-export2.png
+  artifactKey: Guid(af5034ec85daa6748b7e97282ba658e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Enemy/dead/dead/baobao-dead-export2.png using Guid(af5034ec85daa6748b7e97282ba658e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc2d520b06bc22248f33f66963b0b0b0') in 0.010346 seconds 
+  Import took 0.015640 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Enemy/dead/dead/baobao-dead-export19.png
+  artifactKey: Guid(f211d3428a55e984ea55370fecc0a5a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Enemy/dead/dead/baobao-dead-export19.png using Guid(f211d3428a55e984ea55370fecc0a5a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20611b787f40e56c07ef0ea528c2837b') in 0.009650 seconds 
+  Import took 0.014072 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Enemy/baobao-dead/baobao-dead6.png
+  artifactKey: Guid(62066de9062393745871fe03a6aceab8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Enemy/baobao-dead/baobao-dead6.png using Guid(62066de9062393745871fe03a6aceab8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ae1cffc53449f00f83d702e2f9994d8') in 0.009485 seconds 
+  Import took 0.015133 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Enemy/baobao-dead/baobao-dead1.png
+  artifactKey: Guid(8194674c5ca6afc4e952b3a2314682d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Enemy/baobao-dead/baobao-dead1.png using Guid(8194674c5ca6afc4e952b3a2314682d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45774eab9c93dabfd327ba393d7cc4e3') in 0.007571 seconds 
+  Import took 0.012766 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Enemy/baobao-dead/baobao-dead10.png
+  artifactKey: Guid(62ab1c31610259341af44e865c5c9669) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Enemy/baobao-dead/baobao-dead10.png using Guid(62ab1c31610259341af44e865c5c9669) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1974c84cb31d4c805ff4332719b2de34') in 0.009192 seconds 
+  Import took 0.015097 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Enemy/dead/dead/baobao-dead-export20.png
+  artifactKey: Guid(e5c6e42d872d39043a674aec9d001f7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Enemy/dead/dead/baobao-dead-export20.png using Guid(e5c6e42d872d39043a674aec9d001f7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b798dfa938629127232f3a5f9bff23aa') in 0.009991 seconds 
+  Import took 0.014813 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Enemy/angelbaby7/angelbaby2.png
+  artifactKey: Guid(9df68d2d2f067974786fcfa579b94f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Enemy/angelbaby7/angelbaby2.png using Guid(9df68d2d2f067974786fcfa579b94f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '942602fc73742789e519d209f423cc1e') in 0.009699 seconds 
+  Import took 0.016523 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/ExternalTools/AllIn1SpriteShader/Demo/Textures/backMountain.png
+  artifactKey: Guid(758ac31a9bff9ac4181f54de54a6ecb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/AllIn1SpriteShader/Demo/Textures/backMountain.png using Guid(758ac31a9bff9ac4181f54de54a6ecb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93087c3ca4159ac866cafba286135f81') in 0.022693 seconds 
+  Import took 0.027384 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Enemy/baobao-dead/baobao-dead2.png
+  artifactKey: Guid(85286a81747a8c74f8a790c87affd79e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Enemy/baobao-dead/baobao-dead2.png using Guid(85286a81747a8c74f8a790c87affd79e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efbd6610beea377820670b7628f1e567') in 0.009486 seconds 
+  Import took 0.014571 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Enemy/baobao-dead/baobao-dead7.png
+  artifactKey: Guid(e6a55f22025fd9945898beaa5f30a03f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Enemy/baobao-dead/baobao-dead7.png using Guid(e6a55f22025fd9945898beaa5f30a03f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a329eb34c133ea53088a14c5ef83b829') in 0.011733 seconds 
+  Import took 0.016669 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/ExternalTools/Sci-Fi UI/_SciFi_GUISkin_/atlas.png
+  artifactKey: Guid(56d84991286850f428b4e7df0cca7380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-Fi UI/_SciFi_GUISkin_/atlas.png using Guid(56d84991286850f428b4e7df0cca7380) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4339ef138004ebb425bcaa705896b05') in 0.165648 seconds 
+  Import took 0.170785 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Enemy/dead/dead/baobao-dead-export7.png
+  artifactKey: Guid(df92d0b8c6f669449b4a190f8dfc2104) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Enemy/dead/dead/baobao-dead-export7.png using Guid(df92d0b8c6f669449b4a190f8dfc2104) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f46bfe066ed845c5a3a8a3bd3f2e9429') in 0.008946 seconds 
+  Import took 0.013752 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Enemy/dead/dead/baobao-dead-export8.png
+  artifactKey: Guid(d25109151cfeddd49a19064d4e2b4183) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Enemy/dead/dead/baobao-dead-export8.png using Guid(d25109151cfeddd49a19064d4e2b4183) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ef1461b9138a52f1296fbc0a4af6993') in 0.012788 seconds 
+  Import took 0.017478 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Enemy/dead/dead/baobao-dead-export9.png
+  artifactKey: Guid(31b56a39ccad0e6488f733d4c76ce155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Enemy/dead/dead/baobao-dead-export9.png using Guid(31b56a39ccad0e6488f733d4c76ce155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c31313dce39d87b92c64d2636f0354f') in 0.012806 seconds 
+  Import took 0.017667 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000315 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Enemy/angelbaby7/angelbaby5.png
+  artifactKey: Guid(dfd58ad3572cceb4cb3d45b1ab272b46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Enemy/angelbaby7/angelbaby5.png using Guid(dfd58ad3572cceb4cb3d45b1ab272b46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3aa9e469f221ff2a0af19ca78356781') in 0.012984 seconds 
+  Import took 0.018217 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Scenes/4Red_LevelOne/Enemy/angelbaby7/angelbaby4.png
+  artifactKey: Guid(8d54926b8323a4a43bc8eeee61c7bd02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/4Red_LevelOne/Enemy/angelbaby7/angelbaby4.png using Guid(8d54926b8323a4a43bc8eeee61c7bd02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa070d2fee02f1d509fedd08ba3ea4c8') in 0.009420 seconds 
+  Import took 0.012939 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.137076 seconds.
+  path: Assets/ExternalTools/AllIn1SpriteShader/Textures/black.png
+  artifactKey: Guid(0b8da974a6429b8489e21c2a5d8dd509) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/AllIn1SpriteShader/Textures/black.png using Guid(0b8da974a6429b8489e21c2a5d8dd509) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84c57e7b4c195861ac9378b4534c388a') in 0.009662 seconds 
+  Import took 0.014274 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/ExternalTools/TransitionBlocks/Tileable Textures/BlackCircle.png
+  artifactKey: Guid(94c55ba232420cb47b1ba1534a623fbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/TransitionBlocks/Tileable Textures/BlackCircle.png using Guid(94c55ba232420cb47b1ba1534a623fbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c290cd10f6b6d370676ff24dcd8dbf6') in 0.012956 seconds 
+  Import took 0.017890 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/ExternalTools/AllIn1SpriteShader/Textures/GradientTextures/palette-nintendo-gameboy-black-zero-1x.png
+  artifactKey: Guid(2a39734b8956da843adee1646c75554f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/AllIn1SpriteShader/Textures/GradientTextures/palette-nintendo-gameboy-black-zero-1x.png using Guid(2a39734b8956da843adee1646c75554f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eef98ad9c2fd18a13a989c51b7e90152') in 0.012012 seconds 
+  Import took 0.017233 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/ExternalTools/TransitionBlocks/Tileable Textures/BlackSquare.png
+  artifactKey: Guid(14ee1489f85c53b4fba5328cd2889502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/TransitionBlocks/Tileable Textures/BlackSquare.png using Guid(14ee1489f85c53b4fba5328cd2889502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b40c415372872f127d1536d572d0034') in 0.027673 seconds 
+  Import took 0.032907 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.418921 seconds.
+  path: Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Orders/TO_SideWipeBottom.prefab
+  artifactKey: Guid(362d389f84344ae40b5df2c4cc82a5cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Orders/TO_SideWipeBottom.prefab using Guid(362d389f84344ae40b5df2c4cc82a5cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0c81ab060848bd07bd4901e6b97b07a') in 0.003863 seconds 
+  Import took 0.008800 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Orders/TO_SideWipeRandom.prefab
+  artifactKey: Guid(0f2e2a0635a8be44082cbf45ce6535b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Orders/TO_SideWipeRandom.prefab using Guid(0f2e2a0635a8be44082cbf45ce6535b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b32751e0920860523289b0ebc53c7198') in 0.003295 seconds 
+  Import took 0.006974 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Orders/TO_SideWipeTop.prefab
+  artifactKey: Guid(45dd2fe09f8c1e940bfc565a34a7aec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Orders/TO_SideWipeTop.prefab using Guid(45dd2fe09f8c1e940bfc565a34a7aec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9631ce54903723d93eaba345196d7e57') in 0.003844 seconds 
+  Import took 0.007370 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Orders/TO_SideWipeLeft.prefab
+  artifactKey: Guid(a39a05804a2528a40b6f4d26014bc2e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Orders/TO_SideWipeLeft.prefab using Guid(a39a05804a2528a40b6f4d26014bc2e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edcd5666b2131a92f1c700c53f48e7fc') in 0.003220 seconds 
+  Import took 0.007629 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Orders/TO_SideWipeRight.prefab
+  artifactKey: Guid(c80dcece607a49245a0cc9fbc61d3521) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/TransitionBlocks/Prefabs/Transition Orders/TO_SideWipeRight.prefab using Guid(c80dcece607a49245a0cc9fbc61d3521) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bf508b463d64dcbea2abfb84fcbde3a') in 0.004593 seconds 
+  Import took 0.016937 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003178 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.00 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.129 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1130ms)
+		BeginReloadAssembly (120ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (953ms)
+			LoadAssemblies (89ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (333ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (342ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (107ms)
+				ProcessInitializeOnLoadAttributes (218ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.99 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2447 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 135.1 MB.
+System memory in use after: 135.3 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 3087.
+Total: 2.736700 ms (FindLiveObjects: 0.210600 ms CreateObjectMapping: 0.046200 ms MarkObjects: 2.458300 ms  DeleteObjects: 0.020300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002286 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.204 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1205ms)
+		BeginReloadAssembly (131ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (44ms)
+		EndReloadAssembly (998ms)
+			LoadAssemblies (94ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (345ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (65ms)
+			SetupLoadedEditorAssemblies (355ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (100ms)
+				ProcessInitializeOnLoadAttributes (237ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.94 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2447 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 135.0 MB.
+System memory in use after: 135.3 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 3091.
+Total: 4.630500 ms (FindLiveObjects: 0.559900 ms CreateObjectMapping: 0.137700 ms MarkObjects: 3.900500 ms  DeleteObjects: 0.029500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
