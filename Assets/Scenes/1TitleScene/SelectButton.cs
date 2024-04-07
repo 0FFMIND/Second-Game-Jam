@@ -67,9 +67,9 @@ public class SelectButton : MonoBehaviour
     {
         storageButtons.Clear();
         UpdateButtonState(SaveManager.Instance.IsHighResolution, SaveManager.Instance.IsLowResolution, ResoSettingButtons);
-        UpdateButtonState(SaveManager.Instance.IsEnglishLanguage, SaveManager.Instance.IsChineseLanguage, LangSettingButtons);
+        UpdateButtonState(LanguageManager.Instance.currentLanguage == LanguageOption.English, LanguageManager.Instance.currentLanguage == LanguageOption.Chinese, LangSettingButtons);
         UpdateButtonStateTwo(SaveManager.Instance.IsHighResolution, SaveManager.Instance.IsLowResolution, ResoSettingButtons);
-        UpdateButtonStateTwo(SaveManager.Instance.IsEnglishLanguage, SaveManager.Instance.IsChineseLanguage, LangSettingButtons);
+        UpdateButtonStateTwo(LanguageManager.Instance.currentLanguage == LanguageOption.English, LanguageManager.Instance.currentLanguage == LanguageOption.Chinese, LangSettingButtons);
     }
     // Update the state of a pair of buttons based on their saved settings.
     private void UpdateButtonState(bool firstSetting, bool secondSetting, List<SettingBtnCust> buttonList)
@@ -99,7 +99,6 @@ public class SelectButton : MonoBehaviour
     // Event handlers for button actions.
     public void SettingPressedBtn(SettingBtnCust button)
     {
-        // Get the other button in the pair.
         SettingBtnCust otherButton = button.isReso ? ResoSettingButtons[((int)button.nowOptions + 1) % 2] : LangSettingButtons[((int)button.nowOptions + 1) % 2];
         storageButtons.Remove(otherButton);
         if(!storageButtons.Exists(t=> t.Equals(button)))
@@ -119,7 +118,6 @@ public class SelectButton : MonoBehaviour
         button.isPressed = true;
         SaveSettings();
     }
-
 
     public void SaveSettings()
     {
@@ -147,18 +145,18 @@ public class SelectButton : MonoBehaviour
             switch (singleBtn.nowOptions)
             {
                 case SettingBtnCust.E_nowOptions.EngLang:
-                    LanguageManager.Instance.CurrentLanguage = LanguageOption.Chinese;
+                    LanguageManager.Instance.currentLanguage = LanguageOption.Chinese;
                     storageSettings.Add("engLang");
                     break;
                 case SettingBtnCust.E_nowOptions.ChnLang:
-                    LanguageManager.Instance.CurrentLanguage = LanguageOption.English;
+                    LanguageManager.Instance.currentLanguage = LanguageOption.English;
                     storageSettings.Add("chnLang");
                     break;
                 default:
                     break;
             }
         }
-        SaveManager.Instance.SaveSettingsTwo(storageSettings);
+        SaveManager.Instance.SaveMenuSettings(storageSettings);
     }
 
     public void SettingUnpressedBtn(SettingBtnCust button)

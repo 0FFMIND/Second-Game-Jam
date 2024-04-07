@@ -9,10 +9,10 @@ public class TextChange : MonoBehaviour
         SaveManager.Instance.LoadLevel();
         num = SaveManager.Instance.IsAngel;
         text = gameObject.GetComponent<Text>();
-        if (num == 1 && LanguageManager.Instance.CurrentLanguage == LanguageOption.Chinese) text.text = "温和";
-        else if (num == 1 && LanguageManager.Instance.CurrentLanguage == LanguageOption.English) text.text = "Gentle";
-        else if (num == 2 && LanguageManager.Instance.CurrentLanguage == LanguageOption.Chinese) text.text = "激进";
-        else if (num == 2 && LanguageManager.Instance.CurrentLanguage == LanguageOption.Chinese) text.text = "Aggressive";
+        if (num == 1 && LanguageManager.Instance.currentLanguage == LanguageOption.Chinese) text.text = "温和";
+        else if (num == 1 && LanguageManager.Instance.currentLanguage == LanguageOption.English) text.text = "Gentle";
+        else if (num == 2 && LanguageManager.Instance.currentLanguage == LanguageOption.Chinese) text.text = "激进";
+        else if (num == 2 && LanguageManager.Instance.currentLanguage == LanguageOption.Chinese) text.text = "Aggressive";
     }
 
 }

@@ -1,59 +1,51 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 public class ButtonEvent : MonoBehaviour
 {
     /// <summary>
-    /// 将颜色恢复
+    /// 鼠标离开后将颜色恢复
     /// </summary>
     public void TextSet()
     {
         GetComponentInChildren<Text>().color = new Color(180 / 255f, 205 / 255f, 1f, 1f);
     }
     /// <summary>
-    /// 将字体设置为黑
-    /// </summary>
-    public void TextSetBlack()
-    {
-        GetComponentInChildren<Text>().color = Color.black;
-    }
-    /// <summary>
-    /// 点击音效，改个色
+    /// `开始菜单`中按钮Pressed后回到原来的颜色
     /// </summary>
     public void OnMouseClick()
     {
         GetComponentInChildren<Text>().color = new Color(180 / 255f, 205 / 255f, 1f, 1f);
         AudioManager.Instance.PlaySFX(SoundEffect.Click);
     }
+    /// <summary>
+    /// `回到标题`Pressed后回到原来的颜色
+    /// </summary>
     public void OnMouseClickTwo()
     {
-        GetComponentInChildren<Text>().color = new Color(180 / 255f, 205 / 255f, 1f, 1f);
+        GetComponentInChildren<Text>().color = new Color(0.7773585f, 0.8399767f, 1f, 1f);
         AudioManager.Instance.PlaySFX(SoundEffect.Click);
     }
     /// <summary>
-    /// 播放Select音频
+    /// 当鼠标碰到`开始菜单`中的按钮，Text变色+播放音频
     /// </summary>
     public void OnMouseSelected()
     {
+        GetComponentInChildren<Text>().color = Color.black;
         AudioManager.Instance.PlaySFX(SoundEffect.Select);
     }
+    /// <summary>
+    /// 当鼠标碰到`回到标题`按钮，Text变色+播放音频
+    /// </summary>
     public void OnMouseSelectedTwo()
     {
-        GetComponentInChildren<Text>().color = Color.blue;
+        GetComponentInChildren<Text>().color = new Color(0.3f, 0.5f, 1f, 1f);
         AudioManager.Instance.PlaySFX(SoundEffect.Select);
     }
+    /// <summary>
+    /// 当鼠标离开`回到标题`按钮，Text变回原来的颜色
+    /// </summary>
     public void OnMouseExitTwo()
     {
-        GetComponentInChildren<Text>().color = new Color(180 / 255f, 205 / 255f, 1f, 1f);
-        AudioManager.Instance.PlaySFX(SoundEffect.Select);
-    }
-    public void SettingSounds()
-    {
-        AudioManager.Instance.PlaySFX(SoundEffect.Select);
-    }
-    public void SettingClickSounds()
-    {
-        AudioManager.Instance.PlaySFX(SoundEffect.Click);
+        GetComponentInChildren<Text>().color = new Color(0.7773585f, 0.8399767f, 1f, 1f);
     }
 }

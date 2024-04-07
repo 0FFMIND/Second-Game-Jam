@@ -51,7 +51,7 @@ public class CardStorePref : Singleton<CardStorePref>
     public void LoadBuildings()
     {
         string[] dataRow;
-        if (LanguageManager.Instance.CurrentLanguage == LanguageOption.Chinese)
+        if (LanguageManager.Instance.currentLanguage == LanguageOption.Chinese)
         {
             dataRow = CNcardData.text.Split('\n');
         }
@@ -80,7 +80,7 @@ public class CardStorePref : Singleton<CardStorePref>
         DcardList.Clear();
         CardLibrary.Clear();
         string[] dataRow;
-        if (LanguageManager.Instance.CurrentLanguage == LanguageOption.Chinese)
+        if (LanguageManager.Instance.currentLanguage == LanguageOption.Chinese)
         {
             dataRow = CNcardData.text.Split('\n');
         }

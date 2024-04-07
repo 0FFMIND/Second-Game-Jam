@@ -30,7 +30,7 @@ public class TeamManager : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         else
         {
             AudioManager.Instance.PlaySFX(SoundEffect.PopUp);
-            if (LanguageManager.Instance.CurrentLanguage == LanguageOption.Chinese)
+            if (LanguageManager.Instance.currentLanguage == LanguageOption.Chinese)
             {
                 popInfoCN.SetActive(true);
             }
@@ -45,7 +45,7 @@ public class TeamManager : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     public void OnPointerEnter(PointerEventData eventData)
     {
         AudioManager.Instance.PlaySFX(SoundEffect.PopUp);
-        if(LanguageManager.Instance.CurrentLanguage == LanguageOption.Chinese)
+        if(LanguageManager.Instance.currentLanguage == LanguageOption.Chinese)
         {
             popInfoCN.SetActive(true);
         }
@@ -59,7 +59,7 @@ public class TeamManager : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        if (LanguageManager.Instance.CurrentLanguage == LanguageOption.Chinese)
+        if (LanguageManager.Instance.currentLanguage == LanguageOption.Chinese)
         {
             popInfoCN.SetActive(false);
         }

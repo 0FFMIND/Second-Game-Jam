@@ -9,8 +9,7 @@ public class PraseLang : MonoBehaviour
     public TextMeshProUGUI now;
     public void Start()
     {
-        SaveManager.Instance.LoadSettings();
-        if (!SaveManager.Instance.IsEnglishLanguage)
+        if (LanguageManager.Instance.currentLanguage == LanguageOption.English)
         {
             quest.text = "Quests List";
             power.text = "Power";
@@ -29,7 +28,8 @@ public class PraseLang : MonoBehaviour
             }
            
         }
-        else if(SaveManager.Instance.IsEnglishLanguage){
+        else if(LanguageManager.Instance.currentLanguage == LanguageOption.Chinese)
+        {
             quest.text = "本局任务列表";
             power.text = "储能总量";
             weather.text = "当前气候";

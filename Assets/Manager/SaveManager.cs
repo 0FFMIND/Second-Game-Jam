@@ -8,8 +8,6 @@ public class SaveManager : Singleton<SaveManager>
     public bool IsLowResolution { get; private set; } = false;
     public float SFXvalue { get; private set; } = 0;
     public float BGMvalue { get; private set; } = 0;
-    public bool IsEnglishLanguage { get; private set; } = false;
-    public bool IsChineseLanguage { get; private set; } = false;
     //涉及场景的存档
     public bool IsIntroEnd { get; set; } = false; //是否在介绍模式，牵扯到一些UI显示
     public bool IsOpenEnd { get; set; } = false;
@@ -39,13 +37,15 @@ public class SaveManager : Singleton<SaveManager>
                       .Write("ResoOpt", "highReso")
                       .Write("SFXvalue", "0.5")
                       .Write("BGMvalue","0.5")
-                      .Write("LangOpt", "engLang")
+                      .Write("LangOpt", "chnLang")
                       .Commit();
             IsHighResolution = true;
-            IsEnglishLanguage = true;
         }
         //在系统初始化的时候读取文件
-        LoadSettings();
+        LoadMenuSettings();
+
+        ///这个后面必删
+        
         //关于关卡
         if (!SaveWriter.LoadString("LevelSettings.json"))
         {
@@ -229,7 +229,7 @@ public class SaveManager : Singleton<SaveManager>
                 IsPoolFinshed = bool.Parse(r);
             });
     }
-    public void SaveSettingsTwo(List<string> settingsPref)
+    public void SaveMenuSettings(List<string> settingsPref)
     {
         SaveWriter.Create("Settings")
                   .Write("ResoOpt", settingsPref[0])
@@ -237,9 +237,9 @@ public class SaveManager : Singleton<SaveManager>
                   .Write("BGMvalue", settingsPref[2])
                   .Write("LangOpt", settingsPref[3])
                   .Commit();
-        LoadSettingsTwo();
+        SaveAudioSettings();
     }
-    public void LoadSettingsTwo()
+    public void SaveAudioSettings()
     {
         SaveReader.Create("Settings")
                    .Read<string>("SFXvalue", (r) =>
@@ -254,7 +254,7 @@ public class SaveManager : Singleton<SaveManager>
                    });
     }
 
-    public void LoadSettings()
+    public void LoadMenuSettings()
     {
         SaveReader.Create("Settings")
                   .Read<string>("ResoOpt", (r) =>
@@ -282,17 +282,15 @@ public class SaveManager : Singleton<SaveManager>
                     })
                    .Read<string>("LangOpt", (r) =>
                     {
-                        if (r == "engLang")
-                        {
-                            LanguageManager.Instance.SwitchLanguage(LanguageOption.English);
-                            LanguageManager.Instance.hasLanguageChanged = true;
-                            IsEnglishLanguage = true;
-                        }
-                        else if (r == "chnLang")
+                        if (r == "chnLang")
                         {
                             LanguageManager.Instance.SwitchLanguage(LanguageOption.Chinese);
                             LanguageManager.Instance.hasLanguageChanged = true;
-                            IsChineseLanguage = true;
+                        }
+                        else if (r == "engLang")
+                        {
+                            LanguageManager.Instance.SwitchLanguage(LanguageOption.English);
+                            LanguageManager.Instance.hasLanguageChanged = true;
                         }
                     });
     }

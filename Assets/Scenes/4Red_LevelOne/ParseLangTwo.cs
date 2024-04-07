@@ -12,8 +12,7 @@ public class ParseLangTwo : MonoBehaviour
     public Text Fail;
     void Start()
     {
-        SaveManager.Instance.LoadSettings();
-        if (!SaveManager.Instance.IsEnglishLanguage)
+        if (LanguageManager.Instance.currentLanguage == LanguageOption.English)
         {
             Succee.text = "Succeed";
             Return.text = "Return";
@@ -26,7 +25,7 @@ public class ParseLangTwo : MonoBehaviour
             }
 
         }
-        else if(SaveManager.Instance.IsEnglishLanguage)
+        else if(LanguageManager.Instance.currentLanguage == LanguageOption.Chinese)
         {
             Succee.text = "¹§Ï²Í¨¹Ø";
             Return.text = "·µ»Ø";

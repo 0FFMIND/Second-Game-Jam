@@ -22,7 +22,7 @@ public class Cardstr : MonoBehaviour
         AcardList.Clear();
         DcardList.Clear();
         string[] dataRow;
-        if (LanguageManager.Instance.CurrentLanguage == LanguageOption.Chinese)
+        if (LanguageManager.Instance.currentLanguage == LanguageOption.Chinese)
         {
             dataRow = CNcardData.text.Split('\n');
         }

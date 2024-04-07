@@ -20,7 +20,7 @@ public class DropDownLang : MonoBehaviour
         Scene scene = SceneManager.GetActiveScene();
         if (scene.name == "LevelOne")
         {
-            if (LanguageManager.Instance.CurrentLanguage == LanguageOption.Chinese)
+            if (LanguageManager.Instance.currentLanguage == LanguageOption.Chinese)
             {
                 if (GameObject.FindWithTag("ITEM") != null)
                 {
@@ -31,7 +31,7 @@ public class DropDownLang : MonoBehaviour
                 }
 
             }
-            else if (LanguageManager.Instance.CurrentLanguage == LanguageOption.English)
+            else if (LanguageManager.Instance.currentLanguage == LanguageOption.English)
             {
                 if (GameObject.FindWithTag("ITEM") != null)
                 {
@@ -44,7 +44,7 @@ public class DropDownLang : MonoBehaviour
         }
         if(scene.name == "LevelTwo")
         {
-            if (LanguageManager.Instance.CurrentLanguage == LanguageOption.Chinese)
+            if (LanguageManager.Instance.currentLanguage == LanguageOption.Chinese)
             {
                 if (GameObject.FindWithTag("ITEM") != null)
                 {
@@ -55,7 +55,7 @@ public class DropDownLang : MonoBehaviour
                 }
 
             }
-            else if (LanguageManager.Instance.CurrentLanguage == LanguageOption.English)
+            else if (LanguageManager.Instance.currentLanguage == LanguageOption.English)
             {
                 if (GameObject.FindWithTag("ITEM") != null)
                 {
@@ -68,7 +68,7 @@ public class DropDownLang : MonoBehaviour
         }
         if (scene.name == "LevelThree")
         {
-            if (LanguageManager.Instance.CurrentLanguage == LanguageOption.Chinese)
+            if (LanguageManager.Instance.currentLanguage == LanguageOption.Chinese)
             {
                 if (GameObject.FindWithTag("ITEM") != null)
                 {
@@ -79,7 +79,7 @@ public class DropDownLang : MonoBehaviour
                 }
 
             }
-            else if (LanguageManager.Instance.CurrentLanguage == LanguageOption.English)
+            else if (LanguageManager.Instance.currentLanguage == LanguageOption.English)
             {
                 if (GameObject.FindWithTag("ITEM") != null)
                 {
@@ -92,7 +92,7 @@ public class DropDownLang : MonoBehaviour
         }
         if (scene.name == "LevelFour")
         {
-            if (LanguageManager.Instance.CurrentLanguage == LanguageOption.Chinese)
+            if (LanguageManager.Instance.currentLanguage == LanguageOption.Chinese)
             {
                 if (GameObject.FindWithTag("ITEM") != null)
                 {
@@ -103,7 +103,7 @@ public class DropDownLang : MonoBehaviour
                 }
 
             }
-            else if (LanguageManager.Instance.CurrentLanguage == LanguageOption.English)
+            else if (LanguageManager.Instance.currentLanguage == LanguageOption.English)
             {
                 if (GameObject.FindWithTag("ITEM") != null)
                 {
@@ -116,7 +116,7 @@ public class DropDownLang : MonoBehaviour
         }
         if (scene.name == "LevelFive")
         {
-            if (LanguageManager.Instance.CurrentLanguage == LanguageOption.Chinese)
+            if (LanguageManager.Instance.currentLanguage == LanguageOption.Chinese)
             {
                 if (GameObject.FindWithTag("ITEM") != null)
                 {
@@ -127,7 +127,7 @@ public class DropDownLang : MonoBehaviour
                 }
 
             }
-            else if (LanguageManager.Instance.CurrentLanguage == LanguageOption.English)
+            else if (LanguageManager.Instance.currentLanguage == LanguageOption.English)
             {
                 if (GameObject.FindWithTag("ITEM") != null)
                 {

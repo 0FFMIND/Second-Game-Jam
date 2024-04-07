@@ -137,11 +137,11 @@ public class BELevelText : MonoBehaviour
             if (SaveManager.Instance.IsPoolFinshed && introCG[1].activeSelf)
             {
                 introTextOne.SetActive(false); introTextTwo.SetActive(true);
-                if (LanguageManager.Instance.CurrentLanguage == LanguageOption.Chinese)
+                if (LanguageManager.Instance.currentLanguage == LanguageOption.Chinese)
                 {
                     introTextThree.SetActive(true);
                 }
-                else if (LanguageManager.Instance.CurrentLanguage == LanguageOption.English)
+                else if (LanguageManager.Instance.currentLanguage == LanguageOption.English)
                 {
                     introTextThreeEN.SetActive(true);
                 }

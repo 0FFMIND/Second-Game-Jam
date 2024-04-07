@@ -195,7 +195,7 @@ public class DialogManager : Singleton<DialogManager>
     public IEnumerator StartDialog(List<string> cnDialogs,List<string> enDialogs)
     {
         List<string> dialogs;
-        LanguageOption option = LanguageManager.Instance.CurrentLanguage;
+        LanguageOption option = LanguageManager.Instance.currentLanguage;
         if(option == LanguageOption.Chinese)
         {
             dialogs = cnDialogs;

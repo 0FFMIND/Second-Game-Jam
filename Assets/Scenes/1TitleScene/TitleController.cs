@@ -30,11 +30,11 @@ public class TitleController : MonoBehaviour
     {
         if (hasLangChangeInTitle)
         {
-            if(LanguageManager.Instance.CurrentLanguage == LanguageOption.Chinese)
+            if(LanguageManager.Instance.currentLanguage == LanguageOption.Chinese)
             {
                 AbleCNLanguage(true);
             }
-            else if(LanguageManager.Instance.CurrentLanguage == LanguageOption.English)
+            else if(LanguageManager.Instance.currentLanguage == LanguageOption.English)
             {
                 AbleCNLanguage(false);
             }

@@ -186,11 +186,11 @@ public class SkillManager : MonoBehaviour
     }
     public void DisplaySkillInfo()
     {
-        if(LanguageManager.Instance.CurrentLanguage == LanguageOption.Chinese)
+        if(LanguageManager.Instance.currentLanguage == LanguageOption.Chinese)
         {
             skillNameText.text = activeSkill.skillNameCN;
             skillDesText.text = activeSkill.skillDetailCN;
-        }if(LanguageManager.Instance.CurrentLanguage == LanguageOption.English)
+        }if(LanguageManager.Instance.currentLanguage == LanguageOption.English)
         {
             skillNameText.text = activeSkill.skillNameEN;
             skillDesText.text = activeSkill.skillDetailEN;

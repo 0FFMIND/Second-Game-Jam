@@ -11,22 +11,22 @@ public class StrategyChange : MonoBehaviour
         SaveManager.Instance.LoadLevel();
         if(SaveManager.Instance.IsAngel == 1)
         {
-            if(LanguageManager.Instance.CurrentLanguage == LanguageOption.Chinese)
+            if(LanguageManager.Instance.currentLanguage == LanguageOption.Chinese)
             {
                 text.text = "ÎÂºÍ";
             }
-            else if (LanguageManager.Instance.CurrentLanguage == LanguageOption.English)
+            else if (LanguageManager.Instance.currentLanguage == LanguageOption.English)
             {
                 text.text = "Gentle";
             }
         }
         if (SaveManager.Instance.IsAngel == 2)
         {
-            if (LanguageManager.Instance.CurrentLanguage == LanguageOption.Chinese)
+            if (LanguageManager.Instance.currentLanguage == LanguageOption.Chinese)
             {
                 text.text = "¼¤½ø";
             }
-            else if (LanguageManager.Instance.CurrentLanguage == LanguageOption.English)
+            else if (LanguageManager.Instance.currentLanguage == LanguageOption.English)
             {
                 text.text = "Aggresive";
             }

@@ -12,24 +12,28 @@ public enum LanguageOption
 }
 public class LanguageManager : Singleton<LanguageManager>
 {
-    public LanguageOption CurrentLanguage { get; set; }
-    public LanguageOption previousLanguage;
+    public LanguageOption currentLanguage = LanguageOption.Chinese;
+    public LanguageOption previousLanguage = LanguageOption.Chinese;
     public bool hasLanguageChanged;
     private readonly Dictionary<string, string> gameDictionary = new Dictionary<string, string>();
+    private string previousScene = "TitleScene";
     private void Awake()
     {
         LoadLanguageFile("Language");
     }
     private void Update()
     {
-        if (CurrentLanguage != previousLanguage)
+        // 设置里面变了将开头场景的语言库改变
+        if (currentLanguage != previousLanguage)
         {
-            SwitchLanguage(CurrentLanguage);
+            SwitchLanguage(currentLanguage);
         }
         ChangeLanguage();
-        if(SceneManager.GetActiveScene().name != "TitleScene")
+        // 非开头场景时，因为默认所有语言为中文，如果默认设置是英文，每一次变场景时会加载不同语言库
+        if(SceneManager.GetActiveScene().name != previousScene)
         {
-            SwitchLanguage(CurrentLanguage);
+            SwitchLanguage(currentLanguage);
+            previousScene = SceneManager.GetActiveScene().name;
         }
     }
     private void ChangeLanguage()
@@ -37,7 +41,7 @@ public class LanguageManager : Singleton<LanguageManager>
         if (hasLanguageChanged)
         {
             LanguageOption option = previousLanguage;
-            CurrentLanguage = (LanguageOption)(((int)option + 1) % 2);
+            currentLanguage = (LanguageOption)(((int)option + 1) % 2);
             hasLanguageChanged = false;
         }
     }
@@ -67,8 +71,8 @@ public class LanguageManager : Singleton<LanguageManager>
     }
     public void SwitchLanguage(LanguageOption targetLanguage)
     {
-        previousLanguage = CurrentLanguage;
-        CurrentLanguage = targetLanguage;
+        previousLanguage = currentLanguage;
+        currentLanguage = targetLanguage;
         Scene scene = SceneManager.GetActiveScene();
         if(scene.name == "TitleScene")
         {

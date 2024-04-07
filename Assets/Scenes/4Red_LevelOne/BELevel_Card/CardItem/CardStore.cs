@@ -15,10 +15,10 @@ public class CardStore : MonoBehaviour
     public List<Card> DcardList = new List<Card>();
     private void Start()
     {
-        if(LanguageManager.Instance.CurrentLanguage == LanguageOption.Chinese)
+        if(LanguageManager.Instance.currentLanguage == LanguageOption.Chinese)
         {
             HintCN.SetActive(true);HintEN.SetActive(false);
-        }else if (LanguageManager.Instance.CurrentLanguage == LanguageOption.English)
+        }else if (LanguageManager.Instance.currentLanguage == LanguageOption.English)
         {
             HintEN.SetActive(true);HintCN.SetActive(false);
         }
@@ -29,7 +29,7 @@ public class CardStore : MonoBehaviour
         AcardList.Clear();
         DcardList.Clear();
         string[] dataRow;
-        if (LanguageManager.Instance.CurrentLanguage == LanguageOption.Chinese)
+        if (LanguageManager.Instance.currentLanguage == LanguageOption.Chinese)
         {
             dataRow = CNcardData.text.Split('\n');
         }
