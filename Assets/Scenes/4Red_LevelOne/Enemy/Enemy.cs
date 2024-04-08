@@ -18,6 +18,9 @@ public class Enemy : MonoBehaviour
     private EnemyFX _enemyFX;
     public GameObject deathParticles;
 
+    public PathFollower pathFollower;
+    public PathFollower2 pathFollower2;
+
     private void PlayHurtAnimation()
     {
         animator.SetTrigger("Hit");
@@ -30,6 +33,9 @@ public class Enemy : MonoBehaviour
     }
     private IEnumerator PlayDead()
     {
+        if(pathFollower != null) { pathFollower.Speed = 0; }
+        else if(pathFollower2 != null) { pathFollower2.Speed = 0; }
+
         animator.SetTrigger("Die");
         Instantiate(deathParticles, transform.position, Quaternion.identity);
         yield return new WaitForSeconds(0.5f);
@@ -61,6 +67,10 @@ public class Enemy : MonoBehaviour
         animator = GetComponent<Animator>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _enemyHealth = GetComponent<HealthSystem>();
+
+        pathFollower = GetComponent<PathFollower>();
+        pathFollower2 = GetComponent<PathFollower2>();
+
         if (GameObject.FindGameObjectWithTag("defenseholder"))
         {
             CurrentHealth = _enemyHealth.GetHealthAmount() - 10f;
