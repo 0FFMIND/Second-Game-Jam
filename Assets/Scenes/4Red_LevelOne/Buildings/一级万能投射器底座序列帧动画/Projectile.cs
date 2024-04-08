@@ -22,6 +22,10 @@ public class Projectile : MonoBehaviour
             MoveProjectile();
             RotateProjectile();
         }
+        else
+        {
+            ObjectPooler.ReturnToPool(gameObject);
+        }
     }
 
     protected virtual void MoveProjectile()
