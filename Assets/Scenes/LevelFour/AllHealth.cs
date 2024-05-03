@@ -15,6 +15,8 @@ public class AllHealth : MonoBehaviour
     }
     private void LoseHealth()
     {
+        if (!PauseAllHealthTwo.Instance.isWeatherClear)
+        {
             if (GameObject.FindGameObjectsWithTag("solar") != null && GameObject.FindGameObjectsWithTag("solar").Length != 0)
             {
                 for (int i = 0; i < GameObject.FindGameObjectsWithTag("solar").Length; i++)
@@ -75,4 +77,5 @@ public class AllHealth : MonoBehaviour
                 }
             }
         }
+    }
 }

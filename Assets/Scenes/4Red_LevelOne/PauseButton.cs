@@ -8,11 +8,13 @@ public enum GameState
     normal,
     fast,
 }
-public class PauseButton : MonoBehaviour
+public class PauseButton : Singleton<PauseButton>
 {
     public GameObject pauseButton;
     public GameObject pausePanel;
     public GameObject uiPanel;
+    public bool isPause = false;
+
     public Text sInfo;
     [SerializeField] private GameState gameState;
     //当点击时执行
@@ -59,6 +61,7 @@ public class PauseButton : MonoBehaviour
     {
         AudioManager.Instance.PlaySFX(SoundEffect.UISelect);
         UpdateUI();
+        isPause = true;
         Time.timeScale = 0.0f;
         pauseButton.SetActive(false);
         uiPanel.SetActive(false);
@@ -87,6 +90,7 @@ public class PauseButton : MonoBehaviour
     }
     public void ResumeGameBtn()
     {
+        isPause = false;
         EnableUI();
         uiPanel.SetActive(true);
         pauseButton.SetActive(true);

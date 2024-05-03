@@ -7,8 +7,13 @@ public class MainMenu : TitleMenuBase<MainMenu>
     public GameObject infoTrigger;
     public void OnStartPressed()
     {
-        gameObject.GetComponentInParent<TitleController>().nullMenu.Open();
-        infoTrigger.SetActive(true);
+        if (SaveManager.Instance.IsIntroEnd)
+        {
+            gameObject.GetComponentInParent<TitleController>().nullMenu.Open();
+            infoTrigger.SetActive(true);
+        }
+        else
+            TransManager.Instance.ChangeScene("IntroScene");
     }
 
     public void OnContinuePressed()

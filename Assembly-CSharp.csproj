@@ -99,6 +99,7 @@
     <Compile Include="Assets\Scenes\3OpenScene\OpenController.cs" />
     <Compile Include="Assets\ExternalTools\RainMaker\Prefab\RainCollision.cs" />
     <Compile Include="Assets\Scenes\3OpenScene\TextChange.cs" />
+    <Compile Include="Assets\Scenes\4Red_LevelOne\PauseAllHealthTwo.cs" />
     <Compile Include="Assets\ExternalTools\Sci-Fi UI\Demo_Assets\scripts\GUI_Demo.cs" />
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\PlaymakerActions\TransitionBlocksLoadLevel.cs" />
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\Transition Blocks\TransitionBlock.cs" />
