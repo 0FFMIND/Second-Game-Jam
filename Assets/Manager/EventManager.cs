@@ -1,10 +1,7 @@
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using UnityEngine.Events;
 public interface IEventInfo // 定义接口
 {
-
 }
 public class EventInfo<T> : IEventInfo
 {

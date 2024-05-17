@@ -3,33 +3,17 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class IntroController : MonoBehaviour
 {
-    public static IntroController Instance;
-    public GameObject introSave;
-    public GameObject introText;
-    public bool isSaveEnd = false;
-    public static bool isInit = false;
-    public DialogContent BeforeIntroDialog,
-                         IntroDialog;
+    public GameObject FirstIntro;
+    public GameObject SecondIntro;
+    public DialogContent IntroDialog;
     public Image[] storyboards;
-    public static bool isFinished = false;
     public void Start()
     {
-        DialogManager.Instance.isBEfinished = false;
         AudioManager.Instance.StopBGM();
-        if(SceneManager.GetActiveScene().name == "IntroScene")
-        {
-            AudioManager.Instance.PlayBGM(BackgroundMusic.IntroScene);
-        }
-        if(SceneManager.GetActiveScene().name == "EndScene")
-        {
-            AudioManager.Instance.PlayBGM(BackgroundMusic.End);
-        }
-        DialogManager.Instance.isIntroFinished = false;
-        isInit = false;
-        isSaveEnd = false;
+        AudioManager.Instance.PlayBGM(BackgroundMusic.IntroScene);
         //弹出一个显示菜单，显示Intro界面已经储存到continue里面了
         DialogManager.Instance.Init("beforeIntro", BeforeIntroDialog);
-        introSave.SetActive(true);
+        FirstIntro.SetActive(true);
     }
     public void PlayTypping()
     {

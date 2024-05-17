@@ -121,7 +121,7 @@ public class LevelThreeController : MonoBehaviour
     }
     private void Update()
     {
-        Vector3 vector3 = CursorManager.Instance.GetPos();
+        Vector3 vector3 = InputManager.Instance.GetPos();
         Vector2 vector2 = new Vector2(vector3.x, vector3.y);
         for (int i = 0; i < pollutedWater.Length; i++)
         {

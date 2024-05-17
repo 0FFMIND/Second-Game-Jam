@@ -22,6 +22,8 @@ public class TitleController : MonoBehaviour
         mainBackground.SetActive(true);
         subBackground.SetActive(false);
         mainMenu.Open();
+        GameManager.Instance.Init();
+        InputManager.Instance.Init();
         SaveManager.Instance.Init();
         AudioManager.Instance.StopBGM();
         AudioManager.Instance.PlayBGM(BackgroundMusic.TitleScene);

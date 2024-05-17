@@ -6,10 +6,10 @@ public class SellBtn : MonoBehaviour
 {
     public void SellOK()
     {
-        CursorManager.isSellOpen = !CursorManager.isSellOpen;
+        InputManager.isSellOpen = !InputManager.isSellOpen;
     }
     public void GhostOK()
     {
-        CursorManager.isGhostOpen = true;
+        InputManager.isGhostOpen = true;
     }
 }

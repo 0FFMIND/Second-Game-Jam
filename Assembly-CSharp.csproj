@@ -184,7 +184,7 @@
     <Compile Include="Assets\ExternalTools\RFX_Resources\Scripts\ParticleScaler.cs" />
     <Compile Include="Assets\Scenes\3OpenScene\ConfirmBtnController.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\一级万能投射器底座序列帧动画\EnemyFX.cs" />
-    <Compile Include="Assets\Manager\CursorManager.cs" />
+    <Compile Include="Assets\Manager\InputManager.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\PauseButton.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\CardItem\ZoomUI.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\PlaceArea.cs" />
@@ -205,6 +205,7 @@
     <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\BuildingManager.cs" />
     <Compile Include="Assets\Scenes\1TitleScene\TitleMenuBase.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\BuildingDemolish.cs" />
+    <Compile Include="Assets\Scenes\2IntroScene\IntroTexter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\ExternalTools\Febucci\Text Animator\Example\Font\OFL.txt" />

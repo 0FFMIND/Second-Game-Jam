@@ -8,6 +8,8 @@ public class SaveManager : SingletonMono<SaveManager>
     public bool IsLowResolution { get; private set; } = false;
     public float SFXvalue { get; private set; } = 0;
     public float BGMvalue { get; private set; } = 0;
+
+
     //涉及场景的存档
     public bool IsIntroEnd { get; set; } = false; //是否在介绍模式，牵扯到一些UI显示
     public bool IsOpenEnd { get; set; } = false;
@@ -39,8 +41,8 @@ public class SaveManager : SingletonMono<SaveManager>
                       .Write("BGMvalue","0.5")
                       .Write("LangOpt", "chnLang")
                       .Commit();
-            IsHighResolution = true;
         }
+
         //在系统初始化的时候读取文件
         LoadMenuSettings();
 
@@ -262,11 +264,13 @@ public class SaveManager : SingletonMono<SaveManager>
                         if (r == "highReso")
                         {
                             Screen.SetResolution(1920, 1080, true);
+                            IsLowResolution = false;
                             IsHighResolution = true;
                         }
                         else if (r == "lowReso")
                         {
                             Screen.SetResolution(1280, 720, true);
+                            IsHighResolution = false;
                             IsLowResolution = true;
                         }
                     })

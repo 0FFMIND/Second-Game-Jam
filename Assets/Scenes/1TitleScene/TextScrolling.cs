@@ -6,7 +6,7 @@ public class TextScrolling : MonoBehaviour
 {
     public GameObject firstText;
     public GameObject secondText;
-    public float speed = 10f;
+    private float speed = 1.5f;
     private float defaultdeltaPos;
     private Vector3 startPos;
     private Vector3 stopPos;

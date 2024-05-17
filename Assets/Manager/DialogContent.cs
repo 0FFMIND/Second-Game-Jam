@@ -5,7 +5,6 @@ using UnityEngine;
 [System.Serializable]
 public class DialogContent : ScriptableObject
 {
-    public bool istypped;
     public List<string> CNdialogList;
     public List<string> ENdialogList;
 }

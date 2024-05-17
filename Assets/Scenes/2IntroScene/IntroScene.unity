@@ -366,6 +366,7 @@ GameObject:
   - component: {fileID: 452397270}
   - component: {fileID: 452397269}
   - component: {fileID: 452397273}
+  - component: {fileID: 452397274}
   m_Layer: 3
   m_Name: IntroCanvas
   m_TagString: Untagged
@@ -481,6 +482,19 @@ MonoBehaviour:
   storyboards:
   - {fileID: 2024262109}
   - {fileID: 1408211974}
+--- !u!114 &452397274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452397268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6025d6fb04d50c04f8c1dd54cf12b1e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dContent: {fileID: 11400000, guid: 99e34456b5c699e4cbfb26ad46b4540a, type: 2}
 --- !u!1 &462216532
 GameObject:
   m_ObjectHideFlags: 0
@@ -493,7 +507,7 @@ GameObject:
   - component: {fileID: 462216534}
   - component: {fileID: 462216533}
   m_Layer: 5
-  m_Name: SuccessPanel
+  m_Name: FirstPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -622,58 +636,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &651083557
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 651083559}
-  - component: {fileID: 651083558}
-  m_Layer: 0
-  m_Name: ManagersLoader
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &651083558
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 651083557}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9660b61f16ba35145bea1cbc72818129, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AudioPrf: {fileID: 1649119283115470467, guid: 602c7c5521f86844e9ab2e594a36d533, type: 3}
-  CursorPrf: {fileID: 3933639675766690273, guid: 1f03218ea12ea184f85dc9fd15bc6c2f, type: 3}
-  TransPrf: {fileID: 4744311105647135344, guid: 87ad7e2106eb40a4d94f536c5976b66a, type: 3}
-  LangPrf: {fileID: 8440200194425402608, guid: 884f537308130d840bb52ac1eb8088e3, type: 3}
-  SavePrf: {fileID: 1768209978677328532, guid: 4f242dd6bad4fe54a9c0f1dffc8c3c50, type: 3}
-  DialogPrf: {fileID: 8922992427548552584, guid: 8668f4ad11ea9ca43979fb73b08cb4ed, type: 3}
-  GaMPrf: {fileID: 1391059110236874053, guid: 46c29c02de24ca54ca4986de6b67e893, type: 3}
-  EventPrf: {fileID: 2025534161046785189, guid: 8dddf76f47e9f7e4d92005cc9d02e389, type: 3}
-  CardStorePrf: {fileID: 8851941899099644363, guid: 7f440b2f08c94804aa165144fd5ad1a7, type: 3}
---- !u!4 &651083559
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 651083557}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &673372650
 GameObject:
@@ -1499,7 +1461,7 @@ GameObject:
   - component: {fileID: 1360021519}
   - component: {fileID: 1360021518}
   m_Layer: 5
-  m_Name: SuccessfulText
+  m_Name: FirstText
   m_TagString: BETEXT
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2437,7 +2399,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7797057201489556360, guid: 150e9f6600c6cd5449f1b85172a1a35b, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7797057201489556360, guid: 150e9f6600c6cd5449f1b85172a1a35b, type: 3}
       propertyPath: m_LocalPosition.x

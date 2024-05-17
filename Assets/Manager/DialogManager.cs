@@ -4,7 +4,6 @@ using UnityEngine;
 using TMPro;
 using Febucci.UI;
 using UnityEngine.SceneManagement;
-using System.Linq;
 
 public class DialogManager : SingletonMono<DialogManager>
 {
@@ -18,7 +17,6 @@ public class DialogManager : SingletonMono<DialogManager>
     public bool isIntroFinished = false;
     public int index;
     public bool isTyping;
-    private bool onlyOnce = false;
     public void UnInit()
     {
         textObject = GameObject.FindWithTag(name == "beforeIntro" ? "BETEXT" : "TEXT");
@@ -34,19 +32,15 @@ public class DialogManager : SingletonMono<DialogManager>
     }
     private void Update()
     {
-        if (SceneManager.GetActiveScene().name != "TitleScene")
+        if(SceneManager.GetActiveScene().name == "IntroScene")
         {
-            if (Input.GetMouseButtonDown(0))
-            {
-                DialogControl();
-            }
-            else if(Input.touches.Length != 0 && Input.touches[0].phase == TouchPhase.Began)
-            {
-                DialogControl();
-            }
+            EventManager.Instance.AddEventListener("OnMouseDown", HandleDialog);
         }
     }
+    private void HandleDialog()
+    {
 
+    }
     private void DialogControl()
     {
         if (SceneManager.GetActiveScene().name == "BELevelOne")

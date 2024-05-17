@@ -17,7 +17,7 @@ public class ArrowController : MonoBehaviour
     }
     private void Update()
     {
-        endPoint = CursorManager.Instance.cursorPos;
+        endPoint = InputManager.Instance.cursorPos;
     }
 
 }

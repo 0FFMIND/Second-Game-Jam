@@ -1,34 +1,36 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+public enum E_GameState
+{
+    onDialog,
+    onPlay,
+}
 public class GameManager : SingletonMono<GameManager>
 {
     private bool isPause = false;
-    private void Update()
+    public void Init()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        EventManager.Instance.AddEventListener("OnESCDown", HandleESCDown);
+    }
+
+    private void HandleESCDown()
+    {
+        if (SceneManager.GetActiveScene().name == "OpenScene" || SceneManager.GetActiveScene().name == "IntroScene")
         {
-            if (SceneManager.GetActiveScene().name == "OpenScene")
+            TransManager.Instance.ChangeScene("TitleScene");
+        }
+        if (SceneManager.GetActiveScene().name == "LevelOne" || SceneManager.GetActiveScene().name == "LevelTwo" || SceneManager.GetActiveScene().name == "LevelThree" || SceneManager.GetActiveScene().name == "LevelFour" || SceneManager.GetActiveScene().name == "LevelFive" || SceneManager.GetActiveScene().name == "LevelSix")
+        {
+            isPause = !isPause;
+            if (!isPause)
             {
-                TransManager.Instance.ChangeScene("TitleScene");
+                PauseButton.Instance.PauseGame();
             }
-            if (SceneManager.GetActiveScene().name == "LevelOne" || SceneManager.GetActiveScene().name == "LevelTwo" || SceneManager.GetActiveScene().name == "LevelThree" || SceneManager.GetActiveScene().name == "LevelFour" || SceneManager.GetActiveScene().name == "LevelFive" || SceneManager.GetActiveScene().name == "LevelSix")
+            else if (isPause)
             {
-                isPause = !isPause;
-                if (!isPause)
-                {
-                    PauseButton.Instance.PauseGame();
-                }
-                else if (isPause)
-                {
-                    PauseButton.Instance.ResumeGameBtn();
+                PauseButton.Instance.ResumeGameBtn();
 
-                }
             }
-
-
         }
     }
 }

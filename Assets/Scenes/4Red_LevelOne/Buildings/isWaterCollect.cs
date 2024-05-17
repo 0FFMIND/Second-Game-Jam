@@ -17,7 +17,7 @@ public class isWaterCollect : MonoBehaviour
         if(Timer > 48f && !isWaterCollected)
         {
             isWaterCollected = true;
-            CursorManager.Instance.SetPos(this.transform.position);
+            InputManager.Instance.SetPos(this.transform.position);
         }
     }
 }
