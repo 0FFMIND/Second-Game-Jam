@@ -1,13 +1,35 @@
 using UnityEngine.SceneManagement;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class AllHealth : MonoBehaviour
 {
     float timer = 0;
+
+    UnityAction pauseHealthMinus;
+
+    public int RegulatorCount;
+    public bool isWeatherClear = false;
+
+    private void Awake()
+    {
+        pauseHealthMinus = new UnityAction(() =>
+        {
+            if (GameObject.FindGameObjectsWithTag("Regulator").Length == RegulatorCount)
+            {
+                isWeatherClear = true;
+            }
+        });
+    }
+    private void Start()
+    {
+        EventManager.Instance.AddEventListener("PauseHealthMinus", pauseHealthMinus);
+    }
+
     void Update()
     {
         timer += Time.deltaTime;
-        if(timer > 4f)
+        if (timer > 4f)
         {
             LoseHealth();
             timer = 0;
@@ -15,8 +37,11 @@ public class AllHealth : MonoBehaviour
     }
     private void LoseHealth()
     {
-        if (!PauseAllHealthTwo.Instance.isWeatherClear)
+        EventManager.Instance.EventTrigger("PauseHealthMinus");
+
+        if (!isWeatherClear)
         {
+
             if (GameObject.FindGameObjectsWithTag("solar") != null && GameObject.FindGameObjectsWithTag("solar").Length != 0)
             {
                 for (int i = 0; i < GameObject.FindGameObjectsWithTag("solar").Length; i++)
