@@ -5,29 +5,30 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : SingletonMono<GameManager>
 {
+    private bool isPause = false;
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && SceneManager.GetActiveScene().name =="OpenScene")
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            TransManager.Instance.ChangeScene("TitleScene");
-        }
-        if (Input.GetKeyDown(KeyCode.Escape) && (SceneManager.GetActiveScene().name == "LevelOne" || SceneManager.GetActiveScene().name == "LevelTwo" || SceneManager.GetActiveScene().name == "LevelThree" || SceneManager.GetActiveScene().name == "LevelFour" || SceneManager.GetActiveScene().name == "LevelFive" || SceneManager.GetActiveScene().name == "LevelSix"))
-        {
-            if (PauseButton.Instance.isPause)
+            if (SceneManager.GetActiveScene().name == "OpenScene")
             {
-                PauseButton.Instance.ResumeGameBtn();
+                TransManager.Instance.ChangeScene("TitleScene");
+            }
+            if (SceneManager.GetActiveScene().name == "LevelOne" || SceneManager.GetActiveScene().name == "LevelTwo" || SceneManager.GetActiveScene().name == "LevelThree" || SceneManager.GetActiveScene().name == "LevelFour" || SceneManager.GetActiveScene().name == "LevelFive" || SceneManager.GetActiveScene().name == "LevelSix")
+            {
+                isPause = !isPause;
+                if (!isPause)
+                {
+                    PauseButton.Instance.PauseGame();
+                }
+                else if (isPause)
+                {
+                    PauseButton.Instance.ResumeGameBtn();
+
+                }
             }
 
-            else
-            {
-                StartCoroutine(Pause());
-            } 
-        }
-    }
 
-    IEnumerator Pause()
-    {
-        yield return new WaitForSeconds(0.1f);
-        PauseButton.Instance.PauseGame();
+        }
     }
 }

@@ -13,7 +13,6 @@ public class PauseButton : SingletonMono<PauseButton>
     public GameObject pauseButton;
     public GameObject pausePanel;
     public GameObject uiPanel;
-    public bool isPause = false;
 
     public Text sInfo;
     [SerializeField] private GameState gameState;
@@ -61,7 +60,6 @@ public class PauseButton : SingletonMono<PauseButton>
     {
         AudioManager.Instance.PlaySFX(SoundEffect.UISelect);
         UpdateUI();
-        isPause = true;
         Time.timeScale = 0.0f;
         pauseButton.SetActive(false);
         uiPanel.SetActive(false);
@@ -90,7 +88,6 @@ public class PauseButton : SingletonMono<PauseButton>
     }
     public void ResumeGameBtn()
     {
-        isPause = false;
         EnableUI();
         uiPanel.SetActive(true);
         pauseButton.SetActive(true);
