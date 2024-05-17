@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class CursorManager : Singleton<CursorManager>
+public class CursorManager : SingletonMono<CursorManager>
 {
     public static bool isSellOpen = false;
     public static bool isGhostOpen = false;

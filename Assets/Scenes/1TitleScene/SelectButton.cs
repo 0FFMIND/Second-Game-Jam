@@ -51,16 +51,9 @@ public class SelectButton : MonoBehaviour
             button.isReso = parentIndex == 0;
             button.PressedBtn += SettingPressedBtn;
             button.UnPressedBtn += SettingUnpressedBtn;
-            button.HighlightedBtn += SettingHighlightedButton;
         }
     }
 
-    private void SettingHighlightedButton(SettingBtnCust button)
-    {
-        button.isHighlighted = true;
-    }
-
-    #region Update Button
 
     // Update button states based on saved settings.
     private void UpdateButtonsFromSavedSettings()
@@ -94,7 +87,6 @@ public class SelectButton : MonoBehaviour
             SettingPressedBtn(buttonList[1]);
         }
     }
-    #endregion
 
     // Event handlers for button actions.
     public void SettingPressedBtn(SettingBtnCust button)
@@ -109,7 +101,7 @@ public class SelectButton : MonoBehaviour
         button.GetComponentInChildren<Text>().color = new Color(180 / 255f, 205 / 255f, 1f, 1f);
         button.colors = new ColorBlock {
             normalColor = new Color(1f, 1f, 1f, 1f),
-            highlightedColor = Color.white,
+            highlightedColor = new Color(0.6236882f, 0.5226415f, 1f, 0.5f),
             pressedColor = Color.red,
             selectedColor = Color.white,
             disabledColor = new Color(0.8f,0.8f,0.8f,0.8f),
@@ -166,7 +158,7 @@ public class SelectButton : MonoBehaviour
         button.colors = new ColorBlock
         {
             normalColor = new Color(1f, 1f, 1f, 0f),
-            highlightedColor = Color.white,
+            highlightedColor = new Color(0.6236882f, 0.5226415f, 1f, 0.5f),
             pressedColor = Color.red,
             selectedColor = Color.white,
             disabledColor = new Color(0.8f, 0.8f, 0.8f, 0.8f),

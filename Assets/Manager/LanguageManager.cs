@@ -10,11 +10,13 @@ public enum LanguageOption
     English,
     Chinese
 }
-public class LanguageManager : Singleton<LanguageManager>
+public class LanguageManager : SingletonMono<LanguageManager>
 {
+    // 这里公有出来Debug用
     public LanguageOption currentLanguage = LanguageOption.Chinese;
     public LanguageOption previousLanguage = LanguageOption.Chinese;
     public bool hasLanguageChanged;
+    // 私有变量
     private readonly Dictionary<string, string> gameDictionary = new Dictionary<string, string>();
     private string previousScene = "TitleScene";
     private void Awake()

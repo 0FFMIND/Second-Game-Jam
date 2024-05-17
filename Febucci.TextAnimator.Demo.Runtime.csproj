@@ -323,7 +323,7 @@
       <HintPath>Assets\ExternalTools\Plugins\Demigiant\DOTween\Editor\DOTweenEditor.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>Assets\ExternalTools\Resources\Plugins\jillejr.newtonsoft.json-for-unity@12.0.301\Plugins\Newtonsoft.Json Editor\Newtonsoft.Json.dll</HintPath>
+      <HintPath>Assets\Resources\Plugins\jillejr.newtonsoft.json-for-unity@12.0.301\Plugins\Newtonsoft.Json Editor\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="log4netPlastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.11.2\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>

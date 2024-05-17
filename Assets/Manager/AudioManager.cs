@@ -26,7 +26,7 @@ public enum BackgroundMusic
     LevelTwoScene,
     End,
 }
-public class AudioManager : Singleton<AudioManager>
+public class AudioManager : SingletonMono<AudioManager>
 {
     [Header("Sound Effects")]
     public AudioSource[] sfx;

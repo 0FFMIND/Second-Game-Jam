@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 
-public class SaveManager : Singleton<SaveManager>
+public class SaveManager : SingletonMono<SaveManager>
 {
     public bool IsHighResolution { get; private set; } = false;
     public bool IsLowResolution { get; private set; } = false;

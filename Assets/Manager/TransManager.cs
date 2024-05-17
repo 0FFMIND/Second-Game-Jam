@@ -1,5 +1,5 @@
 
-public class TransManager : Singleton<TransManager>
+public class TransManager : SingletonMono<TransManager>
 {
     public void ChangeScene(string sceneName)
     {

@@ -8,7 +8,7 @@ public enum GameState
     normal,
     fast,
 }
-public class PauseButton : Singleton<PauseButton>
+public class PauseButton : SingletonMono<PauseButton>
 {
     public GameObject pauseButton;
     public GameObject pausePanel;

@@ -23,7 +23,7 @@ public class EventInfo : IEventInfo
     }
 }
 // 事件中心使用例子
-public class EventManager : Singleton<EventManager>
+public class EventManager : SingletonMono<EventManager>
 {
     // string是事件名字，接口是监听事件的委托函数
     private Dictionary<string, IEventInfo> eventDic = new Dictionary<string, IEventInfo>();

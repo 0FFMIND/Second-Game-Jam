@@ -6,7 +6,7 @@ using Febucci.UI;
 using UnityEngine.SceneManagement;
 using System.Linq;
 
-public class DialogManager : Singleton<DialogManager>
+public class DialogManager : SingletonMono<DialogManager>
 {
     public GameObject textObject;
     public TextMeshProUGUI text;

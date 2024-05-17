@@ -63,10 +63,11 @@
     <Compile Include="Assets\Manager\LanguageManager.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\HealthBar.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\WaterArea.cs" />
+    <Compile Include="Assets\Manager\SingletonMono.cs" />
     <Compile Include="Assets\Scenes\1TitleScene\MainMenu.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\CardItem\Card.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\一级万能投射器底座序列帧动画\ObjectPooler.cs" />
-    <Compile Include="Assets\DenfenseTower.cs" />
+    <Compile Include="Assets\Scenes\DenfenseTower.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\ParseLangTwo.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\CardItem\CardData.cs" />
     <Compile Include="Assets\Scenes\1TitleScene\SelectButton.cs" />
@@ -99,7 +100,6 @@
     <Compile Include="Assets\Scenes\3OpenScene\OpenController.cs" />
     <Compile Include="Assets\ExternalTools\RainMaker\Prefab\RainCollision.cs" />
     <Compile Include="Assets\Scenes\3OpenScene\TextChange.cs" />
-    <Compile Include="Assets\Scenes\4Red_LevelOne\PauseAllHealthTwo.cs" />
     <Compile Include="Assets\ExternalTools\Sci-Fi UI\Demo_Assets\scripts\GUI_Demo.cs" />
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\PlaymakerActions\TransitionBlocksLoadLevel.cs" />
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\Transition Blocks\TransitionBlock.cs" />
@@ -166,7 +166,6 @@
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\Transition Orders\TransitionOrderCheckerBoard.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\ArrowController.cs" />
     <Compile Include="Assets\ExternalTools\StylizedExplosionPack\scripts\instantiateEffectCaller.cs" />
-    <Compile Include="Assets\Manager\Singleton.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\一级万能投射器底座序列帧动画\MachineProjectile.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\CardItem\ReadId.cs" />
     <Compile Include="Assets\ExternalTools\RainMaker\Demo\DemoScript.cs" />
@@ -189,7 +188,6 @@
     <Compile Include="Assets\Scenes\4Red_LevelOne\PauseButton.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\CardItem\ZoomUI.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\PlaceArea.cs" />
-    <Compile Include="Assets\Manager\ManagersLoader.cs" />
     <Compile Include="Assets\Manager\SaveSystem\SaveBase.cs" />
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\TransitionSetup.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Enemy\PathBase.cs" />
@@ -219,20 +217,20 @@
     <None Include="Assets\ExternalTools\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\ExternalTools\Plugins\Demigiant\DOTween\DOTween.XML" />
     <None Include="Assets\ExternalTools\PostProcessing\Shaders\API\Metal.hlsl" />
-    <None Include="Assets\ExternalTools\Resources\Plugins\jillejr.newtonsoft.json-for-unity@12.0.301\Plugins\Newtonsoft.Json Portable\Newtonsoft.Json.dll" />
+    <None Include="Assets\Resources\Plugins\jillejr.newtonsoft.json-for-unity@12.0.301\Plugins\Newtonsoft.Json Portable\Newtonsoft.Json.dll" />
     <None Include="Assets\ExternalTools\PostProcessing\Shaders\API\OpenGL.hlsl" />
     <None Include="Assets\ExternalTools\PostProcessing\Shaders\API\D3D12.hlsl" />
-    <None Include="Assets\ExternalTools\Resources\Plugins\jillejr.newtonsoft.json-for-unity@12.0.301\Plugins\Newtonsoft.Json Editor\Newtonsoft.Json.dll" />
+    <None Include="Assets\Resources\Plugins\jillejr.newtonsoft.json-for-unity@12.0.301\Plugins\Newtonsoft.Json Editor\Newtonsoft.Json.dll" />
     <None Include="Assets\ExternalTools\StylizedExplosionPack\Tips &amp; Documentations.txt" />
     <None Include="Assets\ExternalTools\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\ExternalTools\Resources\Plugins\jillejr.newtonsoft.json-for-unity@12.0.301\Plugins\Newtonsoft.Json AOT\Newtonsoft.Json.dll" />
-    <None Include="Assets\ExternalTools\Resources\Plugins\jillejr.newtonsoft.json-for-unity@12.0.301\Plugins\Newtonsoft.Json Portable\Newtonsoft.Json.xml" />
+    <None Include="Assets\Resources\Plugins\jillejr.newtonsoft.json-for-unity@12.0.301\Plugins\Newtonsoft.Json AOT\Newtonsoft.Json.dll" />
+    <None Include="Assets\Resources\Plugins\jillejr.newtonsoft.json-for-unity@12.0.301\Plugins\Newtonsoft.Json Portable\Newtonsoft.Json.xml" />
     <None Include="Assets\ExternalTools\RFX_Resources\Scripts\HowtoPlay.txt" />
     <None Include="Assets\ExternalTools\PostProcessing\Shaders\Colors.hlsl" />
     <None Include="Assets\ExternalTools\PostProcessing\Shaders\API\D3D9.hlsl" />
-    <None Include="Assets\ExternalTools\Resources\Plugins\jillejr.newtonsoft.json-for-unity@12.0.301\Plugins\Newtonsoft.Json AOT\Newtonsoft.Json.xml" />
+    <None Include="Assets\Resources\Plugins\jillejr.newtonsoft.json-for-unity@12.0.301\Plugins\Newtonsoft.Json AOT\Newtonsoft.Json.xml" />
     <None Include="Assets\ExternalTools\PostProcessing\Shaders\StdLib.hlsl" />
-    <None Include="Assets\ExternalTools\Resources\Plugins\jillejr.newtonsoft.json-for-unity@12.0.301\Plugins\Newtonsoft.Json Editor\Newtonsoft.Json.xml" />
+    <None Include="Assets\Resources\Plugins\jillejr.newtonsoft.json-for-unity@12.0.301\Plugins\Newtonsoft.Json Editor\Newtonsoft.Json.xml" />
     <None Include="Assets\ExternalTools\RainMaker\Readme.txt" />
     <None Include="Assets\ExternalTools\PostProcessing\Shaders\API\Vulkan.hlsl" />
     <None Include="Assets\ExternalTools\Febucci\Text Animator\Integrations\Integrations.txt" />
@@ -259,7 +257,7 @@
     <None Include="Assets\ExternalTools\RainMaker\Prefab\RainShader.shader" />
     <None Include="Assets\ExternalTools\PostProcessing\Shaders\Blending.hlsl" />
     <None Include="Assets\ExternalTools\Text\ChineseLag.txt" />
-    <None Include="Assets\ExternalTools\Resources\Language.txt" />
+    <None Include="Assets\Resources\Language.txt" />
     <None Include="Assets\ExternalTools\StylizedExplosionPack\shader\alphaBlend_glow.shader" />
     <None Include="Assets\ExternalTools\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\ExternalTools\Plugins\Demigiant\DOTween\readme.txt" />
@@ -269,7 +267,7 @@
     <None Include="Assets\ExternalTools\PostProcessing\Shaders\API\D3D11.hlsl" />
     <None Include="Assets\ExternalTools\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\ExternalTools\PostProcessing\Shaders\API\Switch.hlsl" />
-    <None Include="Assets\ExternalTools\Resources\Plugins\jillejr.newtonsoft.json-for-unity@12.0.301\link.xml" />
+    <None Include="Assets\Resources\Plugins\jillejr.newtonsoft.json-for-unity@12.0.301\link.xml" />
     <None Include="Assets\ExternalTools\TextMesh Pro\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\ExternalTools\PostProcessing\Shaders\XPostProcessing.hlsl" />
   </ItemGroup>
@@ -500,7 +498,7 @@
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.20f1c1\2020.3.20f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>Assets\ExternalTools\Resources\Plugins\jillejr.newtonsoft.json-for-unity@12.0.301\Plugins\Newtonsoft.Json Editor\Newtonsoft.Json.dll</HintPath>
+      <HintPath>Assets\Resources\Plugins\jillejr.newtonsoft.json-for-unity@12.0.301\Plugins\Newtonsoft.Json Editor\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="DOTween">
       <HintPath>Assets\ExternalTools\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>

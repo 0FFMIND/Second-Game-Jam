@@ -4,7 +4,7 @@ using System.IO;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class CardStorePref : Singleton<CardStorePref>
+public class CardStorePref : SingletonMono<CardStorePref>
 {
     public TextAsset CNcardData;
     public TextAsset ENcardData;

@@ -5,11 +5,12 @@ using System;
 public static class FileAccess 
 {
     private const string _defaultExtension = ".json";
+
+    // 选择persistanceDataPath作为储存的目录，这是跨平台的，支持热更新的，但同时支持写入和读取的
     private static string BasePath => Path.Combine(Application.persistentDataPath, "NOC");
     public static bool SaveString(string filename, bool includesExtension, string value)
     {
         filename = GetFilenameWithExtension(filename, includesExtension);
-
         try
         {
             CreateRootFolder();
