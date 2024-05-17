@@ -37,13 +37,9 @@ public class AllHealth : MonoBehaviour
     }
     private void LoseHealth()
     {
-<<<<<<< HEAD
-        if (true)
-=======
         EventManager.Instance.EventTrigger("PauseHealthMinus");
 
         if (!isWeatherClear)
->>>>>>> 2dc9f73cd6d9112f7449c910a527469d8ac7e3f5
         {
 
             if (GameObject.FindGameObjectsWithTag("solar") != null && GameObject.FindGameObjectsWithTag("solar").Length != 0)
