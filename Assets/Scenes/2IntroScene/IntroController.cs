@@ -12,42 +12,42 @@ public class IntroController : MonoBehaviour
         AudioManager.Instance.StopBGM();
         AudioManager.Instance.PlayBGM(BackgroundMusic.IntroScene);
         //弹出一个显示菜单，显示Intro界面已经储存到continue里面了
-        DialogManager.Instance.Init("beforeIntro", BeforeIntroDialog);
+        //DialogManager.Instance.Init("beforeIntro", BeforeIntroDialog);
         FirstIntro.SetActive(true);
     }
     public void PlayTypping()
     {
         AudioManager.Instance.PlaySFX(SoundEffect.Typing);
     }
-    public void SetFinishedFalse()
-    {
-        isFinished = false;
-    }
-    public void SetFinished()
-    {
-        isFinished = true;
-    }
+    //public void SetFinishedFalse()
+    //{
+    //    isFinished = false;
+    //}
+    //public void SetFinished()
+    //{
+    //    isFinished = true;
+    //}
     public void Update()
     {
-        if (!isInit)
-        {
-            if (DialogManager.Instance.isIntroFinished)//用dialogManager来传信号
-            {
-                introText.SetActive(true);
-                introSave.SetActive(false);
-                DialogManager.Instance.Init("Intro", IntroDialog);
-                isInit = true;
-            }
-        }
-        if((DialogManager.Instance.index == 0 || DialogManager.Instance.index == 4)&& isInit)
-        {
-            int index = DialogManager.Instance.index / 4;
-            foreach (var image in storyboards)
-            {
-                image.gameObject.SetActive(false);
-            }
-            storyboards[index].gameObject.SetActive(true);
-        }
+        //if (!isInit)
+        //{
+        //    if (DialogManager.Instance.isIntroFinished)//用dialogManager来传信号
+        //    {
+        //        introText.SetActive(true);
+        //        introSave.SetActive(false);
+        //        DialogManager.Instance.Init("Intro", IntroDialog);
+        //        isInit = true;
+        //    }
+        //}
+        //if((DialogManager.Instance.index == 0 || DialogManager.Instance.index == 4)&& isInit)
+        //{
+        //    int index = DialogManager.Instance.index / 4;
+        //    foreach (var image in storyboards)
+        //    {
+        //        image.gameObject.SetActive(false);
+        //    }
+        //    storyboards[index].gameObject.SetActive(true);
+        //}
         if (DialogManager.Instance.isBEfinished)
         {
             if(SceneManager.GetActiveScene().name == "IntroScene")

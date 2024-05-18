@@ -20,25 +20,25 @@ public class Building : MonoBehaviour
     {
         sellPanel = GameObject.FindGameObjectsWithTag("sell");
         sellCanvas = GameObject.FindGameObjectsWithTag("sellCanvas");
-        if ((Input.GetMouseButtonDown(1) || !InputManager.isSellOpen) && isOpen)
-        {
-            isOpen = !isOpen;
-            for (int i = 0; i < sellPanel.Length; i++)
-            {
-                sellPanel[i].SetActive(false);
-            }
-        }
-        else if((Input.GetMouseButtonDown(1) || InputManager.isSellOpen) && !isOpen)
-        {
-            isOpen = !isOpen;
-            for (int i = 0; i < sellCanvas.Length; i++)
-            {
-                for (int x = 0; x < sellCanvas[i].gameObject.transform.childCount; x++)
-                {
-                    sellCanvas[i].gameObject.transform.GetChild(x).gameObject.SetActive(true);
-                }
-            }
-        }
+        //if ((Input.GetMouseButtonDown(1) || !InputManager.isSellOpen) && isOpen)
+        //{
+        //    isOpen = !isOpen;
+        //    for (int i = 0; i < sellPanel.Length; i++)
+        //    {
+        //        sellPanel[i].SetActive(false);
+        //    }
+        //}
+        //else if((Input.GetMouseButtonDown(1) || InputManager.isSellOpen) && !isOpen)
+        //{
+        //    isOpen = !isOpen;
+        //    for (int i = 0; i < sellCanvas.Length; i++)
+        //    {
+        //        for (int x = 0; x < sellCanvas[i].gameObject.transform.childCount; x++)
+        //        {
+        //            sellCanvas[i].gameObject.transform.GetChild(x).gameObject.SetActive(true);
+        //        }
+        //    }
+        //}
     }
     private void HealthSystem_OnDied(object sender, System.EventArgs e)
     {

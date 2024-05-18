@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class SellBtn : MonoBehaviour
 {
-    public void SellOK()
-    {
-        InputManager.isSellOpen = !InputManager.isSellOpen;
-    }
-    public void GhostOK()
-    {
-        InputManager.isGhostOpen = true;
-    }
+    //public void SellOK()
+    //{
+    //    InputManager.isSellOpen = !InputManager.isSellOpen;
+    //}
+    //public void GhostOK()
+    //{
+    //    InputManager.isGhostOpen = true;
+    //}
 }

@@ -56,31 +56,31 @@ public class DialogManager : SingletonMono<DialogManager>
                 BELevelText.isFinished = true;
             }
         }
-        if (SceneManager.GetActiveScene().name == "IntroScene" || SceneManager.GetActiveScene().name == "EndScene")
-        {
-            if (index == 2 && !IntroController.isInit && IntroController.isFinished)
-            {
-                isIntroFinished = true;
-            }
-            if (index == 5 && IntroController.isFinished && SceneManager.GetActiveScene().name == "IntroScene")
-            {
-                isBEfinished = true;
-            }
-            else if (index == 3 && IntroController.isFinished && SceneManager.GetActiveScene().name == "EndScene")
-            {
-                isBEfinished = true;
-            }
-            else if (IntroController.isFinished)
-            {
-                IntroController.isFinished = false;
-                StartCoroutine(StartDialog(DContent.CNdialogList, DContent.ENdialogList));
-            }
-            else if (!IntroController.isFinished)
-            {
-                textAnimatorPlayer.SkipTypewriter();
-                IntroController.isFinished = true;
-            }
-        }
+        //if (SceneManager.GetActiveScene().name == "IntroScene" || SceneManager.GetActiveScene().name == "EndScene")
+        //{
+        //    if (index == 2 && !IntroController.isInit && IntroController.isFinished)
+        //    {
+        //        isIntroFinished = true;
+        //    }
+        //    if (index == 5 && IntroController.isFinished && SceneManager.GetActiveScene().name == "IntroScene")
+        //    {
+        //        isBEfinished = true;
+        //    }
+        //    else if (index == 3 && IntroController.isFinished && SceneManager.GetActiveScene().name == "EndScene")
+        //    {
+        //        isBEfinished = true;
+        //    }
+        //    else if (IntroController.isFinished)
+        //    {
+        //        IntroController.isFinished = false;
+        //        StartCoroutine(StartDialog(DContent.CNdialogList, DContent.ENdialogList));
+        //    }
+        //    else if (!IntroController.isFinished)
+        //    {
+        //        textAnimatorPlayer.SkipTypewriter();
+        //        IntroController.isFinished = true;
+        //    }
+        //}
         if (SceneManager.GetActiveScene().name == "OpenScene")
         {
             if (!SaveManager.Instance.IsOpenEnd && index <= DContent.CNdialogList.Count && LevelNewIntro.isFinished)
@@ -203,14 +203,14 @@ public class DialogManager : SingletonMono<DialogManager>
             textAnimatorPlayer.ShowText(dialogs[index]);
             index++;
         }
-        else if (SceneManager.GetActiveScene().name == "IntroScene" && !IntroController.isInit)
-        {
-            if (index <= 2 && !isIntroFinished)
-            {
-                textAnimatorPlayer.ShowText(dialogs[index]);
-                index++;
-            }
-        }
+        //else if (SceneManager.GetActiveScene().name == "IntroScene" && !IntroController.isInit)
+        //{
+        //    if (index <= 2 && !isIntroFinished)
+        //    {
+        //        textAnimatorPlayer.ShowText(dialogs[index]);
+        //        index++;
+        //    }
+        //}
         else if (index < dialogs.Count)
         {
             textAnimatorPlayer.ShowText(dialogs[index]);

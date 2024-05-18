@@ -33,12 +33,12 @@ public class BuildingGhost : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(1) || InputManager.isGhostOpen)
-        {
-            InputManager.isGhostOpen = false;
-            Hide();
-            BuildingManager.Instance.activeBuildingType = null;
-        }
+        //if (Input.GetMouseButtonDown(1) || InputManager.isGhostOpen)
+        //{
+        //    InputManager.isGhostOpen = false;
+        //    Hide();
+        //    BuildingManager.Instance.activeBuildingType = null;
+        //}
         if (isSenderOne)
         {
             isSenderOne = false;

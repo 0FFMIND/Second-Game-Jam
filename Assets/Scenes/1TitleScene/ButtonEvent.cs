@@ -48,4 +48,13 @@ public class ButtonEvent : MonoBehaviour
     {
         GetComponentInChildren<Text>().color = new Color(0.7773585f, 0.8399767f, 1f, 1f);
     }
+    public void OnDragSlideHandle()
+    {
+        transform.localScale = new Vector3(1.1f, 1.1f, 1f);
+    }
+
+    public void OnExitSlideHandle()
+    {
+        transform.localScale = new Vector3(1f, 1f, 1f);
+    }
 }

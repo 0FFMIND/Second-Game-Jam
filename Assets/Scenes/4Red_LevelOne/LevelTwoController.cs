@@ -121,49 +121,49 @@ public class LevelTwoController : MonoBehaviour
     }
     private void Update()
     {
-        Vector3 vector3 = InputManager.Instance.GetPos();
-        Vector2 vector2 = new Vector2(vector3.x, vector3.y);
-        for (int i = 0; i < pollutedWater.Length; i++)
-        {
-            if(pollutedWater.Length == 2 || pollutedWater.Length == 3)
-            {
-                float dis = Vector2.Distance(vector2, pollutedWater[i].transform.position);
-                if (dis < 0.5f)
-                {
-                    pollutedWater[i].SetActive(false);
-                    if (i == 0)
-                    {
-                        FirstWater.offset = new Vector2(FirstWater.offset.x, 2.198f);
-                        isWaterOneClear = true;
-                    }
-                    else if (i == 1)
-                    {
-                        SecondWater.offset = new Vector2(SecondWater.offset.x, -.85f);
-                        isWaterOneClear = false;
-                    }
-                }
-            }
-            else if(pollutedWater.Length == 1)
-            {
-                float dis = Vector2.Distance(vector2, pollutedWater[i].transform.position);
-                if (dis < 0.5f)
-                {
-                    pollutedWater[i].SetActive(false);
-                    if (!isWaterOneClear)
-                    {
-                        FirstWater.offset = new Vector2(FirstWater.offset.x, 2.198f);
-                        isWaterOneClear = true;
-                    }
-                    else if (isWaterOneClear)
-                    {
-                        SecondWater.offset = new Vector2(SecondWater.offset.x, -0.85f);
-                        isWaterOneClear = false;
-                    }
-                }
-            }
+        //Vector3 vector3 = InputManager.Instance.GetPos();
+        //Vector2 vector2 = new Vector2(vector3.x, vector3.y);
+        //for (int i = 0; i < pollutedWater.Length; i++)
+        //{
+        //    if(pollutedWater.Length == 2 || pollutedWater.Length == 3)
+        //    {
+        //        float dis = Vector2.Distance(vector2, pollutedWater[i].transform.position);
+        //        if (dis < 0.5f)
+        //        {
+        //            pollutedWater[i].SetActive(false);
+        //            if (i == 0)
+        //            {
+        //                FirstWater.offset = new Vector2(FirstWater.offset.x, 2.198f);
+        //                isWaterOneClear = true;
+        //            }
+        //            else if (i == 1)
+        //            {
+        //                SecondWater.offset = new Vector2(SecondWater.offset.x, -.85f);
+        //                isWaterOneClear = false;
+        //            }
+        //        }
+        //    }
+        //    else if(pollutedWater.Length == 1)
+        //    {
+        //        float dis = Vector2.Distance(vector2, pollutedWater[i].transform.position);
+        //        if (dis < 0.5f)
+        //        {
+        //            pollutedWater[i].SetActive(false);
+        //            if (!isWaterOneClear)
+        //            {
+        //                FirstWater.offset = new Vector2(FirstWater.offset.x, 2.198f);
+        //                isWaterOneClear = true;
+        //            }
+        //            else if (isWaterOneClear)
+        //            {
+        //                SecondWater.offset = new Vector2(SecondWater.offset.x, -0.85f);
+        //                isWaterOneClear = false;
+        //            }
+        //        }
+        //    }
 
 
-        }
+        //}
         if(GameObject.FindWithTag("water") == null && GameObject.FindWithTag("water2") == null)
         {
             isStarTwo = true;
