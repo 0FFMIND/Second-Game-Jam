@@ -12,22 +12,22 @@ public class OpenController : MonoBehaviour
     public Text[] texts;
     private void Start()
     {
-        SaveManager.Instance.LoadLevel();
-        if (!SaveManager.Instance.IsOpenEnd)
-        {
-            levelNewIntro.SetActived();
-            SetAllFalse(upCanvasWhole);
-        }else if (SaveManager.Instance.IsOpenEnd && !SaveManager.Instance.IsLevelOneEnd)
-        {
-            SetAllFalse(upCanvasWhole);
-            SetAllTrue(upCanvasSmall);
-            levelNewIntro.SetDeactived();
-        }else if(SaveManager.Instance.IsOpenEnd && SaveManager.Instance.IsLevelOneEnd)
-        {
-            levelNewIntro.SetDeactived();
-            SetAllFalse(upCanvasSmall);
-            SetAllTrue(upCanvasWhole);
-        }
+    //    SaveManager.Instance.LoadLevel();
+    //    if (!SaveManager.Instance.IsOpenEnd)
+    //    {
+    //        levelNewIntro.SetActived();
+    //        SetAllFalse(upCanvasWhole);
+    //    }else if (SaveManager.Instance.IsOpenEnd && !SaveManager.Instance.IsLevelOneEnd)
+    //    {
+    //        SetAllFalse(upCanvasWhole);
+    //        SetAllTrue(upCanvasSmall);
+    //        levelNewIntro.SetDeactived();
+    //    }else if(SaveManager.Instance.IsOpenEnd && SaveManager.Instance.IsLevelOneEnd)
+    //    {
+    //        levelNewIntro.SetDeactived();
+    //        SetAllFalse(upCanvasSmall);
+    //        SetAllTrue(upCanvasWhole);
+    //    }
     }
     private void SetAllFalse(GameObject[] objects)
     {
@@ -45,16 +45,16 @@ public class OpenController : MonoBehaviour
     }
     private void Update()
     {
-        if (SaveManager.Instance.IsOpenEnd && !SaveManager.Instance.IsLevelOneEnd)
-        {
-            levelNewIntro.SetDeactived();
-            SetAllTrue(upCanvasSmall);
-        }else if(SaveManager.Instance.IsOpenEnd && SaveManager.Instance.IsLevelOneEnd)
-        {
-            levelNewIntro.SetDeactived();
-            SetAllFalse(upCanvasSmall);
-            SetAllTrue(upCanvasWhole);
-        }
+        //if (SaveManager.Instance.IsOpenEnd && !SaveManager.Instance.IsLevelOneEnd)
+        //{
+        //    levelNewIntro.SetDeactived();
+        //    SetAllTrue(upCanvasSmall);
+        //}else if(SaveManager.Instance.IsOpenEnd && SaveManager.Instance.IsLevelOneEnd)
+        //{
+        //    levelNewIntro.SetDeactived();
+        //    SetAllFalse(upCanvasSmall);
+        //    SetAllTrue(upCanvasWhole);
+        //}
 
     }
     public void ImageChange()

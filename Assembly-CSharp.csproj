@@ -120,7 +120,7 @@
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\Transition Orders\TransitionOrderAllAtOnce.cs" />
     <Compile Include="Assets\ExternalTools\RainMaker\Prefab\RainScript2D.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\isWaterCollect.cs" />
-    <Compile Include="Assets\Scenes\3OpenScene\InfoPoPtwo.cs" />
+    <Compile Include="Assets\Scenes\3OpenScene\PlanetPop.cs" />
     <Compile Include="Assets\Scenes\3OpenScene\InfoPop.cs" />
     <Compile Include="Assets\Scenes\1TitleScene\TitleController.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Grid\GridOnScene.cs" />

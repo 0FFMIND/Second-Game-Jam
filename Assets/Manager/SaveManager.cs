@@ -9,9 +9,8 @@ public class SaveManager : SingletonMono<SaveManager>
     public float SFXvalue { get; private set; } = 0;
     public float BGMvalue { get; private set; } = 0;
 
-
     //涉及场景的存档
-    public bool IsIntroEnd { get; set; } = false; //是否在介绍模式，牵扯到一些UI显示
+    public bool IsIntroEnd { get; set; } = false; 
     public bool IsOpenEnd { get; set; } = false;
     public bool IsLevelOneEnd { get; set; } = false;
     public bool IsPoolFinshed { get; set; } = false; // 选好了手牌直接跳过
@@ -42,12 +41,8 @@ public class SaveManager : SingletonMono<SaveManager>
                       .Write("LangOpt", "chnLang")
                       .Commit();
         }
-
-        //在系统初始化的时候读取文件
+        // 在系统初始化的时候读取文件
         LoadMenuSettings();
-
-        ///这个后面必删
-        
         //关于关卡
         if (!SaveWriter.LoadString("LevelSettings.json"))
         {
@@ -113,9 +108,9 @@ public class SaveManager : SingletonMono<SaveManager>
             .Write("LevelOneStar", LevelOneStar.ToString())
             .Write("LevelTwo", IsLevelTwoEnd.ToString())
             .Write("LevelTwoStar", LevelTwoStar.ToString())
-                                                .Write("isBuffOne", isBuffOne.ToString())
-                .Write("isBuffTwo", isBuffTwo.ToString())
-                .Write("isBuffThree", isBuffThree.ToString())
+            .Write("isBuffOne", isBuffOne.ToString())
+            .Write("isBuffTwo", isBuffTwo.ToString())
+            .Write("isBuffThree", isBuffThree.ToString())
                 .Write("isBuffFour", isBuffFour.ToString())
                 .Write("isBuffFive", isBuffFive.ToString())
                 .Write("isBuffSix", isBuffSix.ToString())
