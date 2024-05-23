@@ -1160,8 +1160,13 @@ C# parse time         : 145ms
 candidates check time : 29ms
 console write time    : 0ms
 
+<<<<<<< Updated upstream
 [api-updater (non-obsolete-error-filter)] 2024/5/18 12:42:43 : Starting G:/SoftWare/Unity/2020.3.20f1c1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
 [api-updater (non-obsolete-error-filter)] Exception caught while loading types from G:\Code\Unity Project\GIT\Second-Game-Jam\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll (some types may not be loaded)
+=======
+[api-updater (non-obsolete-error-filter)] 2024/5/23 15:21:25 : Starting C:/Program Files/Unity/Hub/Editor/2020.3.20f1c1/2020.3.20f1c1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] Exception caught while loading types from D:\Second-Game-Jam\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll (some types may not be loaded)
+>>>>>>> Stashed changes
 	Exception of type 'System.Reflection.ReflectionTypeLoadException' was thrown.
 	  at (wrapper managed-to-native) System.Reflection.Assembly.GetTypes(System.Reflection.Assembly,bool)
   at System.Reflection.Assembly.GetTypes () [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
@@ -1170,6 +1175,7 @@ console write time    : 0ms
 
 [api-updater (non-obsolete-error-filter)] 
 ----------------------------------
+<<<<<<< Updated upstream
 jit/startup time      : 734.5939ms
 moved types parse time: 46ms
 candidates parse time : 1ms
@@ -1332,5 +1338,12 @@ moved types parse time: 63ms
 candidates parse time : 1ms
 C# parse time         : 184ms
 candidates check time : 25ms
+=======
+jit/startup time      : 98.6581ms
+moved types parse time: 41ms
+candidates parse time : 1ms
+C# parse time         : 183ms
+candidates check time : 29ms
+>>>>>>> Stashed changes
 console write time    : 0ms
 
