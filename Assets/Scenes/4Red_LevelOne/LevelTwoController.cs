@@ -101,10 +101,10 @@ public class LevelTwoController : MonoBehaviour
         onlyOnce = true;
         Ghost.SetActive(false);
         BuildingManager.SetActive(false);
-        DialogManager.Instance.isIntroFinished = false;
-        DialogManager.Instance.isBEfinished = true;
-        IntroPanel.SetActive(true);
-        DialogManager.Instance.Init("Intro", IntroDialog);
+        //DialogManager.Instance.isIntroFinished = false;
+        //DialogManager.Instance.isBEfinished = true;
+        //IntroPanel.SetActive(true);
+        //DialogManager.Instance.Init("Intro", IntroDialog);
     }
     // ¸øTextAnimatorÓÃµÄ
     public void PlayTypping()
@@ -238,21 +238,21 @@ public class LevelTwoController : MonoBehaviour
         {
             Mouse[11].SetActive(true);
         }
-        if (DialogManager.Instance.isIntroFinished || Input.GetMouseButtonDown(1))
-        {
-            BuildingManager.SetActive(true);
-            Ghost.SetActive(true);
-            onlyOnce = false;
-            if (IntroPanel.activeSelf)
-            {
-                foreach (GameObject obj in buttonPanel)
-                {
-                    obj.SetActive(true);
-                }
-                textOne.SetActive(true);
-                IntroPanel.SetActive(false);
-            }
-        }
+        //if (DialogManager.Instance.isIntroFinished || Input.GetMouseButtonDown(1))
+        //{
+        //    BuildingManager.SetActive(true);
+        //    Ghost.SetActive(true);
+        //    onlyOnce = false;
+        //    if (IntroPanel.activeSelf)
+        //    {
+        //        foreach (GameObject obj in buttonPanel)
+        //        {
+        //            obj.SetActive(true);
+        //        }
+        //        textOne.SetActive(true);
+        //        IntroPanel.SetActive(false);
+        //    }
+        //}
         if (isStarOne && isStarTwo && isStarThree && !SaveManager.Instance.IsLevelTwoEnd)
         {
             SaveManager.Instance.IsLevelTwoEnd = true;

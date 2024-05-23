@@ -1,71 +1,41 @@
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 public class IntroController : MonoBehaviour
 {
     public GameObject FirstIntro;
     public GameObject SecondIntro;
     public DialogContent IntroDialog;
     public Image[] storyboards;
+    private bool isOnce = false;
     public void Start()
     {
         AudioManager.Instance.StopBGM();
         AudioManager.Instance.PlayBGM(BackgroundMusic.IntroScene);
-        //弹出一个显示菜单，显示Intro界面已经储存到continue里面了
-        //DialogManager.Instance.Init("beforeIntro", BeforeIntroDialog);
-        FirstIntro.SetActive(true);
+        FirstIntro.transform.parent.gameObject.SetActive(true);
+        // 显示FirstIntro菜单并开始打字
+        EventManager.Instance.AddEventListener<int>("dialogIndex", HandleIndex);
+        DialogManager.Instance.BeginDialog(FirstIntro, IntroDialog, 0);
+        EventManager.Instance.AddEventListener("dialogFinished",HandleFinished);
+    }
+    private void HandleIndex(int index)
+    {
+        if(index == 2 && !isOnce)
+        {
+            isOnce = true;
+            FirstIntro.transform.parent.gameObject.SetActive(false);
+            DialogManager.Instance.BeginDialog(SecondIntro, IntroDialog, 2);
+        }
+        if(index == 4)
+        {
+            storyboards[0].gameObject.SetActive(false);
+        }
+    }
+    private void HandleFinished()
+    {
+        TransManager.Instance.ChangeScene("OpenScene");
     }
     public void PlayTypping()
     {
         AudioManager.Instance.PlaySFX(SoundEffect.Typing);
-    }
-    //public void SetFinishedFalse()
-    //{
-    //    isFinished = false;
-    //}
-    //public void SetFinished()
-    //{
-    //    isFinished = true;
-    //}
-    public void Update()
-    {
-        //if (!isInit)
-        //{
-        //    if (DialogManager.Instance.isIntroFinished)//用dialogManager来传信号
-        //    {
-        //        introText.SetActive(true);
-        //        introSave.SetActive(false);
-        //        DialogManager.Instance.Init("Intro", IntroDialog);
-        //        isInit = true;
-        //    }
-        //}
-        //if((DialogManager.Instance.index == 0 || DialogManager.Instance.index == 4)&& isInit)
-        //{
-        //    int index = DialogManager.Instance.index / 4;
-        //    foreach (var image in storyboards)
-        //    {
-        //        image.gameObject.SetActive(false);
-        //    }
-        //    storyboards[index].gameObject.SetActive(true);
-        //}
-        if (DialogManager.Instance.isBEfinished)
-        {
-            if(SceneManager.GetActiveScene().name == "IntroScene")
-            {
-                AudioManager.Instance.StopBGM();
-                SaveManager.Instance.IsIntroEnd = true;
-                SaveManager.Instance.SaveLevel();
-                SaveManager.Instance.LoadLevel();
-                TransManager.Instance.ChangeScene("OpenScene");
-            }
-            if (SceneManager.GetActiveScene().name == "EndScene")
-            {
-                AudioManager.Instance.StopBGM();
-                SaveManager.Instance.SaveLevel();
-                SaveManager.Instance.LoadLevel();
-                TransManager.Instance.ChangeScene("TitleScene");
-            }
-        }
-
     }
 }

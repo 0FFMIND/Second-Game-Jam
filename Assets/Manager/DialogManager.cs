@@ -3,224 +3,60 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using Febucci.UI;
-using UnityEngine.SceneManagement;
 
 public class DialogManager : SingletonMono<DialogManager>
 {
-    public GameObject textObject;
-    public TextMeshProUGUI text;
-    public TextAnimator textAnimator;
-    public TextAnimatorPlayer textAnimatorPlayer;
-    public DialogContent DContent;
-    public float textSpeed = 0.03f;
-    public bool isBEfinished = false;
-    public bool isIntroFinished = false;
-    public int index;
-    public bool isTyping;
-    public void UnInit()
+    private TextMeshProUGUI text;
+    private TextAnimatorPlayer textAnimatorPlayer;
+    private List<string> dialogs;
+    private bool canSkip = true;
+    private int index = 0;
+    private void Start()
     {
-        textObject = GameObject.FindWithTag(name == "beforeIntro" ? "BETEXT" : "TEXT");
-        text = textObject.GetComponent<TextMeshProUGUI>();
-        textAnimatorPlayer = textObject.GetComponent<TextAnimatorPlayer>();
-        textAnimator = textObject.GetComponent<TextAnimator>();
+        EventManager.Instance.AddEventListener("OnMouseDown", HandleSkip);
     }
-    public void Init(string name, DialogContent dialogContent)
+    private void HandleSkip()
     {
-        textObject = GameObject.FindWithTag(name == "beforeIntro" ? "BETEXT" : "TEXT");
-        DContent = dialogContent;
-        BeginDialog(DContent);
-    }
-    private void Update()
-    {
-        if(SceneManager.GetActiveScene().name == "IntroScene")
+        if (!canSkip)
         {
-            EventManager.Instance.AddEventListener("OnMouseDown", HandleDialog);
+            StartCoroutine(StartDialog(dialogs));
         }
-    }
-    private void HandleDialog()
-    {
-
-    }
-    private void DialogControl()
-    {
-        if (SceneManager.GetActiveScene().name == "BELevelOne")
+        if (text != null && canSkip)
         {
-            if (index <= DContent.CNdialogList.Count && BELevelText.isFinished)
-            {
-                BELevelText.isFinished = false;
-                StartCoroutine(StartDialog(DContent.CNdialogList, DContent.ENdialogList));
-            }
-            else if (!BELevelText.isFinished)
-            {
-                textAnimatorPlayer.SkipTypewriter();
-                BELevelText.isFinished = true;
-            }
+            textAnimatorPlayer.textAnimator.ShowAllCharacters(canSkip);
         }
-        //if (SceneManager.GetActiveScene().name == "IntroScene" || SceneManager.GetActiveScene().name == "EndScene")
-        //{
-        //    if (index == 2 && !IntroController.isInit && IntroController.isFinished)
-        //    {
-        //        isIntroFinished = true;
-        //    }
-        //    if (index == 5 && IntroController.isFinished && SceneManager.GetActiveScene().name == "IntroScene")
-        //    {
-        //        isBEfinished = true;
-        //    }
-        //    else if (index == 3 && IntroController.isFinished && SceneManager.GetActiveScene().name == "EndScene")
-        //    {
-        //        isBEfinished = true;
-        //    }
-        //    else if (IntroController.isFinished)
-        //    {
-        //        IntroController.isFinished = false;
-        //        StartCoroutine(StartDialog(DContent.CNdialogList, DContent.ENdialogList));
-        //    }
-        //    else if (!IntroController.isFinished)
-        //    {
-        //        textAnimatorPlayer.SkipTypewriter();
-        //        IntroController.isFinished = true;
-        //    }
-        //}
-        if (SceneManager.GetActiveScene().name == "OpenScene")
-        {
-            if (!SaveManager.Instance.IsOpenEnd && index <= DContent.CNdialogList.Count && LevelNewIntro.isFinished)
-            {
-                LevelNewIntro.isFinished = false;
-                StartCoroutine(StartDialog(DContent.CNdialogList, DContent.ENdialogList));
-            }
-            else if (!LevelNewIntro.isFinished && !SaveManager.Instance.IsOpenEnd)
-            {
-                textAnimatorPlayer.SkipTypewriter();
-                LevelNewIntro.isFinished = true;
-            }
-            if (SaveManager.Instance.IsOpenEnd)
-            {
-                return;
-            }
-        }
-        if (SceneManager.GetActiveScene().name == "LevelOne")
-        {
-            if (index <= DContent.CNdialogList.Count && LevelOneController.isFinished && LevelOneController.onlyOnce)
-            {
-                LevelOneController.isFinished = false;
-                StartCoroutine(StartDialog(DContent.CNdialogList, DContent.ENdialogList));
-            }
-            else if (!LevelOneController.isFinished && LevelOneController.onlyOnce)
-            {
-                textAnimatorPlayer.SkipTypewriter();
-                LevelOneController.isFinished = true;
-            }
-        }
-        if (SceneManager.GetActiveScene().name == "LevelTwo")
-        {
-            if (index <= DContent.CNdialogList.Count && LevelTwoController.isFinished && LevelTwoController.onlyOnce)
-            {
-                LevelTwoController.isFinished = false;
-                StartCoroutine(StartDialog(DContent.CNdialogList, DContent.ENdialogList));
-            }
-            else if (!LevelTwoController.isFinished && LevelTwoController.onlyOnce)
-            {
-                textAnimatorPlayer.SkipTypewriter();
-                LevelTwoController.isFinished = true;
-            }
-        }
-        if (SceneManager.GetActiveScene().name == "LevelThree")
-        {
-            if (index <= DContent.CNdialogList.Count && LevelThreeController.isFinished && LevelThreeController.onlyOnce)
-            {
-                LevelThreeController.isFinished = false;
-                StartCoroutine(StartDialog(DContent.CNdialogList, DContent.ENdialogList));
-            }
-            else if (!LevelThreeController.isFinished && LevelThreeController.onlyOnce)
-            {
-                textAnimatorPlayer.SkipTypewriter();
-                LevelThreeController.isFinished = true;
-            }
-        }
-        if (GameObject.Find("BackgroundCanvas").gameObject.GetComponent<LevelFourController>() != null)
-        {
-            if (index <= DContent.CNdialogList.Count && LevelFourController.isFinished && LevelFourController.onlyOnce)
-            {
-                LevelFourController.isFinished = false;
-                StartCoroutine(StartDialog(DContent.CNdialogList, DContent.ENdialogList));
-            }
-            else if (!LevelFourController.isFinished && LevelFourController.onlyOnce)
-            {
-                textAnimatorPlayer.SkipTypewriter();
-                LevelFourController.isFinished = true;
-            }
-        }
-        if (GameObject.Find("BackgroundCanvas").gameObject.GetComponent<LevelFiveController>() != null)
-        {
-            if (index <= DContent.CNdialogList.Count && LevelFiveController.isFinished && LevelFiveController.onlyOnce)
-            {
-                LevelFiveController.isFinished = false;
-                StartCoroutine(StartDialog(DContent.CNdialogList, DContent.ENdialogList));
-            }
-            else if (!LevelFiveController.isFinished && LevelFiveController.onlyOnce)
-            {
-                textAnimatorPlayer.SkipTypewriter();
-                LevelFiveController.isFinished = true;
-            }
-        }
-        if (GameObject.Find("BackgroundCanvas").gameObject.GetComponent<LevelSixController>() != null)
-        {
-            if (index <= DContent.CNdialogList.Count && LevelSixController.isFinished && LevelSixController.onlyOnce)
-            {
-                LevelSixController.isFinished = false;
-                StartCoroutine(StartDialog(DContent.CNdialogList, DContent.ENdialogList));
-            }
-            else if (!LevelSixController.isFinished && LevelSixController.onlyOnce)
-            {
-                textAnimatorPlayer.SkipTypewriter();
-                LevelSixController.isFinished = true;
-            }
-        }
+        canSkip = !canSkip;
     }
 
-    public void BeginDialog(DialogContent content)
+    public void BeginDialog(GameObject textObject, DialogContent content, int num)
     {
         text = textObject.GetComponent<TextMeshProUGUI>();
         textAnimatorPlayer = textObject.GetComponent<TextAnimatorPlayer>();
-        textAnimator = textObject.GetComponent<TextAnimator>();
-        index = 0;
-        StartCoroutine(StartDialog(content.CNdialogList,content.ENdialogList));
-    }
-    public IEnumerator StartDialog(List<string> cnDialogs,List<string> enDialogs)
-    {
-        List<string> dialogs;
-        LanguageOption option = LanguageManager.Instance.currentLanguage;
-        if(option == LanguageOption.Chinese)
+        index = num;
+        if (LanguageManager.Instance.currentLanguage == LanguageOption.Chinese)
         {
-            dialogs = cnDialogs;
-        }else
+            dialogs = content.CNdialogList;
+            textAnimatorPlayer.waitForNormalChars = 0.07f;
+            StartCoroutine(StartDialog(dialogs));
+        }
+        else
         {
+            dialogs = content.ENdialogList;
             textAnimatorPlayer.waitForNormalChars = 0.04f;
-            dialogs = enDialogs;
+            StartCoroutine(StartDialog(dialogs));
         }
-        if (SceneManager.GetActiveScene().name == "IntroScene" && isIntroFinished)
+    }
+    public IEnumerator StartDialog(List<string> dialogs)
+    {  
+        if (index < dialogs.Count)
         {
             textAnimatorPlayer.ShowText(dialogs[index]);
-            index++;
+            EventManager.Instance.EventTrigger<int>("dialogIndex", index++);
         }
-        //else if (SceneManager.GetActiveScene().name == "IntroScene" && !IntroController.isInit)
-        //{
-        //    if (index <= 2 && !isIntroFinished)
-        //    {
-        //        textAnimatorPlayer.ShowText(dialogs[index]);
-        //        index++;
-        //    }
-        //}
-        else if (index < dialogs.Count)
+        else
         {
-            textAnimatorPlayer.ShowText(dialogs[index]);
-            index++;
+            EventManager.Instance.EventTrigger("dialogFinished");
         }
-        else if (index >= dialogs.Count && !isIntroFinished)
-        {
-            isIntroFinished = true;
-        }
-
         yield return null;
     }
 }

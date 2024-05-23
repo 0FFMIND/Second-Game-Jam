@@ -1,10 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public enum E_GameState
-{
-    onDialog,
-    onPlay,
-}
+
 public class GameManager : SingletonMono<GameManager>
 {
     private bool isPause = false;

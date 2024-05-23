@@ -2,13 +2,17 @@
 using UnityEngine;
 public class InputManager : SingletonMono<InputManager>
 {
-    public static bool isSellOpen = false;
-    public static bool isGhostOpen = false;
+    // 先注释掉屎山
+    //public static bool isSellOpen = false;
+    //public static bool isGhostOpen = false;
+    //private Vector3 pos = new Vector3(-100, -100, 0);
+
+
     public Vector2 cursorPos;
-    private Vector3 pos = new Vector3(-100,-100,0);
+    
     public void Init()
     {
-
+        // 用来启动InputManager
     }
     private void Update()
     {
@@ -23,12 +27,14 @@ public class InputManager : SingletonMono<InputManager>
         cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         transform.position = new Vector3(cursorPos.x, cursorPos.y, 1f);
     }
-    public void SetPos(Vector3 pos)
-    {
-        this.pos = pos;
-    }
-    public Vector3 GetPos()
-    {
-        return pos;
-    }
+
+    // 忘了这段代码写来干什么的了
+    //public void SetPos(Vector3 pos)
+    //{
+    //    this.pos = pos;
+    //}
+    //public Vector3 GetPos()
+    //{
+    //    return pos;
+    //}
 }

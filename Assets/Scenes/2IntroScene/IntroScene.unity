@@ -366,7 +366,6 @@ GameObject:
   - component: {fileID: 452397270}
   - component: {fileID: 452397269}
   - component: {fileID: 452397273}
-  - component: {fileID: 452397274}
   m_Layer: 3
   m_Name: IntroCanvas
   m_TagString: Untagged
@@ -447,13 +446,10 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 673372651}
-  - {fileID: 1108900390}
-  - {fileID: 1779924796}
   - {fileID: 1408211972}
   - {fileID: 2024262108}
   - {fileID: 462216535}
   - {fileID: 1184152108}
-  - {fileID: 1935657709}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -474,27 +470,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8215a05129874c47ac79318b5f56bce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  introSave: {fileID: 462216532}
-  introText: {fileID: 1184152103}
-  isSaveEnd: 0
-  BeforeIntroDialog: {fileID: 11400000, guid: 5b78bbf0a8e44af4eb5cbeae6283bbb7, type: 2}
-  IntroDialog: {fileID: 11400000, guid: 593283babc6105240a171d8016ea8c05, type: 2}
+  FirstIntro: {fileID: 1360021516}
+  SecondIntro: {fileID: 1184152103}
+  IntroDialog: {fileID: 11400000, guid: 99e34456b5c699e4cbfb26ad46b4540a, type: 2}
   storyboards:
   - {fileID: 2024262109}
   - {fileID: 1408211974}
---- !u!114 &452397274
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 452397268}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6025d6fb04d50c04f8c1dd54cf12b1e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dContent: {fileID: 11400000, guid: 99e34456b5c699e4cbfb26ad46b4540a, type: 2}
 --- !u!1 &462216532
 GameObject:
   m_ObjectHideFlags: 0
@@ -564,7 +545,7 @@ RectTransform:
   m_Children:
   - {fileID: 1360021517}
   m_Father: {fileID: 452397272}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -667,6 +648,9 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 10.000799, y: 10.000799, z: 1.0000799}
   m_Children:
+  - {fileID: 1779924796}
+  - {fileID: 1935657709}
+  - {fileID: 1108900390}
   - {fileID: 1957148694}
   m_Father: {fileID: 452397272}
   m_RootOrder: 0
@@ -835,11 +819,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1108900389}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -786, y: 184, z: -1}
-  m_LocalScale: {x: 232, y: 224, z: 108}
+  m_LocalPosition: {x: -77.558395, y: 18.399616, z: -1.0002422}
+  m_LocalScale: {x: 23.198147, y: 22.398212, z: 107.99138}
   m_Children: []
-  m_Father: {fileID: 452397272}
-  m_RootOrder: 1
+  m_Father: {fileID: 673372651}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1108900391
 SpriteRenderer:
@@ -906,8 +890,8 @@ GameObject:
   - component: {fileID: 1184152105}
   - component: {fileID: 1184152104}
   m_Layer: 5
-  m_Name: IntroText
-  m_TagString: TEXT
+  m_Name: SecondText
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1440,7 +1424,7 @@ RectTransform:
   m_LocalScale: {x: 1.0000799, y: 1.0000799, z: 1.0000799}
   m_Children: []
   m_Father: {fileID: 452397272}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1462,7 +1446,7 @@ GameObject:
   - component: {fileID: 1360021518}
   m_Layer: 5
   m_Name: FirstText
-  m_TagString: BETEXT
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1502,39 +1486,15 @@ MonoBehaviour:
   startTypewriterMode: -1
   canSkipTypewriter: 1
   hideAppearancesOnSkip: 0
-  triggerEventsOnSkip: 1
+  triggerEventsOnSkip: 0
   resetTypingSpeedAtStartup: 1
   disappearanceOrientation: 0
   onTextShowed:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 452397273}
-        m_TargetAssemblyTypeName: IntroController, Assembly-CSharp
-        m_MethodName: SetFinished
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onTypewriterStart:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 452397273}
-        m_TargetAssemblyTypeName: IntroController, Assembly-CSharp
-        m_MethodName: SetFinishedFalse
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onTextDisappeared:
     m_PersistentCalls:
       m_Calls: []
@@ -1767,7 +1727,7 @@ RectTransform:
   m_LocalScale: {x: 12.799997, y: 7.2, z: 1}
   m_Children: []
   m_Father: {fileID: 452397272}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1854,16 +1814,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1779924795}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1.000305}
-  m_LocalScale: {x: 12.8, y: 7.2, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1.0002422}
+  m_LocalScale: {x: 1.2798978, y: 0.71994245, z: 0.9999201}
   m_Children: []
-  m_Father: {fileID: 452397272}
-  m_RootOrder: 2
+  m_Father: {fileID: 673372651}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -7.7700195, y: 173.70001}
-  m_SizeDelta: {x: -1811.5, y: -969.2}
+  m_AnchoredPosition: {x: 0.25839233, y: 17.36969}
+  m_SizeDelta: {x: -86.22998, y: 2.1292725}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1779924797
 MonoBehaviour:
@@ -2144,7 +2104,7 @@ GameObject:
   - component: {fileID: 1935657709}
   - component: {fileID: 1935657710}
   m_Layer: 0
-  m_Name: left_hover
+  m_Name: right_hover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2157,12 +2117,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1935657708}
-  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
-  m_LocalPosition: {x: 777, y: 189, z: -1}
-  m_LocalScale: {x: 232, y: 224, z: 108}
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
+  m_LocalPosition: {x: 78.72912, y: 18.899576, z: -1.0002422}
+  m_LocalScale: {x: 23.198147, y: 22.398212, z: 107.99138}
   m_Children: []
-  m_Father: {fileID: 452397272}
-  m_RootOrder: 7
+  m_Father: {fileID: 673372651}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!212 &1935657710
 SpriteRenderer:
@@ -2245,7 +2205,7 @@ RectTransform:
   m_LocalScale: {x: 0.099992014, y: 0.099992014, z: 0.9999201}
   m_Children: []
   m_Father: {fileID: 673372651}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2321,7 +2281,7 @@ RectTransform:
   m_LocalScale: {x: 12.8, y: 7.2, z: 1}
   m_Children: []
   m_Father: {fileID: 452397272}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
