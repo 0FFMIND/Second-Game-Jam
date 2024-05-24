@@ -192,6 +192,7 @@
     <Compile Include="Assets\ExternalTools\TransitionBlocks\Scripts\TransitionSetup.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Enemy\PathBase.cs" />
     <Compile Include="Assets\Scenes\1TitleScene\SettingMenu.cs" />
+    <Compile Include="Assets\Scenes\3OpenScene\Quest\QuestInfo.cs" />
     <Compile Include="Assets\Scenes\LevelFour\LevelSixController.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\一级万能投射器底座序列帧动画\TurretProjectile.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\BELevel_Card\CardItem\ChangeText.cs" />
@@ -205,7 +206,6 @@
     <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\BuildingManager.cs" />
     <Compile Include="Assets\Scenes\1TitleScene\TitleMenuBase.cs" />
     <Compile Include="Assets\Scenes\4Red_LevelOne\Buildings\BuildingDemolish.cs" />
-    <Compile Include="Assets\Scenes\3OpenScene\Quest\QuestInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\ExternalTools\Febucci\Text Animator\Example\Font\OFL.txt" />
