@@ -57,4 +57,8 @@ public class ButtonEvent : MonoBehaviour
     {
         transform.localScale = new Vector3(1f, 1f, 1f);
     }
+    public void OnMouseClickSlide()
+    {
+        AudioManager.Instance.PlaySFX(SoundEffect.Click);
+    }
 }
