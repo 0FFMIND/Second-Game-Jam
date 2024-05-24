@@ -470,10 +470,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8215a05129874c47ac79318b5f56bce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FirstIntro: {fileID: 1360021516}
-  SecondIntro: {fileID: 1184152103}
-  IntroDialog: {fileID: 11400000, guid: 99e34456b5c699e4cbfb26ad46b4540a, type: 2}
-  storyboards:
+  firstIntro: {fileID: 1360021516}
+  secondIntro: {fileID: 1184152103}
+  introDialog: {fileID: 11400000, guid: 99e34456b5c699e4cbfb26ad46b4540a, type: 2}
+  storyBoards:
   - {fileID: 2024262109}
   - {fileID: 1408211974}
 --- !u!1 &462216532

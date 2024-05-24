@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-[CreateAssetMenu(fileName = "NewDialogContent", menuName = "NewDialog")]
+[CreateAssetMenu(fileName = "Dialog", menuName = "ScriptableObjects/New Dialog")]
 [System.Serializable]
 public class DialogContent : ScriptableObject
 {

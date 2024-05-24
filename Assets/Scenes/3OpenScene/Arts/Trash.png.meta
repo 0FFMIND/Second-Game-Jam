@@ -29,6 +29,33 @@ TextureImporter:
   - first:
       213: 1477084053918776158
     second: "\u6C61\u67D3\u7269-2023.9.16-0_8"
+  - first:
+      213: 2433294883196242628
+    second: Trash_0
+  - first:
+      213: 8710820032630935801
+    second: Trash_1
+  - first:
+      213: -4600943568829167164
+    second: Trash_2
+  - first:
+      213: 6186020685950223539
+    second: Trash_3
+  - first:
+      213: 8093046331458242966
+    second: Trash_4
+  - first:
+      213: 552884712412909723
+    second: Trash_5
+  - first:
+      213: -8491669589722576643
+    second: Trash_6
+  - first:
+      213: 294980875059100238
+    second: Trash_7
+  - first:
+      213: -8127818867115609648
+    second: Trash_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -166,7 +193,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Trash_01
+      name: Trash_0
       rect:
         serializedVersion: 2
         x: 51
@@ -174,20 +201,20 @@ TextureImporter:
         width: 25
         height: 25
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f65ea92c7de55a80800000000000000
-      internalID: -8478609605924071687
+      spriteID: 4ca00baddccc4c120800000000000000
+      internalID: 2433294883196242628
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u6C61\u67D3\u7269-2023.9.16-0_1"
+      name: Trash_1
       rect:
         serializedVersion: 2
         x: 90
@@ -195,20 +222,20 @@ TextureImporter:
         width: 36
         height: 24
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5e0116906f664d10800000000000000
-      internalID: 2109495936094899806
+      spriteID: 9f0d253faac03e870800000000000000
+      internalID: 8710820032630935801
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u6C61\u67D3\u7269-2023.9.16-0_2"
+      name: Trash_2
       rect:
         serializedVersion: 2
         x: 21
@@ -216,20 +243,20 @@ TextureImporter:
         width: 79
         height: 33
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24e25e26613f88440800000000000000
-      internalID: 4938464268885765698
+      spriteID: 4c9c154733a2620c0800000000000000
+      internalID: -4600943568829167164
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u6C61\u67D3\u7269-2023.9.16-0_3"
+      name: Trash_3
       rect:
         serializedVersion: 2
         x: 136
@@ -237,20 +264,20 @@ TextureImporter:
         width: 51
         height: 14
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b45c056756b81440800000000000000
-      internalID: 4906872280493872308
+      spriteID: 3b40847f90929d550800000000000000
+      internalID: 6186020685950223539
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u6C61\u67D3\u7269-2023.9.16-0_4"
+      name: Trash_4
       rect:
         serializedVersion: 2
         x: 18
@@ -258,20 +285,20 @@ TextureImporter:
         width: 6
         height: 5
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b60bdb58f3b99d040800000000000000
-      internalID: 4672936785502646379
+      spriteID: 699c85972c6405070800000000000000
+      internalID: 8093046331458242966
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u6C61\u67D3\u7269-2023.9.16-0_5"
+      name: Trash_5
       rect:
         serializedVersion: 2
         x: 259
@@ -279,20 +306,20 @@ TextureImporter:
         width: 54
         height: 26
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32491022adbb83bc0800000000000000
-      internalID: -3803083339766590429
+      spriteID: b909d1577bd3ca700800000000000000
+      internalID: 552884712412909723
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u6C61\u67D3\u7269-2023.9.16-0_6"
+      name: Trash_6
       rect:
         serializedVersion: 2
         x: 0
@@ -300,20 +327,20 @@ TextureImporter:
         width: 87
         height: 37
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e72d8a31b74b17df0800000000000000
-      internalID: -184167669041671554
+      spriteID: df8499abf77872a80800000000000000
+      internalID: -8491669589722576643
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u6C61\u67D3\u7269-2023.9.16-0_7"
+      name: Trash_7
       rect:
         serializedVersion: 2
         x: 241
@@ -321,20 +348,20 @@ TextureImporter:
         width: 32
         height: 29
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1bdc4387f75ae490800000000000000
-      internalID: -7716258290974532836
+      spriteID: e4a7e610b8bf71400800000000000000
+      internalID: 294980875059100238
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u6C61\u67D3\u7269-2023.9.16-0_8"
+      name: Trash_8
       rect:
         serializedVersion: 2
         x: 298
@@ -342,14 +369,14 @@ TextureImporter:
         width: 50
         height: 28
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5bf8310f18af7410800000000000000
-      internalID: 1477084053918776158
+      spriteID: 0d13bdaadcf243f80800000000000000
+      internalID: -8127818867115609648
       vertices: []
       indices: 
       edges: []
