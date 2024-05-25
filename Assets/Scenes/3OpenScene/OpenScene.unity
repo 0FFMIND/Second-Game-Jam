@@ -849,7 +849,7 @@ PlayableDirector:
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: 4bd54afc3a1006e4995f4110ac34cb98, type: 2}
-  m_InitialState: 1
+  m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
@@ -2680,6 +2680,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58a8f0f01b4f7c1438b6adbdb069f2d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  information: {fileID: 2050386632}
 --- !u!58 &267076775
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2947,7 +2948,7 @@ SpriteRenderer:
   m_Size: {x: 0.79, y: 0.33}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &278419494
@@ -13972,6 +13973,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58a8f0f01b4f7c1438b6adbdb069f2d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  information: {fileID: 15950001}
 --- !u!58 &1517110742
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -14282,7 +14284,7 @@ SpriteRenderer:
   m_Size: {x: 0.79, y: 0.33}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1548957691
@@ -15884,6 +15886,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58a8f0f01b4f7c1438b6adbdb069f2d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  information: {fileID: 22064389}
 --- !u!58 &1748051550
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -16967,6 +16970,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58a8f0f01b4f7c1438b6adbdb069f2d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  information: {fileID: 1159916980}
 --- !u!58 &1877545074
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -17042,6 +17046,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58a8f0f01b4f7c1438b6adbdb069f2d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  information: {fileID: 118069101}
 --- !u!58 &1885437981
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -17092,6 +17097,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   introText: {fileID: 1072784088}
   introDialog: {fileID: 11400000, guid: 459cb272fd1c4ee42830704d9e2543ae, type: 2}
+  introNewDirector: {fileID: 0}
 --- !u!114 &1886222720
 MonoBehaviour:
   m_ObjectHideFlags: 0

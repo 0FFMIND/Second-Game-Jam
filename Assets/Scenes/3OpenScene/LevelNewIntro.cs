@@ -1,11 +1,13 @@
 using UnityEngine;
-using TMPro;
+using UnityEngine.Playables;
 
 public class LevelNewIntro : MonoBehaviour
 {
     public GameObject introText;
     public DialogContent introDialog;
     public static bool isFinished = false;
+    // 结束后进入Timeline的控制
+    public PlayableDirector introNewDirector;
     private void Start()
     {
         AudioManager.Instance.StopBGM();
@@ -23,6 +25,7 @@ public class LevelNewIntro : MonoBehaviour
         EventManager.Instance.RemoveEventListener("dialogFinished", HandleFinished);
         SaveManager.Instance.IsOpenEnd = true;
         SaveManager.Instance.SaveLevel();
+        introNewDirector.Play();
         introText.transform.parent.gameObject.SetActive(false);
     }
     public void PlayTypping()

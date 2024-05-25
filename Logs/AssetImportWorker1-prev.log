@@ -1,0 +1,1062 @@
+Using pre-set license
+Built from '2020.3/china_unity/release' branch; Version is '2020.3.20f1c1 (256576dc9522) revision 2450806'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 22631.3593; Version 2009; 64bit' Language: 'zh' Physical Memory: 16088 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+G:\SoftWare\Unity\2020.3.20f1c1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+G:/Code/Unity Project/GIT/Second-Game-Jam
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+56473
+Successfully changed project path to: G:/Code/Unity Project/GIT/Second-Game-Jam
+G:/Code/Unity Project/GIT/Second-Game-Jam
+Using Asset Import Pipeline V2.
+AS: AutoStreaming module initializing.Refreshing native plugins compatible for Editor in 158.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.20f1c1 (256576dc9522)
+[Subsystems] Discovering subsystems at path G:/SoftWare/Unity/2020.3.20f1c1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path G:/Code/Unity Project/GIT/Second-Game-Jam/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2520)
+    Vendor:   
+    VRAM:     5996 MB
+    Driver:   31.0.15.5222
+Shader 'Custom/RainShader': fallback shader 'Particles/Alpha Blended' not found
+Initialize mono
+Mono path[0] = 'G:/SoftWare/Unity/2020.3.20f1c1/Editor/Data/Managed'
+Mono path[1] = 'G:/SoftWare/Unity/2020.3.20f1c1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'G:/SoftWare/Unity/2020.3.20f1c1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56912
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: G:/SoftWare/Unity/2020.3.20f1c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001111 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 115.65 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.542 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1542ms)
+		BeginReloadAssembly (76ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (601ms)
+			LoadAssemblies (75ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (162ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (300ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (116ms)
+				BeforeProcessingInitializeOnLoad (26ms)
+				ProcessInitializeOnLoadAttributes (118ms)
+				ProcessInitializeOnLoadMethodAttributes (34ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.008000 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 61.96 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.761 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1762ms)
+		BeginReloadAssembly (136ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (1570ms)
+			LoadAssemblies (102ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (310ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (63ms)
+			SetupLoadedEditorAssemblies (997ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (62ms)
+				BeforeProcessingInitializeOnLoad (113ms)
+				ProcessInitializeOnLoadAttributes (798ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Custom/RainShader': fallback shader 'Particles/Alpha Blended' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.16 seconds
+Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2498 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 115.5 MB.
+System memory in use after: 115.6 MB.
+
+Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 2940.
+Total: 3.283900 ms (FindLiveObjects: 0.197000 ms CreateObjectMapping: 0.070000 ms MarkObjects: 2.903200 ms  DeleteObjects: 0.111500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Scenes/1TitleScene/title.png
+  artifactKey: Guid(643b23b296d47884fb15f3f6baba0978) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/1TitleScene/title.png using Guid(643b23b296d47884fb15f3f6baba0978) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f31ada36e7514e92434ee6e58028ad60') in 0.136570 seconds 
+  Import took 0.141696 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/Scenes/1TitleScene/titletwo.png
+  artifactKey: Guid(577d748eda42f524f84d84eb416771cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/1TitleScene/titletwo.png using Guid(577d748eda42f524f84d84eb416771cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd4c74f514d79bcc7cbb7733e06ed5a8') in 0.014695 seconds 
+  Import took 0.019184 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.006332 seconds.
+  path: Assets/Scenes/1TitleScene/TitleScene.unity
+  artifactKey: Guid(64aa4c4b032721342bb7feef903afbe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/1TitleScene/TitleScene.unity using Guid(64aa4c4b032721342bb7feef903afbe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f013db606fd935cc9279dd46de5e1ae1') in 0.024107 seconds 
+  Import took 0.027066 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003123 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.93 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.886 seconds
+Domain Reload Profiling:
+	ReloadAssembly (935ms)
+		BeginReloadAssembly (161ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (55ms)
+		EndReloadAssembly (733ms)
+			LoadAssemblies (94ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (211ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (243ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (71ms)
+				ProcessInitializeOnLoadAttributes (153ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Shader 'Custom/RainShader': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2440 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 110.2 MB.
+System memory in use after: 110.5 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2944.
+Total: 2.448200 ms (FindLiveObjects: 0.158800 ms CreateObjectMapping: 0.062200 ms MarkObjects: 2.196400 ms  DeleteObjects: 0.029400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1908.561181 seconds.
+  path: Assets/Scenes/2IntroScene/Background.png
+  artifactKey: Guid(e1e8b1af73392cf438b759fb03a7e159) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/2IntroScene/Background.png using Guid(e1e8b1af73392cf438b759fb03a7e159) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c6a94883c5b5728a23bdbd28c151c2c') in 0.125919 seconds 
+  Import took 0.135525 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000327 seconds.
+  path: Assets/Scenes/2IntroScene/CG3.png
+  artifactKey: Guid(df04db1ecf64c4e4da2d8c8ad9770c7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/2IntroScene/CG3.png using Guid(df04db1ecf64c4e4da2d8c8ad9770c7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '952f6b53994e4041c7027d331710c3c3') in 0.049183 seconds 
+  Import took 0.054337 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000345 seconds.
+  path: Assets/Scenes/2IntroScene/CG1.png
+  artifactKey: Guid(1890f7bc209e38e458fc705659875dca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/2IntroScene/CG1.png using Guid(1890f7bc209e38e458fc705659875dca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f25bf59fb8350a5c2f8061709109519d') in 0.023207 seconds 
+  Import took 0.026446 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/Scenes/2IntroScene/IntroDialog.asset
+  artifactKey: Guid(99e34456b5c699e4cbfb26ad46b4540a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/2IntroScene/IntroDialog.asset using Guid(99e34456b5c699e4cbfb26ad46b4540a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '105080b2f8b9f56c4d776132bd7ae4c6') in 0.019593 seconds 
+  Import took 0.022772 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/Scenes/2IntroScene/CG2.png
+  artifactKey: Guid(448834623880704408a1dd94cc20bb03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/2IntroScene/CG2.png using Guid(448834623880704408a1dd94cc20bb03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e1ab6920082a3389dd1e9b76f2fcc91') in 0.021141 seconds 
+  Import took 0.024625 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/Scenes/2IntroScene/CG4.png
+  artifactKey: Guid(924f49133bac037449a93e97d7151076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/2IntroScene/CG4.png using Guid(924f49133bac037449a93e97d7151076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad32bf5a6a080c4c6bd3d2afefe592ed') in 0.011835 seconds 
+  Import took 0.016254 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.717331 seconds.
+  path: Assets/Scenes/2IntroScene/IntroScene.unity
+  artifactKey: Guid(a6b4f81e617fb6d41a94b81c5f5d2441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/2IntroScene/IntroScene.unity using Guid(a6b4f81e617fb6d41a94b81c5f5d2441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80290af1367af507da2d66df2e29b755') in 0.017418 seconds 
+  Import took 0.021153 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.888989 seconds.
+  path: Assets/Scenes/1TitleScene
+  artifactKey: Guid(526070e8b3360e64aafc4c9dfda969f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/1TitleScene using Guid(526070e8b3360e64aafc4c9dfda969f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '501c0049d977632adc01e1e6d09efd5c') in 0.012036 seconds 
+  Import took 0.015169 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 55.241180 seconds.
+  path: Assets/Scenes/1TitleScene/new1((.png
+  artifactKey: Guid(a8eac6628aebedb459755e491fbbd236) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/1TitleScene/new1((.png using Guid(a8eac6628aebedb459755e491fbbd236) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74240602599af0920f277ad23eb0e4ed') in 0.043880 seconds 
+  Import took 0.048850 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/Scenes/1TitleScene/new2((.png
+  artifactKey: Guid(83fa3f370f0e6b343940bdf90616286b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/1TitleScene/new2((.png using Guid(83fa3f370f0e6b343940bdf90616286b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ee6baec976541904a216cfb624b09cc') in 0.024110 seconds 
+  Import took 0.028403 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.675426 seconds.
+  path: Assets/Scenes/1TitleScene/TitleScene.unity
+  artifactKey: Guid(64aa4c4b032721342bb7feef903afbe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/1TitleScene/TitleScene.unity using Guid(64aa4c4b032721342bb7feef903afbe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38188005b9a31ab6ad339e3d25bfadde') in 0.017743 seconds 
+  Import took 0.023618 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.452575 seconds.
+  path: Assets/Scenes/3OpenScene/IntroDialog.asset
+  artifactKey: Guid(459cb272fd1c4ee42830704d9e2543ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/3OpenScene/IntroDialog.asset using Guid(459cb272fd1c4ee42830704d9e2543ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b81a66fb202f5dcd179259f150ec2ca') in 0.005739 seconds 
+  Import took 0.010086 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/Scenes/3OpenScene/LevelNewIntro.playable
+  artifactKey: Guid(4bd54afc3a1006e4995f4110ac34cb98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/3OpenScene/LevelNewIntro.playable using Guid(4bd54afc3a1006e4995f4110ac34cb98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63ba761f50b1def45926b522fb36304e') in 0.024068 seconds 
+  Import took 0.028834 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.493335 seconds.
+  path: Assets/Scenes/3OpenScene/OpenScene.unity
+  artifactKey: Guid(9d1064be07a5a6748811eda953ad3c3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/3OpenScene/OpenScene.unity using Guid(9d1064be07a5a6748811eda953ad3c3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9076f78bd6d149e807eda70e5ecb1864') in 0.014457 seconds 
+  Import took 0.019299 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.331829 seconds.
+  path: Assets/Scenes/3OpenScene/Quest
+  artifactKey: Guid(2b486be378e88614b904f3784dbbc399) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/3OpenScene/Quest using Guid(2b486be378e88614b904f3784dbbc399) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa67015fa6da3202fa603e3843f41605') in 0.015952 seconds 
+  Import took 0.020024 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.891857 seconds.
+  path: Assets/Scenes/3OpenScene/Arts
+  artifactKey: Guid(6b507c42d4d65744f9b664eaae902a69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/3OpenScene/Arts using Guid(6b507c42d4d65744f9b664eaae902a69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a91419e4fdb882f93ef6d42b407dea78') in 0.012642 seconds 
+  Import took 0.017306 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000303 seconds.
+  path: Assets/Scenes/3OpenScene/Arts/SkillTree.png
+  artifactKey: Guid(5e2388f8577e42a4aa9fbc7270b16e45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/3OpenScene/Arts/SkillTree.png using Guid(5e2388f8577e42a4aa9fbc7270b16e45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '691977fbca1af89c606d69a62f5002bd') in 0.013030 seconds 
+  Import took 0.016766 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Scenes/3OpenScene/Arts/PlanetOutline.png
+  artifactKey: Guid(b171b7ebd261d564596a919d31cbb499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/3OpenScene/Arts/PlanetOutline.png using Guid(b171b7ebd261d564596a919d31cbb499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78e7201cb06d84b746a23cb935dc9826') in 0.083103 seconds 
+  Import took 0.087013 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000333 seconds.
+  path: Assets/Scenes/3OpenScene/Arts/LTrash_0.png
+  artifactKey: Guid(f647f9087b4faa7458652ab76cd0924e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/3OpenScene/Arts/LTrash_0.png using Guid(f647f9087b4faa7458652ab76cd0924e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62ed9cec8ffed3914df85fb06adf17b1') in 0.015218 seconds 
+  Import took 0.019739 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000419 seconds.
+  path: Assets/Scenes/3OpenScene/Arts/OpenScene.png
+  artifactKey: Guid(cbaad41674d5121449227898f5859231) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/3OpenScene/Arts/OpenScene.png using Guid(cbaad41674d5121449227898f5859231) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '370b1bafbd61d6951fa08dbc21ebd87c') in 0.032303 seconds 
+  Import took 0.036283 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000350 seconds.
+  path: Assets/Scenes/3OpenScene/Arts/LTrash_2.png
+  artifactKey: Guid(5f3cfec7cbb5e7b419dbe8a1a7d1ebbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/3OpenScene/Arts/LTrash_2.png using Guid(5f3cfec7cbb5e7b419dbe8a1a7d1ebbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c94e9026ce85f6f6742b8615674ecf8a') in 0.014177 seconds 
+  Import took 0.017952 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/Scenes/3OpenScene/Arts/CardChange.png
+  artifactKey: Guid(f2acfe293ed81d342973dc8e27179c3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/3OpenScene/Arts/CardChange.png using Guid(f2acfe293ed81d342973dc8e27179c3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5754256796439450296a6df70d0877d7') in 0.014376 seconds 
+  Import took 0.018984 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000360 seconds.
+  path: Assets/Scenes/3OpenScene/Arts/Backpack.png
+  artifactKey: Guid(50f66d5be11648c46acc37da329ed8ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/3OpenScene/Arts/Backpack.png using Guid(50f66d5be11648c46acc37da329ed8ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f5190903a7d1493ee8a447828840fdf') in 0.016046 seconds 
+  Import took 0.019939 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000346 seconds.
+  path: Assets/Scenes/3OpenScene/Arts/Trash.png
+  artifactKey: Guid(204821a884e4f0b4da221fb3c12e3342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/3OpenScene/Arts/Trash.png using Guid(204821a884e4f0b4da221fb3c12e3342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fb3192d618bb4979d8f0d53d7820d61') in 0.064203 seconds 
+  Import took 0.068190 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/Scenes/3OpenScene/Arts/LTrash_1.png
+  artifactKey: Guid(d1fc96739bdbb3042b7216b5e2b10534) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/3OpenScene/Arts/LTrash_1.png using Guid(d1fc96739bdbb3042b7216b5e2b10534) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5815911dc4bb7f59caf4bc1f760b1ac') in 0.011844 seconds 
+  Import took 0.015298 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/Scenes/3OpenScene/Arts/Button.png
+  artifactKey: Guid(e76533eb39c737d4c8db062f7813e33e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/3OpenScene/Arts/Button.png using Guid(e76533eb39c737d4c8db062f7813e33e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e6227d7b3be3521fe60db45e296aeaf') in 0.036390 seconds 
+  Import took 0.039362 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 780.732600 seconds.
+  path: Assets/Scenes/3OpenScene/Arts/技能卡片图标.png
+  artifactKey: Guid(e07a9acfaedb40f44be93f543c10375a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/3OpenScene/Arts/技能卡片图标.png using Guid(e07a9acfaedb40f44be93f543c10375a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11f0105f9dea259b46fb025e337a5515') in 0.025197 seconds 
+  Import took 0.030406 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/Scenes/3OpenScene/Arts/技能树图标(1).png
+  artifactKey: Guid(aa1369db5ba23b040930d701d5e9ac26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/3OpenScene/Arts/技能树图标(1).png using Guid(aa1369db5ba23b040930d701d5e9ac26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbf4048187750744fb78c0370129f182') in 0.017657 seconds 
+  Import took 0.021342 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.403557 seconds.
+  path: Assets/Scenes/3OpenScene/Arts/CardChange(1.png
+  artifactKey: Guid(2bfe7a5a50082d241afc2510c89979c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/3OpenScene/Arts/CardChange(1.png using Guid(2bfe7a5a50082d241afc2510c89979c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7debc2533762c2ea07971bb9ee007e47') in 0.041662 seconds 
+  Import took 0.046592 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.827275 seconds.
+  path: Assets/Scenes/3OpenScene/Arts/SkillTree(1.png
+  artifactKey: Guid(8a8877ad2a12284479f1b872e1810a58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/3OpenScene/Arts/SkillTree(1.png using Guid(8a8877ad2a12284479f1b872e1810a58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ff436f5e70d917b9388e0a8b38ab461') in 0.043264 seconds 
+  Import took 0.047184 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006619 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.928 seconds
+Domain Reload Profiling:
+	ReloadAssembly (929ms)
+		BeginReloadAssembly (204ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (15ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (102ms)
+		EndReloadAssembly (679ms)
+			LoadAssemblies (94ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (232ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (247ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (66ms)
+				ProcessInitializeOnLoadAttributes (169ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Shader 'Custom/RainShader': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2440 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 113.3 MB.
+System memory in use after: 113.5 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2989.
+Total: 2.920100 ms (FindLiveObjects: 0.180700 ms CreateObjectMapping: 0.088700 ms MarkObjects: 2.629400 ms  DeleteObjects: 0.020000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005169 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.92 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.878 seconds
+Domain Reload Profiling:
+	ReloadAssembly (902ms)
+		BeginReloadAssembly (138ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (721ms)
+			LoadAssemblies (87ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (205ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (57ms)
+			SetupLoadedEditorAssemblies (233ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (65ms)
+				ProcessInitializeOnLoadAttributes (153ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Shader 'Custom/RainShader': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2440 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 113.3 MB.
+System memory in use after: 113.5 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2993.
+Total: 2.324300 ms (FindLiveObjects: 0.222200 ms CreateObjectMapping: 0.055700 ms MarkObjects: 2.029300 ms  DeleteObjects: 0.015700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 210.188192 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle3-1-1.png
+  artifactKey: Guid(1f0fbb6ee9b898446af9d93e597d8ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle3-1-1.png using Guid(1f0fbb6ee9b898446af9d93e597d8ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '064b67ba00f33504ba5ab4c12815d94e') in 0.158957 seconds 
+  Import took 0.164300 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle5-2.png
+  artifactKey: Guid(d8c93038362681045b221b1c51320869) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle5-2.png using Guid(d8c93038362681045b221b1c51320869) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a5de99a8974897f48c4daa7cb823440') in 0.028556 seconds 
+  Import took 0.032135 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/down_hover.png
+  artifactKey: Guid(d3b98e1aa18c98d4d916ac092f70fd1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/down_hover.png using Guid(d3b98e1aa18c98d4d916ac092f70fd1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '704a747092bfb2aab5de08ac63f62324') in 0.035040 seconds 
+  Import took 0.039037 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000363 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Icon_pause.png
+  artifactKey: Guid(56f7e5f98d9d34a48ae3a26db1f99f96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Icon_pause.png using Guid(56f7e5f98d9d34a48ae3a26db1f99f96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8ee782f37e460ad2d20522a298d2eb8') in 0.021015 seconds 
+  Import took 0.025160 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/radio_selected.png
+  artifactKey: Guid(9dafa8d110aa51849af432bfbba91d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/radio_selected.png using Guid(9dafa8d110aa51849af432bfbba91d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d502f0e2e799099d9cd87b095512c53') in 0.023238 seconds 
+  Import took 0.026940 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000411 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle3-1-2.png
+  artifactKey: Guid(9f81854d8bebc0d48a561a0cdee50170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle3-1-2.png using Guid(9f81854d8bebc0d48a561a0cdee50170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52284fb37d420240225438d602b2b4f1') in 0.022528 seconds 
+  Import took 0.026072 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle6-2_pressed.png
+  artifactKey: Guid(883bb911412b13741a114f83590b5d06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle6-2_pressed.png using Guid(883bb911412b13741a114f83590b5d06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37a7de045565756f93013ff2608018da') in 0.019947 seconds 
+  Import took 0.024272 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000350 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle3-2-3.png
+  artifactKey: Guid(d69ff0d7ab6da9f4dbf791227d652191) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle3-2-3.png using Guid(d69ff0d7ab6da9f4dbf791227d652191) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37e5d47a08870fc43be832591b858164') in 0.022871 seconds 
+  Import took 0.027108 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Icon_menu.png
+  artifactKey: Guid(d4fc63fe12e1132498c11e3bd54b9e6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Icon_menu.png using Guid(d4fc63fe12e1132498c11e3bd54b9e6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99f4619ffcef902461768a4f47952629') in 0.021266 seconds 
+  Import took 0.024874 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Icon_Microphone.png
+  artifactKey: Guid(af4673cf3916200488118b79571fce2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Icon_Microphone.png using Guid(af4673cf3916200488118b79571fce2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c811c96441eda83b3e819152afd2fd94') in 0.019394 seconds 
+  Import took 0.022552 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/right_normal.png
+  artifactKey: Guid(93549da5a8eb97c438f9847a3c167006) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/right_normal.png using Guid(93549da5a8eb97c438f9847a3c167006) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d2d5bd30c6759225ec1801c3335b740') in 0.019779 seconds 
+  Import took 0.023059 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/switch_off.png
+  artifactKey: Guid(784d4891745cfae4bbd7c1ba87d935aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/switch_off.png using Guid(784d4891745cfae4bbd7c1ba87d935aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1e3f81bb1324a7530cfa85c8ccfb270') in 0.025797 seconds 
+  Import took 0.029618 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000369 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle3-1-3.png
+  artifactKey: Guid(0d74e5d73c9169d49bad09f80192c297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle3-1-3.png using Guid(0d74e5d73c9169d49bad09f80192c297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bb76d76db5c042a3a1186158e5e917d') in 0.022468 seconds 
+  Import took 0.027409 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/down_normal.png
+  artifactKey: Guid(625723eca88f7df448232176d685992d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/down_normal.png using Guid(625723eca88f7df448232176d685992d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e18fa5ce8cc0725e8e6fdbe58884b620') in 0.018600 seconds 
+  Import took 0.021863 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle3-2-1.png
+  artifactKey: Guid(ae853b8ea5984d4419784e51a03929af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle3-2-1.png using Guid(ae853b8ea5984d4419784e51a03929af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '808fa93e4eebd8adfe28b7f8b02352e6') in 0.021257 seconds 
+  Import took 0.025336 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Icon_play.png
+  artifactKey: Guid(79dff41647fda9d45ba29e5b229c2b7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Icon_play.png using Guid(79dff41647fda9d45ba29e5b229c2b7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '557e5c83b02c02f0a222954ad039ba16') in 0.019756 seconds 
+  Import took 0.023147 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/up_hover.png
+  artifactKey: Guid(7b649ef77d8b4834c96a85982740bcb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/up_hover.png using Guid(7b649ef77d8b4834c96a85982740bcb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb036dffb9411ec7966493098d0a2509') in 0.020560 seconds 
+  Import took 0.024781 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/up_pressed.png
+  artifactKey: Guid(4302f01ec6241fe4da1fca121316593f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/up_pressed.png using Guid(4302f01ec6241fe4da1fca121316593f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faa65aacf72fb59e04486cc527a39447') in 0.019595 seconds 
+  Import took 0.023151 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/left_hover.png
+  artifactKey: Guid(25c2b4cda785ee4489ea15cd8bdb371e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/left_hover.png using Guid(25c2b4cda785ee4489ea15cd8bdb371e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3fc7b1b570ea40f3571f07098645fe1') in 0.019758 seconds 
+  Import took 0.023010 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle6-2_normal.png
+  artifactKey: Guid(d50fb07502babdb4fab8072852929364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle6-2_normal.png using Guid(d50fb07502babdb4fab8072852929364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f775e08997cd64e66772d6e7d18e9d6f') in 0.020761 seconds 
+  Import took 0.024577 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle6-1_pressed.png
+  artifactKey: Guid(3dd5920610c00574f81984af8fa0d63d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle6-1_pressed.png using Guid(3dd5920610c00574f81984af8fa0d63d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '491095b83b1b18f66c7393a6ead642d8') in 0.021035 seconds 
+  Import took 0.024103 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/left_pressed.png
+  artifactKey: Guid(703398fdfa5127744b4a6bde0524becd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/left_pressed.png using Guid(703398fdfa5127744b4a6bde0524becd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '771e0d951b610f1dc7fb686288c6996c') in 0.018058 seconds 
+  Import took 0.021163 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/right_pressed.png
+  artifactKey: Guid(fd71f3b0572497c4fb7b58a86364b87a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/right_pressed.png using Guid(fd71f3b0572497c4fb7b58a86364b87a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c0f880c0a3a3e4f6466a445331b4c90') in 0.019625 seconds 
+  Import took 0.022786 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/left_normal.png
+  artifactKey: Guid(bc731ea99a6d6dd4686608d4e506e426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/left_normal.png using Guid(bc731ea99a6d6dd4686608d4e506e426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05c4c8291b23f9a4344276eba926d971') in 0.019027 seconds 
+  Import took 0.022523 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/direction2.png
+  artifactKey: Guid(38601484b86ed70468e64893e63b1e92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/direction2.png using Guid(38601484b86ed70468e64893e63b1e92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '327863436ee80ad4a4e59f3d1d1e4284') in 0.022518 seconds 
+  Import took 0.026879 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000327 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Icon_web.png
+  artifactKey: Guid(4b2191c7b4d0d574d90a072ea3cfc21b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Icon_web.png using Guid(4b2191c7b4d0d574d90a072ea3cfc21b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30cab525ed15d77c9d31497943c61784') in 0.023239 seconds 
+  Import took 0.026983 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000418 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Icon_lightning.png
+  artifactKey: Guid(19d22aa096d179e40a28c84fd284d090) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Icon_lightning.png using Guid(19d22aa096d179e40a28c84fd284d090) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46ef43cf3124e02b2ebbddd71e27b810') in 0.022569 seconds 
+  Import took 0.026480 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/switch_on.png
+  artifactKey: Guid(e5fe03b3f1b13ba46b303ccd3a517833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/switch_on.png using Guid(e5fe03b3f1b13ba46b303ccd3a517833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43fb7fc786af390dc829181f3c0f6f9b') in 0.023637 seconds 
+  Import took 0.027382 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle5-1 .png
+  artifactKey: Guid(e9131ce82df14e843843750c1658b21d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle5-1 .png using Guid(e9131ce82df14e843843750c1658b21d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4ae26ad05631c3cd8282881d17143b0') in 0.023939 seconds 
+  Import took 0.027944 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle3-2-2.png
+  artifactKey: Guid(407f3091468771a4490b3f7374db91ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle3-2-2.png using Guid(407f3091468771a4490b3f7374db91ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b92912bd6f19d904798c7c8a5b00d3e5') in 0.024372 seconds 
+  Import took 0.028834 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle6-1_normal.png
+  artifactKey: Guid(53381ece91abaad4aa39ddc4f83ea050) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle6-1_normal.png using Guid(53381ece91abaad4aa39ddc4f83ea050) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd16cc0e730372a7c11cb65d7eebaaf92') in 0.022111 seconds 
+  Import took 0.025995 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/down_pressed.png
+  artifactKey: Guid(311feef7cb2b8ec439e1044776bc8c7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/down_pressed.png using Guid(311feef7cb2b8ec439e1044776bc8c7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cab8886bb04f87e0228d5feeac1027c') in 0.021698 seconds 
+  Import took 0.025973 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000391 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/up_normal.png
+  artifactKey: Guid(409b7f3ec81ac464d902782688133cc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/up_normal.png using Guid(409b7f3ec81ac464d902782688133cc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '660aabf4db1b561aa35f5ce1668ef023') in 0.021547 seconds 
+  Import took 0.026495 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle4-2.png
+  artifactKey: Guid(d72051b1ff2517847b4719e352e29f2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle4-2.png using Guid(d72051b1ff2517847b4719e352e29f2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd460d17a6354780107075c2489309c61') in 0.023455 seconds 
+  Import took 0.028096 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000350 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle4-1.png
+  artifactKey: Guid(187eca1f362f3ac4d9ff829899434ee9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle4-1.png using Guid(187eca1f362f3ac4d9ff829899434ee9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f78ccc9238992c85a319717aad4e765') in 0.023054 seconds 
+  Import took 0.026662 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/direction1.png
+  artifactKey: Guid(93adf9684a871ee4aa5c45b36aa06a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/direction1.png using Guid(93adf9684a871ee4aa5c45b36aa06a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f0c5472e0f67ddf7b8911c9737d1976') in 0.023813 seconds 
+  Import took 0.027447 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/right_hover.png
+  artifactKey: Guid(e36d73849d356134b8012e368d5e4160) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/right_hover.png using Guid(e36d73849d356134b8012e368d5e4160) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7524e323a24a28bfac2599345af217dc') in 0.019186 seconds 
+  Import took 0.022698 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/radio_normal.png
+  artifactKey: Guid(d7e9f91fe20b45a48832778f4e0cb4a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/radio_normal.png using Guid(d7e9f91fe20b45a48832778f4e0cb4a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f971c1f34b3e3847ab9cf3a580c0da5') in 0.018925 seconds 
+  Import took 0.022133 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.941308 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle2-1-1.png
+  artifactKey: Guid(8b86f4930df98c8489668656ad37e799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle2-1-1.png using Guid(8b86f4930df98c8489668656ad37e799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba682c36262743630f82ec1beeb071fa') in 0.096785 seconds 
+  Import took 0.103329 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000683 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle2-1-2.png
+  artifactKey: Guid(4955cbcd879d487429a1113701e1e3b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle2-1-2.png using Guid(4955cbcd879d487429a1113701e1e3b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09daccc3ba7f62e8eccb78bf98c362d2') in 0.037802 seconds 
+  Import took 0.044857 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000465 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle2-2-2.png
+  artifactKey: Guid(5b7c1987c67dc1d4e8ca9201e62dd964) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle2-2-2.png using Guid(5b7c1987c67dc1d4e8ca9201e62dd964) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2431ee9b46ac713d8051284d6e9f86d') in 0.029712 seconds 
+  Import took 0.033729 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle2-2-1.png
+  artifactKey: Guid(f3385fd0a6f0749459b58dc4406ec2fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle2-2-1.png using Guid(f3385fd0a6f0749459b58dc4406ec2fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5057030aa62e806b0d6945d136b4f1b7') in 0.021753 seconds 
+  Import took 0.025188 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 43.488726 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Button-01_normal.png
+  artifactKey: Guid(8b55cd23124dbc143af3d8fb55248ab8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Button-01_normal.png using Guid(8b55cd23124dbc143af3d8fb55248ab8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '707226dc1d0511fed3109f5954c6a772') in 0.081253 seconds 
+  Import took 0.084561 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Button-02_normal.png
+  artifactKey: Guid(e2dbad3b493225b4e9484df7d1fc6df5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Button-02_normal.png using Guid(e2dbad3b493225b4e9484df7d1fc6df5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0147ec8f75ce4cd5d7dfeccad41da1f8') in 0.048533 seconds 
+  Import took 0.051622 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000471 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Button-01_pressed.png
+  artifactKey: Guid(2db4ffd999fe2f74097945c14c1044f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Button-01_pressed.png using Guid(2db4ffd999fe2f74097945c14c1044f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfd103c1c5b886ed7ed08c6e0f93ba57') in 0.023882 seconds 
+  Import took 0.027454 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/checkbox_normal.png
+  artifactKey: Guid(9480d58feb0237840b2189d47e7dec78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/checkbox_normal.png using Guid(9480d58feb0237840b2189d47e7dec78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '634313803c989462fe2d70934db25545') in 0.024060 seconds 
+  Import took 0.027759 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle1-2-2.png
+  artifactKey: Guid(2752f07ac8ff1524289d90fdcd7284d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle1-2-2.png using Guid(2752f07ac8ff1524289d90fdcd7284d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '589a3cb2642c8552c063e2db823d708a') in 0.021560 seconds 
+  Import took 0.024890 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle1-2-1.png
+  artifactKey: Guid(64c43cb906890a549944a9c5c5969ba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle1-2-1.png using Guid(64c43cb906890a549944a9c5c5969ba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '517c2857e6c044f6d508be27b807f70f') in 0.021635 seconds 
+  Import took 0.025299 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle1-2.png
+  artifactKey: Guid(0de0b5d3113764442b8fe3b393dcfe1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle1-2.png using Guid(0de0b5d3113764442b8fe3b393dcfe1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '760a8a9965aad5a87349ed3d41bce08a') in 0.021887 seconds 
+  Import took 0.025677 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle1-1.png
+  artifactKey: Guid(483a6f8dc5e351c499cdb419084eab0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle1-1.png using Guid(483a6f8dc5e351c499cdb419084eab0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32759bb78968bd9d074f1a7cfe3c3395') in 0.024136 seconds 
+  Import took 0.027961 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Button-02_pressed.png
+  artifactKey: Guid(2ce04efc8d44e9343be4632d18d688bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Button-02_pressed.png using Guid(2ce04efc8d44e9343be4632d18d688bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59b6f4d5187ac53b6661fd41681d4859') in 0.020043 seconds 
+  Import took 0.024262 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle1-1-2.png
+  artifactKey: Guid(608a4e5e1c8a6ab4d8567a897760dd0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle1-1-2.png using Guid(608a4e5e1c8a6ab4d8567a897760dd0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2bbd26b4c8b303bbf8bfce568bca4b4') in 0.021161 seconds 
+  Import took 0.024349 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle1-1-1.png
+  artifactKey: Guid(eafec7f710b565d4ba7e9e6f2eff72d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/Circle1-1-1.png using Guid(eafec7f710b565d4ba7e9e6f2eff72d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70c7a5588da57bfee0d438b7dcebca0d') in 0.021351 seconds 
+  Import took 0.024571 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/checkbox_pressed.png
+  artifactKey: Guid(9ab2daaac82e5d64ab9f581beec74a90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalTools/Sci-fi Buttons and Panels/Sci-fi Components Resources/Sliced elements/Part02/checkbox_pressed.png using Guid(9ab2daaac82e5d64ab9f581beec74a90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ad7fc8c4ce0859eafb7041c11bf2ac3') in 0.018481 seconds 
+  Import took 0.021595 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010255 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.218 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1219ms)
+		BeginReloadAssembly (125ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (40ms)
+		EndReloadAssembly (1037ms)
+			LoadAssemblies (106ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (331ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (476ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (149ms)
+				ProcessInitializeOnLoadAttributes (314ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Shader 'Custom/RainShader': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2440 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 113.4 MB.
+System memory in use after: 113.6 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 3034.
+Total: 4.059700 ms (FindLiveObjects: 0.257300 ms CreateObjectMapping: 0.096000 ms MarkObjects: 3.674100 ms  DeleteObjects: 0.030400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
